@@ -1,0 +1,111 @@
+🔧 PASSO A PASSO
+
+1. 🔐 Criar uma conta e projeto no Firebase
+	1.	Vai a https://console.firebase.google.com
+	2.	Clica em “Adicionar projeto”
+	3.	Dá um nome (ex: FormularioEscolhas)
+	4.	Podes desativar o Google Analytics
+	5.	Cria o projeto
+
+⸻
+
+2. 🗄️ Ativar Realtime Database
+	1.	No menu lateral, escolhe “Build” > “Realtime Database”
+	2.	Clica em “Criar base de dados”
+	3.	Escolhe “Iniciar em modo de teste” (para desenvolvimento)
+	4.	A base de dados estará disponível numa URL como:
+https://teu-projeto.firebaseio.com/
+
+⸻
+
+3. 🌐 Adicionar Firebase ao teu site (frontend GitHub Pages)
+	1.	Vai a Project Settings > General > Your apps
+	2.	Clica em </> (ícone de Web App)
+	3.	Dá um nome e clica em “Register app”
+	4.	Vais ver o código de configuração como este:
+
+		<script src="https://www.gstatic.com/firebasejs/10.12.2/firebase-app.js"></script>
+		<script src="https://www.gstatic.com/firebasejs/10.12.2/firebase-database.js"></script>
+		<script>
+		const firebaseConfig = {
+			apiKey: "API_KEY",
+			authDomain: "TEU_PROJETO.firebaseapp.com",
+			databaseURL: "https://TEU_PROJETO.firebaseio.com",
+			projectId: "TEU_PROJETO",
+			storageBucket: "TEU_PROJETO.appspot.com",
+			messagingSenderId: "XXXX",
+			appId: "XXX"
+		};
+
+		// Inicializar Firebase
+		const app = firebase.initializeApp(firebaseConfig);
+		const db = firebase.database();
+		</script>
+
+4. ✅ Enviar dados do formulário para Firebase
+
+		<script>
+		function enviarParaFirebase(sistema, subopcao, email) {
+		const dados = {
+			sistema,
+			subopcao,
+			email,
+			timestamp: new Date().toISOString()
+		};
+
+		firebase.database().ref("respostas").push(dados)
+			.then(() => {
+			alert("Dados enviados com sucesso para o Firebase!");
+			})
+			.catch(error => {
+			alert("Erro ao enviar: " + error);
+			});
+		}
+		</script>
+
+Chamas isto quando o utilizador confirmar:
+
+
+		// Depois do utilizador clicar Confirmar
+		confirmarEnvio() {
+		const sistema = document.getElementById('sistema').value;
+		const subopcao = document.getElementById('subopcao').value;
+		const email = document.getElementById('email').value;
+		enviarParaFirebase(sistema, subopcao, email);
+		}
+
+Aceder aos dados no outro computador
+	1.	Entra em https://console.firebase.google.com
+	2.	Abre o teu projeto
+	3.	Vai a Realtime Database > Data
+	4.	Verás os dados inseridos como objetos:
+
+		respostas: {
+			-NkSx1y...: {
+				sistema: "servicenow",
+				subopcao: "cad",
+				email: "utilizador@email.com",
+				timestamp: "2025-06-15T12:00:00Z"
+			},
+			...
+			}
+
+
+// Import the functions you need from the SDKs you need
+import { initializeApp } from "firebase/app";
+// TODO: Add SDKs for Firebase products that you want to use
+// https://firebase.google.com/docs/web/setup#available-libraries
+
+// Your web app's Firebase configuration
+const firebaseConfig = {
+  apiKey: "AIzaSyDERCoKXi7qa1k4S5pc0JipHyFEjgqwXAg",
+  authDomain: "examtopics-v1.firebaseapp.com",
+  databaseURL: "https://examtopics-v1-default-rtdb.europe-west1.firebasedatabase.app",
+  projectId: "examtopics-v1",
+  storageBucket: "examtopics-v1.firebasestorage.app",
+  messagingSenderId: "596894003766",
+  appId: "1:596894003766:web:9c310b67a78b46b97c5e97"
+};
+
+// Initialize Firebase
+const app = initializeApp(firebaseConfig);

@@ -2,7 +2,7 @@
 <html lang="pt">
 <head>
   <meta charset="UTF-8">
-  <title>Formulário com validação de email</title>
+  <title>Formulário com Firebase</title>
   <style>
     body {
       font-family: Arial, sans-serif;
@@ -44,7 +44,26 @@
     <button type="submit" style="margin-top: 10px;">Submeter</button>
   </form>
 
+  <!-- Firebase SDKs -->
+  <script src="https://www.gstatic.com/firebasejs/10.12.2/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/10.12.2/firebase-database.js"></script>
+
   <script>
+    // Configuração Firebase (visível no frontend - ver nota de segurança abaixo)
+    const firebaseConfig = {
+      apiKey: "AIzaSyDERCoKXi7qa1k4S5pc0JipHyFEjgqwXAg",
+      authDomain: "examtopics-v1.firebaseapp.com",
+      databaseURL: "https://examtopics-v1-default-rtdb.europe-west1.firebasedatabase.app",
+      projectId: "examtopics-v1",
+      storageBucket: "examtopics-v1.firebasestorage.app",
+      messagingSenderId: "596894003766",
+      appId: "1:596894003766:web:9c310b67a78b46b97c5e97"
+    };
+
+    // Inicializar Firebase
+    const app = firebase.initializeApp(firebaseConfig);
+    const db = firebase.database();
+
     const subopcoesPorSistema = {
       servicenow: ["cis-itsm", "cis-hr", "cad", "csa"],
       sap: ["aaa", "bbb", "ccc", "ddd"]
@@ -54,7 +73,6 @@
       const sistemaSelecionado = document.getElementById("sistema").value;
       const subopcaoSelect = document.getElementById("subopcao");
 
-      // Limpa as subopções
       subopcaoSelect.innerHTML = '<option value="">-- Escolhe uma subopção --</option>';
 
       if (subopcoesPorSistema[sistemaSelecionado]) {
@@ -68,20 +86,31 @@
     }
 
     function validarFormulario() {
-      const emailInput = document.getElementById("email");
+      const sistema = document.getElementById("sistema").value;
+      const subopcao = document.getElementById("subopcao").value;
+      const email = document.getElementById("email").value.trim();
       const erroEmail = document.getElementById("erroEmail");
-      const email = emailInput.value.trim();
 
       const regexEmail = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-
       if (!regexEmail.test(email)) {
         erroEmail.textContent = "Por favor introduz um email válido.";
         return false;
       }
-
       erroEmail.textContent = "";
-      alert("Formulário submetido com sucesso!");
-      return true;
+
+      // Enviar para Firebase
+      firebase.database().ref("respostas").push({
+        sistema,
+        subopcao,
+        email,
+        timestamp: new Date().toISOString()
+      }).then(() => {
+        alert("Dados enviados com sucesso!");
+      }).catch((error) => {
+        alert("Erro ao enviar: " + error.message);
+      });
+
+      return false; // impedir submissão real do form
     }
   </script>
 
