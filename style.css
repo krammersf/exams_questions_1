@@ -13,8 +13,9 @@ label {
 .erro {
   color: red;
   font-size: 0.9em;
+  margin-top: 5px;
+  min-height: 18px;
 }
-
 input[type="email"],
 select {
   width: 98%;
@@ -35,7 +36,7 @@ button[type="submit"],
   padding: 10px 20px;
   font-weight: bold;
   cursor: pointer;
-  margin-top: 20px;
+  margin-top: 30px;
 }
 
 /* Modal */
