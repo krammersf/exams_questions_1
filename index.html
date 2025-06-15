@@ -18,6 +18,38 @@
       color: red;
       font-size: 0.9em;
     }
+
+    /* Estilo do modal */
+    #modalFundo {
+      display: none;
+      position: fixed;
+      top: 0; left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0,0,0,0.6);
+      z-index: 999;
+    }
+
+    #modalCaixa {
+      background: white;
+      padding: 20px;
+      width: 300px;
+      margin: 100px auto;
+      border-radius: 10px;
+      text-align: center;
+      box-shadow: 0 0 10px #000;
+    }
+
+    #modalCaixa button {
+      margin: 10px 5px 0;
+      padding: 8px 16px;
+      font-weight: bold;
+      cursor: pointer;
+    }
+
+    button[type="submit"] {
+      margin-top: 10px;
+    }
   </style>
 </head>
 <body>
@@ -41,10 +73,22 @@
     <input type="email" id="email" required placeholder="teuemail@exemplo.com">
     <div id="erroEmail" class="erro"></div>
 
-    <button type="submit" style="margin-top: 10px;">Submeter</button>
+    <button type="submit">Submeter</button>
   </form>
 
-  <!-- Script principal como módulo -->
+  <!-- Modal de confirmação -->
+  <div id="modalFundo">
+    <div id="modalCaixa">
+      <p><strong>Confirma os dados abaixo:</strong></p>
+      <p><strong>Sistema:</strong> <span id="confSistema"></span></p>
+      <p><strong>Subopção:</strong> <span id="confSubopcao"></span></p>
+      <p><strong>Email:</strong> <span id="confEmail"></span></p>
+      <button id="btnSim">Sim</button>
+      <button id="btnNao">Não</button>
+    </div>
+  </div>
+
+  <!-- Script principal -->
   <script type="module">
     import { initializeApp } from "https://www.gstatic.com/firebasejs/10.12.2/firebase-app.js";
     import { getDatabase, ref, push } from "https://www.gstatic.com/firebasejs/10.12.2/firebase-database.js";
@@ -67,7 +111,6 @@
       sap: ["aaa", "bbb", "ccc", "ddd"]
     };
 
-    // Torna as funções disponíveis globalmente
     window.atualizarSubopcoes = function () {
       const sistemaSelecionado = document.getElementById("sistema").value;
       const subopcaoSelect = document.getElementById("subopcao");
@@ -97,19 +140,54 @@
       }
       erroEmail.textContent = "";
 
-      push(ref(db, "respostas"), {
-        sistema,
-        subopcao,
-        email,
-        timestamp: new Date().toISOString()
-      }).then(() => {
-        alert("Dados enviados com sucesso!");
-      }).catch((error) => {
-        alert("Erro ao enviar: " + error.message);
+      // Preencher dados no modal
+      document.getElementById("confSistema").textContent = sistema;
+      document.getElementById("confSubopcao").textContent = subopcao;
+      document.getElementById("confEmail").textContent = email;
+
+      // Mostrar modal
+      document.getElementById("modalFundo").style.display = "block";
+
+      return false; // impedir envio imediato
+    };
+
+    document.addEventListener("DOMContentLoaded", () => {
+      document.getElementById("btnSim").addEventListener("click", (e) => {
+        e.preventDefault();
+
+        const sistema = document.getElementById("confSistema").textContent;
+        const subopcao = document.getElementById("confSubopcao").textContent;
+        const email = document.getElementById("confEmail").textContent;
+
+        push(ref(db, "respostas"), {
+          sistema,
+          subopcao,
+          email,
+          timestamp: new Date().toISOString()
+        }).then(() => {
+          alert("Dados enviados com sucesso!");
+          limparFormulario();
+        }).catch((error) => {
+          alert("Erro ao enviar: " + error.message);
+        });
+
+        document.getElementById("modalFundo").style.display = "none";
       });
 
-      return false;
-    };
+      document.getElementById("btnNao").addEventListener("click", (e) => {
+        e.preventDefault();
+        limparFormulario();
+        document.getElementById("modalFundo").style.display = "none";
+      });
+    });
+
+    function limparFormulario() {
+      document.getElementById("sistema").value = "";
+      atualizarSubopcoes();
+      document.getElementById("subopcao").value = "";
+      document.getElementById("email").value = "";
+      document.getElementById("erroEmail").textContent = "";
+    }
   </script>
 
 </body>
