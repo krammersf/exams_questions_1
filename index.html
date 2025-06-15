@@ -44,12 +44,11 @@
     <button type="submit" style="margin-top: 10px;">Submeter</button>
   </form>
 
-  <!-- Firebase SDKs -->
-  <script src="https://www.gstatic.com/firebasejs/10.12.2/firebase-app.js"></script>
-  <script src="https://www.gstatic.com/firebasejs/10.12.2/firebase-database.js"></script>
+  <!-- Script principal como módulo -->
+  <script type="module">
+    import { initializeApp } from "https://www.gstatic.com/firebasejs/10.12.2/firebase-app.js";
+    import { getDatabase, ref, push } from "https://www.gstatic.com/firebasejs/10.12.2/firebase-database.js";
 
-  <script>
-    // Configuração Firebase (visível no frontend - ver nota de segurança abaixo)
     const firebaseConfig = {
       apiKey: "AIzaSyDERCoKXi7qa1k4S5pc0JipHyFEjgqwXAg",
       authDomain: "examtopics-v1.firebaseapp.com",
@@ -60,16 +59,16 @@
       appId: "1:596894003766:web:9c310b67a78b46b97c5e97"
     };
 
-    // Inicializar Firebase
-    const app = firebase.initializeApp(firebaseConfig);
-    const db = firebase.database();
+    const app = initializeApp(firebaseConfig);
+    const db = getDatabase(app);
 
     const subopcoesPorSistema = {
       servicenow: ["cis-itsm", "cis-hr", "cad", "csa"],
       sap: ["aaa", "bbb", "ccc", "ddd"]
     };
 
-    function atualizarSubopcoes() {
+    // Torna as funções disponíveis globalmente
+    window.atualizarSubopcoes = function () {
       const sistemaSelecionado = document.getElementById("sistema").value;
       const subopcaoSelect = document.getElementById("subopcao");
 
@@ -83,9 +82,9 @@
           subopcaoSelect.appendChild(option);
         });
       }
-    }
+    };
 
-    function validarFormulario() {
+    window.validarFormulario = function () {
       const sistema = document.getElementById("sistema").value;
       const subopcao = document.getElementById("subopcao").value;
       const email = document.getElementById("email").value.trim();
@@ -98,8 +97,7 @@
       }
       erroEmail.textContent = "";
 
-      // Enviar para Firebase
-      firebase.database().ref("respostas").push({
+      push(ref(db, "respostas"), {
         sistema,
         subopcao,
         email,
@@ -110,8 +108,8 @@
         alert("Erro ao enviar: " + error.message);
       });
 
-      return false; // impedir submissão real do form
-    }
+      return false;
+    };
   </script>
 
 </body>
