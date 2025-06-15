@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+  <meta charset="UTF-8">
+  <title>Dropdown Dinâmico</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      padding: 20px;
+    }
+
+    label {
+      display: block;
+      margin-top: 10px;
+    }
+  </style>
+</head>
+<body>
+
+  <h2>Seleciona uma opção</h2>
+
+  <label for="sistema">Sistema:</label>
+  <select id="sistema" onchange="atualizarSubopcoes()">
+    <option value="">-- Escolhe um sistema --</option>
+    <option value="servicenow">ServiceNow</option>
+    <option value="sap">SAP</option>
+  </select>
+
+  <label for="subopcao">Subopções:</label>
+  <select id="subopcao">
+    <option value="">-- Escolhe uma subopção --</option>
+  </select>
+
+  <script>
+    const subopcoesPorSistema = {
+      servicenow: ["cis-itsm", "cis-hr", "cad", "csa"],
+      sap: ["aaa", "bbb", "ccc", "ddd"]
+    };
+
+    function atualizarSubopcoes() {
+      const sistemaSelecionado = document.getElementById("sistema").value;
+      const subopcaoSelect = document.getElementById("subopcao");
+
+      // Limpar opções anteriores
+      subopcaoSelect.innerHTML = '<option value="">-- Escolhe uma subopção --</option>';
+
+      if (subopcoesPorSistema[sistemaSelecionado]) {
+        subopcoesPorSistema[sistemaSelecionado].forEach(opcao => {
+          const option = document.createElement("option");
+          option.value = opcao;
+          option.textContent = opcao;
+          subopcaoSelect.appendChild(option);
+        });
+      }
+    }
+  </script>
+
+</body>
+</html>
