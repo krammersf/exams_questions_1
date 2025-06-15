@@ -25,6 +25,7 @@ select {
   border: 1px solid #ccc;
   background-color: #444;
   color: white;
+  margin-bottom: 30px;
 }
 
 button[type="submit"],
