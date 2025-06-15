@@ -2,7 +2,7 @@
 <html lang="pt">
 <head>
   <meta charset="UTF-8">
-  <title>Dropdown Dinâmico</title>
+  <title>Formulário com validação de email</title>
   <style>
     body {
       font-family: Arial, sans-serif;
@@ -13,23 +13,36 @@
       display: block;
       margin-top: 10px;
     }
+
+    .erro {
+      color: red;
+      font-size: 0.9em;
+    }
   </style>
 </head>
 <body>
 
-  <h2>Seleciona uma opção</h2>
+  <h2>Seleciona um sistema e subopção</h2>
 
-  <label for="sistema">Sistema:</label>
-  <select id="sistema" onchange="atualizarSubopcoes()">
-    <option value="">-- Escolhe um sistema --</option>
-    <option value="servicenow">ServiceNow</option>
-    <option value="sap">SAP</option>
-  </select>
+  <form onsubmit="return validarFormulario()">
+    <label for="sistema">Sistema:</label>
+    <select id="sistema" onchange="atualizarSubopcoes()" required>
+      <option value="">-- Escolhe um sistema --</option>
+      <option value="servicenow">ServiceNow</option>
+      <option value="sap">SAP</option>
+    </select>
 
-  <label for="subopcao">Subopções:</label>
-  <select id="subopcao">
-    <option value="">-- Escolhe uma subopção --</option>
-  </select>
+    <label for="subopcao">Subopções:</label>
+    <select id="subopcao" required>
+      <option value="">-- Escolhe uma subopção --</option>
+    </select>
+
+    <label for="email">Email:</label>
+    <input type="email" id="email" required placeholder="teuemail@exemplo.com">
+    <div id="erroEmail" class="erro"></div>
+
+    <button type="submit" style="margin-top: 10px;">Submeter</button>
+  </form>
 
   <script>
     const subopcoesPorSistema = {
@@ -41,7 +54,7 @@
       const sistemaSelecionado = document.getElementById("sistema").value;
       const subopcaoSelect = document.getElementById("subopcao");
 
-      // Limpar opções anteriores
+      // Limpa as subopções
       subopcaoSelect.innerHTML = '<option value="">-- Escolhe uma subopção --</option>';
 
       if (subopcoesPorSistema[sistemaSelecionado]) {
@@ -52,6 +65,23 @@
           subopcaoSelect.appendChild(option);
         });
       }
+    }
+
+    function validarFormulario() {
+      const emailInput = document.getElementById("email");
+      const erroEmail = document.getElementById("erroEmail");
+      const email = emailInput.value.trim();
+
+      const regexEmail = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+
+      if (!regexEmail.test(email)) {
+        erroEmail.textContent = "Por favor introduz um email válido.";
+        return false;
+      }
+
+      erroEmail.textContent = "";
+      alert("Formulário submetido com sucesso!");
+      return true;
     }
   </script>
 
