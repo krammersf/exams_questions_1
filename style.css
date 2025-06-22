@@ -67,12 +67,12 @@ button[type="submit"],
   font-size: 1.1rem;
 }
 
-/* 📱 Responsividade com simulação de zoom a 250% */
+/* 📱 Responsividade com simulação de zoom a 500% */
 @media (max-width: 600px) {
   html, body {
-    transform: scale(2.5);
+    transform: scale(5);
     transform-origin: top left;
-    width: 40%;
+    width: 20%; /* inversamente proporcional ao scale (100 / 5 = 20) */
     overflow-x: hidden;
   }
 }
