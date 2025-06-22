@@ -70,39 +70,15 @@ button[type="submit"],
 /* Responsividade: aumenta fontes e espaçamentos no telemóvel */
 @media (max-width: 600px) {
   html {
-    font-size: 32px; /* aumenta a base do tamanho da fonte (2x do normal 16px) */
+    font-size: 24px;
   }
 
   body {
-    padding: 1.5rem;
+    zoom: 2.5; /* dobra tudo visualmente */
   }
 
-  label {
-    font-size: 2.8rem;
-  }
-
-  input[type="email"],
-  select {
-    font-size: 3rem;
-    padding: 2.5rem;
-    margin-bottom: 40px;
-  }
-
-  button[type="submit"],
-  #modalCaixa button {
-    font-size: 3rem;
-    padding: 2.5rem 3rem;
-  }
-
-  h2 {
-    font-size: 3.5rem;
-  }
-
-  #modalCaixa {
-    font-size: 2.8rem;
-    padding: 3.5rem;
-    width: 90%;
-    max-width: 340px;
-    margin: 80px auto;
+  input, select, button, label {
+    font-size: 1.5rem; /* Ajusta o que precisa */
+    padding: 1.2rem;
   }
 }
