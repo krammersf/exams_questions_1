@@ -61,3 +61,18 @@ button[type="submit"],
   box-shadow: 0 0 10px #000;
   color: black;
 }
+
+/* Responsividade para telemóveis */
+@media (max-width: 600px) {
+  body {
+    padding: 10px;
+  }
+
+  form {
+    padding: 15px;
+  }
+
+  input, select, button {
+    font-size: 18px;
+  }
+}
