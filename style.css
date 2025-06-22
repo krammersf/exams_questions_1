@@ -67,38 +67,12 @@ button[type="submit"],
   font-size: 1.1rem;
 }
 
-/* Responsividade para telemóveis: zoom visual grande */
+/* 📱 Responsividade com simulação de zoom a 250% */
 @media (max-width: 600px) {
-  html {
-    font-size: 22px; /* Aumenta tudo! (normal é 16px) */
-  }
-
-  body {
-    padding: 1rem;
-  }
-
-  form {
-    padding: 1rem;
-  }
-
-  input, select, button {
-    font-size: 1.3rem;
-    padding: 1rem;
-  }
-
-  label {
-    font-size: 1.3rem;
-  }
-
-  h2 {
-    font-size: 2rem;
-  }
-
-  #modalCaixa {
-    font-size: 1.3rem;
-  }
-
-  #modalCaixa button {
-    font-size: 1.2rem;
+  html, body {
+    transform: scale(2.5);
+    transform-origin: top left;
+    width: 40%;
+    overflow-x: hidden;
   }
 }
