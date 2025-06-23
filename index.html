@@ -109,8 +109,8 @@
           
           subopcoesPorSistema[sistemaSelecionado].forEach(opcao => {
             const option = document.createElement("option");
-            option.value = opcao;
-            option.textContent = opcao.toUpperCase(); // Mostrar em maiúsculas para melhor leitura
+            option.value = opcao.toLowerCase(); // 👈 sempre minúsculas
+            option.textContent = opcao.toUpperCase(); // 👈 visível em maiúsculas
             subopcaoSelect.appendChild(option);
           });
         }, 200);
