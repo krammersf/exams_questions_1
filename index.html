@@ -202,6 +202,9 @@
       <option value="">-- Escolhe um sistema --</option>
       <option value="servicenow">ServiceNow</option>
       <option value="sap">SAP</option>
+      <option value="aws">AWS</option>
+      <option value="microsoft">Microsoft</option>
+      <option value="cisco">Cisco</option>
     </select>
 
     <label for="subopcao">Subopções:</label>
@@ -246,24 +249,53 @@
     const app = initializeApp(firebaseConfig);
     const db = getDatabase(app);
 
-    const subopcoesPorSistema = {
-      servicenow: ["cis-apm", "cas-pa", "cis-vrm", "cis-itsm"],
-      sap: ["aaa", "bbb", "ccc", "ddd"]
-    };
+    // Variável global para armazenar as subopções
+    let subopcoesPorSistema = {};
+
+    // Função para carregar as subopções do ficheiro JSON
+    async function carregarSubopcoes() {
+      try {
+        const response = await fetch('subopcoes.json');
+        if (!response.ok) {
+          throw new Error('Erro ao carregar subopcoes.json');
+        }
+        subopcoesPorSistema = await response.json();
+        console.log('Subopções carregadas:', subopcoesPorSistema);
+      } catch (error) {
+        console.error('Erro ao carregar subopções:', error);
+        // Fallback para dados básicos se o ficheiro não carregar
+        subopcoesPorSistema = {
+          servicenow: ["cis-apm", "cas-pa", "cis-vrm", "cis-itsm"],
+          sap: ["aaa", "bbb", "ccc", "ddd"]
+        };
+      }
+    }
+
+    // Carregar subopções quando a página carrega
+    carregarSubopcoes();
 
     window.atualizarSubopcoes = function () {
       const sistemaSelecionado = document.getElementById("sistema").value;
       const subopcaoSelect = document.getElementById("subopcao");
 
+      // Limpar opções existentes
       subopcaoSelect.innerHTML = '<option value="">-- Escolhe uma subopção --</option>';
 
-      if (subopcoesPorSistema[sistemaSelecionado]) {
-        subopcoesPorSistema[sistemaSelecionado].forEach(opcao => {
-          const option = document.createElement("option");
-          option.value = opcao;
-          option.textContent = opcao;
-          subopcaoSelect.appendChild(option);
-        });
+      if (sistemaSelecionado && subopcoesPorSistema[sistemaSelecionado]) {
+        // Mostrar loading temporariamente
+        subopcaoSelect.innerHTML = '<option value="">-- A carregar... --</option>';
+        
+        // Pequeno delay para mostrar o loading (opcional)
+        setTimeout(() => {
+          subopcaoSelect.innerHTML = '<option value="">-- Escolhe uma subopção --</option>';
+          
+          subopcoesPorSistema[sistemaSelecionado].forEach(opcao => {
+            const option = document.createElement("option");
+            option.value = opcao;
+            option.textContent = opcao.toUpperCase(); // Mostrar em maiúsculas para melhor leitura
+            subopcaoSelect.appendChild(option);
+          });
+        }, 200);
       }
     };
 
