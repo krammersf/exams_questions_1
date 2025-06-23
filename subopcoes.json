@@ -4,11 +4,12 @@
     "cas-pa", 
     "cis-vrm",
     "cis-itsm",
-    "cis-csa",
+    "csa",
     "cis-csm",
     "cis-ham",
     "cis-hr",
-    "cis-sam"
+    "cis-sam",
+	"cad"
   ],
   "sap": [
     "c_ts4fi_2021",
