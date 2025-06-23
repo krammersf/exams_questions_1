@@ -12,41 +12,18 @@
 	"cad"
   ],
   "sap": [
-    "c_ts4fi_2021",
-    "c_ts4co_2021", 
-    "c_ts452_2021",
-    "c_ts410_2020",
-    "c_tscm62_67",
-    "c_ts460_1909",
-    "c_hanaimp_17",
-    "c_s4cps_2108"
+    "C_CPI_2404"
+
   ],
   "aws": [
-    "aws-solutions-architect-associate",
-    "aws-solutions-architect-professional",
-    "aws-developer-associate",
-    "aws-sysops-administrator",
-    "aws-devops-engineer-professional",
-    "aws-security-specialty",
-    "aws-database-specialty",
-    "aws-machine-learning-specialty"
+	"AWS Certified Big Data - Specialty"
   ],
   "microsoft": [
-    "az-104",
-    "az-204",
-    "az-303",
-    "az-304",
-    "az-500",
-    "az-900",
-    "ms-100",
-    "ms-101"
+    "70-535"
+
   ],
   "cisco": [
-    "ccna-200-301",
-    "ccnp-350-401",
-    "ccnp-350-801",
-    "ccie-400-101",
-    "ccsp-350-701",
-    "devnet-200-901"
+    "200-155"
+
   ]
 }
