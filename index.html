@@ -54,6 +54,16 @@
     </div>
   </div>
 
+  <!-- Modal de sucesso -->
+  <div id="modalSucesso" style="display:none; position:fixed; inset:0; background-color:rgba(0,0,0,0.6); z-index:9999; justify-content:center; align-items:center;">
+    <div style="background:white; padding:30px; border-radius:10px; text-align:center; max-width:300px;">
+      <p style="font-size:18px; font-weight:bold;">Data submitted successfully!</p>
+      <button id="btnOkSucesso" style="margin-top:20px; padding:10px 20px; background-color:#007bff; color:white; border:none; border-radius:5px; cursor:pointer;">
+        OK
+      </button>
+    </div>
+  </div>
+
   <!-- Script principal -->
   <script type="module">
     import { initializeApp } from "https://www.gstatic.com/firebasejs/10.12.2/firebase-app.js";
@@ -155,10 +165,10 @@
           email,
           timestamp: new Date().toISOString()
         }).then(() => {
-          alert("Dados enviados com sucesso!");
+          document.getElementById("modalSucesso").style.display = "flex"; // Mostrar modal de sucesso
           limparFormulario();
         }).catch((error) => {
-          alert("Erro ao enviar: " + error.message);
+          alert("Erro ao enviar: " + error.message); // podes também criar um modal de erro, se quiseres
         });
 
         document.getElementById("modalFundo").style.display = "none";
@@ -168,6 +178,11 @@
         e.preventDefault();
         limparFormulario();
         document.getElementById("modalFundo").style.display = "none";
+      });
+
+      document.getElementById("btnOkSucesso").addEventListener("click", () => {
+        document.getElementById("modalSucesso").style.display = "none";
+        window.location.reload(); // ou window.location.href = "pagina.html"
       });
     });
 
