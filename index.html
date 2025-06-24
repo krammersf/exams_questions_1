@@ -17,12 +17,12 @@
 </head>
 <body>
 
-  <h2>Seleciona um sistema e subopção</h2>
+  <h2>Select a certification provider</h2>
 
   <form onsubmit="return validarFormulario()">
-    <label for="sistema">Sistema:</label>
+    <label for="sistema">Provider:</label>
     <select id="sistema" onchange="atualizarSubopcoes()" required>
-      <option value="">-- Escolhe um sistema --</option>
+      <option value="">-- Choose an option --</option>
       <option value="servicenow">ServiceNow</option>
       <option value="sap">SAP</option>
       <option value="aws">AWS</option>
@@ -30,27 +30,27 @@
       <option value="cisco">Cisco</option>
     </select>
 
-    <label for="subopcao">Subopções:</label>
+    <label for="subopcao">Exams:</label>
     <select id="subopcao" required>
-      <option value="">-- Escolhe uma subopção --</option>
+      <option value="">-- Choose an option --</option>
     </select>
 
     <label for="email">Email:</label>
-    <input type="email" id="email" required placeholder="teuemail@exemplo.com">
+    <input type="email" id="email" required placeholder="your_email@example.com">
     <div id="erroEmail" class="erro"></div>
 
-    <button type="submit">Submeter</button>
+    <button type="submit">Submit</button>
   </form>
 
   <!-- Modal de confirmação -->
   <div id="modalFundo">
     <div id="modalCaixa">
-      <p><strong>Confirma os dados abaixo:</strong></p>
-      <p><strong>Sistema:</strong> <span id="confSistema"></span></p>
-      <p><strong>Subopção:</strong> <span id="confSubopcao"></span></p>
+      <p><strong>Confirm the details below:</strong></p>
+      <p><strong>Provider:</strong> <span id="confSistema"></span></p>
+      <p><strong>Exam:</strong> <span id="confSubopcao"></span></p>
       <p><strong>Email:</strong> <span id="confEmail"></span></p>
-      <button id="btnSim">Sim</button>
-      <button id="btnNao">Não</button>
+      <button id="btnSim">Yes</button>
+      <button id="btnNao">No</button>
     </div>
   </div>
 
