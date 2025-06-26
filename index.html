@@ -116,11 +116,11 @@
         // Pequeno delay para mostrar o loading (opcional)
         setTimeout(() => {
           subopcaoSelect.innerHTML = '<option value="">-- Escolhe uma subopção --</option>';
-          
+
           subopcoesPorSistema[sistemaSelecionado].forEach(opcao => {
             const option = document.createElement("option");
-            option.value = opcao.toLowerCase(); // 👈 sempre minúsculas
-            option.textContent = opcao.toUpperCase(); // 👈 visível em maiúsculas
+            option.value = opcao.value;       // valor enviado ao Firebase
+            option.textContent = opcao.label; // texto visível no menu
             subopcaoSelect.appendChild(option);
           });
         }, 200);
@@ -129,7 +129,9 @@
 
     window.validarFormulario = function () {
       const sistema = document.getElementById("sistema").value;
-      const subopcao = document.getElementById("subopcao").value;
+      const subopcaoEl = document.getElementById("subopcao");
+      const subopcaoValue = subopcaoEl.value;
+      const subopcaoLabel = subopcaoEl.options[subopcaoEl.selectedIndex].text;
       const email = document.getElementById("email").value.trim();
       const erroEmail = document.getElementById("erroEmail");
 
@@ -140,15 +142,18 @@
       }
       erroEmail.textContent = "";
 
-      // Preencher dados no modal
+      // Mostrar nome completo no modal
       document.getElementById("confSistema").textContent = sistema;
-      document.getElementById("confSubopcao").textContent = subopcao;
+      document.getElementById("confSubopcao").textContent = subopcaoLabel;
       document.getElementById("confEmail").textContent = email;
+
+      // Guardar código para submissão
+      document.getElementById("confSubopcao").dataset.value = subopcaoValue;
 
       // Mostrar modal
       document.getElementById("modalFundo").style.display = "block";
 
-      return false; // impedir envio imediato
+      return false;
     };
 
     document.addEventListener("DOMContentLoaded", () => {
@@ -156,7 +161,7 @@
         e.preventDefault();
 
         const sistema = document.getElementById("confSistema").textContent;
-        const subopcao = document.getElementById("confSubopcao").textContent;
+        const subopcao = document.getElementById("confSubopcao").dataset.value;
         const email = document.getElementById("confEmail").textContent;
 
         push(ref(db, "respostas"), {

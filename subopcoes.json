@@ -1,15 +1,85 @@
 {
   "servicenow": [
-    "cis-apm",
-    "cas-pa", 
-    "cis-vrm",
-    "cis-itsm",
-    "csa",
-    "cis-csm",
-    "cis-ham",
-    "cis-hr",
-    "cis-sam",
-	"cad"
+    {
+      "label": "CAD: ServiceNow Certified Application Developer Popular",
+      "value": "cad"
+    },
+    {
+      "label": "CAS-PA: Certified Application Specialist – Performance Analytics",
+      "value": "cas-pa"
+    },
+    {
+      "label": "CIS-APM: Certified Implementation Specialist - Application Portfolio Management",
+      "value": "cis-apm"
+    },
+    {
+      "label": "CIS-CPG: Certified Implementation Specialist - Cloud Provisioning and Governance",
+      "value": "cis-cpg"
+    },
+    {
+      "label": "CIS-CSM: Certified Implementation Specialist - Customer Service Management Popular",
+      "value": "cis-csm"
+    },
+    {
+      "label": "CIS-Discovery: Certified Implementation Specialist - Discovery",
+      "value": "cis-discovery"
+    },
+    {
+      "label": "CIS-EM: Certified Implementation Specialist - Event Mangement",
+      "value": "cis-em"
+    },
+    {
+      "label": "CIS-FSM: Certified Implementation Specialist - Field Service Mangement",
+      "value": "cis-fsm"
+    },
+    {
+      "label": "CIS-HAM: Certified Implementation Specialist – Hardware Asset Management",
+      "value": "cis-ham"
+    },
+    {
+      "label": "CIS-HR: Certified Implementation Specialist - Human Resources Popular",
+      "value": "cis-hr"
+    },
+    {
+      "label": "CIS-ITSM: Certified Implementation Specialist - IT Service Management Popular",
+      "value": "cis-itsm"
+    },
+    {
+      "label": "CIS-PPM: Certified Implementation Specialist - Project Portfolio Management",
+      "value": "cis-ppm"
+    },
+    {
+      "label": "CIS-RC: Certified Implementation Specialist - Risk and Compliance Popular",
+      "value": "cis-rc"
+    },
+    {
+      "label": "CIS-SAM: Certified Implementation Specialist - Software Asset Management",
+      "value": "cis-sam"
+    },
+    {
+      "label": "CIS-SIR: Certified Implementation Specialist - Security Incident Response",
+      "value": "cis-sir"
+    },
+    {
+      "label": "CIS-SM: Certified Implementation Specialist - Service Mapping",
+      "value": "cis-sm"
+    },
+    {
+      "label": "CIS-SPM: Certified Implementation Specialist - Strategic Portfolio Management Popular",
+      "value": "cis-spm"
+    },
+    {
+      "label": "CIS-VR: Certified Implementation Specialist - Vulnerability Response",
+      "value": "cis-vr"
+    },
+    {
+      "label": "CIS-VRM: Certified Implementation Specialist - Vendor Risk Management",
+      "value": "cis-vrm"
+    },
+    {
+      "label": "CSA: ServiceNow Certified System Administrator Popular",
+      "value": "csa"
+    }
   ],
   "sap": [
     "C_CPI_2404"
