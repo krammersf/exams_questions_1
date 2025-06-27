@@ -161,7 +161,7 @@ button:hover {
 }
 
 #modalCaixa {
-  background: white;
+  background: rgb(179, 63, 63);
   color: black;
   padding: 30px;
   border-radius: 10px;
