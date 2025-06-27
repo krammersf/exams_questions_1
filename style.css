@@ -15,7 +15,7 @@ h2 {
 
 /* Estilos do formulário */
 form {
-  background: rgb(255, 227, 227);
+  background: rgb(238, 238, 238);
   padding: 30px;
   border-radius: 8px;
   box-shadow: 0 2px 10px rgba(0,0,0,0.1);
@@ -54,7 +54,7 @@ select:focus, input:focus {
 .select-display {
   width: 100%;
   padding: 12px;
-  border: 1px solid #ddd;
+  border: 2px solid #ddd;
   border-radius: 4px;
   background: white;
   cursor: pointer;
