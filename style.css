@@ -210,3 +210,14 @@ button:hover {
     max-height: 200px;
   }
 }
+
+#btnClear {
+  background-color: #ffc107;
+  color: #000;
+  margin-left: 10px;
+  font-weight: bold;
+}
+
+#btnClear:hover {
+  background-color: #e0a800;
+}

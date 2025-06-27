@@ -192,4 +192,16 @@ document.addEventListener('DOMContentLoaded', () => {
   document.getElementById('btnOkSucesso').addEventListener('click', () => {
     document.getElementById('modalSucesso').style.display = 'none';
   });
+
+  document.getElementById('btnClear').addEventListener('click', () => {
+    document.getElementById('sistema').value = '';
+    document.getElementById('subopcao').value = '';
+    document.getElementById('email').value = '';
+    document.getElementById('erroEmail').textContent = '';
+    document.getElementById('providerDisplay').textContent = '-- Choose a provider --';
+    document.getElementById('selectDisplay').textContent = '-- Choose an option --';
+    selectedProvider = '';
+    selectedExamValue = '';
+    selectedExamLabel = '';
+    });
 });
