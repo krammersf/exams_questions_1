@@ -194,14 +194,29 @@ document.addEventListener('DOMContentLoaded', () => {
   });
 
   document.getElementById('btnClear').addEventListener('click', () => {
+    // Reset inputs
     document.getElementById('sistema').value = '';
     document.getElementById('subopcao').value = '';
     document.getElementById('email').value = '';
     document.getElementById('erroEmail').textContent = '';
-    document.getElementById('providerDisplay').textContent = '-- Choose a provider --';
-    document.getElementById('selectDisplay').textContent = '-- Choose an option --';
+
+    // Reset variáveis
     selectedProvider = '';
     selectedExamValue = '';
     selectedExamLabel = '';
-    });
+
+    // Reset visual dos dropdowns customizados
+    const providerDisplay = document.getElementById('providerDisplay');
+    const providerOptions = document.getElementById('providerOptions');
+    const selectDisplay = document.getElementById('selectDisplay');
+    const selectOptions = document.getElementById('selectOptions');
+
+    providerDisplay.textContent = '-- Choose a provider --';
+    providerOptions.innerHTML = '';
+    selectDisplay.textContent = '-- Choose an option --';
+    selectOptions.innerHTML = '';
+
+    // Recarregar as opções dos providers
+    popularProvidersDropdown();
+  });
 });
