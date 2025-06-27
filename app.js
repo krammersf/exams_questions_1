@@ -102,7 +102,8 @@ function popularExamsDropdown(exams) {
       selectedExamValue = exam.value;
       selectedExamLabel = exam.label;
       hiddenInput.value = exam.value;
-      display.innerHTML = div.innerHTML;
+      display.textContent = code;
+    //   display.innerHTML = div.innerHTML;
       optionsContainer.style.display = 'none';
     });
 
