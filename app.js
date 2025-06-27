@@ -94,7 +94,7 @@ function popularExamsDropdown(exams) {
     div.className = 'select-option';
 
     const [code, desc] = exam.label.split(': ');
-    div.innerHTML = `<strong>${code}</strong>${desc ? ': ' + desc : ''}`;
+    div.innerHTML = `<strong>${code}</strong>${desc ? `<br><span>${desc}</span>` : ''}`;
     div.dataset.value = exam.value;
     div.dataset.label = exam.label;
 
