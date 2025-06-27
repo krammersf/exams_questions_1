@@ -150,7 +150,7 @@ button:hover {
 }
 
 /* Modal de confirmação */
-#modalFundo {
+/* #modalFundo {
   display: none;
   position: fixed;
   inset: 0;
@@ -158,7 +158,7 @@ button:hover {
   z-index: 9999;
   justify-content: center;
   align-items: center;
-}
+} */
 
 #modalCaixa {
   background: rgb(179, 63, 63) !important;
