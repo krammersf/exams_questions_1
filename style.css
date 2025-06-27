@@ -4,7 +4,7 @@ body {
   max-width: 600px;
   margin: 0 auto;
   padding: 20px;
-  background-color: #a8a7a7;
+  background-color: #a8a7a7; /* body externo */
 }
 
 h2 {
