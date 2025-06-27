@@ -31,9 +31,14 @@
     </select>
 
     <label for="subopcao">Exams:</label>
-    <select id="subopcao" required>
-      <option value="">-- Choose an option --</option>
-    </select>
+    <div class="custom-select" id="customSelect">
+      <div class="select-display" id="selectDisplay">-- Choose an option --</div>
+      <div class="select-options" id="selectOptions">
+        <!-- Options will be populated here -->
+      </div>
+    </div>
+    <!-- Hidden input para enviar o valor -->
+    <input type="hidden" id="subopcao" name="subopcao" required>
 
     <label for="email">Email:</label>
     <input type="email" id="email" required placeholder="your_email@example.com">
@@ -64,141 +69,8 @@
     </div>
   </div>
 
-  <!-- Script principal -->
-  <script type="module">
-    import { initializeApp } from "https://www.gstatic.com/firebasejs/10.12.2/firebase-app.js";
-    import { getDatabase, ref, push } from "https://www.gstatic.com/firebasejs/10.12.2/firebase-database.js";
-
-    const firebaseConfig = {
-      apiKey: "AIzaSyDERCoKXi7qa1k4S5pc0JipHyFEjgqwXAg",
-      authDomain: "examtopics-v1.firebaseapp.com",
-      databaseURL: "https://examtopics-v1-default-rtdb.europe-west1.firebasedatabase.app",
-      projectId: "examtopics-v1",
-      storageBucket: "examtopics-v1.firebasestorage.app",
-      messagingSenderId: "596894003766",
-      appId: "1:596894003766:web:9c310b67a78b46b97c5e97"
-    };
-
-    const app = initializeApp(firebaseConfig);
-    const db = getDatabase(app);
-
-    // Variável global para armazenar as subopções
-    let subopcoesPorSistema = {};
-
-    // Função para carregar as subopções do ficheiro JSON
-    async function carregarSubopcoes() {
-      try {
-        const response = await fetch('subopcoes.json');
-        if (!response.ok) {
-          throw new Error('Erro ao carregar subopcoes.json');
-        }
-        subopcoesPorSistema = await response.json();
-        console.log('Subopções carregadas:', subopcoesPorSistema);
-      } catch (error) {
-        console.error('Erro ao carregar subopções:', error);
-      }
-    }
-
-    // Carregar subopções quando a página carrega
-    carregarSubopcoes();
-
-    window.atualizarSubopcoes = function () {
-      const sistemaSelecionado = document.getElementById("sistema").value;
-      const subopcaoSelect = document.getElementById("subopcao");
-
-      // Limpar opções existentes
-      subopcaoSelect.innerHTML = '<option value="">-- Escolhe uma subopção --</option>';
-
-      if (sistemaSelecionado && subopcoesPorSistema[sistemaSelecionado]) {
-        // Mostrar loading temporariamente
-        subopcaoSelect.innerHTML = '<option value="">-- A carregar... --</option>';
-        
-        // Pequeno delay para mostrar o loading (opcional)
-        setTimeout(() => {
-          subopcaoSelect.innerHTML = '<option value="">-- Escolhe uma subopção --</option>';
-
-          subopcoesPorSistema[sistemaSelecionado].forEach(opcao => {
-            const option = document.createElement("option");
-            option.value = opcao.value;       // valor enviado ao Firebase
-            option.textContent = opcao.label; // texto visível no menu
-            subopcaoSelect.appendChild(option);
-          });
-        }, 200);
-      }
-    };
-
-    window.validarFormulario = function () {
-      const sistema = document.getElementById("sistema").value;
-      const subopcaoEl = document.getElementById("subopcao");
-      const subopcaoValue = subopcaoEl.value;
-      const subopcaoLabel = subopcaoEl.options[subopcaoEl.selectedIndex].text;
-      const email = document.getElementById("email").value.trim();
-      const erroEmail = document.getElementById("erroEmail");
-
-      const regexEmail = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-      if (!regexEmail.test(email)) {
-        erroEmail.textContent = "Por favor introduz um email válido.";
-        return false;
-      }
-      erroEmail.textContent = "";
-
-      // Mostrar nome completo no modal
-      document.getElementById("confSistema").textContent = sistema;
-      document.getElementById("confSubopcao").textContent = subopcaoLabel;
-      document.getElementById("confEmail").textContent = email;
-
-      // Guardar código para submissão
-      document.getElementById("confSubopcao").dataset.value = subopcaoValue;
-
-      // Mostrar modal
-      document.getElementById("modalFundo").style.display = "block";
-
-      return false;
-    };
-
-    document.addEventListener("DOMContentLoaded", () => {
-      document.getElementById("btnSim").addEventListener("click", (e) => {
-        e.preventDefault();
-
-        const sistema = document.getElementById("confSistema").textContent;
-        const subopcao = document.getElementById("confSubopcao").dataset.value;
-        const email = document.getElementById("confEmail").textContent;
-
-        push(ref(db, "respostas"), {
-          sistema,
-          subopcao,
-          email,
-          timestamp: new Date().toISOString()
-        }).then(() => {
-          document.getElementById("modalSucesso").style.display = "flex"; // Mostrar modal de sucesso
-          limparFormulario();
-        }).catch((error) => {
-          alert("Erro ao enviar: " + error.message); // podes também criar um modal de erro, se quiseres
-        });
-
-        document.getElementById("modalFundo").style.display = "none";
-      });
-
-      document.getElementById("btnNao").addEventListener("click", (e) => {
-        e.preventDefault();
-        limparFormulario();
-        document.getElementById("modalFundo").style.display = "none";
-      });
-
-      document.getElementById("btnOkSucesso").addEventListener("click", () => {
-        document.getElementById("modalSucesso").style.display = "none";
-        window.location.reload(); // ou window.location.href = "pagina.html"
-      });
-    });
-
-    function limparFormulario() {
-      document.getElementById("sistema").value = "";
-      atualizarSubopcoes();
-      document.getElementById("subopcao").value = "";
-      document.getElementById("email").value = "";
-      document.getElementById("erroEmail").textContent = "";
-    }
-  </script>
+  <!-- Incluir o ficheiro JavaScript -->
+  <script type="module" src="app.js"></script>
 
 </body>
 </html>
