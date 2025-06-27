@@ -15,7 +15,7 @@ h2 {
 
 /* Estilos do formulário */
 form {
-  background: rgb(123, 71, 71);
+  background: rgb(255, 227, 227);
   padding: 30px;
   border-radius: 8px;
   box-shadow: 0 2px 10px rgba(0,0,0,0.1);
@@ -144,7 +144,7 @@ button:hover {
 
 /* Mensagens de erro */
 .erro {
-  color: #fadde0;
+  color: #fd051d;
   font-size: 12px;
   margin-top: 5px;
 }
