@@ -98,6 +98,8 @@ select:focus, input:focus {
   cursor: pointer;
   border-bottom: 1px solid #f0f0f0;
   line-height: 1.4;
+  white-space: normal;         /* Permite quebra de linha */
+  display: block;              /* Garante que o <br> funciona como esperado */
 }
 
 .select-option:hover {
