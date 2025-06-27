@@ -18,7 +18,7 @@ const app = initializeApp(firebaseConfig);
 const db = getDatabase(app);
 
 // Variáveis globais
-let subopcoesPorSistema = {};
+let subopcoesPorSistema = [];
 let selectedProvider = '';
 let selectedExamValue = '';
 let selectedExamLabel = '';
@@ -31,7 +31,7 @@ async function carregarSubopcoes() {
     popularProvidersDropdown();
   } catch (e) {
     console.error(e);
-    subopcoesPorSistema = {}; // fallback vazio
+    subopcoesPorSistema = []; // fallback vazio
   }
 }
 
@@ -46,10 +46,11 @@ function popularProvidersDropdown() {
   hiddenInput.value = '';
   selectedProvider = '';
 
-  Object.keys(subopcoesPorSistema).forEach(providerKey => {
+  subopcoesPorSistema.forEach(item => {
+    const providerKey = item.provider;
     const div = document.createElement('div');
     div.className = 'select-option';
-    div.textContent = providerKey.charAt(0).toUpperCase() + providerKey.slice(1);
+    div.textContent = providerKey;
     div.dataset.value = providerKey;
 
     div.addEventListener('click', () => {
@@ -59,7 +60,7 @@ function popularProvidersDropdown() {
       optionsContainer.style.display = 'none';
 
       // Ao escolher provider, popular exames
-      popularExamsDropdown(subopcoesPorSistema[providerKey]);
+      popularExamsDropdown(item.exams);
     });
 
     optionsContainer.appendChild(div);
@@ -92,7 +93,6 @@ function popularExamsDropdown(exams) {
     const div = document.createElement('div');
     div.className = 'select-option';
 
-    // Se quiseres separar código e descrição do label:
     const [code, desc] = exam.label.split(': ');
     div.innerHTML = `<strong>${code}</strong>${desc ? ': ' + desc : ''}`;
     div.dataset.value = exam.value;
@@ -143,21 +143,18 @@ window.validarFormulario = function() {
   }
   erroEmail.textContent = '';
 
-  // Preencher modal com confirmação
   document.getElementById('confSistema').textContent = sistema;
   document.getElementById('confSubopcao').textContent = selectedExamLabel;
   document.getElementById('confEmail').textContent = email;
   document.getElementById('confSubopcao').dataset.value = subopcao;
 
   document.getElementById('modalFundo').style.display = 'flex';
-
   return false;
 };
 
 document.addEventListener('DOMContentLoaded', () => {
   carregarSubopcoes();
 
-  // Botões modal (igual ao teu código)
   document.getElementById('btnSim').addEventListener('click', e => {
     e.preventDefault();
 
@@ -172,7 +169,6 @@ document.addEventListener('DOMContentLoaded', () => {
       timestamp: new Date().toISOString()
     }).then(() => {
       document.getElementById('modalSucesso').style.display = 'flex';
-      // Limpar formulário e estados aqui
       document.getElementById('sistema').value = '';
       document.getElementById('subopcao').value = '';
       document.getElementById('email').value = '';

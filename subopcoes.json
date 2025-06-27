@@ -1,148 +1,61 @@
-{
-  "servicenow": [
-    {
-      "label": "CAD: ServiceNow Certified Application Developer Popular",
-      "value": "cad"
-    },
-    {
-      "label": "CAS-PA: Certified Application Specialist – Performance Analytics",
-      "value": "cas-pa"
-    },
-    {
-      "label": "CIS-APM: Certified Implementation Specialist - Application Portfolio Management",
-      "value": "cis-apm"
-    },
-    {
-      "label": "CIS-CPG: Certified Implementation Specialist - Cloud Provisioning and Governance",
-      "value": "cis-cpg"
-    },
-    {
-      "label": "CIS-CSM: Certified Implementation Specialist - Customer Service Management Popular",
-      "value": "cis-csm"
-    },
-    {
-      "label": "CIS-Discovery: Certified Implementation Specialist - Discovery",
-      "value": "cis-discovery"
-    },
-    {
-      "label": "CIS-EM: Certified Implementation Specialist - Event Management",
-      "value": "cis-em"
-    },
-    {
-      "label": "CIS-FSM: Certified Implementation Specialist - Field Service Management",
-      "value": "cis-fsm"
-    },
-    {
-      "label": "CIS-HAM: Certified Implementation Specialist – Hardware Asset Management",
-      "value": "cis-ham"
-    },
-    {
-      "label": "CIS-HR: Certified Implementation Specialist - Human Resources Popular",
-      "value": "cis-hr"
-    },
-    {
-      "label": "CIS-ITSM: Certified Implementation Specialist - IT Service Management Popular",
-      "value": "cis-itsm"
-    },
-    {
-      "label": "CIS-PPM: Certified Implementation Specialist - Project Portfolio Management",
-      "value": "cis-ppm"
-    },
-    {
-      "label": "CIS-RC: Certified Implementation Specialist - Risk and Compliance Popular",
-      "value": "cis-rc"
-    },
-    {
-      "label": "CIS-SAM: Certified Implementation Specialist - Software Asset Management",
-      "value": "cis-sam"
-    },
-    {
-      "label": "CIS-SIR: Certified Implementation Specialist - Security Incident Response",
-      "value": "cis-sir"
-    },
-    {
-      "label": "CIS-SM: Certified Implementation Specialist - Service Mapping",
-      "value": "cis-sm"
-    },
-    {
-      "label": "CIS-SPM: Certified Implementation Specialist - Strategic Portfolio Management Popular",
-      "value": "cis-spm"
-    },
-    {
-      "label": "CIS-VR: Certified Implementation Specialist - Vulnerability Response",
-      "value": "cis-vr"
-    },
-    {
-      "label": "CIS-VRM: Certified Implementation Specialist - Vendor Risk Management",
-      "value": "cis-vrm"
-    },
-    {
-      "label": "CSA: ServiceNow Certified System Administrator Popular",
-      "value": "csa"
-    }
-  ],
-  "sap": [
-    {
-      "label": "C_CPI_2404: SAP Certified Integration Associate - SAP Cloud Platform Integration",
-      "value": "C_CPI_2404"
-    },
-    {
-      "label": "C_S4CS_2408: SAP Certified Associate - Implementation Consultant - SAP S/4HANA Cloud Public Edition - Customer Service",
-      "value": "C_S4CS_2408"
-    },
-    {
-      "label": "C_S4FCF_2023: SAP Certified Associate - SAP S/4HANA Cloud Private Edition - Central Finance",
-      "value": "C_S4FCF_2023"
-    }
-  ],
-  "aws": [
-    {
-      "label": "AWS-BDS: AWS Certified Big Data - Specialty",
-      "value": "AWS Certified Big Data - Specialty"
-    },
-    {
-      "label": "AWS-SAA: AWS Certified Solutions Architect - Associate",
-      "value": "SAA-C03"
-    },
-    {
-      "label": "AWS-DVA: AWS Certified Developer - Associate",
-      "value": "DVA-C02"
-    },
-    {
-      "label": "AWS-SOA: AWS Certified SysOps Administrator - Associate",
-      "value": "SOA-C02"
-    }
-  ],
-  "microsoft": [
-    {
-      "label": "70-535: Architecting Microsoft Azure Solutions",
-      "value": "70-535"
-    },
-    {
-      "label": "AZ-104: Microsoft Azure Administrator",
-      "value": "AZ-104"
-    },
-    {
-      "label": "AZ-204: Developing Solutions for Microsoft Azure",
-      "value": "AZ-204"
-    },
-    {
-      "label": "AZ-303: Microsoft Azure Architect Technologies",
-      "value": "AZ-303"
-    }
-  ],
-  "cisco": [
-    {
-      "label": "200-155: Implementing Cisco Data Center Infrastructure",
-      "value": "200-155"
-    },
-    {
-      "label": "200-301: Implementing and Administering Cisco Solutions",
-      "value": "200-301"
-    },
-    {
-      "label": "300-410: Implementing Cisco Enterprise Advanced Routing and Services",
-      "value": "300-410"
-    }
-  ]
-}
+[
+  {
+    "provider": "ServiceNow",
+    "exams": [
+      { "label": "CAD: ServiceNow Certified Application Developer Popular", "value": "cad" },
+      { "label": "CAS-PA: Certified Application Specialist – Performance Analytics", "value": "cas-pa" },
+      { "label": "CIS-APM: Certified Implementation Specialist - Application Portfolio Management", "value": "cis-apm" },
+      { "label": "CIS-CPG: Certified Implementation Specialist - Cloud Provisioning and Governance", "value": "cis-cpg" },
+      { "label": "CIS-CSM: Certified Implementation Specialist - Customer Service Management Popular", "value": "cis-csm" },
+      { "label": "CIS-Discovery: Certified Implementation Specialist - Discovery", "value": "cis-discovery" },
+      { "label": "CIS-EM: Certified Implementation Specialist - Event Management", "value": "cis-em" },
+      { "label": "CIS-FSM: Certified Implementation Specialist - Field Service Management", "value": "cis-fsm" },
+      { "label": "CIS-HAM: Certified Implementation Specialist – Hardware Asset Management", "value": "cis-ham" },
+      { "label": "CIS-HR: Certified Implementation Specialist - Human Resources Popular", "value": "cis-hr" },
+      { "label": "CIS-ITSM: Certified Implementation Specialist - IT Service Management Popular", "value": "cis-itsm" },
+      { "label": "CIS-PPM: Certified Implementation Specialist - Project Portfolio Management", "value": "cis-ppm" },
+      { "label": "CIS-RC: Certified Implementation Specialist - Risk and Compliance Popular", "value": "cis-rc" },
+      { "label": "CIS-SAM: Certified Implementation Specialist - Software Asset Management", "value": "cis-sam" },
+      { "label": "CIS-SIR: Certified Implementation Specialist - Security Incident Response", "value": "cis-sir" },
+      { "label": "CIS-SM: Certified Implementation Specialist - Service Mapping", "value": "cis-sm" },
+      { "label": "CIS-SPM: Certified Implementation Specialist - Strategic Portfolio Management Popular", "value": "cis-spm" },
+      { "label": "CIS-VR: Certified Implementation Specialist - Vulnerability Response", "value": "cis-vr" },
+      { "label": "CIS-VRM: Certified Implementation Specialist - Vendor Risk Management", "value": "cis-vrm" },
+      { "label": "CSA: ServiceNow Certified System Administrator Popular", "value": "csa" }
+    ]
+  },
+  {
+    "provider": "SAP",
+    "exams": [
+      { "label": "C_CPI_2404: SAP Certified Integration Associate - SAP Cloud Platform Integration", "value": "C_CPI_2404" },
+      { "label": "C_S4CS_2408: SAP Certified Associate - Implementation Consultant - SAP S/4HANA Cloud Public Edition - Customer Service", "value": "C_S4CS_2408" },
+      { "label": "C_S4FCF_2023: SAP Certified Associate - SAP S/4HANA Cloud Private Edition - Central Finance", "value": "C_S4FCF_2023" }
+    ]
+  },
+  {
+    "provider": "AWS",
+    "exams": [
+      { "label": "AWS-BDS: AWS Certified Big Data - Specialty", "value": "AWS Certified Big Data - Specialty" },
+      { "label": "AWS-SAA: AWS Certified Solutions Architect - Associate", "value": "SAA-C03" },
+      { "label": "AWS-DVA: AWS Certified Developer - Associate", "value": "DVA-C02" },
+      { "label": "AWS-SOA: AWS Certified SysOps Administrator - Associate", "value": "SOA-C02" }
+    ]
+  },
+  {
+    "provider": "Microsoft",
+    "exams": [
+      { "label": "70-535: Architecting Microsoft Azure Solutions", "value": "70-535" },
+      { "label": "AZ-104: Microsoft Azure Administrator", "value": "AZ-104" },
+      { "label": "AZ-204: Developing Solutions for Microsoft Azure", "value": "AZ-204" },
+      { "label": "AZ-303: Microsoft Azure Architect Technologies", "value": "AZ-303" }
+    ]
+  },
+  {
+    "provider": "Cisco",
+    "exams": [
+      { "label": "200-155: Implementing Cisco Data Center Infrastructure", "value": "200-155" },
+      { "label": "200-301: Implementing and Administering Cisco Solutions", "value": "200-301" },
+      { "label": "300-410: Implementing Cisco Enterprise Advanced Routing and Services", "value": "300-410" }
+    ]
+  }
+]
