@@ -88,10 +88,13 @@
           div.dataset.label = opcao.label;
           div.innerHTML = `
             <span class="code">${opcao.value.toUpperCase()}:</span>
-            <span class="desc">${opcao.label.split(":"[1])?.trim() || ""}</span>
+            <span class="desc">${opcao.label.split(":")[1]?.trim() || ""}</span>
           `;
           div.addEventListener("click", () => {
-            dropdownSelected.innerHTML = div.innerHTML;
+            dropdownSelected.innerHTML = `
+              <span class="code">${div.dataset.value.toUpperCase()}:</span>
+              <span class="desc">${div.dataset.label.split(":")[1]?.trim() || ""}</span>
+            `;
             hiddenInput.value = div.dataset.value;
             dropdownOptions.style.display = "none";
           });
