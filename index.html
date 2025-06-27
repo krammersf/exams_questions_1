@@ -21,14 +21,13 @@
 
   <form onsubmit="return validarFormulario()">
     <label for="sistema">Provider:</label>
-    <select id="sistema" onchange="atualizarSubopcoes()" required>
-      <option value="">-- Choose an option --</option>
-      <option value="servicenow">ServiceNow</option>
-      <option value="sap">SAP</option>
-      <option value="aws">AWS</option>
-      <option value="microsoft">Microsoft</option>
-      <option value="cisco">Cisco</option>
-    </select>
+    <div class="custom-select" id="customProvider">
+      <div class="select-display" id="providerDisplay">-- Choose a provider --</div>
+      <div class="select-options" id="providerOptions">
+        <!-- Providers serão preenchidos aqui -->
+      </div>
+    </div>
+    <input type="hidden" id="sistema" name="sistema" required>
 
     <label for="subopcao">Exams:</label>
     <div class="custom-select" id="customSelect">

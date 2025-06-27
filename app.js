@@ -68,10 +68,10 @@ function popularDropdown(opcoes) {
   const selectOptions = document.getElementById('selectOptions');
   const selectDisplay = document.getElementById('selectDisplay');
   const hiddenInput = document.getElementById('subopcao');
-  
+
   // Limpar opções existentes
   selectOptions.innerHTML = '';
-  selectDisplay.textContent = '-- Choose an option --';
+  selectDisplay.textContent = '-- Escolha o exame --';
   selectedValue = '';
   selectedLabel = '';
   hiddenInput.value = '';
@@ -82,33 +82,29 @@ function popularDropdown(opcoes) {
     optionDiv.dataset.value = opcao.value;
 
     // Dividir o label em código e descrição
-    const parts = opcao.label.split(': ');
-    if (parts.length > 1) {
-        const codigo = parts[0];
-        const descricao = parts[1];
-      
-        optionDiv.innerHTML = `
-        <div class="option-code">${codigo}:</div>
-        <div class="option-description">${descricao}</div>
-        `;
-    } else {
-      optionDiv.innerHTML = `<span class="option-code">${opcao.label}</span>`;
-    }
+    const [codigo, descricao] = opcao.label.split(': ');
+    
+    optionDiv.innerHTML = `
+      <div style="display: flex; flex-direction: column;">
+        <span style="font-weight: bold; color: #333; font-size: 14px;">${codigo}</span>
+        <span style="color: #666; font-size: 12px;">${descricao || ''}</span>
+      </div>
+    `;
 
     // Adicionar evento de clique
     optionDiv.addEventListener('click', () => {
       selectedValue = opcao.value;
       selectedLabel = opcao.label;
-      
-      // Atualizar display
+
+      // Atualizar display principal
       selectDisplay.innerHTML = optionDiv.innerHTML;
-      
-      // Atualizar input hidden
+
+      // Guardar no input escondido
       hiddenInput.value = opcao.value;
-      
+
       // Fechar dropdown
       selectOptions.style.display = 'none';
-      
+
       console.log('Selecionado:', selectedValue, selectedLabel);
     });
 
