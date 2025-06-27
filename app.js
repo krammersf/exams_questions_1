@@ -84,13 +84,13 @@ function popularDropdown(opcoes) {
     // Dividir o label em código e descrição
     const parts = opcao.label.split(': ');
     if (parts.length > 1) {
-      const codigo = parts[0];
-      const descricao = parts[1];
+        const codigo = parts[0];
+        const descricao = parts[1];
       
-      optionDiv.innerHTML = `
-        <span class="option-code">${codigo}:</span>
-        <span class="option-description">${descricao}</span>
-      `;
+        optionDiv.innerHTML = `
+        <div class="option-code">${codigo}:</div>
+        <div class="option-description">${descricao}</div>
+        `;
     } else {
       optionDiv.innerHTML = `<span class="option-code">${opcao.label}</span>`;
     }
