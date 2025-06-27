@@ -35,7 +35,7 @@ select, input[type="email"] {
   padding: 12px;
   border: 1px solid #ddd;
   border-radius: 4px;
-  font-size: 14px;
+  font-size: 16px;
   box-sizing: border-box;
 }
 
@@ -58,7 +58,7 @@ select:focus, input:focus {
   border-radius: 4px;
   background: white;
   cursor: pointer;
-  font-size: 14px;
+  font-size: 16px;
   box-sizing: border-box;
   min-height: 46px;
   display: flex;
@@ -74,7 +74,7 @@ select:focus, input:focus {
   position: absolute;
   right: 12px;
   color: #666;
-  font-size: 12px;
+  font-size: 14px;
 }
 
 .select-options {
@@ -110,13 +110,13 @@ select:focus, input:focus {
 
 /* Formatação das opções */
 .option-code {
-  font-size: 12px;
+  font-size: 14px;
   font-weight: bold;
   color: #333;
 }
 
 .option-description {
-  font-size: 8px;
+  font-size: 10px;
   color: #666;
   margin-left: 2px;
 }

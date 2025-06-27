@@ -25,11 +25,11 @@
       "value": "cis-discovery"
     },
     {
-      "label": "CIS-EM: Certified Implementation Specialist - Event Mangement",
+      "label": "CIS-EM: Certified Implementation Specialist - Event Management",
       "value": "cis-em"
     },
     {
-      "label": "CIS-FSM: Certified Implementation Specialist - Field Service Mangement",
+      "label": "CIS-FSM: Certified Implementation Specialist - Field Service Management",
       "value": "cis-fsm"
     },
     {
@@ -82,18 +82,67 @@
     }
   ],
   "sap": [
-    "C_CPI_2404"
-
+    {
+      "label": "C_CPI_2404: SAP Certified Integration Associate - SAP Cloud Platform Integration",
+      "value": "C_CPI_2404"
+    },
+    {
+      "label": "C_S4CS_2408: SAP Certified Associate - Implementation Consultant - SAP S/4HANA Cloud Public Edition - Customer Service",
+      "value": "C_S4CS_2408"
+    },
+    {
+      "label": "C_S4FCF_2023: SAP Certified Associate - SAP S/4HANA Cloud Private Edition - Central Finance",
+      "value": "C_S4FCF_2023"
+    }
   ],
   "aws": [
-	"AWS Certified Big Data - Specialty"
+    {
+      "label": "AWS-BDS: AWS Certified Big Data - Specialty",
+      "value": "AWS Certified Big Data - Specialty"
+    },
+    {
+      "label": "AWS-SAA: AWS Certified Solutions Architect - Associate",
+      "value": "SAA-C03"
+    },
+    {
+      "label": "AWS-DVA: AWS Certified Developer - Associate",
+      "value": "DVA-C02"
+    },
+    {
+      "label": "AWS-SOA: AWS Certified SysOps Administrator - Associate",
+      "value": "SOA-C02"
+    }
   ],
   "microsoft": [
-    "70-535"
-
+    {
+      "label": "70-535: Architecting Microsoft Azure Solutions",
+      "value": "70-535"
+    },
+    {
+      "label": "AZ-104: Microsoft Azure Administrator",
+      "value": "AZ-104"
+    },
+    {
+      "label": "AZ-204: Developing Solutions for Microsoft Azure",
+      "value": "AZ-204"
+    },
+    {
+      "label": "AZ-303: Microsoft Azure Architect Technologies",
+      "value": "AZ-303"
+    }
   ],
   "cisco": [
-    "200-155"
-
+    {
+      "label": "200-155: Implementing Cisco Data Center Infrastructure",
+      "value": "200-155"
+    },
+    {
+      "label": "200-301: Implementing and Administering Cisco Solutions",
+      "value": "200-301"
+    },
+    {
+      "label": "300-410: Implementing Cisco Enterprise Advanced Routing and Services",
+      "value": "300-410"
+    }
   ]
 }
