@@ -2,160 +2,203 @@
 <html lang="pt">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=5, user-scalable=yes">
   <title>ExamQuestions</title>
   <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64' width='64' height='64'%3E%3Ccircle cx='32' cy='32' r='30' fill='%234CAF50' stroke='%232E7D32' stroke-width='2'/%3E%3Crect x='18' y='16' width='28' height='36' rx='2' fill='white' stroke='%23ddd' stroke-width='1'/%3E%3Cline x1='22' y1='24' x2='42' y2='24' stroke='%23333' stroke-width='1.5' opacity='0.7'/%3E%3Cline x1='22' y1='28' x2='42' y2='28' stroke='%23333' stroke-width='1.5' opacity='0.7'/%3E%3Cline x1='22' y1='32' x2='38' y2='32' stroke='%23333' stroke-width='1.5' opacity='0.7'/%3E%3Ccircle cx='32' cy='40' r='6' fill='%23FF9800' stroke='%23F57C00' stroke-width='1'/%3E%3Ctext x='32' y='45' text-anchor='middle' font-family='Arial, sans-serif' font-size='8' font-weight='bold' fill='white'%3E?%3C/text%3E%3C/svg%3E">
   <link rel="stylesheet" href="style.css">
-  <link rel="stylesheet" href="dropdown.css">
+  <script>
+  // Forçar busting da cache se for reload
+  if (performance.navigation.type === performance.navigation.TYPE_RELOAD) {
+    const url = new URL(window.location.href);
+    url.searchParams.set('cachebust', Date.now());
+    window.location.replace(url.toString());
+  }
+</script>
 </head>
 <body>
+
+  <h2>Select a certification provider</h2>
+
   <form onsubmit="return validarFormulario()">
-    <label for="sistema">Sistema:</label>
-    <select id="sistema" name="sistema" onchange="atualizarSubopcoes()">
-      <option value="">-- Escolha um sistema --</option>
+    <label for="sistema">Provider:</label>
+    <select id="sistema" onchange="atualizarSubopcoes()" required>
+      <option value="">-- Choose an option --</option>
       <option value="servicenow">ServiceNow</option>
-      <!-- Outros sistemas -->
+      <option value="sap">SAP</option>
+      <option value="aws">AWS</option>
+      <option value="microsoft">Microsoft</option>
+      <option value="cisco">Cisco</option>
     </select>
 
-    <label for="subopcaoCustom">Exams:</label>
-    <div id="subopcaoCustom" class="dropdown-container">
-      <div class="dropdown-selected">-- Choose an exam --</div>
-      <div class="dropdown-options"></div>
-      <input type="hidden" id="subopcaoValue" name="subopcao">
-    </div>
+    <label for="subopcao">Exams:</label>
+    <select id="subopcao" required>
+      <option value="">-- Choose an option --</option>
+    </select>
 
     <label for="email">Email:</label>
-    <input type="email" id="email" name="email" required>
+    <input type="email" id="email" required placeholder="your_email@example.com">
+    <div id="erroEmail" class="erro"></div>
 
-    <button type="submit">Submeter</button>
+    <button type="submit">Submit</button>
   </form>
 
-  <!-- Modal de Confirmação -->
-  <div id="modalFundo" class="modal">
-    <div class="modal-content">
-      <p>Confirmas os seguintes dados?</p>
-      <p><strong>Sistema:</strong> <span id="confSistema"></span></p>
-      <p><strong>Exame:</strong> <span id="confSubopcao"></span></p>
+  <!-- Modal de confirmação -->
+  <div id="modalFundo">
+    <div id="modalCaixa">
+      <p><strong>Confirm the details below:</strong></p>
+      <p><strong>Provider:</strong> <span id="confSistema"></span></p>
+      <p><strong>Exam:</strong> <span id="confSubopcao"></span></p>
       <p><strong>Email:</strong> <span id="confEmail"></span></p>
-      <button id="btnSim">Sim</button>
-      <button onclick="document.getElementById('modalFundo').style.display='none'">Não</button>
+      <button id="btnSim">Yes</button>
+      <button id="btnNao">No</button>
     </div>
   </div>
 
-  <!-- Modal de Sucesso -->
-  <div id="modalSucesso" class="modal">
-    <div class="modal-content">
-      <p>Submissão concluída com sucesso!</p>
-      <button onclick="document.getElementById('modalSucesso').style.display='none'">Fechar</button>
+  <!-- Modal de sucesso -->
+  <div id="modalSucesso" style="display:none; position:fixed; inset:0; background-color:rgba(0,0,0,0.6); z-index:9999; justify-content:center; align-items:center;">
+      <div style="background:rgb(255, 255, 255); color:black; padding:30px; border-radius:10px; text-align:center; max-width:300px;">
+      <p style="font-size:18px; font-weight:bold;">Data submitted successfully!</p>
+      <button id="btnOkSucesso" style="margin-top:20px; padding:10px 20px; background-color:#007bff; color:rgb(255, 255, 255); border:none; border-radius:5px; cursor:pointer;">
+        OK
+      </button>
     </div>
   </div>
 
+  <!-- Script principal -->
   <script type="module">
-    import { initializeApp } from "https://www.gstatic.com/firebasejs/10.11.0/firebase-app.js";
-    import { getDatabase, ref, push } from "https://www.gstatic.com/firebasejs/10.11.0/firebase-database.js";
+    import { initializeApp } from "https://www.gstatic.com/firebasejs/10.12.2/firebase-app.js";
+    import { getDatabase, ref, push } from "https://www.gstatic.com/firebasejs/10.12.2/firebase-database.js";
 
     const firebaseConfig = {
-      // a tua config
+      apiKey: "AIzaSyDERCoKXi7qa1k4S5pc0JipHyFEjgqwXAg",
+      authDomain: "examtopics-v1.firebaseapp.com",
+      databaseURL: "https://examtopics-v1-default-rtdb.europe-west1.firebasedatabase.app",
+      projectId: "examtopics-v1",
+      storageBucket: "examtopics-v1.firebasestorage.app",
+      messagingSenderId: "596894003766",
+      appId: "1:596894003766:web:9c310b67a78b46b97c5e97"
     };
 
     const app = initializeApp(firebaseConfig);
     const db = getDatabase(app);
 
+    // Variável global para armazenar as subopções
     let subopcoesPorSistema = {};
 
-    fetch("subopcoes.json")
-      .then(resp => resp.json())
-      .then(data => {
-        subopcoesPorSistema = data;
-      });
+    // Função para carregar as subopções do ficheiro JSON
+    async function carregarSubopcoes() {
+      try {
+        const response = await fetch('subopcoes.json');
+        if (!response.ok) {
+          throw new Error('Erro ao carregar subopcoes.json');
+        }
+        subopcoesPorSistema = await response.json();
+        console.log('Subopções carregadas:', subopcoesPorSistema);
+      } catch (error) {
+        console.error('Erro ao carregar subopções:', error);
+      }
+    }
 
-    const dropdownContainer = document.getElementById("subopcaoCustom");
-    const dropdownSelected = dropdownContainer.querySelector(".dropdown-selected");
-    const dropdownOptions = dropdownContainer.querySelector(".dropdown-options");
-    const hiddenInput = document.getElementById("subopcaoValue");
+    // Carregar subopções quando a página carrega
+    carregarSubopcoes();
 
     window.atualizarSubopcoes = function () {
-      const sistema = document.getElementById("sistema").value;
-      dropdownOptions.innerHTML = "";
-      hiddenInput.value = "";
-      dropdownSelected.textContent = "-- Choose an exam --";
+      const sistemaSelecionado = document.getElementById("sistema").value;
+      const subopcaoSelect = document.getElementById("subopcao");
 
-      if (sistema && subopcoesPorSistema[sistema]) {
-        subopcoesPorSistema[sistema].forEach(opcao => {
-          const div = document.createElement("div");
-          div.classList.add("dropdown-option");
-          div.dataset.value = opcao.value;
-          div.dataset.label = opcao.label;
-          div.innerHTML = `
-            <span class="code">${opcao.value.toUpperCase()}:</span>
-            <span class="desc">${opcao.label.split(":")[1]?.trim() || ""}</span>
-          `;
-          div.addEventListener("click", () => {
-            dropdownSelected.innerHTML = `
-              <span class="code">${div.dataset.value.toUpperCase()}:</span>
-              <span class="desc">${div.dataset.label.split(":")[1]?.trim() || ""}</span>
-            `;
-            hiddenInput.value = div.dataset.value;
-            dropdownOptions.style.display = "none";
+      // Limpar opções existentes
+      subopcaoSelect.innerHTML = '<option value="">-- Escolhe uma subopção --</option>';
+
+      if (sistemaSelecionado && subopcoesPorSistema[sistemaSelecionado]) {
+        // Mostrar loading temporariamente
+        subopcaoSelect.innerHTML = '<option value="">-- A carregar... --</option>';
+        
+        // Pequeno delay para mostrar o loading (opcional)
+        setTimeout(() => {
+          subopcaoSelect.innerHTML = '<option value="">-- Escolhe uma subopção --</option>';
+
+          subopcoesPorSistema[sistemaSelecionado].forEach(opcao => {
+            const option = document.createElement("option");
+            option.value = opcao.value;       // valor enviado ao Firebase
+            option.textContent = opcao.label; // texto visível no menu
+            subopcaoSelect.appendChild(option);
           });
-          dropdownOptions.appendChild(div);
-        });
+        }, 200);
       }
     };
-
-    dropdownSelected.addEventListener("click", () => {
-      dropdownOptions.style.display = dropdownOptions.style.display === "block" ? "none" : "block";
-    });
-
-    document.addEventListener("click", e => {
-      if (!dropdownContainer.contains(e.target)) {
-        dropdownOptions.style.display = "none";
-      }
-    });
 
     window.validarFormulario = function () {
       const sistema = document.getElementById("sistema").value;
-      const subopcao = hiddenInput.value;
+      const subopcaoEl = document.getElementById("subopcao");
+      const subopcaoValue = subopcaoEl.value;
+      const subopcaoLabel = subopcaoEl.options[subopcaoEl.selectedIndex].text;
       const email = document.getElementById("email").value.trim();
+      const erroEmail = document.getElementById("erroEmail");
 
-      if (!sistema || !subopcao || !email) {
-        alert("Por favor preenche todos os campos.");
+      const regexEmail = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+      if (!regexEmail.test(email)) {
+        erroEmail.textContent = "Por favor introduz um email válido.";
         return false;
       }
+      erroEmail.textContent = "";
 
+      // Mostrar nome completo no modal
       document.getElementById("confSistema").textContent = sistema;
-      document.getElementById("confSubopcao").textContent = dropdownContainer.querySelector(`.dropdown-option[data-value='${subopcao}']`).dataset.label;
-      document.getElementById("confSubopcao").dataset.value = subopcao;
+      document.getElementById("confSubopcao").textContent = subopcaoLabel;
       document.getElementById("confEmail").textContent = email;
 
-      document.getElementById("modalFundo").style.display = "flex";
+      // Guardar código para submissão
+      document.getElementById("confSubopcao").dataset.value = subopcaoValue;
+
+      // Mostrar modal
+      document.getElementById("modalFundo").style.display = "block";
+
       return false;
     };
 
-    document.getElementById("btnSim").addEventListener("click", () => {
-      const sistema = document.getElementById("confSistema").textContent;
-      const subopcao = document.getElementById("confSubopcao").dataset.value;
-      const email = document.getElementById("confEmail").textContent;
+    document.addEventListener("DOMContentLoaded", () => {
+      document.getElementById("btnSim").addEventListener("click", (e) => {
+        e.preventDefault();
 
-      push(ref(db, "respostas"), {
-        sistema,
-        subopcao,
-        email,
-        timestamp: new Date().toISOString()
-      })
-        .then(() => {
-          document.getElementById("modalSucesso").style.display = "flex";
+        const sistema = document.getElementById("confSistema").textContent;
+        const subopcao = document.getElementById("confSubopcao").dataset.value;
+        const email = document.getElementById("confEmail").textContent;
+
+        push(ref(db, "respostas"), {
+          sistema,
+          subopcao,
+          email,
+          timestamp: new Date().toISOString()
+        }).then(() => {
+          document.getElementById("modalSucesso").style.display = "flex"; // Mostrar modal de sucesso
           limparFormulario();
+        }).catch((error) => {
+          alert("Erro ao enviar: " + error.message); // podes também criar um modal de erro, se quiseres
         });
 
-      document.getElementById("modalFundo").style.display = "none";
+        document.getElementById("modalFundo").style.display = "none";
+      });
+
+      document.getElementById("btnNao").addEventListener("click", (e) => {
+        e.preventDefault();
+        limparFormulario();
+        document.getElementById("modalFundo").style.display = "none";
+      });
+
+      document.getElementById("btnOkSucesso").addEventListener("click", () => {
+        document.getElementById("modalSucesso").style.display = "none";
+        window.location.reload(); // ou window.location.href = "pagina.html"
+      });
     });
 
     function limparFormulario() {
       document.getElementById("sistema").value = "";
-      document.getElementById("email").value = "";
       atualizarSubopcoes();
+      document.getElementById("subopcao").value = "";
+      document.getElementById("email").value = "";
+      document.getElementById("erroEmail").textContent = "";
     }
   </script>
+
 </body>
 </html>
