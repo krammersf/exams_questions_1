@@ -180,6 +180,31 @@ button:hover {
   padding: 10px 20px;
 }
 
+
+#modalCaixa p:first-child {
+  font-size: 20px;           /* Aumenta o título */
+  font-weight: bold;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+#modalCaixa p:not(:first-child) {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  font-size: 16px;           /* Controla o tamanho do texto dos campos */
+  text-align: left;          /* Alinha o texto à esquerda */
+  gap: 8px;
+}
+
+#modalCaixa span {
+  font-weight: normal;
+  color: #333;
+}
+
+
+
+
 #btnSim {
   background-color: #28a745;
 }
