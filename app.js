@@ -42,7 +42,7 @@ function popularProvidersDropdown() {
   const hiddenInput = document.getElementById('sistema');
 
   optionsContainer.innerHTML = '';
-  display.textContent = '-- Choose a provider --';
+  display.textContent = '-- Choose a option --';
   hiddenInput.value = '';
   selectedProvider = '';
 
