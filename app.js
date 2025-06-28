@@ -215,6 +215,7 @@ document.addEventListener('DOMContentLoaded', () => {
     document.getElementById('subopcao').value = '';
     document.getElementById('email').value = '';
     document.getElementById('erroEmail').textContent = '';
+    document.getElementById('infoQuestions').textContent = '';
 
     // Reset variáveis
     selectedProvider = '';
