@@ -3,30 +3,39 @@
 <head>
   <meta charset="UTF-8">
   <title>Contact</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=5, user-scalable=yes">
+  <link rel="stylesheet" href="style.css">
   <style>
-    body {
-      font-family: Arial, sans-serif;
-      background-color: #f4f4f4;
+    .contact-container {
+      background: #eeeeee;
+      max-width: 600px;
+      margin: 0 auto;
+      padding: 30px;
+      border-radius: 8px;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.1);
       text-align: center;
-      padding: 50px;
     }
 
-    h1 {
+    .contact-container h1 {
       color: #333;
+      margin-bottom: 20px;
     }
 
-    p {
+    .contact-container p {
       font-size: 18px;
+      color: #333;
+      margin-bottom: 10px;
+    }
+
+    .contact-container .email {
+      font-weight: bold;
+      color: #007bff;
+      word-break: break-all;
       margin-bottom: 30px;
     }
 
-    .email {
-      font-weight: bold;
-      color: #007bff;
-    }
-
     .back-button {
-      background-color: #007bff;
+      background-color: #5f5f5f;
       color: white;
       padding: 12px 24px;
       text-decoration: none;
@@ -36,14 +45,35 @@
     }
 
     .back-button:hover {
-      background-color: #0056b3;
+      background-color: #3d3d3d;
+    }
+
+    @media (max-width: 600px) {
+      .contact-container {
+        padding: 20px;
+      }
+
+      .contact-container p,
+      .contact-container .email {
+        font-size: 16px;
+      }
+
+      .back-button {
+        width: 100%;
+        padding: 14px;
+        font-size: 18px;
+      }
     }
   </style>
 </head>
 <body>
-  <h1>Need Help?</h1>
-  <p>If you need any help or have any question, contact me:</p>
-  <p class="email">exam.questions@gmail.com</p>
-  <a href="index.html" class="back-button">⬅ Back</a>
+
+  <div class="contact-container">
+    <h1>Need Help?</h1>
+    <p>If you need any help or have any question, contact me:</p>
+    <p class="email">exam.questions@gmail.com</p>
+    <a href="index.html" class="back-button">⬅ Back</a>
+  </div>
+
 </body>
 </html>
