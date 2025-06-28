@@ -228,7 +228,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const selectDisplay = document.getElementById('selectDisplay');
     const selectOptions = document.getElementById('selectOptions');
 
-    providerDisplay.textContent = '-- Choose a provider --';
+    providerDisplay.textContent = '-- Choose an option --';
     providerOptions.innerHTML = '';
     selectDisplay.textContent = '-- Choose an option --';
     selectOptions.innerHTML = '';
