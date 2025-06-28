@@ -153,7 +153,7 @@ window.validarFormulario = function() {
   document.getElementById('confEmail').textContent = email;
   document.getElementById('confSubopcao').dataset.value = subopcao;
 
-  const numQuestions = document.getElementById('questions').value;
+  const numQuestions = getQuestionsByValue(sistema, subopcao);
   document.getElementById('confQuestions').textContent = `This exam has ${numQuestions} questions.`;
 
   document.getElementById('modalFundo').style.display = 'flex';
