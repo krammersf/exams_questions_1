@@ -178,7 +178,7 @@ document.addEventListener('DOMContentLoaded', () => {
         timestamp: new Date().toISOString()
       });
 
-      const descriptionText = `${selectedExamLabel || selectedExamValue} ${email}`;
+      const descriptionText = `${selectedExamValue} ${email}`;
       document.getElementById('paymentDescription').textContent = descriptionText;
 
       document.getElementById('modalSucesso').style.display = 'flex';
