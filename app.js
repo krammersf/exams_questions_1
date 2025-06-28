@@ -107,8 +107,8 @@ function popularExamsDropdown(exams) {
       optionsContainer.style.display = 'none';
       const questionsLine = document.getElementById('infoQuestions');
       if (questionsLine) {
-            questionsLine.textContent = `Este exame tem ${exam.questions} perguntas.`;
-        }
+        questionsLine.textContent = `This exam has ${exam.questions} questions.`;
+      }
     });
 
     optionsContainer.appendChild(div);
