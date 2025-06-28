@@ -8,7 +8,7 @@ const firebaseConfig = {
   authDomain: "examtopics-v1.firebaseapp.com",
   databaseURL: "https://examtopics-v1-default-rtdb.europe-west1.firebasedatabase.app",
   projectId: "examtopics-v1",
-  storageBucket: "examtopics-v1.firebasestorage.app",
+  storageBucket: "examtopics-v1.appspot.com",
   messagingSenderId: "596894003766",
   appId: "1:596894003766:web:9c310b67a78b46b97c5e97"
 };
@@ -31,11 +31,10 @@ async function carregarSubopcoes() {
     popularProvidersDropdown();
   } catch (e) {
     console.error(e);
-    subopcoesPorSistema = []; // fallback vazio
+    subopcoesPorSistema = [];
   }
 }
 
-// Popular dropdown providers (customProvider)
 function popularProvidersDropdown() {
   const optionsContainer = document.getElementById('providerOptions');
   const display = document.getElementById('providerDisplay');
@@ -47,19 +46,16 @@ function popularProvidersDropdown() {
   selectedProvider = '';
 
   subopcoesPorSistema.forEach(item => {
-    const providerKey = item.provider;
     const div = document.createElement('div');
     div.className = 'select-option';
-    div.textContent = providerKey;
-    div.dataset.value = providerKey;
+    div.textContent = item.provider;
+    div.dataset.value = item.provider;
 
     div.addEventListener('click', () => {
-      selectedProvider = providerKey;
-      hiddenInput.value = providerKey;
+      selectedProvider = item.provider;
+      hiddenInput.value = item.provider;
       display.textContent = div.textContent;
       optionsContainer.style.display = 'none';
-
-      // Ao escolher provider, popular exames
       popularExamsDropdown(item.exams);
     });
 
@@ -77,7 +73,6 @@ function popularProvidersDropdown() {
   });
 }
 
-// Popular dropdown exames (customSelect)
 function popularExamsDropdown(exams) {
   const optionsContainer = document.getElementById('selectOptions');
   const display = document.getElementById('selectDisplay');
@@ -92,7 +87,6 @@ function popularExamsDropdown(exams) {
   exams.forEach(exam => {
     const div = document.createElement('div');
     div.className = 'select-option';
-
     const [code, desc] = exam.label.split(': ');
     div.innerHTML = `<strong>${code}</strong>${desc ? `<br><span>${desc}</span>` : ''}`;
     div.dataset.value = exam.value;
@@ -103,7 +97,6 @@ function popularExamsDropdown(exams) {
       selectedExamLabel = exam.label;
       hiddenInput.value = exam.value;
       display.textContent = code;
-    //   display.innerHTML = div.innerHTML;
       optionsContainer.style.display = 'none';
       const questionsLine = document.getElementById('infoQuestions');
       if (questionsLine) {
@@ -170,29 +163,44 @@ function getQuestionsByValue(provider, value) {
 document.addEventListener('DOMContentLoaded', () => {
   carregarSubopcoes();
 
-  document.getElementById('btnSim').addEventListener('click', e => {
+  document.getElementById('btnSim').addEventListener('click', async e => {
     e.preventDefault();
 
     const sistema = document.getElementById('confSistema').textContent;
     const subopcao = document.getElementById('confSubopcao').dataset.value;
     const email = document.getElementById('confEmail').textContent;
 
-    push(ref(db, "respostas"), {
-      sistema,
-      subopcao,
-      email,
-      timestamp: new Date().toISOString()
-    }).then(() => {
-    // Preenche o modal de pagamento ANTES de limpar
-    const examLabel = selectedExamLabel || selectedExamValue;
-    const userEmail = document.getElementById('confEmail').textContent.trim();
-    const descriptionText = `${examLabel} ${userEmail}`;
-    document.getElementById('paymentDescription').textContent = descriptionText;
+    try {
+      await push(ref(db, "respostas"), {
+        sistema,
+        subopcao,
+        email,
+        timestamp: new Date().toISOString()
+      });
 
-    // Mostra o modal de sucesso
-    document.getElementById('modalSucesso').style.display = 'flex';
+      const descriptionText = `${selectedExamLabel || selectedExamValue} ${email}`;
+      document.getElementById('paymentDescription').textContent = descriptionText;
 
-    // Limpa os campos
+      document.getElementById('modalSucesso').style.display = 'flex';
+      document.getElementById('modalFundo').style.display = 'none';
+
+    } catch (err) {
+      alert('Erro ao enviar: ' + err.message);
+    }
+  });
+
+  document.getElementById('btnNao').addEventListener('click', e => {
+    e.preventDefault();
+    document.getElementById('modalFundo').style.display = 'none';
+  });
+
+  document.getElementById('btnOkSucesso').addEventListener('click', () => {
+    document.getElementById('modalSucesso').style.display = 'none';
+    document.getElementById('modalPagamento').style.display = 'flex';
+  });
+
+  document.getElementById('btnContinue').addEventListener('click', () => {
+    // Limpar todos os dados e estado
     document.getElementById('sistema').value = '';
     document.getElementById('subopcao').value = '';
     document.getElementById('email').value = '';
@@ -203,59 +211,27 @@ document.addEventListener('DOMContentLoaded', () => {
     selectedProvider = '';
     selectedExamValue = '';
     selectedExamLabel = '';
-    document.getElementById('modalFundo').style.display = 'none';
-    });
-    }).catch(err => {
-      alert('Erro ao enviar: ' + err.message);
-    });
-  });
+    document.getElementById('providerOptions').innerHTML = '';
+    document.getElementById('selectOptions').innerHTML = '';
+    document.getElementById('modalPagamento').style.display = 'none';
 
-  document.getElementById('btnNao').addEventListener('click', e => {
-    e.preventDefault();
-    document.getElementById('modalFundo').style.display = 'none';
-  });
-
-  document.getElementById('btnOkSucesso').addEventListener('click', () => {
-    document.getElementById('modalSucesso').style.display = 'none';
-
-    // // Preenche o modal de pagamento com os dados dinâmicos
-    // const examLabel = selectedExamLabel || selectedExamValue;
-    // const userEmail = document.getElementById('email').value.trim();
-    // const descriptionText = `${examLabel} ${userEmail}`;
-    // document.getElementById('paymentDescription').textContent = descriptionText;
-
-    document.getElementById('modalPagamento').style.display = 'flex';
-  });
-
-  document.getElementById('btnContinue').addEventListener('click', () => {
-    window.location.href = "index.html";
+    // Recarrega os providers
+    popularProvidersDropdown();
   });
 
   document.getElementById('btnClear').addEventListener('click', () => {
-    // Reset inputs
     document.getElementById('sistema').value = '';
     document.getElementById('subopcao').value = '';
     document.getElementById('email').value = '';
     document.getElementById('erroEmail').textContent = '';
     document.getElementById('infoQuestions').textContent = '';
-
-    // Reset variáveis
+    document.getElementById('providerDisplay').textContent = '-- Choose a option --';
+    document.getElementById('selectDisplay').textContent = '-- Choose an option --';
     selectedProvider = '';
     selectedExamValue = '';
     selectedExamLabel = '';
-
-    // Reset visual dos dropdowns customizados
-    const providerDisplay = document.getElementById('providerDisplay');
-    const providerOptions = document.getElementById('providerOptions');
-    const selectDisplay = document.getElementById('selectDisplay');
-    const selectOptions = document.getElementById('selectOptions');
-
-    providerDisplay.textContent = '-- Choose an option --';
-    providerOptions.innerHTML = '';
-    selectDisplay.textContent = '-- Choose an option --';
-    selectOptions.innerHTML = '';
-
-    // Recarregar as opções dos providers
+    document.getElementById('providerOptions').innerHTML = '';
+    document.getElementById('selectOptions').innerHTML = '';
     popularProvidersDropdown();
   });
 });
