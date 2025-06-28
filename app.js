@@ -42,7 +42,7 @@ function popularProvidersDropdown() {
   const hiddenInput = document.getElementById('sistema');
 
   optionsContainer.innerHTML = '';
-  display.textContent = '-- Choose a certification --';
+  display.textContent = '-- Choose a provider --';
   hiddenInput.value = '';
   selectedProvider = '';
 
@@ -54,35 +54,17 @@ function popularProvidersDropdown() {
     div.dataset.value = providerKey;
 
     div.addEventListener('click', () => {
-      // Atualiza variáveis
       selectedProvider = providerKey;
       hiddenInput.value = providerKey;
-      display.textContent = providerKey;
-
-      // Popular exames deste provider
-      popularExamsDropdown(item.exams);
-
-      // Limpar info do exame anterior
-      document.getElementById('selectDisplay').textContent = '-- Choose an exam --';
-      document.getElementById('infoQuestions').textContent = '';
-      document.getElementById('questions').value = '';
-
+      display.textContent = div.textContent;
       optionsContainer.style.display = 'none';
+
+      // Ao escolher provider, popular exames
+      popularExamsDropdown(item.exams);
     });
 
     optionsContainer.appendChild(div);
   });
-
-  display.onclick = () => {
-    optionsContainer.style.display = optionsContainer.style.display === 'block' ? 'none' : 'block';
-  };
-
-  document.addEventListener('click', (e) => {
-    if (!document.getElementById('customProvider').contains(e.target)) {
-      optionsContainer.style.display = 'none';
-    }
-  });
-}
 
   display.onclick = () => {
     optionsContainer.style.display = optionsContainer.style.display === 'block' ? 'none' : 'block';
