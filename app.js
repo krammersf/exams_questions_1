@@ -207,6 +207,16 @@ document.addEventListener('DOMContentLoaded', () => {
 
   document.getElementById('btnOkSucesso').addEventListener('click', () => {
     document.getElementById('modalSucesso').style.display = 'none';
+
+    // Preenche o modal de pagamento com os dados dinâmicos
+    const descriptionText = `${selectedExamValue} ${document.getElementById('email').value.trim()}`;
+    document.getElementById('paymentDescription').textContent = descriptionText;
+
+    document.getElementById('modalPagamento').style.display = 'flex';
+  });
+
+  document.getElementById('btnContinue').addEventListener('click', () => {
+    window.location.href = "index.html";
   });
 
   document.getElementById('btnClear').addEventListener('click', () => {

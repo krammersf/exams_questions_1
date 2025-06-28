@@ -68,6 +68,22 @@
     </div>
   </div>
 
+  <!-- Modal de pagamento -->
+  <div id="modalPagamento" style="display:none; position:fixed; inset:0; background-color:rgba(0,0,0,0.6); z-index:9999; justify-content:center; align-items:center;">
+    <div style="background:white; color:black; padding:30px; border-radius:10px; text-align:center; max-width:350px;">
+      <p style="font-size:20px; font-weight:bold;">Payment Information</p>
+      <p><strong>Payment method:</strong> MB Way</p>
+      <p><strong>Amount:</strong> 5€</p>
+      <p><strong>Number:</strong> 919 712 216</p>
+      <p><strong>Description:</strong> <span id="paymentDescription"></span></p>
+      <p style="margin-top:20px;">You will receive your questions in 15 - 60 minutes.</p>
+      <button id="btnContinue" style="margin-top:20px; padding:10px 20px; background-color:#007bff; color:#fff; border:none; border-radius:5px; cursor:pointer;">
+        Continue
+      </button>
+      <p style="margin-top:15px; color:green;">Thanks for your purchase!</p>
+    </div>
+  </div>
+
   <!-- JavaScript -->
   <script type="module" src="app.js"></script>
 
