@@ -105,6 +105,10 @@ function popularExamsDropdown(exams) {
       display.textContent = code;
     //   display.innerHTML = div.innerHTML;
       optionsContainer.style.display = 'none';
+      const questionsLine = document.getElementById('questionsLine');
+      if (questionsLine) {
+            questionsLine.textContent = `Este exame tem ${exam.questions} perguntas.`;
+        }
     });
 
     optionsContainer.appendChild(div);
@@ -174,6 +178,7 @@ document.addEventListener('DOMContentLoaded', () => {
       document.getElementById('subopcao').value = '';
       document.getElementById('email').value = '';
       document.getElementById('erroEmail').textContent = '';
+      document.getElementById('questionsLine').textContent = '';
       document.getElementById('providerDisplay').textContent = '-- Choose a provider --';
       document.getElementById('selectDisplay').textContent = '-- Choose an option --';
       selectedProvider = '';
