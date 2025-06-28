@@ -261,3 +261,24 @@ button:hover {
 #btnClear:hover {
   background-color: #e0a800;
 }
+
+
+
+#helpButton {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: #007bff;
+  color: white;
+  padding: 10px 14px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-size: 14px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transition: background-color 0.3s ease;
+  z-index: 1000;
+}
+
+#helpButton:hover {
+  background-color: #0056b3;
+}
