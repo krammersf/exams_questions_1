@@ -209,7 +209,9 @@ document.addEventListener('DOMContentLoaded', () => {
     document.getElementById('modalSucesso').style.display = 'none';
 
     // Preenche o modal de pagamento com os dados dinâmicos
-    const descriptionText = `${selectedExamValue} ${document.getElementById('email').value.trim()}`;
+    const examLabel = selectedExamLabel || selectedExamValue;
+    const userEmail = document.getElementById('email').value.trim();
+    const descriptionText = `${examLabel} ${userEmail}`;
     document.getElementById('paymentDescription').textContent = descriptionText;
 
     document.getElementById('modalPagamento').style.display = 'flex';
