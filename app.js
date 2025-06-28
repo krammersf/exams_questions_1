@@ -54,13 +54,20 @@ function popularProvidersDropdown() {
     div.dataset.value = providerKey;
 
     div.addEventListener('click', () => {
-      selectedProvider = providerKey;
-      hiddenInput.value = providerKey;
-      display.textContent = div.textContent;
-      optionsContainer.style.display = 'none';
+        selectedExamValue = exam.value;
+        selectedExamLabel = exam.label;
+        hiddenInput.value = exam.value;
 
-      // Ao escolher provider, popular exames
-      popularExamsDropdown(item.exams);
+        // Adiciona esta linha:
+        document.getElementById('questions').value = exam.questions;
+
+        display.textContent = code;
+        optionsContainer.style.display = 'none';
+
+        const questionsLine = document.getElementById('infoQuestions');
+        if (questionsLine) {
+            questionsLine.textContent = `This exam has ${exam.questions} questions.`;
+        }
     });
 
     optionsContainer.appendChild(div);
@@ -153,8 +160,8 @@ window.validarFormulario = function() {
   document.getElementById('confEmail').textContent = email;
   document.getElementById('confSubopcao').dataset.value = subopcao;
 
-  document.getElementById('confQuestions').textContent = 
-  `This exam has ${getQuestionsByValue(selectedProvider, selectedExamValue)} questions.`;
+  const numQuestions = document.getElementById('questions').value;
+  document.getElementById('confQuestions').textContent = `This exam has ${numQuestions} questions.`;
 
   document.getElementById('modalFundo').style.display = 'flex';
   return false;
