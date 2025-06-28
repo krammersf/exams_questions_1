@@ -183,18 +183,28 @@ document.addEventListener('DOMContentLoaded', () => {
       email,
       timestamp: new Date().toISOString()
     }).then(() => {
-      document.getElementById('modalSucesso').style.display = 'flex';
-      document.getElementById('sistema').value = '';
-      document.getElementById('subopcao').value = '';
-      document.getElementById('email').value = '';
-      document.getElementById('erroEmail').textContent = '';
-      document.getElementById('infoQuestions').textContent = '';
-      document.getElementById('providerDisplay').textContent = '-- Choose a provider --';
-      document.getElementById('selectDisplay').textContent = '-- Choose an option --';
-      selectedProvider = '';
-      selectedExamValue = '';
-      selectedExamLabel = '';
-      document.getElementById('modalFundo').style.display = 'none';
+    // Preenche o modal de pagamento ANTES de limpar
+    const examLabel = selectedExamLabel || selectedExamValue;
+    const userEmail = document.getElementById('confEmail').textContent.trim();
+    const descriptionText = `${examLabel} ${userEmail}`;
+    document.getElementById('paymentDescription').textContent = descriptionText;
+
+    // Mostra o modal de sucesso
+    document.getElementById('modalSucesso').style.display = 'flex';
+
+    // Limpa os campos
+    document.getElementById('sistema').value = '';
+    document.getElementById('subopcao').value = '';
+    document.getElementById('email').value = '';
+    document.getElementById('erroEmail').textContent = '';
+    document.getElementById('infoQuestions').textContent = '';
+    document.getElementById('providerDisplay').textContent = '-- Choose a option --';
+    document.getElementById('selectDisplay').textContent = '-- Choose an option --';
+    selectedProvider = '';
+    selectedExamValue = '';
+    selectedExamLabel = '';
+    document.getElementById('modalFundo').style.display = 'none';
+    });
     }).catch(err => {
       alert('Erro ao enviar: ' + err.message);
     });
@@ -208,11 +218,11 @@ document.addEventListener('DOMContentLoaded', () => {
   document.getElementById('btnOkSucesso').addEventListener('click', () => {
     document.getElementById('modalSucesso').style.display = 'none';
 
-    // Preenche o modal de pagamento com os dados dinâmicos
-    const examLabel = selectedExamLabel || selectedExamValue;
-    const userEmail = document.getElementById('email').value.trim();
-    const descriptionText = `${examLabel} ${userEmail}`;
-    document.getElementById('paymentDescription').textContent = descriptionText;
+    // // Preenche o modal de pagamento com os dados dinâmicos
+    // const examLabel = selectedExamLabel || selectedExamValue;
+    // const userEmail = document.getElementById('email').value.trim();
+    // const descriptionText = `${examLabel} ${userEmail}`;
+    // document.getElementById('paymentDescription').textContent = descriptionText;
 
     document.getElementById('modalPagamento').style.display = 'flex';
   });
