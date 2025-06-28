@@ -153,9 +153,19 @@ window.validarFormulario = function() {
   document.getElementById('confEmail').textContent = email;
   document.getElementById('confSubopcao').dataset.value = subopcao;
 
+  document.getElementById('confQuestions').textContent = 
+  `This exam has ${getQuestionsByValue(selectedProvider, selectedExamValue)} questions.`;
+
   document.getElementById('modalFundo').style.display = 'flex';
   return false;
 };
+
+function getQuestionsByValue(provider, value) {
+  const providerData = subopcoesPorSistema.find(p => p.provider === provider);
+  if (!providerData) return 0;
+  const exam = providerData.exams.find(e => e.value === value);
+  return exam ? exam.questions : 0;
+}
 
 document.addEventListener('DOMContentLoaded', () => {
   carregarSubopcoes();
