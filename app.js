@@ -154,7 +154,7 @@ window.validarFormulario = function() {
   document.getElementById('confSubopcao').dataset.value = subopcao;
 
   const numQuestions = getQuestionsByValue(sistema, subopcao);
-  document.getElementById('confQuestions').textContent = `This exam has ${numQuestions} questions.`;
+  document.getElementById('confQuestions').textContent = `${numQuestions}`;
 
   document.getElementById('modalFundo').style.display = 'flex';
   return false;
