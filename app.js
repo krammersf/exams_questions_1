@@ -141,7 +141,7 @@ window.validarFormulario = function() {
   }
   erroEmail.textContent = '';
 
-  // Guardar dados para depois da confirmação de pagamento
+  // Preencher dados no modal de confirmação
   document.getElementById('confSistema').textContent = sistema;
   document.getElementById('confSubopcao').textContent = selectedExamLabel;
   document.getElementById('confEmail').textContent = email;
@@ -153,8 +153,8 @@ window.validarFormulario = function() {
   const descriptionText = `${selectedExamValue} ${email}`;
   document.getElementById('paymentDescription').textContent = descriptionText;
 
-  // Mostrar diretamente o modal de pagamento
-  document.getElementById('modalPagamento').style.display = 'flex';
+  // Agora mostra o modal de CONFIRMAÇÃO (não pagamento já)
+  document.getElementById('modalFundo').style.display = 'flex';
 
   return false;
 };
@@ -169,33 +169,36 @@ function getQuestionsByValue(provider, value) {
 document.addEventListener('DOMContentLoaded', () => {
   carregarSubopcoes();
 
-  document.getElementById('btnSim').addEventListener('click', async e => {
+  // Ao clicar "Sim" na confirmação
+  document.getElementById('btnSim').addEventListener('click', e => {
     e.preventDefault();
 
+    // Fecha confirmação, abre pagamento
+    document.getElementById('modalFundo').style.display = 'none';
+    document.getElementById('modalPagamento').style.display = 'flex';
+  });
+
+  // Ao clicar "Continuar" após pagamento
+  document.getElementById('btnContinue').addEventListener('click', async () => {
     const sistema = document.getElementById('confSistema').textContent;
     const subopcao = document.getElementById('confSubopcao').dataset.value;
     const email = document.getElementById('confEmail').textContent;
 
     try {
-        await push(ref(db, "respostas"), {
+      await push(ref(db, "respostas"), {
         sistema,
         subopcao,
         email,
         timestamp: new Date().toISOString()
-        });
+      });
 
-        // Esconder o modal de confirmação
-        document.getElementById('modalFundo').style.display = 'none';
-
-        // Mostrar o modal de sucesso
-        document.getElementById('modalSucesso').style.display = 'flex';
+      document.getElementById('modalPagamento').style.display = 'none';
+      document.getElementById('modalSucesso').style.display = 'flex';
 
     } catch (err) {
-        alert('Erro ao enviar: ' + err.message);
+      alert('Erro ao enviar: ' + err.message);
     }
   });
-
-
 
   document.getElementById('btnNao').addEventListener('click', e => {
     e.preventDefault();
@@ -205,7 +208,6 @@ document.addEventListener('DOMContentLoaded', () => {
   document.getElementById('btnOkSucesso').addEventListener('click', () => {
     document.getElementById('modalSucesso').style.display = 'none';
 
-    // Limpar todos os dados e estado
     document.getElementById('sistema').value = '';
     document.getElementById('subopcao').value = '';
     document.getElementById('email').value = '';
@@ -220,14 +222,6 @@ document.addEventListener('DOMContentLoaded', () => {
     document.getElementById('selectOptions').innerHTML = '';
     popularProvidersDropdown();
   });
-
-  document.getElementById('btnContinue').addEventListener('click', () => {
-    // Mostrar modal de confirmação (e não limpar ainda)
-    document.getElementById('modalPagamento').style.display = 'none';
-    document.getElementById('modalFundo').style.display = 'flex';
-  });
-
-
 
   document.getElementById('btnClear').addEventListener('click', () => {
     document.getElementById('sistema').value = '';
