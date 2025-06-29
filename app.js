@@ -184,7 +184,10 @@ document.addEventListener('DOMContentLoaded', () => {
         timestamp: new Date().toISOString()
         });
 
+        // Esconder o modal de confirmação
         document.getElementById('modalFundo').style.display = 'none';
+
+        // Mostrar o modal de sucesso
         document.getElementById('modalSucesso').style.display = 'flex';
 
     } catch (err) {
@@ -192,31 +195,7 @@ document.addEventListener('DOMContentLoaded', () => {
     }
   });
 
-//   document.getElementById('btnSim').addEventListener('click', async e => {
-//     e.preventDefault();
 
-//     const sistema = document.getElementById('confSistema').textContent;
-//     const subopcao = document.getElementById('confSubopcao').dataset.value;
-//     const email = document.getElementById('confEmail').textContent;
-
-//     try {
-//       await push(ref(db, "respostas"), {
-//         sistema,
-//         subopcao,
-//         email,
-//         timestamp: new Date().toISOString()
-//       });
-
-//       const descriptionText = `${selectedExamValue} ${email}`;
-//       document.getElementById('paymentDescription').textContent = descriptionText;
-
-//       document.getElementById('modalSucesso').style.display = 'flex';
-//       document.getElementById('modalFundo').style.display = 'none';
-
-//     } catch (err) {
-//       alert('Erro ao enviar: ' + err.message);
-//     }
-//   });
 
   document.getElementById('btnNao').addEventListener('click', e => {
     e.preventDefault();
@@ -248,25 +227,7 @@ document.addEventListener('DOMContentLoaded', () => {
     document.getElementById('modalFundo').style.display = 'flex';
   });
 
-//   document.getElementById('btnContinue').addEventListener('click', () => {
-//     // Limpar todos os dados e estado
-//     document.getElementById('sistema').value = '';
-//     document.getElementById('subopcao').value = '';
-//     document.getElementById('email').value = '';
-//     document.getElementById('erroEmail').textContent = '';
-//     document.getElementById('infoQuestions').textContent = '';
-//     document.getElementById('providerDisplay').textContent = '-- Choose a option --';
-//     document.getElementById('selectDisplay').textContent = '-- Choose an option --';
-//     selectedProvider = '';
-//     selectedExamValue = '';
-//     selectedExamLabel = '';
-//     document.getElementById('providerOptions').innerHTML = '';
-//     document.getElementById('selectOptions').innerHTML = '';
-//     document.getElementById('modalPagamento').style.display = 'none';
 
-//     // Recarrega os providers
-//     popularProvidersDropdown();
-//   });
 
   document.getElementById('btnClear').addEventListener('click', () => {
     document.getElementById('sistema').value = '';
