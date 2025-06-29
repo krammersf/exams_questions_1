@@ -178,6 +178,10 @@ document.addEventListener('DOMContentLoaded', () => {
     document.getElementById('modalPagamento').style.display = 'flex';
   });
 
+  document.getElementById('btnCancel').addEventListener('click', () => {
+    window.location.href = "index.html";
+  });
+
   // Ao clicar "Continuar" após pagamento
   document.getElementById('btnContinue').addEventListener('click', async () => {
     const sistema = document.getElementById('confSistema').textContent;
