@@ -141,6 +141,7 @@ window.validarFormulario = function() {
   }
   erroEmail.textContent = '';
 
+  // Guardar dados para depois da confirmação de pagamento
   document.getElementById('confSistema').textContent = sistema;
   document.getElementById('confSubopcao').textContent = selectedExamLabel;
   document.getElementById('confEmail').textContent = email;
@@ -149,7 +150,12 @@ window.validarFormulario = function() {
   const numQuestions = getQuestionsByValue(sistema, subopcao);
   document.getElementById('confQuestions').textContent = `${numQuestions}`;
 
-  document.getElementById('modalFundo').style.display = 'flex';
+  const descriptionText = `${selectedExamValue} ${email}`;
+  document.getElementById('paymentDescription').textContent = descriptionText;
+
+  // Mostrar diretamente o modal de pagamento
+  document.getElementById('modalPagamento').style.display = 'flex';
+
   return false;
 };
 
@@ -171,23 +177,46 @@ document.addEventListener('DOMContentLoaded', () => {
     const email = document.getElementById('confEmail').textContent;
 
     try {
-      await push(ref(db, "respostas"), {
+        await push(ref(db, "respostas"), {
         sistema,
         subopcao,
         email,
         timestamp: new Date().toISOString()
-      });
+        });
 
-      const descriptionText = `${selectedExamValue} ${email}`;
-      document.getElementById('paymentDescription').textContent = descriptionText;
-
-      document.getElementById('modalSucesso').style.display = 'flex';
-      document.getElementById('modalFundo').style.display = 'none';
+        document.getElementById('modalFundo').style.display = 'none';
+        document.getElementById('modalSucesso').style.display = 'flex';
 
     } catch (err) {
-      alert('Erro ao enviar: ' + err.message);
+        alert('Erro ao enviar: ' + err.message);
     }
   });
+
+//   document.getElementById('btnSim').addEventListener('click', async e => {
+//     e.preventDefault();
+
+//     const sistema = document.getElementById('confSistema').textContent;
+//     const subopcao = document.getElementById('confSubopcao').dataset.value;
+//     const email = document.getElementById('confEmail').textContent;
+
+//     try {
+//       await push(ref(db, "respostas"), {
+//         sistema,
+//         subopcao,
+//         email,
+//         timestamp: new Date().toISOString()
+//       });
+
+//       const descriptionText = `${selectedExamValue} ${email}`;
+//       document.getElementById('paymentDescription').textContent = descriptionText;
+
+//       document.getElementById('modalSucesso').style.display = 'flex';
+//       document.getElementById('modalFundo').style.display = 'none';
+
+//     } catch (err) {
+//       alert('Erro ao enviar: ' + err.message);
+//     }
+//   });
 
   document.getElementById('btnNao').addEventListener('click', e => {
     e.preventDefault();
@@ -196,10 +225,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
   document.getElementById('btnOkSucesso').addEventListener('click', () => {
     document.getElementById('modalSucesso').style.display = 'none';
-    document.getElementById('modalPagamento').style.display = 'flex';
-  });
 
-  document.getElementById('btnContinue').addEventListener('click', () => {
     // Limpar todos os dados e estado
     document.getElementById('sistema').value = '';
     document.getElementById('subopcao').value = '';
@@ -213,11 +239,34 @@ document.addEventListener('DOMContentLoaded', () => {
     selectedExamLabel = '';
     document.getElementById('providerOptions').innerHTML = '';
     document.getElementById('selectOptions').innerHTML = '';
-    document.getElementById('modalPagamento').style.display = 'none';
-
-    // Recarrega os providers
     popularProvidersDropdown();
   });
+
+  document.getElementById('btnContinue').addEventListener('click', () => {
+    // Mostrar modal de confirmação (e não limpar ainda)
+    document.getElementById('modalPagamento').style.display = 'none';
+    document.getElementById('modalFundo').style.display = 'flex';
+  });
+
+//   document.getElementById('btnContinue').addEventListener('click', () => {
+//     // Limpar todos os dados e estado
+//     document.getElementById('sistema').value = '';
+//     document.getElementById('subopcao').value = '';
+//     document.getElementById('email').value = '';
+//     document.getElementById('erroEmail').textContent = '';
+//     document.getElementById('infoQuestions').textContent = '';
+//     document.getElementById('providerDisplay').textContent = '-- Choose a option --';
+//     document.getElementById('selectDisplay').textContent = '-- Choose an option --';
+//     selectedProvider = '';
+//     selectedExamValue = '';
+//     selectedExamLabel = '';
+//     document.getElementById('providerOptions').innerHTML = '';
+//     document.getElementById('selectOptions').innerHTML = '';
+//     document.getElementById('modalPagamento').style.display = 'none';
+
+//     // Recarrega os providers
+//     popularProvidersDropdown();
+//   });
 
   document.getElementById('btnClear').addEventListener('click', () => {
     document.getElementById('sistema').value = '';
