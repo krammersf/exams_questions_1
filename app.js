@@ -150,7 +150,7 @@ window.validarFormulario = function() {
   const numQuestions = getQuestionsByValue(sistema, subopcao);
   document.getElementById('confQuestions').textContent = `${numQuestions}`;
 
-  const descriptionText = `${selectedExamValue} ${email}`;
+  const descriptionText = `${selectedExamValue} + ${email}`;
   document.getElementById('paymentDescription').textContent = descriptionText;
 
   // Agora mostra o modal de CONFIRMAÇÃO (não pagamento já)
