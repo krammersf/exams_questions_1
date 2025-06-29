@@ -179,7 +179,7 @@ document.addEventListener('DOMContentLoaded', () => {
   });
 
   document.getElementById('btnCancel').addEventListener('click', () => {
-    window.location.href = "index.html";
+    document.getElementById('modalPagamento').style.display = 'none';
   });
 
   // Ao clicar "Continuar" após pagamento
