@@ -31,7 +31,23 @@
       font-weight: bold;
       color: #383838;
       word-break: break-all;
+      margin-bottom: 10px;
+    }
+
+    .copy-button {
+      background-color: #007bff;
+      color: white;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 6px;
+      font-size: 14px;
+      cursor: pointer;
       margin-bottom: 30px;
+      transition: background-color 0.3s ease;
+    }
+
+    .copy-button:hover {
+      background-color: #0056b3;
     }
 
     .back-button {
@@ -58,6 +74,11 @@
         font-size: 16px;
       }
 
+      .copy-button {
+        width: 100%;
+        font-size: 16px;
+      }
+
       .back-button {
         width: 100%;
         padding: 14px;
@@ -71,9 +92,27 @@
   <div class="contact-container">
     <h1>Need Help?</h1>
     <p>If you need any help or have any question, contact me:</p>
-    <p class="email">exam.questions.pt@gmail.com</p>
+    <p class="email" id="email">exam.questions.pt@gmail.com</p>
+    <button class="copy-button" onclick="copyEmail()">📋 Copy Email</button>
+    <br>
     <a href="index.html" class="back-button">⬅ Back</a>
   </div>
+
+  <script>
+    function copyEmail() {
+      const email = document.getElementById('email').innerText;
+      navigator.clipboard.writeText(email).then(() => {
+        const btn = document.querySelector('.copy-button');
+        btn.textContent = '✅ Copied!';
+        setTimeout(() => {
+          btn.textContent = '📋 Copy Email';
+        }, 2000);
+      }).catch(err => {
+        alert('Failed to copy email.');
+        console.error(err);
+      });
+    }
+  </script>
 
 </body>
 </html>
