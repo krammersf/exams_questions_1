@@ -85,7 +85,8 @@
       { "questions": "10", "label": "AWS-BDS: AWS Certified Big Data - Specialty", "value": "AWS Certified Big Data - Specialty" },
       { "questions": "10", "label": "AWS-SAA: AWS Certified Solutions Architect - Associate", "value": "SAA-C03" },
       { "questions": "10", "label": "AWS-DVA: AWS Certified Developer - Associate", "value": "DVA-C02" },
-      { "questions": "10", "label": "AWS-SOA: AWS Certified SysOps Administrator - Associate", "value": "SOA-C02" }
+      { "questions": "10", "label": "AWS-SOA: AWS Certified SysOps Administrator - Associate", "value": "SOA-C02" },
+      { "questions": "10", "label": "AWS Certified Cloud Practitioner", "value": "aws-certified-cloud-practitioner" }
     ]
   },
   {
