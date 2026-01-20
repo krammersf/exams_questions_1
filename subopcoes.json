@@ -106,5 +106,12 @@
       { "questions": "10", "label": "200-301: Implementing and Administering Cisco Solutions", "value": "200-301" },
       { "questions": "10", "label": "300-410: Implementing Cisco Enterprise Advanced Routing and Services", "value": "300-410" }
     ]
+  },
+    {
+    "provider": "Scrum",
+    "exams": [
+      { "questions": "10", "label": "PSM-i: Scrum PSI I", "value": "psm-i" }
+    ]
   }
+
 ]
