@@ -22,7 +22,8 @@
       { "questions": "170", "label": "CIS-VR: Certified Implementation Specialist - Vulnerability Response", "value": "cis-vr" },
       { "questions": "180", "label": "CIS-VRM: Certified Implementation Specialist - Vendor Risk Management", "value": "cis-vrm" },
       { "questions": "190", "label": "CSA: ServiceNow Certified System Administrator *", "value": "csa" },
-      { "questions": "200", "label": "CIS-TPRM: Certified Implementation Specialist - Third-party Risk Management *", "value": "cis-tprm" }
+      { "questions": "200", "label": "CIS-TPRM: Certified Implementation Specialist - Third-party Risk Management", "value": "cis-tprm" },
+      { "questions": "200", "label": "CIS-DF: Certified Implementation Specialist - Data Foundation", "value": "cis-df" }
     ]
   },
   {
