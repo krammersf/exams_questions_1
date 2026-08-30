@@ -2,117 +2,456 @@
   {
     "provider": "ServiceNow",
     "exams": [
-      { "questions": "10", "label": "CAD: ServiceNow Certified Application Developer *", "value": "cad" },
-      { "questions": "20", "label": "CAS-PA: Certified Application Specialist – Performance Analytics", "value": "cas-pa" },
-      { "questions": "30", "label": "CIS-APM: Certified Implementation Specialist - Application Portfolio Management", "value": "cis-apm" },
-      { "questions": "40", "label": "CIS-CPG: Certified Implementation Specialist - Cloud Provisioning and Governance", "value": "cis-cpg" },
-      { "questions": "50", "label": "CIS-CSM: Certified Implementation Specialist - Customer Service Management *", "value": "cis-csm" },
-      { "questions": "10", "label": "CIS-Discovery: Certified Implementation Specialist - Discovery", "value": "cis-discovery" },
-      { "questions": "60", "label": "CIS-EM: Certified Implementation Specialist - Event Management", "value": "cis-em" },
-      { "questions": "70", "label": "CIS-FSM: Certified Implementation Specialist - Field Service Management", "value": "cis-fsm" },
-      { "questions": "80", "label": "CIS-HAM: Certified Implementation Specialist – Hardware Asset Management", "value": "cis-ham" },
-      { "questions": "90", "label": "CIS-HR: Certified Implementation Specialist - Human Resources *", "value": "cis-hr" },
-      { "questions": "100", "label": "CIS-ITSM: Certified Implementation Specialist - IT Service Management *", "value": "cis-itsm" },
-      { "questions": "110", "label": "CIS-PPM: Certified Implementation Specialist - Project Portfolio Management", "value": "cis-ppm" },
-      { "questions": "120", "label": "CIS-RC: Certified Implementation Specialist - Risk and Compliance *", "value": "cis-rc" },
-      { "questions": "130", "label": "CIS-SAM: Certified Implementation Specialist - Software Asset Management", "value": "cis-sam" },
-      { "questions": "140", "label": "CIS-SIR: Certified Implementation Specialist - Security Incident Response", "value": "cis-sir" },
-      { "questions": "150", "label": "CIS-SM: Certified Implementation Specialist - Service Mapping", "value": "cis-sm" },
-      { "questions": "160", "label": "CIS-SPM: Certified Implementation Specialist - Strategic Portfolio Management *", "value": "cis-spm" },
-      { "questions": "170", "label": "CIS-VR: Certified Implementation Specialist - Vulnerability Response", "value": "cis-vr" },
-      { "questions": "180", "label": "CIS-VRM: Certified Implementation Specialist - Vendor Risk Management", "value": "cis-vrm" },
-      { "questions": "190", "label": "CSA: ServiceNow Certified System Administrator *", "value": "csa" },
-      { "questions": "200", "label": "CIS-TPRM: Certified Implementation Specialist - Third-party Risk Management", "value": "cis-tprm" },
-      { "questions": "200", "label": "CIS-DF: Certified Implementation Specialist - Data Foundation", "value": "cis-df" }
+      {
+        "questions": "219",
+        "label": "CAD: ServiceNow Certified Application Developer",
+        "value": "cad"
+      },
+      {
+        "questions": "83",
+        "label": "CAS-PA: Certified Application Specialist – Performance Analytics",
+        "value": "cas-pa"
+      },
+      {
+        "questions": "59",
+        "label": "CIS-APM: Certified Implementation Specialist - Application Portfolio Management",
+        "value": "cis-apm"
+      },
+      {
+        "questions": "45",
+        "label": "CIS-CPG: Certified Implementation Specialist - Cloud Provisioning and Governance",
+        "value": "cis-cpg"
+      },
+      {
+        "questions": "284",
+        "label": "CIS-CSM: Certified Implementation Specialist - Customer Service Management",
+        "value": "cis-csm"
+      },
+      {
+        "questions": "250",
+        "label": "CIS-DF: Certified Implementation Specialist - Data Foundations (CMDB and CSDM)",
+        "value": "cis-df"
+      },
+      {
+        "questions": "122",
+        "label": "CIS-Discovery: Certified Implementation Specialist - Discovery",
+        "value": "cis-discovery"
+      },
+      {
+        "questions": "130",
+        "label": "CIS-EM: Certified Implementation Specialist - Event Mangement",
+        "value": "cis-em"
+      },
+      {
+        "questions": "118",
+        "label": "CIS-FSM: Certified Implementation Specialist - Field Service Mangement",
+        "value": "cis-fsm"
+      },
+      {
+        "questions": "203",
+        "label": "CIS-HAM: Certified Implementation Specialist – Hardware Asset Management",
+        "value": "cis-ham"
+      },
+      {
+        "questions": "229",
+        "label": "CIS-HR: Certified Implementation Specialist - Human Resources",
+        "value": "cis-hr"
+      },
+      {
+        "questions": "242",
+        "label": "CIS-ITSM: Certified Implementation Specialist - IT Service Management",
+        "value": "cis-itsm"
+      },
+      {
+        "questions": "169",
+        "label": "CIS-PPM: Certified Implementation Specialist - Project Portfolio Management",
+        "value": "cis-ppm"
+      },
+      {
+        "questions": "289",
+        "label": "CIS-RC: Certified Implementation Specialist - Risk and Compliance",
+        "value": "cis-rc"
+      },
+      {
+        "questions": "222",
+        "label": "CIS-SAM: Certified Implementation Specialist - Software Asset Management",
+        "value": "cis-sam"
+      },
+      {
+        "questions": "125",
+        "label": "CIS-SIR: Certified Implementation Specialist - Security Incident Response",
+        "value": "cis-sir"
+      },
+      {
+        "questions": "124",
+        "label": "CIS-SM: Certified Implementation Specialist - Service Mapping",
+        "value": "cis-sm"
+      },
+      {
+        "questions": "182",
+        "label": "CIS-SPM: Certified Implementation Specialist - Strategic Portfolio Management",
+        "value": "cis-spm"
+      },
+      {
+        "questions": "60",
+        "label": "CIS-TPRM: Certified Implementation Specialist - Third-party Risk Management",
+        "value": "cis-tprm"
+      },
+      {
+        "questions": "132",
+        "label": "CIS-VR: Certified Implementation Specialist - Vulnerability Response",
+        "value": "cis-vr"
+      },
+      {
+        "questions": "60",
+        "label": "CIS-VRM: Certified Implementation Specialist - Vendor Risk Management",
+        "value": "cis-vrm"
+      },
+      {
+        "questions": "408",
+        "label": "CSA: ServiceNow Certified System Administrator",
+        "value": "csa"
+      }
     ]
   },
   {
     "provider": "SAP",
     "exams": [
-      { "questions": "10", "label": "C_ABAPD_2309: SAP Certified Associate - Back-End Developer - ABAP Cloud", "value": "c_abapd_2309" },
-      { "questions": "10", "label": "C_ACTIVATE13: SAP Certified Associate - SAP Activate Project Manager", "value": "c_activate13" },
-      { "questions": "10", "label": "C_ACTIVATE22: SAP Certified Associate - SAP Activate Project Manager", "value": "c_activate22" },
-      { "questions": "10", "label": "C_ARSOR_2202: SAP Certified Application Associate - SAP Ariba Sourcing", "value": "c_arsor_2202" },
-      { "questions": "10", "label": "C_CPI_14: SAP Certified Development Associate - SAP Integration Suite", "value": "c_cpi_14" },
-      { "questions": "10", "label": "C_CPI_2404: SAP Certified Associate - Integration Developer", "value": "c_cpi_2404" },
-      { "questions": "10", "label": "C_FIOAD_2021: SAP Certified Associate - SAP Fiori System Administration", "value": "c_fioad_2021" },
-      { "questions": "10", "label": "C_HAMOD_2404: SAP Certified Associate - Data Engineer - SAP HANA", "value": "c_hamod_2404" },
-      { "questions": "10", "label": "C_HANATEC_17: SAP Certified Technology Associate - SAP HANA 2.0 SPS05", "value": "c_hanatec_17" },
-      { "questions": "10", "label": "C_HANATEC_18: SAP Certified Technology Associate - SAP HANA 2.0 SPS06", "value": "c_hanatec_18" },
-      { "questions": "10", "label": "C_HCMP_2311: SAP Certified Associate - SAP HCM Payroll for SAP S/4HANA", "value": "c_hcmp_2311" },
-      { "questions": "10", "label": "C_S4CFI_2202: SAP Certified Application Associate - SAP S/4HANA Cloud (public) - Finance Implementation", "value": "c_s4cfi_2202" },
-      { "questions": "10", "label": "C_S4CPR_2408: SAP Certified Associate - Implementation Consultant - SAP S/4HANA Cloud Public Edition, Sourcing and Procurement", "value": "c_s4cpr_2408" },
-      { "questions": "10", "label": "C_S4CS_2408: SAP Certified Associate - Implementation Consultant - SAP S/4HANA Cloud Public Edition, Sales", "value": "c_s4cs_2408" },
-      { "questions": "10", "label": "C_S4EWM_2020: SAP Certified Associate - Extended Warehouse Management with SAP S/4HANA", "value": "c_s4ewm_2020" },
-      { "questions": "10", "label": "C_S4EWM_2023: SAP Certified Associate - Extended Warehouse Management in SAP S/4HANA", "value": "c_s4ewm_2023" },
-      { "questions": "10", "label": "C_S4TM_2020: SAP Certified Associate - Transportation Management in SAP S/4HANA", "value": "c_s4tm_2020" },
-      { "questions": "10", "label": "C_SAC_2221: SAP Certified Application Associate - SAP Analytics Cloud", "value": "c_sac_2221" },
-      { "questions": "10", "label": "C_SECAUTH_20: SAP Certified Technology Associate - SAP System Security and Authorizations", "value": "c_secauth_20" },
-      { "questions": "10", "label": "C_TADM_23: SAP Certified Technology Consultant - SAP S/4HANA System Administration", "value": "c_tadm_23" },
-      { "questions": "10", "label": "C_TAW12_750: SAP Certified Development Associate - ABAP with SAP NetWeaver 7.50", "value": "c_taw12_750" },
-      { "questions": "10", "label": "C_TFIN52_64: SAP Certified Application Associate - Financial Accounting with SAP ERP 6.0 EHP4", "value": "c_tfin52_64" },
-      { "questions": "10", "label": "C_TFIN52_67: SAP Certified Application Associate - Financial Accounting with SAP ERP 6.0 EhP7", "value": "c_tfin52_67" },
-      { "questions": "10", "label": "C_THR12_67: SAP Certified Application Associate - SAP HCM with ERP 6.0 EHP7", "value": "c_thr12_67" },
-      { "questions": "10", "label": "C_THR81_2205: SAP Certified Application Associate - SAP SuccessFactors Employee Central Core 1H/2022", "value": "c_thr81_2205" },
-      { "questions": "10", "label": "C_TPLM30_67: SAP Certified Application Associate - SAP Maintenance & Repair with ERP 6.0 EHP7", "value": "c_tplm30_67" },
-      { "questions": "10", "label": "C_TS410_2022: SAP Certified Application Associate - Business Process Integration with SAP S/4HANA", "value": "c_ts410_2022" },
-      { "questions": "10", "label": "C_TS413_1909: SAP Certified Application Associate – SAP S/4HANA Asset Management", "value": "c_ts413_1909" },
-      { "questions": "10", "label": "C_TS413_2021: SAP Certified Application Associate - SAP S/4HANA Asset Management", "value": "c_ts413_2021" },
-      { "questions": "10", "label": "C_TS422_2023: SAP Certified Associate - SAP S/4HANA Cloud Private Edition, Production Planning and Manufacturing", "value": "c_ts422_2023" },
-      { "questions": "10", "label": "C_TS450_2020: SAP Certified Application Associate - SAP S/4HANA Sourcing and Procurement - Upskilling for ERP Experts", "value": "c_ts450_2020" },
-      { "questions": "10", "label": "C_TS452_2021: SAP Certified Application Associate - SAP S/4HANA Sourcing and Procurement", "value": "c_ts452_2021" },
-      { "questions": "10", "label": "C_TS452_2022: SAP Certified Associate - SAP S/4HANA Sourcing and Procurement", "value": "c_ts452_2022" },
-      { "questions": "10", "label": "C_TS452_2410: SAP Certified Associate - SAP S/4HANA Cloud Private Edition, Sourcing and Procurement", "value": "c_ts452_2410" },
-      { "questions": "10", "label": "C_TS462_2020: SAP Certified Application Associate – SAP S/4HANA Sales 2020", "value": "c_ts462_2020" },
-      { "questions": "10", "label": "C_TS462_2021: SAP Certified Application Associate – SAP S/4HANA Sales 2021", "value": "c_ts462_2021" },
-      { "questions": "10", "label": "C_TS462_2022: SAP Certified Application Associate - SAP S/4HANA Sales 2022", "value": "c_ts462_2022" },
-      { "questions": "10", "label": "C_TS4CO_2023: SAP Certified Associate - SAP S/4HANA for Management Accounting Associates", "value": "c_ts4co_2023" },
-      { "questions": "10", "label": "C_TS4FI_2020: SAP Certified Application Associate - SAP S/4HANA for Financial Accounting Associates (SAP S/4HANA 2020)", "value": "c_ts4fi_2020" },
-      { "questions": "10", "label": "C_TS4FI_2021: SAP Certified Associate - SAP S/4HANA 2021 for Financial Accounting", "value": "c_ts4fi_2021" },
-      { "questions": "10", "label": "C_TS4FI_2023: SAP Certified Associate - SAP S/4HANA Cloud Private Edition, Financial Accounting", "value": "c_ts4fi_2023" },
-      { "questions": "10", "label": "C_TSCM52_67: SAP Certified Application Associate - Procurement with SAP ERP 6.0 EhP7", "value": "c_tscm52_67" },
-      { "questions": "10", "label": "C_TSCM62_67: SAP Certified Application Associate – Sales and Distribution, ERP 6.0 EhP7", "value": "c_tscm62_67" },
-      { "questions": "10", "label": "E_ACTCLD_21: SAP Certified Specialist - SAP Activate for Cloud Solutions Project Manager", "value": "e_actcld_21" },
-      { "questions": "10", "label": "E_HANAAW_17: SAP Certified Development Specialist - ABAP for SAP HANA 2.0", "value": "e_hanaaw_17" },
-      { "questions": "10", "label": "E_S4CPE_2023: SAP Certified Specialist - SAP S/4HANA Cloud, Private Edition Implementation with SAP Activate", "value": "e_s4cpe_2023" },
-      { "questions": "10", "label": "E_S4HCON2023: SAP Certified Specialist - SAP S/4HANA Conversion and SAP System Upgrade", "value": "e_s4hcon2023" },
-      { "questions": "10", "label": "P_BTPA_2408: SAP Certified Professional - Solution Architect - SAP BTP", "value": "p_btpa_2408" },
-      { "questions": "10", "label": "P_S4FIN_2021: SAP Certified Application Professional - Financials in SAP S/4HANA for SAP ERP Finance Experts (SAP S/4HANA 2021)", "value": "p_s4fin_2021" },
-      { "questions": "10", "label": "C_S4FCF_2023: SAP Certified Associate - SAP S/4HANA Cloud Private Edition - Central Finance", "value": "c_s4fcf_2023" }
+      {
+        "questions": "10",
+        "label": "C_ABAPD_2309: SAP Certified Associate - Back-End Developer - ABAP Cloud",
+        "value": "c_abapd_2309"
+      },
+      {
+        "questions": "10",
+        "label": "C_ACTIVATE13: SAP Certified Associate - SAP Activate Project Manager",
+        "value": "c_activate13"
+      },
+      {
+        "questions": "10",
+        "label": "C_ACTIVATE22: SAP Certified Associate - SAP Activate Project Manager",
+        "value": "c_activate22"
+      },
+      {
+        "questions": "10",
+        "label": "C_ARSOR_2202: SAP Certified Application Associate - SAP Ariba Sourcing",
+        "value": "c_arsor_2202"
+      },
+      {
+        "questions": "10",
+        "label": "C_CPI_14: SAP Certified Development Associate - SAP Integration Suite",
+        "value": "c_cpi_14"
+      },
+      {
+        "questions": "10",
+        "label": "C_CPI_2404: SAP Certified Associate - Integration Developer",
+        "value": "c_cpi_2404"
+      },
+      {
+        "questions": "10",
+        "label": "C_FIOAD_2021: SAP Certified Associate - SAP Fiori System Administration",
+        "value": "c_fioad_2021"
+      },
+      {
+        "questions": "10",
+        "label": "C_HAMOD_2404: SAP Certified Associate - Data Engineer - SAP HANA",
+        "value": "c_hamod_2404"
+      },
+      {
+        "questions": "10",
+        "label": "C_HANATEC_17: SAP Certified Technology Associate - SAP HANA 2.0 SPS05",
+        "value": "c_hanatec_17"
+      },
+      {
+        "questions": "10",
+        "label": "C_HANATEC_18: SAP Certified Technology Associate - SAP HANA 2.0 SPS06",
+        "value": "c_hanatec_18"
+      },
+      {
+        "questions": "10",
+        "label": "C_HCMP_2311: SAP Certified Associate - SAP HCM Payroll for SAP S/4HANA",
+        "value": "c_hcmp_2311"
+      },
+      {
+        "questions": "10",
+        "label": "C_S4CFI_2202: SAP Certified Application Associate - SAP S/4HANA Cloud (public) - Finance Implementation",
+        "value": "c_s4cfi_2202"
+      },
+      {
+        "questions": "10",
+        "label": "C_S4CPR_2408: SAP Certified Associate - Implementation Consultant - SAP S/4HANA Cloud Public Edition, Sourcing and Procurement",
+        "value": "c_s4cpr_2408"
+      },
+      {
+        "questions": "10",
+        "label": "C_S4CS_2408: SAP Certified Associate - Implementation Consultant - SAP S/4HANA Cloud Public Edition, Sales",
+        "value": "c_s4cs_2408"
+      },
+      {
+        "questions": "10",
+        "label": "C_S4EWM_2020: SAP Certified Associate - Extended Warehouse Management with SAP S/4HANA",
+        "value": "c_s4ewm_2020"
+      },
+      {
+        "questions": "10",
+        "label": "C_S4EWM_2023: SAP Certified Associate - Extended Warehouse Management in SAP S/4HANA",
+        "value": "c_s4ewm_2023"
+      },
+      {
+        "questions": "10",
+        "label": "C_S4TM_2020: SAP Certified Associate - Transportation Management in SAP S/4HANA",
+        "value": "c_s4tm_2020"
+      },
+      {
+        "questions": "10",
+        "label": "C_SAC_2221: SAP Certified Application Associate - SAP Analytics Cloud",
+        "value": "c_sac_2221"
+      },
+      {
+        "questions": "10",
+        "label": "C_SECAUTH_20: SAP Certified Technology Associate - SAP System Security and Authorizations",
+        "value": "c_secauth_20"
+      },
+      {
+        "questions": "10",
+        "label": "C_TADM_23: SAP Certified Technology Consultant - SAP S/4HANA System Administration",
+        "value": "c_tadm_23"
+      },
+      {
+        "questions": "10",
+        "label": "C_TAW12_750: SAP Certified Development Associate - ABAP with SAP NetWeaver 7.50",
+        "value": "c_taw12_750"
+      },
+      {
+        "questions": "10",
+        "label": "C_TFIN52_64: SAP Certified Application Associate - Financial Accounting with SAP ERP 6.0 EHP4",
+        "value": "c_tfin52_64"
+      },
+      {
+        "questions": "10",
+        "label": "C_TFIN52_67: SAP Certified Application Associate - Financial Accounting with SAP ERP 6.0 EhP7",
+        "value": "c_tfin52_67"
+      },
+      {
+        "questions": "10",
+        "label": "C_THR12_67: SAP Certified Application Associate - SAP HCM with ERP 6.0 EHP7",
+        "value": "c_thr12_67"
+      },
+      {
+        "questions": "10",
+        "label": "C_THR81_2205: SAP Certified Application Associate - SAP SuccessFactors Employee Central Core 1H/2022",
+        "value": "c_thr81_2205"
+      },
+      {
+        "questions": "10",
+        "label": "C_TPLM30_67: SAP Certified Application Associate - SAP Maintenance & Repair with ERP 6.0 EHP7",
+        "value": "c_tplm30_67"
+      },
+      {
+        "questions": "10",
+        "label": "C_TS410_2022: SAP Certified Application Associate - Business Process Integration with SAP S/4HANA",
+        "value": "c_ts410_2022"
+      },
+      {
+        "questions": "10",
+        "label": "C_TS413_1909: SAP Certified Application Associate – SAP S/4HANA Asset Management",
+        "value": "c_ts413_1909"
+      },
+      {
+        "questions": "10",
+        "label": "C_TS413_2021: SAP Certified Application Associate - SAP S/4HANA Asset Management",
+        "value": "c_ts413_2021"
+      },
+      {
+        "questions": "10",
+        "label": "C_TS422_2023: SAP Certified Associate - SAP S/4HANA Cloud Private Edition, Production Planning and Manufacturing",
+        "value": "c_ts422_2023"
+      },
+      {
+        "questions": "10",
+        "label": "C_TS450_2020: SAP Certified Application Associate - SAP S/4HANA Sourcing and Procurement - Upskilling for ERP Experts",
+        "value": "c_ts450_2020"
+      },
+      {
+        "questions": "10",
+        "label": "C_TS452_2021: SAP Certified Application Associate - SAP S/4HANA Sourcing and Procurement",
+        "value": "c_ts452_2021"
+      },
+      {
+        "questions": "10",
+        "label": "C_TS452_2022: SAP Certified Associate - SAP S/4HANA Sourcing and Procurement",
+        "value": "c_ts452_2022"
+      },
+      {
+        "questions": "10",
+        "label": "C_TS452_2410: SAP Certified Associate - SAP S/4HANA Cloud Private Edition, Sourcing and Procurement",
+        "value": "c_ts452_2410"
+      },
+      {
+        "questions": "10",
+        "label": "C_TS462_2020: SAP Certified Application Associate – SAP S/4HANA Sales 2020",
+        "value": "c_ts462_2020"
+      },
+      {
+        "questions": "10",
+        "label": "C_TS462_2021: SAP Certified Application Associate – SAP S/4HANA Sales 2021",
+        "value": "c_ts462_2021"
+      },
+      {
+        "questions": "10",
+        "label": "C_TS462_2022: SAP Certified Application Associate - SAP S/4HANA Sales 2022",
+        "value": "c_ts462_2022"
+      },
+      {
+        "questions": "10",
+        "label": "C_TS4CO_2023: SAP Certified Associate - SAP S/4HANA for Management Accounting Associates",
+        "value": "c_ts4co_2023"
+      },
+      {
+        "questions": "10",
+        "label": "C_TS4FI_2020: SAP Certified Application Associate - SAP S/4HANA for Financial Accounting Associates (SAP S/4HANA 2020)",
+        "value": "c_ts4fi_2020"
+      },
+      {
+        "questions": "10",
+        "label": "C_TS4FI_2021: SAP Certified Associate - SAP S/4HANA 2021 for Financial Accounting",
+        "value": "c_ts4fi_2021"
+      },
+      {
+        "questions": "10",
+        "label": "C_TS4FI_2023: SAP Certified Associate - SAP S/4HANA Cloud Private Edition, Financial Accounting",
+        "value": "c_ts4fi_2023"
+      },
+      {
+        "questions": "10",
+        "label": "C_TSCM52_67: SAP Certified Application Associate - Procurement with SAP ERP 6.0 EhP7",
+        "value": "c_tscm52_67"
+      },
+      {
+        "questions": "10",
+        "label": "C_TSCM62_67: SAP Certified Application Associate – Sales and Distribution, ERP 6.0 EhP7",
+        "value": "c_tscm62_67"
+      },
+      {
+        "questions": "10",
+        "label": "E_ACTCLD_21: SAP Certified Specialist - SAP Activate for Cloud Solutions Project Manager",
+        "value": "e_actcld_21"
+      },
+      {
+        "questions": "10",
+        "label": "E_HANAAW_17: SAP Certified Development Specialist - ABAP for SAP HANA 2.0",
+        "value": "e_hanaaw_17"
+      },
+      {
+        "questions": "10",
+        "label": "E_S4CPE_2023: SAP Certified Specialist - SAP S/4HANA Cloud, Private Edition Implementation with SAP Activate",
+        "value": "e_s4cpe_2023"
+      },
+      {
+        "questions": "10",
+        "label": "E_S4HCON2023: SAP Certified Specialist - SAP S/4HANA Conversion and SAP System Upgrade",
+        "value": "e_s4hcon2023"
+      },
+      {
+        "questions": "10",
+        "label": "P_BTPA_2408: SAP Certified Professional - Solution Architect - SAP BTP",
+        "value": "p_btpa_2408"
+      },
+      {
+        "questions": "10",
+        "label": "P_S4FIN_2021: SAP Certified Application Professional - Financials in SAP S/4HANA for SAP ERP Finance Experts (SAP S/4HANA 2021)",
+        "value": "p_s4fin_2021"
+      },
+      {
+        "questions": "10",
+        "label": "C_S4FCF_2023: SAP Certified Associate - SAP S/4HANA Cloud Private Edition - Central Finance",
+        "value": "c_s4fcf_2023"
+      }
     ]
   },
   {
     "provider": "AWS",
     "exams": [
-      { "questions": "10", "label": "AWS-BDS: AWS Certified Big Data - Specialty", "value": "AWS Certified Big Data - Specialty" },
-      { "questions": "10", "label": "AWS-SAA: AWS Certified Solutions Architect - Associate", "value": "SAA-C03" },
-      { "questions": "10", "label": "AWS-DVA: AWS Certified Developer - Associate", "value": "DVA-C02" },
-      { "questions": "10", "label": "AWS-SOA: AWS Certified SysOps Administrator - Associate", "value": "SOA-C02" },
-      { "questions": "10", "label": "AWS-CCP: AWS Certified Cloud Practitioner", "value": "aws-certified-cloud-practitioner" }
+      {
+        "questions": "10",
+        "label": "AWS-BDS: AWS Certified Big Data - Specialty",
+        "value": "AWS Certified Big Data - Specialty"
+      },
+      {
+        "questions": "10",
+        "label": "AWS-SAA: AWS Certified Solutions Architect - Associate",
+        "value": "SAA-C03"
+      },
+      {
+        "questions": "10",
+        "label": "AWS-DVA: AWS Certified Developer - Associate",
+        "value": "DVA-C02"
+      },
+      {
+        "questions": "10",
+        "label": "AWS-SOA: AWS Certified SysOps Administrator - Associate",
+        "value": "SOA-C02"
+      },
+      {
+        "questions": "10",
+        "label": "AWS-CCP: AWS Certified Cloud Practitioner",
+        "value": "aws-certified-cloud-practitioner"
+      }
     ]
   },
   {
     "provider": "Microsoft",
     "exams": [
-      { "questions": "10", "label": "70-535: Architecting Microsoft Azure Solutions", "value": "70-535" },
-      { "questions": "10", "label": "AZ-104: Microsoft Azure Administrator", "value": "AZ-104" },
-      { "questions": "10", "label": "AZ-204: Developing Solutions for Microsoft Azure", "value": "AZ-204" },
-      { "questions": "10", "label": "AZ-303: Microsoft Azure Architect Technologies", "value": "AZ-303" }
+      {
+        "questions": "10",
+        "label": "70-535: Architecting Microsoft Azure Solutions",
+        "value": "70-535"
+      },
+      {
+        "questions": "10",
+        "label": "AZ-104: Microsoft Azure Administrator",
+        "value": "AZ-104"
+      },
+      {
+        "questions": "10",
+        "label": "AZ-204: Developing Solutions for Microsoft Azure",
+        "value": "AZ-204"
+      },
+      {
+        "questions": "10",
+        "label": "AZ-303: Microsoft Azure Architect Technologies",
+        "value": "AZ-303"
+      }
     ]
   },
   {
     "provider": "Cisco",
     "exams": [
-      { "questions": "10", "label": "200-155: Implementing Cisco Data Center Infrastructure", "value": "200-155" },
-      { "questions": "10", "label": "200-301: Implementing and Administering Cisco Solutions", "value": "200-301" },
-      { "questions": "10", "label": "300-410: Implementing Cisco Enterprise Advanced Routing and Services", "value": "300-410" }
+      {
+        "questions": "10",
+        "label": "200-155: Implementing Cisco Data Center Infrastructure",
+        "value": "200-155"
+      },
+      {
+        "questions": "10",
+        "label": "200-301: Implementing and Administering Cisco Solutions",
+        "value": "200-301"
+      },
+      {
+        "questions": "10",
+        "label": "300-410: Implementing Cisco Enterprise Advanced Routing and Services",
+        "value": "300-410"
+      }
     ]
   },
-    {
+  {
     "provider": "Scrum",
     "exams": [
-      { "questions": "10", "label": "PSM-i: Scrum PSI I", "value": "psm-i" }
+      {
+        "questions": "10",
+        "label": "PSM-i: Scrum PSI I",
+        "value": "psm-i"
+      }
     ]
   }
-
 ]
