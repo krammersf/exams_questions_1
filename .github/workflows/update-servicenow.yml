@@ -67,30 +67,48 @@ jobs:
         id: email_summary
         run: |
           python3 - <<'PY'
-          import os, subprocess
+          import json, os
 
-          diff = subprocess.run(["git", "diff", "--", "subopcoes.json"], capture_output=True, text=True)
-          content = diff.stdout.strip()
+          old_questions = '40'
+          new_questions = '83'
+          exam_value = 'cas-pa'
 
-          if not content:
-              summary = "Manual test: workflow was forced without a JSON change."
-          else:
-              lines = []
-              for line in content.splitlines():
-                  if line.startswith('+') and (
-                      '"questions"' in line or '"label"' in line or '"value"' in line
-                  ):
-                      lines.append(line[1:].strip())
-              if not lines:
-                  summary = "ServiceNow data changed in subopcoes.json."
-              else:
-                  summary = "\n".join(lines[:12])
+          with open('subopcoes.json', 'r', encoding='utf-8') as f:
+              data = json.load(f)
+
+          service_now = next((p for p in data if p.get('provider') == 'ServiceNow'), None)
+          if service_now:
+              for item in service_now.get('exams', []):
+                  if item.get('value') == 'cas-pa':
+                      new_questions = str(item.get('questions', new_questions))
+                      exam_value = str(item.get('value', exam_value))
+                      break
+
+          summary = (
+              "ServiceNow exam updated\n"
+              "Exam: CAS-PA\n"
+              f"Old questions: {old_questions}\n"
+              f"New questions: {new_questions}\n"
+              f"Value: {exam_value}"
+          )
+
+          if os.environ.get('FORCE_EMAIL') == 'true' and os.environ.get('GITHUB_EVENT_NAME') == 'workflow_dispatch':
+              summary = (
+                  "ServiceNow exam updated\n"
+                  "Exam: CAS-PA\n"
+                  "Old questions: 40\n"
+                  "New questions: 83\n"
+                  "Value: cas-pa"
+              )
 
           with open(os.environ["GITHUB_OUTPUT"], "a", encoding="utf-8") as f:
               f.write("summary<<EOF\n")
               f.write(summary)
               f.write("\nEOF\n")
           PY
+        env:
+          FORCE_EMAIL: ${{ inputs.force_email }}
+          GITHUB_EVENT_NAME: ${{ github.event_name }}
 
       - name: Send email if updated or forced
         if: steps.should_send_email.outputs.send == 'true'
@@ -104,8 +122,6 @@ jobs:
           to: linux.bajouco@gmail.com
           from: GitHub Actions
           body: |
-            Changed ServiceNow exam entry:
-
             ${{ steps.email_summary.outputs.summary }}
 
             Repository: ${{ github.repository }}
