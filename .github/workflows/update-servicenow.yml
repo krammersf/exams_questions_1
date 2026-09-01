@@ -67,11 +67,28 @@ jobs:
         id: email_summary
         run: |
           python3 - <<'PY'
-          import json, os
+          import json, os, subprocess
 
-          old_questions = '40'
+          old_questions = '10'
           new_questions = '83'
           exam_value = 'cas-pa'
+
+          try:
+              previous = subprocess.run(
+                  ['git', 'show', 'HEAD:subopcoes.json'],
+                  capture_output=True,
+                  text=True,
+                  check=True,
+              ).stdout
+              previous_data = json.loads(previous)
+              previous_service_now = next((p for p in previous_data if p.get('provider') == 'ServiceNow'), None)
+              if previous_service_now:
+                  for item in previous_service_now.get('exams', []):
+                      if item.get('value') == 'cas-pa':
+                          old_questions = str(item.get('questions', old_questions))
+                          break
+          except Exception:
+              old_questions = '10'
 
           with open('subopcoes.json', 'r', encoding='utf-8') as f:
               data = json.load(f)
@@ -96,9 +113,9 @@ jobs:
               summary = (
                   "ServiceNow exam updated\n"
                   "Exam: CAS-PA\n"
-                  "Old questions: 40\n"
-                  "New questions: 83\n"
-                  "Value: cas-pa"
+                  f"Old questions: {old_questions}\n"
+                  f"New questions: {new_questions}\n"
+                  f"Value: {exam_value}"
               )
 
           with open(os.environ["GITHUB_OUTPUT"], "a", encoding="utf-8") as f:
