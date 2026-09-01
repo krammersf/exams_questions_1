@@ -31,6 +31,15 @@ jobs:
         with:
           python-version: '3.12'
 
+      - name: Save current JSON before refresh
+        run: |
+          if git show HEAD:subopcoes.json > previous_subopcoes.json 2>/dev/null; then
+            echo "Saved previous JSON from HEAD"
+          else
+            cp subopcoes.json previous_subopcoes.json
+            echo "No previous JSON in git; used working copy as baseline"
+          fi
+
       - name: Refresh ServiceNow question counts
         run: python3 refresh_servicenow_questions.py
 
@@ -67,7 +76,7 @@ jobs:
         id: email_summary
         run: |
           python3 - <<'PY'
-          import json, os, subprocess
+          import json, os
 
           def load_service_now(file_text):
               data = json.loads(file_text)
@@ -76,16 +85,8 @@ jobs:
                   return []
               return service_now.get('exams', [])
 
-          try:
-              previous_json = subprocess.run(
-                  ['git', 'show', 'HEAD:subopcoes.json'],
-                  capture_output=True,
-                  text=True,
-                  check=True,
-              ).stdout
-              previous_exams = load_service_now(previous_json)
-          except Exception:
-              previous_exams = []
+          with open('previous_subopcoes.json', 'r', encoding='utf-8') as f:
+              previous_exams = load_service_now(f.read())
 
           with open('subopcoes.json', 'r', encoding='utf-8') as f:
               current_exams = load_service_now(f.read())
@@ -97,9 +98,8 @@ jobs:
           for value, current_exam in current_by_value.items():
               previous_exam = previous_by_value.get(value)
               current_questions = str(current_exam.get('questions', '0'))
-              if previous_exam is None:
-                  old_questions = 'new'
-              else:
+              old_questions = 'new'
+              if previous_exam is not None:
                   old_questions = str(previous_exam.get('questions', current_questions))
               if previous_exam is None or old_questions != current_questions:
                   changed.append({
@@ -109,16 +109,11 @@ jobs:
                       'value': value,
                   })
 
-          if os.environ.get('FORCE_EMAIL') == 'true' and os.environ.get('GITHUB_EVENT_NAME') == 'workflow_dispatch':
-              changed = [{
-                  'exam': 'CAS-PA',
-                  'old': '83',
-                  'new': '83',
-                  'value': 'cas-pa',
-              }]
-
           if not changed:
-              summary = "ServiceNow exam updated\nNo changes detected."
+              if os.environ.get('FORCE_EMAIL') == 'true' and os.environ.get('GITHUB_EVENT_NAME') == 'workflow_dispatch':
+                  summary = "ServiceNow exam updated\nNo changes detected.\nForced email: true"
+              else:
+                  summary = "ServiceNow exam updated\nNo changes detected."
           else:
               blocks = []
               for item in changed:
