@@ -8,17 +8,17 @@
         "value": "cad"
       },
       {
-        "questions": "83",
+        "questions": "12",
         "label": "CAS-PA: Certified Application Specialist – Performance Analytics",
         "value": "cas-pa"
       },
       {
-        "questions": "59",
+        "questions": "13",
         "label": "CIS-APM: Certified Implementation Specialist - Application Portfolio Management",
         "value": "cis-apm"
       },
       {
-        "questions": "45",
+        "questions": "14",
         "label": "CIS-CPG: Certified Implementation Specialist - Cloud Provisioning and Governance",
         "value": "cis-cpg"
       },
