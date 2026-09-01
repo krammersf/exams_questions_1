@@ -24,14 +24,39 @@ jobs:
       - name: Refresh ServiceNow question counts
         run: python3 refresh_servicenow_questions.py
 
+      - name: Check whether subopcoes.json changed
+        id: check_changes
+        run: |
+          git add subopcoes.json
+          if git diff --cached --quiet; then
+            echo "changed=false" >> "$GITHUB_OUTPUT"
+          else
+            echo "changed=true" >> "$GITHUB_OUTPUT"
+          fi
+
       - name: Commit updated JSON if changed
+        if: steps.check_changes.outputs.changed == 'true'
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add subopcoes.json
-          if git diff --cached --quiet; then
-            echo "No changes to commit."
-          else
-            git commit -m "Update ServiceNow exam question counts"
-            git push
-          fi
+          git commit -m "Update ServiceNow exam question counts"
+          git push
+
+      - name: Send email if updated
+        if: steps.check_changes.outputs.changed == 'true'
+        uses: dawidd6/action-send-mail@v3
+        with:
+          server_address: smtp.gmail.com
+          server_port: 587
+          username: ${{ secrets.EMAIL_USERNAME }}
+          password: ${{ secrets.EMAIL_PASSWORD }}
+          subject: "ServiceNow exam counts updated"
+          to: linux.bajouco@gmail.com
+          from: GitHub Actions
+          body: |
+            The file subopcoes.json was updated automatically.
+
+            Repository: ${{ github.repository }}
+            Branch: ${{ github.ref_name }}
+            Workflow: ${{ github.workflow }}
+          attachments: subopcoes.json
