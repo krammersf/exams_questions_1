@@ -69,54 +69,67 @@ jobs:
           python3 - <<'PY'
           import json, os, subprocess
 
-          old_questions = '10'
-          new_questions = '83'
-          exam_value = 'cas-pa'
+          def load_service_now(file_text):
+              data = json.loads(file_text)
+              service_now = next((p for p in data if p.get('provider') == 'ServiceNow'), None)
+              if not service_now:
+                  return []
+              return service_now.get('exams', [])
 
           try:
-              previous = subprocess.run(
+              previous_json = subprocess.run(
                   ['git', 'show', 'HEAD:subopcoes.json'],
                   capture_output=True,
                   text=True,
                   check=True,
               ).stdout
-              previous_data = json.loads(previous)
-              previous_service_now = next((p for p in previous_data if p.get('provider') == 'ServiceNow'), None)
-              if previous_service_now:
-                  for item in previous_service_now.get('exams', []):
-                      if item.get('value') == 'cas-pa':
-                          old_questions = str(item.get('questions', old_questions))
-                          break
+              previous_exams = load_service_now(previous_json)
           except Exception:
-              old_questions = '10'
+              previous_exams = []
 
           with open('subopcoes.json', 'r', encoding='utf-8') as f:
-              data = json.load(f)
+              current_exams = load_service_now(f.read())
 
-          service_now = next((p for p in data if p.get('provider') == 'ServiceNow'), None)
-          if service_now:
-              for item in service_now.get('exams', []):
-                  if item.get('value') == 'cas-pa':
-                      new_questions = str(item.get('questions', new_questions))
-                      exam_value = str(item.get('value', exam_value))
-                      break
+          previous_by_value = {exam.get('value'): exam for exam in previous_exams if exam.get('value')}
+          current_by_value = {exam.get('value'): exam for exam in current_exams if exam.get('value')}
 
-          summary = (
-              "ServiceNow exam updated\n"
-              "Exam: CAS-PA\n"
-              f"Old questions: {old_questions}\n"
-              f"New questions: {new_questions}\n"
-              f"Value: {exam_value}"
-          )
+          changed = []
+          for value, current_exam in current_by_value.items():
+              previous_exam = previous_by_value.get(value)
+              current_questions = str(current_exam.get('questions', '0'))
+              if previous_exam is None:
+                  old_questions = 'new'
+              else:
+                  old_questions = str(previous_exam.get('questions', current_questions))
+              if previous_exam is None or old_questions != current_questions:
+                  changed.append({
+                      'exam': current_exam.get('label', value).split(':')[0].strip(),
+                      'old': old_questions,
+                      'new': current_questions,
+                      'value': value,
+                  })
 
           if os.environ.get('FORCE_EMAIL') == 'true' and os.environ.get('GITHUB_EVENT_NAME') == 'workflow_dispatch':
-              summary = (
-                  "ServiceNow exam updated\n"
-                  "Exam: CAS-PA\n"
-                  f"Old questions: {old_questions}\n"
-                  f"New questions: {new_questions}\n"
-                  f"Value: {exam_value}"
-              )
+              changed = [{
+                  'exam': 'CAS-PA',
+                  'old': '83',
+                  'new': '83',
+                  'value': 'cas-pa',
+              }]
+
+          if not changed:
+              summary = "ServiceNow exam updated\nNo changes detected."
+          else:
+              blocks = []
+              for item in changed:
+                  blocks.append(
+                      "ServiceNow exam updated\n"
+                      f"Exam: {item['exam']}\n"
+                      f"Old questions: {item['old']}\n"
+                      f"New questions: {item['new']}\n"
+                      f"Value: {item['value']}"
+                  )
+              summary = "\n\n".join(blocks)
 
           with open(os.environ["GITHUB_OUTPUT"], "a", encoding="utf-8") as f:
               f.write("summary<<EOF\n")
