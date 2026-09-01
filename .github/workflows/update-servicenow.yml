@@ -63,6 +63,35 @@ jobs:
             echo "send=false" >> "$GITHUB_OUTPUT"
           fi
 
+      - name: Build email summary
+        id: email_summary
+        run: |
+          python3 - <<'PY'
+          import os, subprocess
+
+          diff = subprocess.run(["git", "diff", "--", "subopcoes.json"], capture_output=True, text=True)
+          content = diff.stdout.strip()
+
+          if not content:
+              summary = "Manual test: workflow was forced without a JSON change."
+          else:
+              lines = []
+              for line in content.splitlines():
+                  if line.startswith('+') and (
+                      '"questions"' in line or '"label"' in line or '"value"' in line
+                  ):
+                      lines.append(line[1:].strip())
+              if not lines:
+                  summary = "ServiceNow data changed in subopcoes.json."
+              else:
+                  summary = "\n".join(lines[:12])
+
+          with open(os.environ["GITHUB_OUTPUT"], "a", encoding="utf-8") as f:
+              f.write("summary<<EOF\n")
+              f.write(summary)
+              f.write("\nEOF\n")
+          PY
+
       - name: Send email if updated or forced
         if: steps.should_send_email.outputs.send == 'true'
         uses: dawidd6/action-send-mail@v3
@@ -75,10 +104,11 @@ jobs:
           to: linux.bajouco@gmail.com
           from: GitHub Actions
           body: |
-            The file subopcoes.json was updated automatically.
+            Changed ServiceNow exam entry:
+
+            ${{ steps.email_summary.outputs.summary }}
 
             Repository: ${{ github.repository }}
             Branch: ${{ github.ref_name }}
             Workflow: ${{ github.workflow }}
             Forced email: ${{ inputs.force_email }}
-          attachments: subopcoes.json
