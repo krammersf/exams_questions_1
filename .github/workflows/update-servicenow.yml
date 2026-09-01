@@ -1,15 +1,25 @@
 name: Update ServiceNow exam counts
 
+permissions:
+  contents: write
+
 on:
   push:
     branches:
       - main
   workflow_dispatch:
+    inputs:
+      force_email:
+        description: 'Force email even if subopcoes.json did not change'
+        required: false
+        type: boolean
+        default: false
   schedule:
     - cron: '0 3 * * *'
 
 jobs:
   refresh:
+    if: github.event_name != 'push' || github.actor != 'github-actions[bot]'
     runs-on: ubuntu-latest
 
     steps:
@@ -42,8 +52,19 @@ jobs:
           git commit -m "Update ServiceNow exam question counts"
           git push
 
-      - name: Send email if updated
-        if: steps.check_changes.outputs.changed == 'true'
+      - name: Decide whether to send the email
+        id: should_send_email
+        env:
+          FORCE_EMAIL: ${{ inputs.force_email }}
+        run: |
+          if [[ "${{ steps.check_changes.outputs.changed }}" == "true" || "$FORCE_EMAIL" == "true" ]]; then
+            echo "send=true" >> "$GITHUB_OUTPUT"
+          else
+            echo "send=false" >> "$GITHUB_OUTPUT"
+          fi
+
+      - name: Send email if updated or forced
+        if: steps.should_send_email.outputs.send == 'true'
         uses: dawidd6/action-send-mail@v3
         with:
           server_address: smtp.gmail.com
@@ -59,4 +80,5 @@ jobs:
             Repository: ${{ github.repository }}
             Branch: ${{ github.ref_name }}
             Workflow: ${{ github.workflow }}
+            Forced email: ${{ inputs.force_email }}
           attachments: subopcoes.json
