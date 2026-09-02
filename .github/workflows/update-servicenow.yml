@@ -40,8 +40,8 @@ jobs:
             echo "No previous JSON in git; used working copy as baseline"
           fi
 
-      - name: Refresh ServiceNow question counts
-        run: python3 refresh_servicenow_questions.py
+      - name: Refresh ServiceNow and SAP question counts
+        run: python3 refresh_questions.py
 
       - name: Check whether subopcoes.json changed
         id: check_changes

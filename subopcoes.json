@@ -118,254 +118,314 @@
     "provider": "SAP",
     "exams": [
       {
-        "questions": "10",
+        "questions": "79",
         "label": "C_ABAPD_2309: SAP Certified Associate - Back-End Developer - ABAP Cloud",
-        "value": "c_abapd_2309"
+        "value": "c-abapd-2309"
       },
       {
-        "questions": "10",
+        "questions": "80",
+        "label": "C_ACT_2403: SAP Certified Associate - Project Manager - SAP Activate",
+        "value": "c-act-2403"
+      },
+      {
+        "questions": "80",
         "label": "C_ACTIVATE13: SAP Certified Associate - SAP Activate Project Manager",
-        "value": "c_activate13"
+        "value": "c-activate13"
       },
       {
-        "questions": "10",
+        "questions": "80",
         "label": "C_ACTIVATE22: SAP Certified Associate - SAP Activate Project Manager",
-        "value": "c_activate22"
+        "value": "c-activate22"
       },
       {
-        "questions": "10",
+        "questions": "57",
+        "label": "C_AIG_2412: SAP Certified - SAP Generative AI Developer",
+        "value": "c-aig-2412"
+      },
+      {
+        "questions": "65",
         "label": "C_ARSOR_2202: SAP Certified Application Associate - SAP Ariba Sourcing",
-        "value": "c_arsor_2202"
+        "value": "c-arsor-2202"
       },
       {
-        "questions": "10",
+        "questions": "18",
+        "label": "C_BCBDC_2505: SAP Certified Associate - SAP Business Data Cloud",
+        "value": "c-bcbdc-2505"
+      },
+      {
+        "questions": "80",
         "label": "C_CPI_14: SAP Certified Development Associate - SAP Integration Suite",
-        "value": "c_cpi_14"
+        "value": "c-cpi-14"
       },
       {
-        "questions": "10",
+        "questions": "60",
         "label": "C_CPI_2404: SAP Certified Associate - Integration Developer",
-        "value": "c_cpi_2404"
+        "value": "c-cpi-2404"
       },
       {
-        "questions": "10",
+        "questions": "66",
         "label": "C_FIOAD_2021: SAP Certified Associate - SAP Fiori System Administration",
-        "value": "c_fioad_2021"
+        "value": "c-fioad-2021"
       },
       {
-        "questions": "10",
+        "questions": "80",
         "label": "C_HAMOD_2404: SAP Certified Associate - Data Engineer - SAP HANA",
-        "value": "c_hamod_2404"
+        "value": "c-hamod-2404"
       },
       {
-        "questions": "10",
+        "questions": "77",
         "label": "C_HANATEC_17: SAP Certified Technology Associate - SAP HANA 2.0 SPS05",
-        "value": "c_hanatec_17"
+        "value": "c-hanatec-17"
       },
       {
-        "questions": "10",
+        "questions": "80",
         "label": "C_HANATEC_18: SAP Certified Technology Associate - SAP HANA 2.0 SPS06",
-        "value": "c_hanatec_18"
+        "value": "c-hanatec-18"
       },
       {
-        "questions": "10",
+        "questions": "80",
         "label": "C_HCMP_2311: SAP Certified Associate - SAP HCM Payroll for SAP S/4HANA",
-        "value": "c_hcmp_2311"
+        "value": "c-hcmp-2311"
       },
       {
-        "questions": "10",
+        "questions": "80",
+        "label": "C_HRHPC_2505: SAP Certified Associate - Implementation Consultant - SAP SuccessFactors Employee Central Payroll",
+        "value": "c-hrhpc-2505"
+      },
+      {
+        "questions": "80",
         "label": "C_S4CFI_2202: SAP Certified Application Associate - SAP S/4HANA Cloud (public) - Finance Implementation",
-        "value": "c_s4cfi_2202"
+        "value": "c-s4cfi-2202"
       },
       {
-        "questions": "10",
+        "questions": "79",
+        "label": "C_S4CFI_2504: SAP Certified Associate - Implementation Consultant - SAP S/4HANA Cloud Public Edition, Financial Accounting",
+        "value": "c-s4cfi-2504"
+      },
+      {
+        "questions": "79",
         "label": "C_S4CPR_2408: SAP Certified Associate - Implementation Consultant - SAP S/4HANA Cloud Public Edition, Sourcing and Procurement",
-        "value": "c_s4cpr_2408"
+        "value": "c-s4cpr-2408"
       },
       {
-        "questions": "10",
+        "questions": "79",
         "label": "C_S4CS_2408: SAP Certified Associate - Implementation Consultant - SAP S/4HANA Cloud Public Edition, Sales",
-        "value": "c_s4cs_2408"
+        "value": "c-s4cs-2408"
       },
       {
-        "questions": "10",
+        "questions": "80",
         "label": "C_S4EWM_2020: SAP Certified Associate - Extended Warehouse Management with SAP S/4HANA",
-        "value": "c_s4ewm_2020"
+        "value": "c-s4ewm-2020"
       },
       {
-        "questions": "10",
+        "questions": "80",
         "label": "C_S4EWM_2023: SAP Certified Associate - Extended Warehouse Management in SAP S/4HANA",
-        "value": "c_s4ewm_2023"
+        "value": "c-s4ewm-2023"
       },
       {
-        "questions": "10",
+        "questions": "80",
+        "label": "C_S4PM_2504: SAP Certified Associate - Managing SAP S/4HANA Cloud Public Edition Projects",
+        "value": "c-s4pm-2504"
+      },
+      {
+        "questions": "79",
         "label": "C_S4TM_2020: SAP Certified Associate - Transportation Management in SAP S/4HANA",
-        "value": "c_s4tm_2020"
+        "value": "c-s4tm-2020"
       },
       {
-        "questions": "10",
+        "questions": "80",
         "label": "C_SAC_2221: SAP Certified Application Associate - SAP Analytics Cloud",
-        "value": "c_sac_2221"
+        "value": "c-sac-2221"
       },
       {
-        "questions": "10",
+        "questions": "80",
+        "label": "C_SEC_2405: SAP Certified Associate - Security Administrator",
+        "value": "c-sec-2405"
+      },
+      {
+        "questions": "80",
         "label": "C_SECAUTH_20: SAP Certified Technology Associate - SAP System Security and Authorizations",
-        "value": "c_secauth_20"
+        "value": "c-secauth-20"
       },
       {
-        "questions": "10",
+        "questions": "80",
         "label": "C_TADM_23: SAP Certified Technology Consultant - SAP S/4HANA System Administration",
-        "value": "c_tadm_23"
+        "value": "c-tadm-23"
       },
       {
-        "questions": "10",
+        "questions": "155",
         "label": "C_TAW12_750: SAP Certified Development Associate - ABAP with SAP NetWeaver 7.50",
-        "value": "c_taw12_750"
+        "value": "c-taw12-750"
       },
       {
-        "questions": "10",
+        "questions": "426",
         "label": "C_TFIN52_64: SAP Certified Application Associate - Financial Accounting with SAP ERP 6.0 EHP4",
         "value": "c_tfin52_64"
       },
       {
-        "questions": "10",
+        "questions": "96",
         "label": "C_TFIN52_67: SAP Certified Application Associate - Financial Accounting with SAP ERP 6.0 EhP7",
-        "value": "c_tfin52_67"
+        "value": "c-tfin52-67"
       },
       {
-        "questions": "10",
+        "questions": "244",
         "label": "C_THR12_67: SAP Certified Application Associate - SAP HCM with ERP 6.0 EHP7",
-        "value": "c_thr12_67"
+        "value": "c-thr12-67"
       },
       {
-        "questions": "10",
+        "questions": "79",
         "label": "C_THR81_2205: SAP Certified Application Associate - SAP SuccessFactors Employee Central Core 1H/2022",
-        "value": "c_thr81_2205"
+        "value": "c-thr81-2205"
       },
       {
-        "questions": "10",
-        "label": "C_TPLM30_67: SAP Certified Application Associate - SAP Maintenance & Repair with ERP 6.0 EHP7",
-        "value": "c_tplm30_67"
+        "questions": "60",
+        "label": "C_THR81_2505: SAP Certified - SAP SuccessFactors Employee Central Core and Position Management",
+        "value": "c-thr81-2505"
       },
       {
-        "questions": "10",
+        "questions": "80",
+        "label": "C_THR82_2505: SAP Certified Associate - SAP SuccessFactors Performance and Goals",
+        "value": "c-thr82-2505"
+      },
+      {
+        "questions": "80",
+        "label": "C_THR83_2505: SAP Certified Associate - Implementation Consultant - SAP SuccessFactors Recruiting: Recruiter Experience",
+        "value": "c-thr83-2505"
+      },
+      {
+        "questions": "80",
+        "label": "C_THR97_2505: SAP Certified Associate - Implementation Consultant - SAP SuccessFactors Onboarding",
+        "value": "c-thr97-2505"
+      },
+      {
+        "questions": "80",
+        "label": "C_TPLM30_67: SAP Certified Application Associate - SAP Maintenance &amp; Repair with ERP 6.0 EHP7",
+        "value": "c-tplm30-67"
+      },
+      {
+        "questions": "80",
         "label": "C_TS410_2022: SAP Certified Application Associate - Business Process Integration with SAP S/4HANA",
-        "value": "c_ts410_2022"
+        "value": "c-ts410-2022"
       },
       {
-        "questions": "10",
+        "questions": "80",
         "label": "C_TS413_1909: SAP Certified Application Associate – SAP S/4HANA Asset Management",
-        "value": "c_ts413_1909"
+        "value": "c-ts413-1909"
       },
       {
-        "questions": "10",
+        "questions": "80",
         "label": "C_TS413_2021: SAP Certified Application Associate - SAP S/4HANA Asset Management",
-        "value": "c_ts413_2021"
+        "value": "c-ts413-2021"
       },
       {
-        "questions": "10",
+        "questions": "80",
         "label": "C_TS422_2023: SAP Certified Associate - SAP S/4HANA Cloud Private Edition, Production Planning and Manufacturing",
-        "value": "c_ts422_2023"
+        "value": "c-ts422-2023"
       },
       {
-        "questions": "10",
+        "questions": "80",
         "label": "C_TS450_2020: SAP Certified Application Associate - SAP S/4HANA Sourcing and Procurement - Upskilling for ERP Experts",
-        "value": "c_ts450_2020"
+        "value": "c-ts450-2020"
       },
       {
-        "questions": "10",
+        "questions": "80",
         "label": "C_TS452_2021: SAP Certified Application Associate - SAP S/4HANA Sourcing and Procurement",
-        "value": "c_ts452_2021"
+        "value": "c-ts452-2021"
       },
       {
-        "questions": "10",
+        "questions": "80",
         "label": "C_TS452_2022: SAP Certified Associate - SAP S/4HANA Sourcing and Procurement",
-        "value": "c_ts452_2022"
+        "value": "c-ts452-2022"
       },
       {
-        "questions": "10",
+        "questions": "80",
         "label": "C_TS452_2410: SAP Certified Associate - SAP S/4HANA Cloud Private Edition, Sourcing and Procurement",
-        "value": "c_ts452_2410"
+        "value": "c-ts452-2410"
       },
       {
-        "questions": "10",
+        "questions": "80",
         "label": "C_TS462_2020: SAP Certified Application Associate – SAP S/4HANA Sales 2020",
-        "value": "c_ts462_2020"
+        "value": "c-ts462-2020"
       },
       {
-        "questions": "10",
+        "questions": "80",
         "label": "C_TS462_2021: SAP Certified Application Associate – SAP S/4HANA Sales 2021",
-        "value": "c_ts462_2021"
+        "value": "c-ts462-2021"
       },
       {
-        "questions": "10",
+        "questions": "80",
         "label": "C_TS462_2022: SAP Certified Application Associate - SAP S/4HANA Sales 2022",
-        "value": "c_ts462_2022"
+        "value": "c-ts462-2022"
       },
       {
-        "questions": "10",
+        "questions": "60",
+        "label": "C_TS462_2023: SAP Certified Associate - SAP S/4HANA Cloud Private Edition, Sales",
+        "value": "c-ts462-2023"
+      },
+      {
+        "questions": "80",
         "label": "C_TS4CO_2023: SAP Certified Associate - SAP S/4HANA for Management Accounting Associates",
-        "value": "c_ts4co_2023"
+        "value": "c-ts4co-2023"
       },
       {
-        "questions": "10",
+        "questions": "80",
         "label": "C_TS4FI_2020: SAP Certified Application Associate - SAP S/4HANA for Financial Accounting Associates (SAP S/4HANA 2020)",
-        "value": "c_ts4fi_2020"
+        "value": "c-ts4fi-2020"
       },
       {
-        "questions": "10",
+        "questions": "80",
         "label": "C_TS4FI_2021: SAP Certified Associate - SAP S/4HANA 2021 for Financial Accounting",
-        "value": "c_ts4fi_2021"
+        "value": "c-ts4fi-2021"
       },
       {
-        "questions": "10",
+        "questions": "80",
         "label": "C_TS4FI_2023: SAP Certified Associate - SAP S/4HANA Cloud Private Edition, Financial Accounting",
-        "value": "c_ts4fi_2023"
+        "value": "c-ts4fi-2023"
       },
       {
-        "questions": "10",
+        "questions": "173",
         "label": "C_TSCM52_67: SAP Certified Application Associate - Procurement with SAP ERP 6.0 EhP7",
-        "value": "c_tscm52_67"
+        "value": "c-tscm52-67"
       },
       {
-        "questions": "10",
+        "questions": "80",
         "label": "C_TSCM62_67: SAP Certified Application Associate – Sales and Distribution, ERP 6.0 EhP7",
         "value": "c_tscm62_67"
       },
       {
-        "questions": "10",
+        "questions": "40",
+        "label": "E_ACTAI_2403: SAP Certified Specialist - Project Manager - SAP Activate for Agile Implementation Management",
+        "value": "e-actai-2403"
+      },
+      {
+        "questions": "40",
         "label": "E_ACTCLD_21: SAP Certified Specialist - SAP Activate for Cloud Solutions Project Manager",
-        "value": "e_actcld_21"
+        "value": "e-actcld-21"
       },
       {
-        "questions": "10",
+        "questions": "40",
         "label": "E_HANAAW_17: SAP Certified Development Specialist - ABAP for SAP HANA 2.0",
-        "value": "e_hanaaw_17"
+        "value": "e-hanaaw-17"
       },
       {
-        "questions": "10",
-        "label": "E_S4CPE_2023: SAP Certified Specialist - SAP S/4HANA Cloud, Private Edition Implementation with SAP Activate",
-        "value": "e_s4cpe_2023"
+        "questions": "40",
+        "label": "E_S4CPE_2023: SAP Certified Specialist - SAP S/4HANA Cloud, private edition implementation with SAP Activate",
+        "value": "e-s4cpe-2023"
       },
       {
-        "questions": "10",
+        "questions": "40",
         "label": "E_S4HCON2023: SAP Certified Specialist - SAP S/4HANA Conversion and SAP System Upgrade",
-        "value": "e_s4hcon2023"
+        "value": "e-s4hcon2023"
       },
       {
-        "questions": "10",
+        "questions": "40",
         "label": "P_BTPA_2408: SAP Certified Professional - Solution Architect - SAP BTP",
-        "value": "p_btpa_2408"
+        "value": "p-btpa-2408"
       },
       {
-        "questions": "10",
+        "questions": "79",
         "label": "P_S4FIN_2021: SAP Certified Application Professional - Financials in SAP S/4HANA for SAP ERP Finance Experts (SAP S/4HANA 2021)",
-        "value": "p_s4fin_2021"
-      },
-      {
-        "questions": "10",
-        "label": "C_S4FCF_2023: SAP Certified Associate - SAP S/4HANA Cloud Private Edition - Central Finance",
-        "value": "c_s4fcf_2023"
+        "value": "p-s4fin-2021"
       }
     ]
   },
