@@ -78,7 +78,7 @@ jobs:
           python3 - <<'PY'
           import json, os
 
-            def load_providers(file_text):
+          def load_providers(file_text):
               data = json.loads(file_text)
               return {
                 provider.get('provider'): provider.get('exams', [])
@@ -93,7 +93,7 @@ jobs:
               current_providers = load_providers(f.read())
 
           changed = []
-            for provider_name, current_exams in current_providers.items():
+          for provider_name, current_exams in current_providers.items():
               previous_by_value = {
                 exam.get('value'): exam
                 for exam in previous_providers.get(provider_name, [])
