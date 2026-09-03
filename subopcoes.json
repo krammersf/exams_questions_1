@@ -508,9 +508,29 @@
     "provider": "Scrum",
     "exams": [
       {
-        "questions": "10",
-        "label": "PSM-i: Scrum PSI I",
+        "questions": "45",
+        "label": "PSK I: Professional Scrum with Kanban",
+        "value": "psk-i"
+      },
+      {
+        "questions": "258",
+        "label": "PSM I: Professional Scrum Master I",
         "value": "psm-i"
+      },
+      {
+        "questions": "221",
+        "label": "PSM II: Professional Scrum Master II",
+        "value": "psm-ii"
+      },
+      {
+        "questions": "159",
+        "label": "PSPO I: Professional Scrum Product Owner I",
+        "value": "pspo-i"
+      },
+      {
+        "questions": "94",
+        "label": "PSPO II: Professional Scrum Product Owner",
+        "value": "pspo-ii"
       }
     ]
   }

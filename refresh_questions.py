@@ -6,6 +6,7 @@ from pathlib import Path
 BASE_URLS = {
     "ServiceNow": "https://www.examtopics.com/exams/servicenow/",
     "SAP": "https://www.examtopics.com/exams/sap/",
+    "Scrum": "https://www.examtopics.com/exams/scrum/",
 }
 USER_AGENT = "Mozilla/5.0"
 

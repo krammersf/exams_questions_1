@@ -78,35 +78,43 @@ jobs:
           python3 - <<'PY'
           import json, os
 
-          def load_service_now(file_text):
+            def load_providers(file_text):
               data = json.loads(file_text)
-              service_now = next((p for p in data if p.get('provider') == 'ServiceNow'), None)
-              if not service_now:
-                  return []
-              return service_now.get('exams', [])
+              return {
+                provider.get('provider'): provider.get('exams', [])
+                for provider in data
+                if provider.get('provider') in {'ServiceNow', 'SAP', 'Scrum'}
+              }
 
           with open('previous_subopcoes.json', 'r', encoding='utf-8') as f:
-              previous_exams = load_service_now(f.read())
+              previous_providers = load_providers(f.read())
 
           with open('subopcoes.json', 'r', encoding='utf-8') as f:
-              current_exams = load_service_now(f.read())
-
-          previous_by_value = {exam.get('value'): exam for exam in previous_exams if exam.get('value')}
-          current_by_value = {exam.get('value'): exam for exam in current_exams if exam.get('value')}
+              current_providers = load_providers(f.read())
 
           changed = []
-          for value, current_exam in current_by_value.items():
-              previous_exam = previous_by_value.get(value)
-              current_questions = str(current_exam.get('questions', '0'))
-              old_questions = 'new'
-              if previous_exam is not None:
+            for provider_name, current_exams in current_providers.items():
+              previous_by_value = {
+                exam.get('value'): exam
+                for exam in previous_providers.get(provider_name, [])
+                if exam.get('value')
+              }
+              for current_exam in current_exams:
+                value = current_exam.get('value')
+                if not value:
+                  continue
+                previous_exam = previous_by_value.get(value)
+                current_questions = str(current_exam.get('questions', '0'))
+                old_questions = 'new'
+                if previous_exam is not None:
                   old_questions = str(previous_exam.get('questions', current_questions))
-              if previous_exam is None or old_questions != current_questions:
+                if previous_exam is None or old_questions != current_questions:
                   changed.append({
-                      'exam': current_exam.get('label', value).split(':')[0].strip(),
-                      'old': old_questions,
-                      'new': current_questions,
-                      'value': value,
+                    'provider': provider_name,
+                    'exam': current_exam.get('label', value).split(':')[0].strip(),
+                    'old': old_questions,
+                    'new': current_questions,
+                    'value': value,
                   })
 
           if not changed:
@@ -118,7 +126,7 @@ jobs:
               blocks = []
               for item in changed:
                   blocks.append(
-                      "ServiceNow exam updated\n"
+                      f"{item['provider']} exam updated\n"
                       f"Exam: {item['exam']}\n"
                       f"Old questions: {item['old']}\n"
                       f"New questions: {item['new']}\n"
