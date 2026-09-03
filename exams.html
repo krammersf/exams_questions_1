@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=5, user-scalable=yes">
+  <title>Exams | ExamQuestions</title>
+  <link rel="icon" type="image/svg+xml" href="images/favicon.svg">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="exams-page">
+  <main class="exams-page-container">
+    <h1>Exams</h1>
+    <p class="exams-intro">Select a certification or an exam to see the current number of questions.</p>
+
+    <div class="exam-filters">
+      <div>
+        <label for="examsProviderFilter">Certification:</label>
+        <select id="examsProviderFilter">
+          <option value="" selected disabled>Choose a certification</option>
+        </select>
+      </div>
+      <div class="exam-actions">
+        <button type="button" id="clearExamFilter">Clear</button>
+        <a href="index.html" class="back-button">&larr; Back</a>
+      </div>
+    </div>
+
+    <div id="examList" class="exam-list" aria-live="polite">
+      <p class="empty-exams">Loading exams...</p>
+    </div>
+
+  </main>
+
+  <script>
+    const providerFilter = document.getElementById('examsProviderFilter');
+    const clearExamFilter = document.getElementById('clearExamFilter');
+    const examList = document.getElementById('examList');
+    let providers = [];
+
+    function renderExams() {
+      const providerName = providerFilter.value;
+      const visibleProviders = providers.filter(provider => provider.provider === providerName);
+      const exams = visibleProviders.flatMap(provider => provider.exams.map(exam => ({
+        ...exam,
+        provider: provider.provider
+      })));
+
+      examList.innerHTML = exams.length
+        ? exams.map(exam => {
+            const [code, description] = exam.label.split(': ');
+            return `
+            <div class="exam-row">
+              <div>
+                <strong>${exam.provider}</strong>
+                <span class="exam-code">${code}</span>
+                <span>${description || ''}</span>
+              </div>
+              <b>${exam.questions} questions</b>
+            </div>
+          `;
+          }).join('')
+        : '<p class="empty-exams">No exams found.</p>';
+    }
+
+    async function loadExams() {
+      try {
+        const response = await fetch('subopcoes.json');
+        if (!response.ok) throw new Error('Could not load exams');
+        providers = await response.json();
+
+        providers.forEach(provider => {
+          const option = document.createElement('option');
+          option.value = provider.provider;
+          option.textContent = provider.provider;
+          providerFilter.appendChild(option);
+        });
+        renderExams();
+      } catch (error) {
+        console.error(error);
+        examList.innerHTML = '<p class="empty-exams">Could not load exams.</p>';
+      }
+    }
+
+    providerFilter.addEventListener('change', renderExams);
+    clearExamFilter.addEventListener('click', () => {
+      providerFilter.value = '';
+      renderExams();
+    });
+    loadExams();
+  </script>
+</body>
+</html>

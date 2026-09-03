@@ -3,7 +3,7 @@
     "provider": "ServiceNow",
     "exams": [
       {
-        "questions": "219",
+        "questions": "2",
         "label": "CAD: ServiceNow Certified Application Developer",
         "value": "cad"
       },
@@ -148,7 +148,7 @@
         "value": "c-arsor-2202"
       },
       {
-        "questions": "18",
+        "questions": "3",
         "label": "C_BCBDC_2505: SAP Certified Associate - SAP Business Data Cloud",
         "value": "c-bcbdc-2505"
       },
@@ -508,7 +508,7 @@
     "provider": "Scrum",
     "exams": [
       {
-        "questions": "45",
+        "questions": "1",
         "label": "PSK I: Professional Scrum with Kanban",
         "value": "psk-i"
       },

@@ -282,3 +282,269 @@ button:hover {
 #helpButton:hover {
   background-color: #0056b3;
 }
+
+#examsButton {
+  position: fixed;
+  bottom: 20px;
+  left: 20px;
+  width: auto;
+  margin: 0;
+  padding: 10px 14px;
+  background-color: #007bff;
+  color: white;
+  border-radius: 8px;
+  text-decoration: none;
+  font-size: 14px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  z-index: 1000;
+}
+
+#examsButton:hover {
+  background-color: #0056b3;
+}
+
+.exams-modal {
+  display: none;
+  position: fixed;
+  inset: 0;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  background: rgba(0, 0, 0, 0.6);
+  z-index: 9998;
+}
+
+.exams-panel {
+  position: relative;
+  width: min(720px, 100%);
+  max-height: 85vh;
+  overflow-y: auto;
+  padding: 28px;
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+}
+
+.exams-panel h3 {
+  margin: 0 0 22px;
+  color: #333;
+  text-align: center;
+}
+
+.exams-panel label {
+  margin-top: 14px;
+}
+
+.exams-panel select {
+  display: block;
+}
+
+.close-exams {
+  position: absolute;
+  top: 8px;
+  right: 12px;
+  width: auto;
+  margin: 0;
+  padding: 0 8px;
+  background: transparent;
+  color: #555;
+  font-size: 28px;
+  line-height: 1;
+}
+
+.close-exams:hover {
+  background: transparent;
+  color: #000;
+}
+
+.exam-list {
+  margin-top: 20px;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  overflow: hidden;
+}
+
+.exam-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 18px;
+  padding: 12px 14px;
+  border-bottom: 1px solid #eee;
+}
+
+.exam-row:last-child {
+  border-bottom: none;
+}
+
+.exam-row div {
+  min-width: 0;
+}
+
+.exam-row strong,
+.exam-row span {
+  display: block;
+}
+
+.exam-row strong {
+  margin-bottom: 3px;
+  color: #198754;
+  font-size: 13px;
+}
+
+.exam-row .exam-code {
+  margin-bottom: 3px;
+  color: #333;
+  font-weight: bold;
+}
+
+.exam-row span {
+  color: #333;
+}
+
+.exam-row b {
+  flex: 0 0 auto;
+  color: #333;
+  white-space: nowrap;
+}
+
+.empty-exams {
+  padding: 16px;
+  margin: 0;
+  color: #666;
+  text-align: center;
+}
+
+.exams-page {
+  max-width: 1000px;
+  background-color: #f7f9fb;
+}
+
+.exams-page-container {
+  padding: 24px 0 80px;
+}
+
+.exams-page-container h1 {
+  margin: 0 0 8px;
+  color: #333;
+  text-align: center;
+}
+
+.exams-intro {
+  margin: 0 0 24px;
+  color: #666;
+  text-align: center;
+}
+
+.exam-filters {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto;
+  align-items: end;
+  gap: 16px;
+  margin-bottom: 20px;
+}
+
+.exam-filters label {
+  margin-top: 0;
+}
+
+.exam-filters select {
+  min-height: 46px;
+}
+
+.exams-page .exam-list {
+  background: #fff;
+}
+
+.exam-actions {
+  display: flex;
+  align-items: end;
+  gap: 10px;
+}
+
+#clearExamFilter {
+  width: 100px;
+  height: 46px;
+  margin: 0;
+  background-color: #ffc107;
+  color: #000;
+  font-weight: bold;
+  border-radius: 4px;
+}
+
+#clearExamFilter:hover {
+  background-color: #e0a800;
+}
+
+.exams-page .back-button {
+  display: block;
+  width: 100px;
+  height: 46px;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 12px 20px;
+  background-color: #5f5f5f;
+  color: #fff;
+  border-radius: 6px;
+  text-decoration: none;
+  text-align: center;
+}
+
+.exams-page .back-button:hover {
+  background-color: #3d3d3d;
+}
+
+@media (max-width: 600px) {
+  .exams-page {
+    padding: 12px;
+  }
+
+  .exams-page-container {
+    padding: 12px 0 60px;
+  }
+
+  .exams-page-container h1 {
+    font-size: 28px;
+  }
+
+  .exams-intro {
+    margin-bottom: 20px;
+    line-height: 1.45;
+  }
+
+  .exam-filters {
+    grid-template-columns: 1fr;
+    gap: 10px;
+    margin-bottom: 16px;
+  }
+
+  .exam-actions {
+    align-items: stretch;
+  }
+
+  #clearExamFilter,
+  .exams-page .back-button {
+    flex: 1;
+    box-sizing: border-box;
+    text-align: center;
+  }
+
+  .exam-list {
+    margin-top: 16px;
+  }
+
+  .exam-row {
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 6px;
+    padding: 14px 12px;
+  }
+
+  .exam-row span {
+    line-height: 1.35;
+  }
+
+  .exam-row b {
+    font-size: 14px;
+  }
+}
