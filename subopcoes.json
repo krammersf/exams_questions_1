@@ -8,7 +8,7 @@
         "value": "cad"
       },
       {
-        "questions": "83",
+        "questions": "10",
         "label": "CAS-PA: Certified Application Specialist – Performance Analytics",
         "value": "cas-pa"
       },
@@ -128,7 +128,7 @@
         "value": "c-act-2403"
       },
       {
-        "questions": "80",
+        "questions": "33",
         "label": "C_ACTIVATE13: SAP Certified Associate - SAP Activate Project Manager",
         "value": "c-activate13"
       },
@@ -208,7 +208,7 @@
         "value": "c-s4cpr-2408"
       },
       {
-        "questions": "79",
+        "questions": "33",
         "label": "C_S4CS_2408: SAP Certified Associate - Implementation Consultant - SAP S/4HANA Cloud Public Edition, Sales",
         "value": "c-s4cs-2408"
       },
