@@ -23,6 +23,10 @@ let selectedProvider = '';
 let selectedExamValue = '';
 let selectedExamLabel = '';
 
+function getProviderDisplayName(provider) {
+  return provider === 'AWS' ? 'Amazon (AWS)' : provider;
+}
+
 async function carregarSubopcoes() {
   try {
     const response = await fetch('subopcoes.json');
@@ -48,7 +52,7 @@ function popularProvidersDropdown() {
   subopcoesPorSistema.forEach(item => {
     const div = document.createElement('div');
     div.className = 'select-option';
-    div.textContent = item.provider;
+    div.textContent = getProviderDisplayName(item.provider);
     div.dataset.value = item.provider;
 
     div.addEventListener('click', () => {

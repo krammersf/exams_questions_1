@@ -433,29 +433,144 @@
     "provider": "AWS",
     "exams": [
       {
-        "questions": "10",
-        "label": "AWS-BDS: AWS Certified Big Data - Specialty",
-        "value": "AWS Certified Big Data - Specialty"
+        "questions": "377",
+        "label": "ANS-C00: AWS Certified Advanced Networking - Specialty",
+        "value": "ans-c00"
       },
       {
-        "questions": "10",
-        "label": "AWS-SAA: AWS Certified Solutions Architect - Associate",
-        "value": "SAA-C03"
+        "questions": "296",
+        "label": "AWS Certified Advanced Networking - Specialty ANS-C01: AWS Certified Advanced Networking - Specialty ANS-C01",
+        "value": "aws-certified-advanced-networking-specialty-ans-c01"
       },
       {
-        "questions": "10",
-        "label": "AWS-DVA: AWS Certified Developer - Associate",
-        "value": "DVA-C02"
+        "questions": "488",
+        "label": "AWS Certified AI Practitioner AIF-C01: AWS Certified AI Practitioner AIF-C01",
+        "value": "aws-certified-ai-practitioner-aif-c01"
       },
       {
-        "questions": "10",
-        "label": "AWS-SOA: AWS Certified SysOps Administrator - Associate",
-        "value": "SOA-C02"
+        "questions": "59",
+        "label": "AWS Certified Alexa Skill Builder - Specialty: AWS Certified Alexa Skill Builder - Specialty",
+        "value": "aws-certified-alexa-skill-builder-specialty"
       },
       {
-        "questions": "10",
-        "label": "AWS-CCP: AWS Certified Cloud Practitioner",
+        "questions": "85",
+        "label": "AWS Certified Big Data - Specialty: AWS Certified Big Data - Specialty (BDS-C00)",
+        "value": "aws-certified-big-data-specialty"
+      },
+      {
+        "questions": "200",
+        "label": "AWS Certified CloudOps Engineer - Associate SOA-C03: AWS Certified CloudOps Engineer - Associate SOA-C03",
+        "value": "aws-certified-cloudops-engineer-associate-soa-c03"
+      },
+      {
+        "questions": "988",
+        "label": "AWS Certified Cloud Practitioner: AWS Certified Cloud Practitioner (CLF-C01)",
         "value": "aws-certified-cloud-practitioner"
+      },
+      {
+        "questions": "719",
+        "label": "AWS Certified Cloud Practitioner CLF-C02: AWS Certified Cloud Practitioner CLF-C02",
+        "value": "aws-certified-cloud-practitioner-clf-c02"
+      },
+      {
+        "questions": "164",
+        "label": "AWS Certified Data Analytics - Specialty: AWS Certified Data Analytics - Specialty (DAS-C01)",
+        "value": "aws-certified-data-analytics-specialty"
+      },
+      {
+        "questions": "359",
+        "label": "AWS Certified Database - Specialty: AWS Certified Database - Specialty",
+        "value": "aws-certified-database-specialty"
+      },
+      {
+        "questions": "366",
+        "label": "AWS Certified Data Engineer - Associate DEA-C01: AWS Certified Data Engineer - Associate DEA-C01",
+        "value": "aws-certified-data-engineer-associate-dea-c01"
+      },
+      {
+        "questions": "443",
+        "label": "AWS Certified Developer Associate: AWS Certified Developer Associate",
+        "value": "aws-certified-developer-associate"
+      },
+      {
+        "questions": "557",
+        "label": "AWS Certified Developer - Associate DVA-C02: AWS Certified Developer - Associate DVA-C02",
+        "value": "aws-certified-developer-associate-dva-c02"
+      },
+      {
+        "questions": "460",
+        "label": "AWS Certified DevOps Engineer - Professional DOP-C02: AWS Certified DevOps Engineer - Professional DOP-C02",
+        "value": "aws-certified-devops-engineer-professional-dop-c02"
+      },
+      {
+        "questions": "127",
+        "label": "AWS Certified Generative AI Developer - Professional AIP-C01: AWS Certified Generative AI Developer - Professional AIP-C01",
+        "value": "aws-certified-generative-ai-developer-professional-aip-c01"
+      },
+      {
+        "questions": "271",
+        "label": "AWS Certified Machine Learning Engineer - Associate MLA-C01: AWS Certified Machine Learning Engineer - Associate MLA-C01",
+        "value": "aws-certified-machine-learning-engineer-associate-mla-c01"
+      },
+      {
+        "questions": "369",
+        "label": "AWS Certified Machine Learning - Specialty: AWS Certified Machine Learning - Specialty (MLS-C01)",
+        "value": "aws-certified-machine-learning-specialty"
+      },
+      {
+        "questions": "130",
+        "label": "AWS Certified SAP on AWS - Specialty PAS-C01: AWS Certified SAP on AWS - Specialty PAS-C01",
+        "value": "aws-certified-sap-on-aws-specialty-pas-c01"
+      },
+      {
+        "questions": "509",
+        "label": "AWS Certified Security - Specialty: AWS Certified Security - Specialty",
+        "value": "aws-certified-security-specialty"
+      },
+      {
+        "questions": "307",
+        "label": "AWS Certified Security - Specialty SCS-C02: AWS Certified Security - Specialty SCS-C02",
+        "value": "aws-certified-security-specialty-scs-c02"
+      },
+      {
+        "questions": "85",
+        "label": "AWS Certified Security - Specialty SCS-C03: AWS Certified Security - Specialty SCS-C03",
+        "value": "aws-certified-security-specialty-scs-c03"
+      },
+      {
+        "questions": "822",
+        "label": "AWS Certified Solutions Architect - Associate SAA-C02: AWS Certified Solutions Architect - Associate SAA-C02",
+        "value": "aws-certified-solutions-architect-associate-saa-c02"
+      },
+      {
+        "questions": "1019",
+        "label": "AWS Certified Solutions Architect - Associate SAA-C03: AWS Certified Solutions Architect - Associate SAA-C03",
+        "value": "aws-certified-solutions-architect-associate-saa-c03"
+      },
+      {
+        "questions": "1019",
+        "label": "AWS Certified Solutions Architect - Professional: AWS Certified Solutions Architect - Professional",
+        "value": "aws-certified-solutions-architect-professional"
+      },
+      {
+        "questions": "529",
+        "label": "AWS Certified Solutions Architect - Professional SAP-C02: AWS Certified Solutions Architect - Professional SAP-C02",
+        "value": "aws-certified-solutions-architect-professional-sap-c02"
+      },
+      {
+        "questions": "478",
+        "label": "AWS Certified SysOps Administrator - Associate: AWS Certified SysOps Administrator - Associate (SOA-C02)",
+        "value": "aws-certified-sysops-administrator-associate"
+      },
+      {
+        "questions": "208",
+        "label": "AWS DevOps Engineer Professional: AWS DevOps Engineer - Professional (DOP-C01)",
+        "value": "aws-devops-engineer-professional"
+      },
+      {
+        "questions": "932",
+        "label": "AWS-SysOps: AWS Certified SysOps Administrator",
+        "value": "aws-sysops"
       }
     ]
   },
