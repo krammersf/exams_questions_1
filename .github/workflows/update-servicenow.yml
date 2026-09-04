@@ -33,7 +33,9 @@ jobs:
 
       - name: Save current JSON before refresh
         run: |
-          if git show HEAD:subopcoes.json > previous_subopcoes.json 2>/dev/null; then
+          if [[ "${{ github.event_name }}" == "push" ]] && git show HEAD^:subopcoes.json > previous_subopcoes.json 2>/dev/null; then
+            echo "Saved previous JSON from the parent commit"
+          elif git show HEAD:subopcoes.json > previous_subopcoes.json 2>/dev/null; then
             echo "Saved previous JSON from HEAD"
           else
             cp subopcoes.json previous_subopcoes.json
@@ -174,8 +176,8 @@ jobs:
           server_port: 587
           username: ${{ secrets.EMAIL_USERNAME }}
           password: ${{ secrets.EMAIL_PASSWORD }}
-          subject: "ServiceNow exam counts updated"
-          to: frederico.bajouco@gmail.com
+          subject: "Exam questions updated"
+          to: linux.bajouco@gmail.com
           from: GitHub Actions
           body: |
             ${{ steps.email_summary.outputs.summary }}
