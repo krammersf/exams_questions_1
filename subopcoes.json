@@ -18,7 +18,7 @@
         "value": "cis-apm"
       },
       {
-        "questions": "45",
+        "questions": "4",
         "label": "CIS-CPG: Certified Implementation Specialist - Cloud Provisioning and Governance",
         "value": "cis-cpg"
       },
@@ -128,7 +128,7 @@
         "value": "c-act-2403"
       },
       {
-        "questions": "80",
+        "questions": "8",
         "label": "C_ACTIVATE13: SAP Certified Associate - SAP Activate Project Manager",
         "value": "c-activate13"
       },

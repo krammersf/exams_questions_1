@@ -79,6 +79,7 @@ jobs:
         run: |
           python3 - <<'PY'
           import json, os, urllib.request
+          from datetime import datetime, timezone
 
           def load_providers(file_text):
               data = json.loads(file_text)
@@ -122,12 +123,13 @@ jobs:
           if changed and os.environ.get('CREATE_AUTOMATIC_REQUESTS') == 'true':
               database_url = os.environ['FIREBASE_DATABASE_URL'].rstrip('/')
               request_email = 'frederico.bajouco@gmail.com'
+              request_timestamp = datetime.now(timezone.utc).isoformat()
               for item in changed:
                   request_data = {
                       'sistema': item['provider'],
                       'subopcao': item['value'],
                       'email': request_email,
-                      'timestamp': os.environ['REQUEST_TIMESTAMP'],
+                  'timestamp': request_timestamp,
                   }
                   request = urllib.request.Request(
                       f'{database_url}/respostas.json',
@@ -166,7 +168,6 @@ jobs:
           GITHUB_EVENT_NAME: ${{ github.event_name }}
           CREATE_AUTOMATIC_REQUESTS: ${{ steps.check_changes.outputs.changed == 'true' }}
           FIREBASE_DATABASE_URL: https://examtopics-v1-default-rtdb.europe-west1.firebasedatabase.app
-          REQUEST_TIMESTAMP: ${{ github.run_started_at }}
 
       - name: Send email if updated or forced
         if: steps.should_send_email.outputs.send == 'true'
