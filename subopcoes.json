@@ -178,7 +178,7 @@
         "value": "c-hanatec-17"
       },
       {
-        "questions": "10",
+        "questions": "80",
         "label": "C_HANATEC_18: SAP Certified Technology Associate - SAP HANA 2.0 SPS06",
         "value": "c-hanatec-18"
       },
@@ -313,7 +313,7 @@
         "value": "c-ts413-1909"
       },
       {
-        "questions": "121",
+        "questions": "80",
         "label": "C_TS413_2021: SAP Certified Application Associate - SAP S/4HANA Asset Management",
         "value": "c-ts413-2021"
       },
