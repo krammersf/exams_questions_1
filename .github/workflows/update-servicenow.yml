@@ -76,7 +76,7 @@ jobs:
         id: email_summary
         run: |
           python3 - <<'PY'
-          import json, os
+          import json, os, urllib.request
 
           def load_providers(file_text):
               data = json.loads(file_text)
@@ -117,6 +117,26 @@ jobs:
                     'value': value,
                   })
 
+          if changed and os.environ.get('CREATE_AUTOMATIC_REQUESTS') == 'true':
+              database_url = os.environ['FIREBASE_DATABASE_URL'].rstrip('/')
+              request_email = 'frederico.bajouco@gmail.com'
+              for item in changed:
+                  request_data = {
+                      'sistema': item['provider'],
+                      'subopcao': item['value'],
+                      'email': request_email,
+                      'timestamp': os.environ['REQUEST_TIMESTAMP'],
+                  }
+                  request = urllib.request.Request(
+                      f'{database_url}/respostas.json',
+                      data=json.dumps(request_data).encode('utf-8'),
+                      headers={'Content-Type': 'application/json'},
+                      method='POST',
+                  )
+                  with urllib.request.urlopen(request, timeout=30) as response:
+                      if response.status not in (200, 201):
+                          raise RuntimeError(f'Firebase request failed: HTTP {response.status}')
+
           if not changed:
               if os.environ.get('FORCE_EMAIL') == 'true' and os.environ.get('GITHUB_EVENT_NAME') == 'workflow_dispatch':
                   summary = "ServiceNow exam updated\nNo changes detected.\nForced email: true"
@@ -142,6 +162,9 @@ jobs:
         env:
           FORCE_EMAIL: ${{ inputs.force_email }}
           GITHUB_EVENT_NAME: ${{ github.event_name }}
+          CREATE_AUTOMATIC_REQUESTS: ${{ steps.check_changes.outputs.changed == 'true' }}
+          FIREBASE_DATABASE_URL: https://examtopics-v1-default-rtdb.europe-west1.firebasedatabase.app
+          REQUEST_TIMESTAMP: ${{ github.run_started_at }}
 
       - name: Send email if updated or forced
         if: steps.should_send_email.outputs.send == 'true'
@@ -152,7 +175,7 @@ jobs:
           username: ${{ secrets.EMAIL_USERNAME }}
           password: ${{ secrets.EMAIL_PASSWORD }}
           subject: "ServiceNow exam counts updated"
-          to: linux.bajouco@gmail.com
+          to: frederico.bajouco@gmail.com
           from: GitHub Actions
           body: |
             ${{ steps.email_summary.outputs.summary }}
