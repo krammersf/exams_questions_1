@@ -21,6 +21,12 @@ form {
   box-shadow: 0 2px 10px rgba(0,0,0,0.1);
 }
 
+.order-title {
+  margin: 0 0 20px;
+  color: #333;
+  text-align: center;
+}
+
 label {
   display: block;
   margin-top: 20px;
