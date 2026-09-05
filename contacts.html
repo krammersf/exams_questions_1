@@ -35,8 +35,10 @@
     }
 
     .copy-button {
-      background-color: #007bff;
+      background-color: #004997;
       color: white;
+      height: 46px;
+      box-sizing: border-box;
       padding: 10px 20px;
       border: none;
       border-radius: 6px;
@@ -50,13 +52,28 @@
       background-color: #0056b3;
     }
 
+    .contact-actions {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .contact-actions .copy-button {
+      margin-top: 0;
+      margin-bottom: 0;
+    }
+
     .back-button {
       background-color: #5f5f5f;
       color: white;
-      padding: 12px 24px;
+      height: 46px;
+      box-sizing: border-box;
+      padding: 12px 46.5px;
       text-decoration: none;
       border-radius: 6px;
       font-size: 16px;
+      white-space: nowrap;
       transition: background-color 0.3s ease;
     }
 
@@ -75,14 +92,23 @@
       }
 
       .copy-button {
-        width: 100%;
         font-size: 16px;
       }
 
       .back-button {
-        width: 100%;
         padding: 14px;
         font-size: 18px;
+      }
+
+      .contact-actions {
+        flex-direction: column;
+      }
+
+      .contact-actions .copy-button,
+      .contact-actions .back-button {
+        width: 100%;
+        box-sizing: border-box;
+        text-align: center;
       }
     }
   </style>
@@ -93,9 +119,12 @@
     <h1>Need Help?</h1>
     <p>If you need any help or have any question, contact me:</p>
     <p class="email" id="email">exam.questions.pt@gmail.com</p>
-    <button class="copy-button" onclick="copyEmail()">📋 Copy Email</button>
     <br>
-    <a href="index.html" class="back-button">⬅ Back</a>
+    <br>
+    <div class="contact-actions">
+      <button class="copy-button" onclick="copyEmail()">📋 Copy Email</button>
+      <a href="index.html" class="back-button">⬅ Back</a>
+    </div>
   </div>
 
   <script>

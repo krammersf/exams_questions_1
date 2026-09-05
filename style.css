@@ -245,6 +245,11 @@ button:hover {
 
 #btnSubmit {
   flex: 1; /* Ocupa o máximo possível */
+  background-color: #004997;
+}
+
+#btnSubmit:hover {
+  background-color: #0056b3;
 }
 
 #btnClear {
@@ -268,7 +273,7 @@ button:hover {
   position: fixed;
   bottom: 20px;
   right: 20px;
-  background-color: #007bff;
+  background-color: #004997;
   color: white;
   padding: 10px 14px;
   border-radius: 8px;
@@ -287,14 +292,16 @@ button:hover {
   position: fixed;
   bottom: 20px;
   left: 20px;
-  width: auto;
+  width: 128px;
+  box-sizing: border-box;
   margin: 0;
   padding: 10px 14px;
-  background-color: #007bff;
+  background-color: #004997;
   color: white;
   border-radius: 8px;
   text-decoration: none;
   font-size: 14px;
+  text-align: center;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
   z-index: 1000;
 }
