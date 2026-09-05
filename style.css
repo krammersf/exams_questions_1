@@ -27,6 +27,31 @@ form {
   text-align: center;
 }
 
+.payment-method-link {
+  display: inline-block;
+  cursor: pointer;
+  border-radius: 6px;
+}
+
+.payment-method-link:hover,
+.payment-method-link:focus-visible {
+  outline: 3px solid #004997;
+  outline-offset: 3px;
+}
+
+.payment-link-hint {
+  display: inline-block;
+  margin-top: 2px;
+  margin-bottom: 12px;
+  color: #555;
+  font-size: 12px;
+}
+
+#btnContinue,
+#btnCancel {
+  margin-top: 0;
+}
+
 label {
   display: block;
   margin-top: 20px;
