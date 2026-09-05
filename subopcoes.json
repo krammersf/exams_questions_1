@@ -578,24 +578,1159 @@
     "provider": "Microsoft",
     "exams": [
       {
-        "questions": "10",
+        "questions": "41",
+        "label": "62-193: Technology Literacy for Educators",
+        "value": "62-193"
+      },
+      {
+        "questions": "156",
+        "label": "70-243: Administering and Deploying System Center 2012 Configuration Manager (SCCM)",
+        "value": "70-243"
+      },
+      {
+        "questions": "141",
+        "label": "70-331: Core Solutions of Microsoft SharePoint Server 2013",
+        "value": "70-331"
+      },
+      {
+        "questions": "127",
+        "label": "70-332: Advanced Solutions of Microsoft SharePoint Server 2013",
+        "value": "70-332"
+      },
+      {
+        "questions": "126",
+        "label": "70-333: Deploying Enterprise Voice with Skype for Business 2015",
+        "value": "70-333"
+      },
+      {
+        "questions": "145",
+        "label": "70-334: Core Solutions of Microsoft Skype for Business 2015",
+        "value": "70-334"
+      },
+      {
+        "questions": "165",
+        "label": "70-339: Managing Microsoft SharePoint Server 2016",
+        "value": "70-339"
+      },
+      {
+        "questions": "183",
+        "label": "70-341: Core Solutions of Microsoft Exchange Server 2013",
+        "value": "70-341"
+      },
+      {
+        "questions": "191",
+        "label": "70-342: Advanced Solutions of Microsoft Exchange Server 2013",
+        "value": "70-342"
+      },
+      {
+        "questions": "168",
+        "label": "70-345: Designing and Deploying Microsoft Exchange Server 2016",
+        "value": "70-345"
+      },
+      {
+        "questions": "282",
+        "label": "70-346: Managing Office 365 Identities and Requirements",
+        "value": "70-346"
+      },
+      {
+        "questions": "247",
+        "label": "70-347: Enabling Office 365 Services",
+        "value": "70-347"
+      },
+      {
+        "questions": "48",
+        "label": "70-348: Managing Projects and Portfolios with Microsoft PPM",
+        "value": "70-348"
+      },
+      {
+        "questions": "65",
+        "label": "70-357: Developing Mobile Apps",
+        "value": "70-357"
+      },
+      {
+        "questions": "36",
+        "label": "70-398: Planning for and Managing Devices in the Enterprise",
+        "value": "70-398"
+      },
+      {
+        "questions": "550",
+        "label": "70-410: Installing and Configuring Windows Server 2012",
+        "value": "70-410"
+      },
+      {
+        "questions": "300",
+        "label": "70-411: Administering Windows Server 2012",
+        "value": "70-411"
+      },
+      {
+        "questions": "448",
+        "label": "70-412: Configuring Advanced Windows Server 2012 Services",
+        "value": "70-412"
+      },
+      {
+        "questions": "337",
+        "label": "70-413: MCSE Designing and Implementing a Server Infrastructure",
+        "value": "70-413"
+      },
+      {
+        "questions": "171",
+        "label": "70-414: MCSE Implementing an Advanced Server Infrastructure",
+        "value": "70-414"
+      },
+      {
+        "questions": "691",
+        "label": "70-417: Upgrading Your Skills to MCSA Windows Server 2012",
+        "value": "70-417"
+      },
+      {
+        "questions": "265",
+        "label": "70-461: MCSA Querying Microsoft SQL Server 2012/2014",
+        "value": "70-461"
+      },
+      {
+        "questions": "320",
+        "label": "70-462: MCSA Administering Microsoft SQL Server 20122014 Databases",
+        "value": "70-462"
+      },
+      {
+        "questions": "218",
+        "label": "70-463: MCSA Implementing a Data Warehouse with Microsoft SQL Server 20122014",
+        "value": "70-463"
+      },
+      {
+        "questions": "209",
+        "label": "70-464: Developing Microsoft SQL Server 2012/2014 Databases",
+        "value": "70-464"
+      },
+      {
+        "questions": "64",
+        "label": "70-465: Designing Database Solutions for Microsoft SQL Server 2012",
+        "value": "70-465"
+      },
+      {
+        "questions": "190",
+        "label": "70-466: Implementing Data Models and Reports with Microsoft SQL Server 2012",
+        "value": "70-466"
+      },
+      {
+        "questions": "102",
+        "label": "70-467: Designing Business Intelligence Solutions with Microsoft SQL Server 2012",
+        "value": "70-467"
+      },
+      {
+        "questions": "26",
+        "label": "70-473: Designing and Implementing Cloud Data Platform Solutions",
+        "value": "70-473"
+      },
+      {
+        "questions": "42",
+        "label": "70-475: Designing and Implementing Big Data Analytics Solutions",
+        "value": "70-475"
+      },
+      {
+        "questions": "270",
+        "label": "70-480: MCSD Programming in HTML5 with JavaScript and CSS3",
+        "value": "70-480"
+      },
+      {
+        "questions": "271",
+        "label": "70-483: MCSD Programming in C",
+        "value": "70-483"
+      },
+      {
+        "questions": "234",
+        "label": "70-486: MCSD Developing ASP.NET MVC 4 Web Applications",
+        "value": "70-486"
+      },
+      {
+        "questions": "200",
+        "label": "70-487: MCSD Developing Windows Azure and Web Services",
+        "value": "70-487"
+      },
+      {
+        "questions": "79",
+        "label": "70-488: Developing Microsoft SharePoint Server 2013 Core Solutions",
+        "value": "70-488"
+      },
+      {
+        "questions": "48",
+        "label": "70-489: Developing Microsoft SharePoint Server 2013 Advanced Solutions",
+        "value": "70-489"
+      },
+      {
+        "questions": "97",
+        "label": "70-496: Administering Visual Studio Team Foundation Server 2012",
+        "value": "70-496"
+      },
+      {
+        "questions": "100",
+        "label": "70-497: Software Testing with Visual Studio 2012",
+        "value": "70-497"
+      },
+      {
+        "questions": "95",
+        "label": "70-498: Delivering Continuous Value with Visual Studio 2012 Application Lifecycle Management",
+        "value": "70-498"
+      },
+      {
+        "questions": "217",
+        "label": "70-532: Developing Microsoft Azure Solutions",
+        "value": "70-532"
+      },
+      {
+        "questions": "246",
+        "label": "70-533: Implementing Microsoft Azure Infrastructure Solutions",
+        "value": "70-533"
+      },
+      {
+        "questions": "35",
         "label": "70-535: Architecting Microsoft Azure Solutions",
         "value": "70-535"
       },
       {
-        "questions": "10",
+        "questions": "67",
+        "label": "70-537: Configuring and Operating a Hybrid Cloud with Microsoft Azure Stack",
+        "value": "70-537"
+      },
+      {
+        "questions": "551",
+        "label": "70-680: Windows 7 Configuring",
+        "value": "70-680"
+      },
+      {
+        "questions": "118",
+        "label": "70-685: Windows 7 Enterprise Desktop Support Technician",
+        "value": "70-685"
+      },
+      {
+        "questions": "183",
+        "label": "70-686: Windows 7, Enterprise Desktop Administrator",
+        "value": "70-686"
+      },
+      {
+        "questions": "125",
+        "label": "70-695: Deploying Windows Devices and Enterprise Apps",
+        "value": "70-695"
+      },
+      {
+        "questions": "369",
+        "label": "70-697: Configuring Windows Devices",
+        "value": "70-697"
+      },
+      {
+        "questions": "153",
+        "label": "70-698: Installing and Configuring Windows 10",
+        "value": "70-698"
+      },
+      {
+        "questions": "155",
+        "label": "70-703: Administering Microsoft System Center Configuration Manager and Cloud Services Integration",
+        "value": "70-703"
+      },
+      {
+        "questions": "113",
+        "label": "70-705: Designing and Providing Microsoft Licensing Solutions to Large Organizations",
+        "value": "70-705"
+      },
+      {
+        "questions": "47",
+        "label": "70-713: Software Asset Management (SAM) Core",
+        "value": "70-713"
+      },
+      {
+        "questions": "63",
+        "label": "70-735: OEM Manufacturing and Deployment for Windows 10",
+        "value": "70-735"
+      },
+      {
+        "questions": "294",
+        "label": "70-740: Installation, Storage, and Compute with Windows Server 2016",
+        "value": "70-740"
+      },
+      {
+        "questions": "207",
+        "label": "70-741: MCSA Networking with Windows Server 2016",
+        "value": "70-741"
+      },
+      {
+        "questions": "266",
+        "label": "70-742: Identity with Windows Server 2016",
+        "value": "70-742"
+      },
+      {
+        "questions": "231",
+        "label": "70-743: Upgrading Your Skills to MCSA Windows Server 2016",
+        "value": "70-743"
+      },
+      {
+        "questions": "205",
+        "label": "70-744: Securing Windows Server 2016",
+        "value": "70-744"
+      },
+      {
+        "questions": "73",
+        "label": "70-745: Implementing a Software-Defined Datacenter",
+        "value": "70-745"
+      },
+      {
+        "questions": "201",
+        "label": "70-761: Querying Data with Transact-SQL",
+        "value": "70-761"
+      },
+      {
+        "questions": "178",
+        "label": "70-762: Developing SQL Databases",
+        "value": "70-762"
+      },
+      {
+        "questions": "342",
+        "label": "70-764: Administering a SQL Database Infrastructure",
+        "value": "70-764"
+      },
+      {
+        "questions": "186",
+        "label": "70-765: Provisioning SQL Databases",
+        "value": "70-765"
+      },
+      {
+        "questions": "142",
+        "label": "70-767: Implementing a SQL Data Warehouse",
+        "value": "70-767"
+      },
+      {
+        "questions": "38",
+        "label": "70-768: Developing SQL Data Models",
+        "value": "70-768"
+      },
+      {
+        "questions": "39",
+        "label": "70-773: Analyzing Big Data with Microsoft R",
+        "value": "70-773"
+      },
+      {
+        "questions": "37",
+        "label": "70-774: Perform Cloud Data Science with Azure Machine Learning",
+        "value": "70-774"
+      },
+      {
+        "questions": "35",
+        "label": "70-775: Perform Data Engineering on Microsoft Azure HDInsight",
+        "value": "70-775"
+      },
+      {
+        "questions": "83",
+        "label": "70-776: Perform Big Data Engineering on Microsoft Cloud Services",
+        "value": "70-776"
+      },
+      {
+        "questions": "145",
+        "label": "70-778: Analyzing and Visualizing Data with Microsoft Power BI",
+        "value": "70-778"
+      },
+      {
+        "questions": "98",
+        "label": "70-779: Analyzing and Visualizing Data with Microsoft Excel",
+        "value": "70-779"
+      },
+      {
+        "questions": "101",
+        "label": "74-343: Managing Projects with Microsoft Project 2013",
+        "value": "74-343"
+      },
+      {
+        "questions": "99",
+        "label": "74-409: Server Virtualization with Windows Server Hyper-V and System Center",
+        "value": "74-409"
+      },
+      {
+        "questions": "98",
+        "label": "74-697: OEM Preinstallation",
+        "value": "74-697"
+      },
+      {
+        "questions": "30",
+        "label": "77-420: Excel 2013",
+        "value": "77-420"
+      },
+      {
+        "questions": "12",
+        "label": "77-427: Excel 2013 Expert Part One",
+        "value": "77-427"
+      },
+      {
+        "questions": "61",
+        "label": "77-602: MOS: Using Microsoft Office Excel 2007",
+        "value": "77-602"
+      },
+      {
+        "questions": "34",
+        "label": "77-725: Word 2016: Core Document Creation, Collaboration and Communication",
+        "value": "77-725"
+      },
+      {
+        "questions": "4",
+        "label": "77-727: Excel 2016: Core Data Analysis, Manipulation, and Presentation",
+        "value": "77-727"
+      },
+      {
+        "questions": "101",
+        "label": "77-881: Word 2010",
+        "value": "77-881"
+      },
+      {
+        "questions": "101",
+        "label": "77-884: Outlook 2010",
+        "value": "77-884"
+      },
+      {
+        "questions": "18",
+        "label": "77-886: SharePoint 2010",
+        "value": "77-886"
+      },
+      {
+        "questions": "61",
+        "label": "77-888: Excel 2010 Expert",
+        "value": "77-888"
+      },
+      {
+        "questions": "260",
+        "label": "98-349: Windows Operating System Fundamentals",
+        "value": "98-349"
+      },
+      {
+        "questions": "163",
+        "label": "98-361: Software Development Fundamentals",
+        "value": "98-361"
+      },
+      {
+        "questions": "235",
+        "label": "98-364: Database Fundamentals",
+        "value": "98-364"
+      },
+      {
+        "questions": "439",
+        "label": "98-365: Windows Server Administration Fundamentals",
+        "value": "98-365"
+      },
+      {
+        "questions": "196",
+        "label": "98-366: Networking Fundamentals",
+        "value": "98-366"
+      },
+      {
+        "questions": "162",
+        "label": "98-367: Security Fundamentals",
+        "value": "98-367"
+      },
+      {
+        "questions": "66",
+        "label": "98-368: Mobility and Devices Fundamentals",
+        "value": "98-368"
+      },
+      {
+        "questions": "39",
+        "label": "98-369: Cloud Fundamentals",
+        "value": "98-369"
+      },
+      {
+        "questions": "96",
+        "label": "98-375: HTML5 App Development Fundamentals",
+        "value": "98-375"
+      },
+      {
+        "questions": "40",
+        "label": "98-381: Introduction to Programming Using Python",
+        "value": "98-381"
+      },
+      {
+        "questions": "39",
+        "label": "98-382: Introduction to Programming Using JavaScript",
+        "value": "98-382"
+      },
+      {
+        "questions": "40",
+        "label": "98-383: Introduction to Programming Using HTML and CSS",
+        "value": "98-383"
+      },
+      {
+        "questions": "42",
+        "label": "98-388: Introduction to Programming Using Java",
+        "value": "98-388"
+      },
+      {
+        "questions": "120",
+        "label": "AB-100: Agentic AI Business Solutions Architect",
+        "value": "ab-100"
+      },
+      {
+        "questions": "69",
+        "label": "AB-410: Building Intelligent Applications",
+        "value": "ab-410"
+      },
+      {
+        "questions": "84",
+        "label": "AB-620: Designing and Building Integrated AI Agent Solutions in Copilot Studio",
+        "value": "ab-620"
+      },
+      {
+        "questions": "92",
+        "label": "AB-730: AI Business Professional",
+        "value": "ab-730"
+      },
+      {
+        "questions": "100",
+        "label": "AB-731: AI Transformation Leader",
+        "value": "ab-731"
+      },
+      {
+        "questions": "89",
+        "label": "AB-900: Microsoft 365 Copilot and Agent Administration Fundamentals",
+        "value": "ab-900"
+      },
+      {
+        "questions": "218",
+        "label": "AI-100: Designing and Implementing an Azure AI Solution",
+        "value": "ai-100"
+      },
+      {
+        "questions": "333",
+        "label": "AI-102: Designing and Implementing a Microsoft Azure AI Solution",
+        "value": "ai-102"
+      },
+      {
+        "questions": "135",
+        "label": "AI-103: Developing AI Apps and Agents on Azure",
+        "value": "ai-103"
+      },
+      {
+        "questions": "140",
+        "label": "AI-200: Developing AI Cloud Solutions on Azure",
+        "value": "ai-200"
+      },
+      {
+        "questions": "170",
+        "label": "AI-300: Operationalizing Machine Learning and Generative AI Solutions",
+        "value": "ai-300"
+      },
+      {
+        "questions": "246",
+        "label": "AI-900: Microsoft Azure AI Fundamentals",
+        "value": "ai-900"
+      },
+      {
+        "questions": "128",
+        "label": "AI-901: Microsoft Azure AI Fundamentals",
+        "value": "ai-901"
+      },
+      {
+        "questions": "197",
+        "label": "AZ-100: Microsoft Azure Infrastructure and Deployment",
+        "value": "az-100"
+      },
+      {
+        "questions": "103",
+        "label": "AZ-101: Microsoft Azure Integration and Security",
+        "value": "az-101"
+      },
+      {
+        "questions": "76",
+        "label": "AZ-102: Microsoft Azure Administrator Certification Transition",
+        "value": "az-102"
+      },
+      {
+        "questions": "265",
+        "label": "AZ-103: Microsoft Azure Administrator",
+        "value": "az-103"
+      },
+      {
+        "questions": "606",
         "label": "AZ-104: Microsoft Azure Administrator",
-        "value": "AZ-104"
+        "value": "az-104"
       },
       {
-        "questions": "10",
+        "questions": "424",
+        "label": "AZ-120: Planning and Administering Microsoft Azure for SAP Workloads",
+        "value": "az-120"
+      },
+      {
+        "questions": "363",
+        "label": "AZ-140: Configuring and Operating Windows Virtual Desktop on Microsoft Azure",
+        "value": "az-140"
+      },
+      {
+        "questions": "63",
+        "label": "AZ-200: Microsoft Azure Developer Core Solutions",
+        "value": "az-200"
+      },
+      {
+        "questions": "61",
+        "label": "AZ-202: Microsoft Azure Developer Certification Transition",
+        "value": "az-202"
+      },
+      {
+        "questions": "150",
+        "label": "AZ-203: Developing Solutions for Microsoft Azure",
+        "value": "az-203"
+      },
+      {
+        "questions": "487",
         "label": "AZ-204: Developing Solutions for Microsoft Azure",
-        "value": "AZ-204"
+        "value": "az-204"
       },
       {
-        "questions": "10",
+        "questions": "251",
+        "label": "AZ-220: Microsoft Azure IoT Developer",
+        "value": "az-220"
+      },
+      {
+        "questions": "241",
+        "label": "AZ-300: Microsoft Azure Architect Technologies",
+        "value": "az-300"
+      },
+      {
+        "questions": "234",
+        "label": "AZ-301: Microsoft Azure Architect Design",
+        "value": "az-301"
+      },
+      {
+        "questions": "55",
+        "label": "AZ-302: Microsoft Azure Solutions Architect",
+        "value": "az-302"
+      },
+      {
+        "questions": "334",
         "label": "AZ-303: Microsoft Azure Architect Technologies",
-        "value": "AZ-303"
+        "value": "az-303"
+      },
+      {
+        "questions": "237",
+        "label": "AZ-304: Microsoft Azure Architect Design",
+        "value": "az-304"
+      },
+      {
+        "questions": "286",
+        "label": "AZ-305: Designing Microsoft Azure Infrastructure Solutions",
+        "value": "az-305"
+      },
+      {
+        "questions": "564",
+        "label": "AZ-400: Microsoft Azure DevOps Solutions",
+        "value": "az-400"
+      },
+      {
+        "questions": "505",
+        "label": "AZ-500: Microsoft Azure Security Technologies",
+        "value": "az-500"
+      },
+      {
+        "questions": "167",
+        "label": "AZ-600: Configuring and Operating a Hybrid Cloud with Microsoft Azure Stack Hub",
+        "value": "az-600"
+      },
+      {
+        "questions": "387",
+        "label": "AZ-700: Designing and Implementing Microsoft Azure Networking Solutions",
+        "value": "az-700"
+      },
+      {
+        "questions": "92",
+        "label": "AZ-720: Troubleshooting Microsoft Azure Connectivity",
+        "value": "az-720"
+      },
+      {
+        "questions": "311",
+        "label": "AZ-800: Administering Windows Server Hybrid Core Infrastructure",
+        "value": "az-800"
+      },
+      {
+        "questions": "326",
+        "label": "AZ-801: Configuring Windows Server Hybrid Advanced Services",
+        "value": "az-801"
+      },
+      {
+        "questions": "474",
+        "label": "AZ-900: Microsoft Azure Fundamentals",
+        "value": "az-900"
+      },
+      {
+        "questions": "94",
+        "label": "DA-100: Analyzing Data with Microsoft Power BI",
+        "value": "da-100"
+      },
+      {
+        "questions": "527",
+        "label": "DP-100: Designing and Implementing a Data Science Solution on Azure",
+        "value": "dp-100"
+      },
+      {
+        "questions": "372",
+        "label": "DP-200: Implementing an Azure Data Solution",
+        "value": "dp-200"
+      },
+      {
+        "questions": "208",
+        "label": "DP-201: Designing an Azure Data Solution",
+        "value": "dp-201"
+      },
+      {
+        "questions": "399",
+        "label": "DP-203: Data Engineering on Microsoft Azure",
+        "value": "dp-203"
+      },
+      {
+        "questions": "373",
+        "label": "DP-300: Administering Relational Databases on Microsoft Azure",
+        "value": "dp-300"
+      },
+      {
+        "questions": "271",
+        "label": "DP-420: Designing and Implementing Cloud-Native Applications Using Microsoft Azure Cosmos DB",
+        "value": "dp-420"
+      },
+      {
+        "questions": "194",
+        "label": "DP-500: Designing and Implementing Enterprise-Scale Analytics Solutions Using Microsoft Azure and Microsoft Power BI",
+        "value": "dp-500"
+      },
+      {
+        "questions": "222",
+        "label": "DP-600: Implementing Analytics Solutions Using Microsoft Fabric",
+        "value": "dp-600"
+      },
+      {
+        "questions": "139",
+        "label": "DP-700: Implementing Data Engineering Solutions Using Microsoft Fabric",
+        "value": "dp-700"
+      },
+      {
+        "questions": "108",
+        "label": "DP-750: Implementing Data Engineering Solutions Using Azure Databricks",
+        "value": "dp-750"
+      },
+      {
+        "questions": "101",
+        "label": "DP-800: Developing AI-Enabled Database Solutions",
+        "value": "dp-800"
+      },
+      {
+        "questions": "323",
+        "label": "DP-900: Microsoft Azure Data Fundamentals",
+        "value": "dp-900"
+      },
+      {
+        "questions": "65",
+        "label": "GH-100: GitHub Administration",
+        "value": "gh-100"
+      },
+      {
+        "questions": "124",
+        "label": "GH-200: GitHub Actions",
+        "value": "gh-200"
+      },
+      {
+        "questions": "124",
+        "label": "GH-300: GitHub Copilot",
+        "value": "gh-300"
+      },
+      {
+        "questions": "127",
+        "label": "GH-500: GitHub Advanced Security",
+        "value": "gh-500"
+      },
+      {
+        "questions": "58",
+        "label": "GH-600: Developing in Agentic AI Systems",
+        "value": "gh-600"
+      },
+      {
+        "questions": "142",
+        "label": "GH-900: GitHub Foundations",
+        "value": "gh-900"
+      },
+      {
+        "questions": "126",
+        "label": "MB-200: Microsoft Dynamics 365 Customer Engagement Core",
+        "value": "mb-200"
+      },
+      {
+        "questions": "383",
+        "label": "MB-210: Microsoft Dynamics 365 for Sales",
+        "value": "mb-210"
+      },
+      {
+        "questions": "328",
+        "label": "MB-220: Microsoft Dynamics 365 for Marketing",
+        "value": "mb-220"
+      },
+      {
+        "questions": "459",
+        "label": "MB-230: Microsoft Dynamics 365 Customer Service Functional Consultant",
+        "value": "mb-230"
+      },
+      {
+        "questions": "343",
+        "label": "MB-240: Microsoft Dynamics 365 for Field Service",
+        "value": "mb-240"
+      },
+      {
+        "questions": "185",
+        "label": "MB-260: Microsoft Customer Data Platform Specialist",
+        "value": "mb-260"
+      },
+      {
+        "questions": "90",
+        "label": "MB2-707: Microsoft Dynamics CRM Customization and Configuration",
+        "value": "mb2-707"
+      },
+      {
+        "questions": "23",
+        "label": "MB2-708: Microsoft Dynamics CRM Installation",
+        "value": "mb2-708"
+      },
+      {
+        "questions": "50",
+        "label": "MB2-710: Microsoft Dynamics CRM 2016 Online Deployment",
+        "value": "mb2-710"
+      },
+      {
+        "questions": "48",
+        "label": "MB2-711: Microsoft Dynamics CRM 2016 Installation",
+        "value": "mb2-711"
+      },
+      {
+        "questions": "90",
+        "label": "MB2-712: Microsoft Dynamics CRM 2016 Customization and Configuration",
+        "value": "mb2-712"
+      },
+      {
+        "questions": "48",
+        "label": "MB2-713: Microsoft Dynamics CRM 2016 Sales",
+        "value": "mb2-713"
+      },
+      {
+        "questions": "90",
+        "label": "MB2-714: Microsoft Dynamics CRM 2016 Customer Service",
+        "value": "mb2-714"
+      },
+      {
+        "questions": "48",
+        "label": "MB2-715: Microsoft Dynamics 365 customer engagement Online Deployment",
+        "value": "mb2-715"
+      },
+      {
+        "questions": "100",
+        "label": "MB2-716: Microsoft Dynamics 365 Customization and Configuration",
+        "value": "mb2-716"
+      },
+      {
+        "questions": "50",
+        "label": "MB2-717: Microsoft Dynamics 365 for Sales",
+        "value": "mb2-717"
+      },
+      {
+        "questions": "42",
+        "label": "MB2-718: Microsoft Dynamics 365 for Customer Service",
+        "value": "mb2-718"
+      },
+      {
+        "questions": "48",
+        "label": "MB2-719: Microsoft Dynamics 365 for Marketing",
+        "value": "mb2-719"
+      },
+      {
+        "questions": "183",
+        "label": "MB-280: Microsoft Dynamics 365 Customer Experience Analyst",
+        "value": "mb-280"
+      },
+      {
+        "questions": "48",
+        "label": "MB2-877: exam",
+        "value": "mb2-877"
+      },
+      {
+        "questions": "456",
+        "label": "MB-300: Microsoft Dynamics 365: Core Finance and Operations",
+        "value": "mb-300"
+      },
+      {
+        "questions": "425",
+        "label": "MB-310: Microsoft Dynamics 365 Finance Functional Consultant",
+        "value": "mb-310"
+      },
+      {
+        "questions": "206",
+        "label": "MB-320: Microsoft Dynamics 365 Supply Chain Management, Manufacturing",
+        "value": "mb-320"
+      },
+      {
+        "questions": "454",
+        "label": "MB-330: Microsoft Dynamics 365 Supply Chain Management",
+        "value": "mb-330"
+      },
+      {
+        "questions": "270",
+        "label": "MB-335: Microsoft Dynamics 365 Supply Chain Management Functional Consultant Expert",
+        "value": "mb-335"
+      },
+      {
+        "questions": "182",
+        "label": "MB-340: Microsoft Dynamics 365 Commerce Functional Consultant",
+        "value": "mb-340"
+      },
+      {
+        "questions": "61",
+        "label": "MB-400: Microsoft Power Apps + Dynamics 365 Developer",
+        "value": "mb-400"
+      },
+      {
+        "questions": "399",
+        "label": "MB-500: Microsoft Dynamics 365: Finance and Operations Apps Developer",
+        "value": "mb-500"
+      },
+      {
+        "questions": "56",
+        "label": "MB-600: Microsoft Power Apps + Dynamics 365 Solution Architect",
+        "value": "mb-600"
+      },
+      {
+        "questions": "97",
+        "label": "MB6-894: Development, Extensions and Deployment for Microsoft Dynamics 365 for Finance and Operations",
+        "value": "mb6-894"
+      },
+      {
+        "questions": "71",
+        "label": "MB6-895: exam",
+        "value": "mb6-895"
+      },
+      {
+        "questions": "87",
+        "label": "MB6-896: exam",
+        "value": "mb6-896"
+      },
+      {
+        "questions": "91",
+        "label": "MB6-897: exam",
+        "value": "mb6-897"
+      },
+      {
+        "questions": "79",
+        "label": "MB6-898: exam",
+        "value": "mb6-898"
+      },
+      {
+        "questions": "332",
+        "label": "MB-700: Microsoft Dynamics 365: Finance and Operations Apps Solution Architect",
+        "value": "mb-700"
+      },
+      {
+        "questions": "307",
+        "label": "MB-800: Microsoft Dynamics 365 Business Central Functional Consultant",
+        "value": "mb-800"
+      },
+      {
+        "questions": "131",
+        "label": "MB-820: Microsoft Dynamics 365 Business Central Developer",
+        "value": "mb-820"
+      },
+      {
+        "questions": "77",
+        "label": "MB-900: Microsoft Dynamics 365 Fundamentals",
+        "value": "mb-900"
+      },
+      {
+        "questions": "92",
+        "label": "MB-901: Microsoft Dynamics 365 Fundamentals",
+        "value": "mb-901"
+      },
+      {
+        "questions": "229",
+        "label": "MB-910: Microsoft Dynamics 365 Fundamentals Customer Engagement Apps (CRM)",
+        "value": "mb-910"
+      },
+      {
+        "questions": "175",
+        "label": "MB-920: Microsoft Dynamics 365 Fundamentals Finance and Operations Apps (ERP)",
+        "value": "mb-920"
+      },
+      {
+        "questions": "415",
+        "label": "MD-100: Windows 10",
+        "value": "md-100"
+      },
+      {
+        "questions": "417",
+        "label": "MD-101: Managing Modern Desktops",
+        "value": "md-101"
+      },
+      {
+        "questions": "409",
+        "label": "MD-102: Endpoint Administrator",
+        "value": "md-102"
+      },
+      {
+        "questions": "24",
+        "label": "MO-201: Microsoft Excel Expert (Excel and Excel 2019)",
+        "value": "mo-201"
+      },
+      {
+        "questions": "437",
+        "label": "MS-100: Microsoft 365 Identity and Services",
+        "value": "ms-100"
+      },
+      {
+        "questions": "449",
+        "label": "MS-101: Microsoft 365 Mobility and Security",
+        "value": "ms-101"
+      },
+      {
+        "questions": "460",
+        "label": "MS-102: Microsoft 365 Administrator",
+        "value": "ms-102"
+      },
+      {
+        "questions": "143",
+        "label": "MS-200: Planning and Configuring a Messaging Platform",
+        "value": "ms-200"
+      },
+      {
+        "questions": "178",
+        "label": "MS-201: Implementing a Hybrid and Secure Messaging Platform",
+        "value": "ms-201"
+      },
+      {
+        "questions": "64",
+        "label": "MS-202: Microsoft 365 Messaging Administrator Certification Transition",
+        "value": "ms-202"
+      },
+      {
+        "questions": "448",
+        "label": "MS-203: Microsoft 365 Messaging",
+        "value": "ms-203"
+      },
+      {
+        "questions": "95",
+        "label": "MS-220: Troubleshooting Microsoft Exchange Online",
+        "value": "ms-220"
+      },
+      {
+        "questions": "119",
+        "label": "MS-300: Deploying Microsoft 365 Teamwork",
+        "value": "ms-300"
+      },
+      {
+        "questions": "125",
+        "label": "MS-301: Deploying SharePoint Server Hybrid",
+        "value": "ms-301"
+      },
+      {
+        "questions": "45",
+        "label": "MS-302: Microsoft 365 Teamwork Administrator Certification Transition",
+        "value": "ms-302"
+      },
+      {
+        "questions": "352",
+        "label": "MS-500: Microsoft 365 Security Administration",
+        "value": "ms-500"
+      },
+      {
+        "questions": "245",
+        "label": "MS-600: Building Applications and Solutions with Microsoft 365 Core Services",
+        "value": "ms-600"
+      },
+      {
+        "questions": "513",
+        "label": "MS-700: Managing Microsoft Teams",
+        "value": "ms-700"
+      },
+      {
+        "questions": "137",
+        "label": "MS-720: Microsoft Teams Voice Engineer",
+        "value": "ms-720"
+      },
+      {
+        "questions": "300",
+        "label": "MS-721: Collaboration Communications Systems Engineer",
+        "value": "ms-721"
+      },
+      {
+        "questions": "125",
+        "label": "MS-740: Troubleshooting Microsoft Teams",
+        "value": "ms-740"
+      },
+      {
+        "questions": "507",
+        "label": "MS-900: Microsoft 365 Fundamentals",
+        "value": "ms-900"
+      },
+      {
+        "questions": "352",
+        "label": "PL-100: Microsoft Power Platform App Maker",
+        "value": "pl-100"
+      },
+      {
+        "questions": "328",
+        "label": "PL-200: Microsoft Power Platform Functional Consultant",
+        "value": "pl-200"
+      },
+      {
+        "questions": "397",
+        "label": "PL-300: Microsoft Power BI Data Analyst",
+        "value": "pl-300"
+      },
+      {
+        "questions": "429",
+        "label": "PL-400: Microsoft Power Platform Developer",
+        "value": "pl-400"
+      },
+      {
+        "questions": "180",
+        "label": "PL-500: Microsoft Power Automate RPA Developer",
+        "value": "pl-500"
+      },
+      {
+        "questions": "255",
+        "label": "PL-600: Microsoft Power Platform Solution Architect",
+        "value": "pl-600"
+      },
+      {
+        "questions": "380",
+        "label": "PL-900: Microsoft Power Platform Fundamentals",
+        "value": "pl-900"
+      },
+      {
+        "questions": "360",
+        "label": "SC-100: Microsoft Cybersecurity Architect",
+        "value": "sc-100"
+      },
+      {
+        "questions": "480",
+        "label": "SC-200: Microsoft Security Operations Analyst",
+        "value": "sc-200"
+      },
+      {
+        "questions": "463",
+        "label": "SC-300: Microsoft Identity and Access Administrator",
+        "value": "sc-300"
+      },
+      {
+        "questions": "387",
+        "label": "SC-400: Microsoft Information Protection Administrator",
+        "value": "sc-400"
+      },
+      {
+        "questions": "280",
+        "label": "SC-401: Administering Information Security in Microsoft 365",
+        "value": "sc-401"
+      },
+      {
+        "questions": "121",
+        "label": "SC-500: Implementing End-to-End Security Controls for Cloud and AI Workloads",
+        "value": "sc-500"
+      },
+      {
+        "questions": "252",
+        "label": "SC-900: Microsoft Security, Compliance, and Identity Fundamentals",
+        "value": "sc-900"
       }
     ]
   },
@@ -603,19 +1738,1039 @@
     "provider": "Cisco",
     "exams": [
       {
-        "questions": "10",
-        "label": "200-155: Implementing Cisco Data Center Infrastructure",
+        "questions": "138",
+        "label": "010-151: Supporting Cisco Data Center System Devices (DCTECH)",
+        "value": "010-151"
+      },
+      {
+        "questions": "724",
+        "label": "100-105: ICND Interconnecting Cisco Networking Devices Part 1",
+        "value": "100-105"
+      },
+      {
+        "questions": "73",
+        "label": "100-140: Cisco Certified Support Technician (CCST) IT Support",
+        "value": "100-140"
+      },
+      {
+        "questions": "75",
+        "label": "100-150: Cisco Certified Support Technician (CCST) Networking",
+        "value": "100-150"
+      },
+      {
+        "questions": "84",
+        "label": "100-160: Cisco Certified Support Technician (CCST) Cybersecurity",
+        "value": "100-160"
+      },
+      {
+        "questions": "60",
+        "label": "100-490: Cisco Certified Technician Routing &amp; Switching (RSTECH)",
+        "value": "100-490"
+      },
+      {
+        "questions": "60",
+        "label": "100-890: Supporting Cisco Collaboration Devices",
+        "value": "100-890"
+      },
+      {
+        "questions": "693",
+        "label": "200-105: ICND Interconnecting Cisco Networking Devices Part 2",
+        "value": "200-105"
+      },
+      {
+        "questions": "1926",
+        "label": "200-125: CCNA Cisco Certified Network Associate",
+        "value": "200-125"
+      },
+      {
+        "questions": "131",
+        "label": "200-150: Introducing Cisco Data Center Networking",
+        "value": "200-150"
+      },
+      {
+        "questions": "81",
+        "label": "200-155: Introducing Cisco Data Center Technologies",
         "value": "200-155"
       },
       {
-        "questions": "10",
-        "label": "200-301: Implementing and Administering Cisco Solutions",
+        "questions": "462",
+        "label": "200-201: Understanding Cisco Cybersecurity Operations Fundamentals (CBROPS)",
+        "value": "200-201"
+      },
+      {
+        "questions": "1395",
+        "label": "200-301: Cisco Certified Network Associate (CCNA)",
         "value": "200-301"
       },
       {
-        "questions": "10",
-        "label": "300-410: Implementing Cisco Enterprise Advanced Routing and Services",
+        "questions": "756",
+        "label": "200-310: Designing for Cisco Internetwork Solutions",
+        "value": "200-310"
+      },
+      {
+        "questions": "601",
+        "label": "200-355: CCNA Wireless Implementing Cisco Wireless Network Fundamentals",
+        "value": "200-355"
+      },
+      {
+        "questions": "64",
+        "label": "200-401: Managing Industrial Networks with Cisco Networking Technologies",
+        "value": "200-401"
+      },
+      {
+        "questions": "67",
+        "label": "200-601: Managing Industrial Networks for Manufacturing with Cisco Technologies",
+        "value": "200-601"
+      },
+      {
+        "questions": "631",
+        "label": "200-901: DevNet Associate (DEVASC)",
+        "value": "200-901"
+      },
+      {
+        "questions": "413",
+        "label": "210-060: CCNA Collaboration Implementing Cisco Collaboration Devices (CICD)",
+        "value": "210-060"
+      },
+      {
+        "questions": "341",
+        "label": "210-065: CCNA Collaboration Implementing Cisco Video Network Devices (CIVND)",
+        "value": "210-065"
+      },
+      {
+        "questions": "1130",
+        "label": "210-250: CCNA Cyber Ops Understanding Cisco Cybersecurity Fundamentals",
+        "value": "210-250"
+      },
+      {
+        "questions": "179",
+        "label": "210-255: CCNA Cyber Ops Implementing Cisco Cybersecurity Operations",
+        "value": "210-255"
+      },
+      {
+        "questions": "620",
+        "label": "210-260: CCNA Security Implementing Cisco Network Security",
+        "value": "210-260"
+      },
+      {
+        "questions": "60",
+        "label": "210-451: Understanding Cisco Cloud Fundamentals",
+        "value": "210-451"
+      },
+      {
+        "questions": "117",
+        "label": "210-455: Introducing Cisco Cloud Administration",
+        "value": "210-455"
+      },
+      {
+        "questions": "361",
+        "label": "300-070: Implementing Cisco IP Telephony and Video, Part 1 (CIPTV1)",
+        "value": "300-070"
+      },
+      {
+        "questions": "496",
+        "label": "300-075: Implementing Cisco IP Telephony and Video Part 2 (CIPTV2)",
+        "value": "300-075"
+      },
+      {
+        "questions": "157",
+        "label": "300-080: Troubleshooting Cisco IP Telephony and Video (CTCOLLAB)",
+        "value": "300-080"
+      },
+      {
+        "questions": "182",
+        "label": "300-085: Implementing Cisco Collaboration Applications (CAPPS)",
+        "value": "300-085"
+      },
+      {
+        "questions": "1468",
+        "label": "300-101: CCNP Implementing Cisco IP Routing (ROUTE v2.0)",
+        "value": "300-101"
+      },
+      {
+        "questions": "992",
+        "label": "300-115: CCNP Cisco IP Switched Networks (SWITCH v2.0)",
+        "value": "300-115"
+      },
+      {
+        "questions": "154",
+        "label": "300-135: CCNP Troubleshooting and Maintaining Cisco IP Networks (TSHOOT v2.0)",
+        "value": "300-135"
+      },
+      {
+        "questions": "465",
+        "label": "300-160: Designing Cisco Data Center Infrastructure",
+        "value": "300-160"
+      },
+      {
+        "questions": "328",
+        "label": "300-165: Implementing Cisco Data Center Infrastructure",
+        "value": "300-165"
+      },
+      {
+        "questions": "58",
+        "label": "300-170: Implementing Cisco Data Center Virtualization and Automation",
+        "value": "300-170"
+      },
+      {
+        "questions": "239",
+        "label": "300-175: Implementing Cisco Data Center Unified Computing",
+        "value": "300-175"
+      },
+      {
+        "questions": "81",
+        "label": "300-180: Troubleshooting Cisco Data Center Infrastructure (DCIT)",
+        "value": "300-180"
+      },
+      {
+        "questions": "368",
+        "label": "300-206: CCNP Security Implementing Cisco Edge Network Security Solutions (SENSS)",
+        "value": "300-206"
+      },
+      {
+        "questions": "256",
+        "label": "300-208: CCNP Security Implementing Cisco Secure Access Solutions (SISAS)",
+        "value": "300-208"
+      },
+      {
+        "questions": "314",
+        "label": "300-209: CCNP Security Implementing Cisco Secure Mobility Solutions (SIMOS)",
+        "value": "300-209"
+      },
+      {
+        "questions": "563",
+        "label": "300-210: CCNP Security Implementing Cisco Threat Control Solutions",
+        "value": "300-210"
+      },
+      {
+        "questions": "134",
+        "label": "300-215: Conducting Forensic Analysis and Incident Response Using Cisco CyberOps Technologies (CBRFIR)",
+        "value": "300-215"
+      },
+      {
+        "questions": "60",
+        "label": "300-220: Conducting Threat Hunting and Defending using Cisco Technologies for Cybersecurity",
+        "value": "300-220"
+      },
+      {
+        "questions": "411",
+        "label": "300-320: Designing Cisco Network Service Architectures",
+        "value": "300-320"
+      },
+      {
+        "questions": "137",
+        "label": "300-360: Designing Cisco Wireless Enterprise Networks",
+        "value": "300-360"
+      },
+      {
+        "questions": "54",
+        "label": "300-365: Deploying Cisco Wireless Enterprise Networks",
+        "value": "300-365"
+      },
+      {
+        "questions": "57",
+        "label": "300-370: Troubleshooting Cisco Wireless Enterprise Network",
+        "value": "300-370"
+      },
+      {
+        "questions": "53",
+        "label": "300-375: Securing Cisco Wireless Enterprise Networks",
+        "value": "300-375"
+      },
+      {
+        "questions": "620",
+        "label": "300-410: Implementing Cisco Enterprise Advanced Routing and Services (ENARSI)",
         "value": "300-410"
+      },
+      {
+        "questions": "502",
+        "label": "300-415: Implementing Cisco SD-WAN Solutions (ENSDWI)",
+        "value": "300-415"
+      },
+      {
+        "questions": "417",
+        "label": "300-420: Designing Cisco Enterprise Networks (ENSLD)",
+        "value": "300-420"
+      },
+      {
+        "questions": "268",
+        "label": "300-425: Designing Cisco Enterprise Wireless Networks (300-425 ENWLSD)",
+        "value": "300-425"
+      },
+      {
+        "questions": "326",
+        "label": "300-430: Implementing Cisco Enterprise Wireless Networks (300-430 ENWLSI)",
+        "value": "300-430"
+      },
+      {
+        "questions": "233",
+        "label": "300-435: Automating Cisco Enterprise Solutions (ENAUTO)",
+        "value": "300-435"
+      },
+      {
+        "questions": "84",
+        "label": "300-440: Designing and Implementing Cloud Connectivity (ENCC)",
+        "value": "300-440"
+      },
+      {
+        "questions": "57",
+        "label": "300-445: Designing and Implementing Enterprise Network Assurance",
+        "value": "300-445"
+      },
+      {
+        "questions": "96",
+        "label": "300-460: Implementing and Troubleshooting the Cisco Cloud Infrastructure",
+        "value": "300-460"
+      },
+      {
+        "questions": "60",
+        "label": "300-465: Designing the Cisco Cloud",
+        "value": "300-465"
+      },
+      {
+        "questions": "60",
+        "label": "300-470: Automating the Cisco Enterprise Cloud",
+        "value": "300-470"
+      },
+      {
+        "questions": "60",
+        "label": "300-475: Building the Cisco Cloud with Application Centric Infrastructure",
+        "value": "300-475"
+      },
+      {
+        "questions": "264",
+        "label": "300-510: Implementing Cisco Service Provider Advanced Routing Solutions (SPRI)",
+        "value": "300-510"
+      },
+      {
+        "questions": "147",
+        "label": "300-515: Implementing Cisco Service Provider VPN Services (SPVI)",
+        "value": "300-515"
+      },
+      {
+        "questions": "118",
+        "label": "300-535: Automating Cisco Service Provider Solutions (SPAUTO)",
+        "value": "300-535"
+      },
+      {
+        "questions": "70",
+        "label": "300-550: Designing and Implementing Cisco Network Programmability",
+        "value": "300-550"
+      },
+      {
+        "questions": "306",
+        "label": "300-610: Designing Cisco Data Center Infrastructure (DCID)",
+        "value": "300-610"
+      },
+      {
+        "questions": "291",
+        "label": "300-615: Troubleshooting Cisco Data Center Infrastructure (DCIT)",
+        "value": "300-615"
+      },
+      {
+        "questions": "404",
+        "label": "300-620: Implementing Cisco Application Centric Infrastructure (DCACI)",
+        "value": "300-620"
+      },
+      {
+        "questions": "60",
+        "label": "300-625: Configuring Cisco MDS 9000 Series Switches (DCSAN)",
+        "value": "300-625"
+      },
+      {
+        "questions": "120",
+        "label": "300-630: Implementing Cisco Application Centric Infrastructure - Advanced",
+        "value": "300-630"
+      },
+      {
+        "questions": "60",
+        "label": "300-635: Automating Cisco Data Center Solutions (DCAUTO)",
+        "value": "300-635"
+      },
+      {
+        "questions": "60",
+        "label": "300-640: Implementing Cisco Data Center AI Infrastructure (DCAI)",
+        "value": "300-640"
+      },
+      {
+        "questions": "435",
+        "label": "300-710: Securing Networks with Cisco Firepower (300-710 SNCF)",
+        "value": "300-710"
+      },
+      {
+        "questions": "407",
+        "label": "300-715: Implementing and Configuring Cisco Identity Services Engine (300-715 SISE)",
+        "value": "300-715"
+      },
+      {
+        "questions": "214",
+        "label": "300-720: Securing Email with Cisco Email Security Appliance (300-720 SESA)",
+        "value": "300-720"
+      },
+      {
+        "questions": "112",
+        "label": "300-725: Securing the Web with Cisco Web Security Appliance (300-725 SWSA)",
+        "value": "300-725"
+      },
+      {
+        "questions": "249",
+        "label": "300-730: Implementing Secure Solutions with Virtual Private Networks (SVPN 300-730)",
+        "value": "300-730"
+      },
+      {
+        "questions": "116",
+        "label": "300-735: Automating Cisco Security Solutions (SAUTO)",
+        "value": "300-735"
+      },
+      {
+        "questions": "61",
+        "label": "300-745: Designing Cisco Security Infrastructure",
+        "value": "300-745"
+      },
+      {
+        "questions": "238",
+        "label": "300-810: Implementing Cisco Collaboration Applications (CLICA)",
+        "value": "300-810"
+      },
+      {
+        "questions": "245",
+        "label": "300-815: Implementing Cisco Advanced Call Control and Mobility Services (CLASSM)",
+        "value": "300-815"
+      },
+      {
+        "questions": "277",
+        "label": "300-820: Implementing Cisco Collaboration Cloud and Edge Solutions",
+        "value": "300-820"
+      },
+      {
+        "questions": "58",
+        "label": "300-825: Implementing Cisco Collaboration Conferencing",
+        "value": "300-825"
+      },
+      {
+        "questions": "60",
+        "label": "300-830: Implementing Cisco Collaboration Cloud Customer Experience (CLCCE)",
+        "value": "300-830"
+      },
+      {
+        "questions": "117",
+        "label": "300-835: Automating Cisco Collaboration Solutions (CLAUTO)",
+        "value": "300-835"
+      },
+      {
+        "questions": "161",
+        "label": "300-910: Implementing DevOps Solutions and Practices using Cisco Platforms (DEVOPS)",
+        "value": "300-910"
+      },
+      {
+        "questions": "59",
+        "label": "300-915: Developing Solutions Using Cisco IoT and Edge Platforms (DEVIOT)",
+        "value": "300-915"
+      },
+      {
+        "questions": "60",
+        "label": "300-920: Developing Applications for Cisco Webex and Webex Devices (DEVWBX)",
+        "value": "300-920"
+      },
+      {
+        "questions": "102",
+        "label": "350-101: Implementing and Operating Cisco Wireless Core Technologies (WLCOR)",
+        "value": "350-101"
+      },
+      {
+        "questions": "228",
+        "label": "350-201: Performing CyberOps Using Core Security Technologies (CBRCOR)",
+        "value": "350-201"
+      },
+      {
+        "questions": "1066",
+        "label": "350-401: Implementing Cisco Enterprise Network Core Technologies (ENCOR)",
+        "value": "350-401"
+      },
+      {
+        "questions": "515",
+        "label": "350-501: Implementing and Operating Cisco Service Provider Network Core Technologies (SPCOR)",
+        "value": "350-501"
+      },
+      {
+        "questions": "526",
+        "label": "350-601: Implementing and Operating Cisco Data Center Core Technologies (DCCOR)",
+        "value": "350-601"
+      },
+      {
+        "questions": "703",
+        "label": "350-701: Implementing and Operating Cisco Security Core Technologies",
+        "value": "350-701"
+      },
+      {
+        "questions": "515",
+        "label": "350-801: Implementing Cisco Collaboration Core Technologies (CLCOR)",
+        "value": "350-801"
+      },
+      {
+        "questions": "614",
+        "label": "350-901: Designing, Deploying, and Managing Network Automation Systems (AUTOCOR)",
+        "value": "350-901"
+      },
+      {
+        "questions": "253",
+        "label": "352-001: CCDE Design Written",
+        "value": "352-001"
+      },
+      {
+        "questions": "349",
+        "label": "400-007: Cisco Certified Design Expert",
+        "value": "400-007"
+      },
+      {
+        "questions": "939",
+        "label": "400-051: CCIE Collaboration Written",
+        "value": "400-051"
+      },
+      {
+        "questions": "2105",
+        "label": "400-101: CCIE Routing and Switching Written",
+        "value": "400-101"
+      },
+      {
+        "questions": "489",
+        "label": "400-151: CCIE Data Center Written Exam",
+        "value": "400-151"
+      },
+      {
+        "questions": "446",
+        "label": "400-201: CCIE SP Written v4.1",
+        "value": "400-201"
+      },
+      {
+        "questions": "952",
+        "label": "400-251: CCIE Security Written Exam",
+        "value": "400-251"
+      },
+      {
+        "questions": "449",
+        "label": "400-351: CCIE Wireless Written Exam",
+        "value": "400-351"
+      },
+      {
+        "questions": "77",
+        "label": "500-006: Implementing Cisco TelePresence Video Solution Part 2",
+        "value": "500-006"
+      },
+      {
+        "questions": "64",
+        "label": "500-007: Implementing Cisco TelePresence Video Solution Part 1",
+        "value": "500-007"
+      },
+      {
+        "questions": "49",
+        "label": "500-051: Unified Communications Contact Center Express Implementation - UCCX",
+        "value": "500-051"
+      },
+      {
+        "questions": "88",
+        "label": "500-052: Deploying Cisco Unified Contact Center Express",
+        "value": "500-052"
+      },
+      {
+        "questions": "50",
+        "label": "500-170: Designing the FlexPod Solution (FPDESIGN)",
+        "value": "500-170"
+      },
+      {
+        "questions": "50",
+        "label": "500-171: Implementing and Administering the FlexPod Solution (FPIMPADM)",
+        "value": "500-171"
+      },
+      {
+        "questions": "85",
+        "label": "500-220: Cisco Meraki Solutions Specialist",
+        "value": "500-220"
+      },
+      {
+        "questions": "30",
+        "label": "500-230: Cisco Service Provider Routing Field Engineer",
+        "value": "500-230"
+      },
+      {
+        "questions": "29",
+        "label": "500-240: Cisco Mobile Backhaul for Field Engineers",
+        "value": "500-240"
+      },
+      {
+        "questions": "48",
+        "label": "500-254: Implementing and Configuring Cisco Identity Services Engine",
+        "value": "500-254"
+      },
+      {
+        "questions": "50",
+        "label": "500-265: Advanced Security Architecture for System Engineers",
+        "value": "500-265"
+      },
+      {
+        "questions": "169",
+        "label": "500-275: Securing Cisco Networks with Sourcefire FireAMP Endpoints",
+        "value": "500-275"
+      },
+      {
+        "questions": "60",
+        "label": "500-285: Securing Cisco Networks with Sourcefire Intrusion Prevention System",
+        "value": "500-285"
+      },
+      {
+        "questions": "48",
+        "label": "500-301: Cisco Cloud Collaboration Solutions",
+        "value": "500-301"
+      },
+      {
+        "questions": "91",
+        "label": "500-325: Cisco Collaboration Servers and Appliances",
+        "value": "500-325"
+      },
+      {
+        "questions": "64",
+        "label": "500-420: Cisco AppDynamics Associate Performance Analyst",
+        "value": "500-420"
+      },
+      {
+        "questions": "61",
+        "label": "500-425: Cisco AppDynamics Associate Administrator",
+        "value": "500-425"
+      },
+      {
+        "questions": "50",
+        "label": "500-430: Cisco AppDynamics Professional Implementer",
+        "value": "500-430"
+      },
+      {
+        "questions": "93",
+        "label": "500-440: Designing Cisco Unified Contact Center Enterprise (UCCED)",
+        "value": "500-440"
+      },
+      {
+        "questions": "60",
+        "label": "500-442: Administering Cisco Contact Center Enterprise",
+        "value": "500-442"
+      },
+      {
+        "questions": "60",
+        "label": "500-443: Advanced Administration and Reporting of Contact Center Enterprise",
+        "value": "500-443"
+      },
+      {
+        "questions": "56",
+        "label": "500-444: Cisco Contact Center Enterprise Implementation and Troubleshooting (CCEIT)",
+        "value": "500-444"
+      },
+      {
+        "questions": "58",
+        "label": "500-445: Implementing Cisco Contact Center Enterprise Chat and Email (CCECE)",
+        "value": "500-445"
+      },
+      {
+        "questions": "95",
+        "label": "500-450: Implementing and Supporting Cisco Unified Contact Center Enterprise (UCCEIS)",
+        "value": "500-450"
+      },
+      {
+        "questions": "36",
+        "label": "500-451: Enterprise Network Unified Access Essentials",
+        "value": "500-451"
+      },
+      {
+        "questions": "87",
+        "label": "500-452: Enterprise Networks Core and WAN",
+        "value": "500-452"
+      },
+      {
+        "questions": "35",
+        "label": "500-470: Cisco Enterprise Networks SDA, SDWAN and ISE Exam for System Engineers",
+        "value": "500-470"
+      },
+      {
+        "questions": "49",
+        "label": "500-490: Designing Cisco Enterprise Networks (ENDESIGN)",
+        "value": "500-490"
+      },
+      {
+        "questions": "62",
+        "label": "500-551: Cisco Networking: On-Premise and Cloud Solutions",
+        "value": "500-551"
+      },
+      {
+        "questions": "50",
+        "label": "500-560: Cisco Networking: On-Premise and Cloud Solutions (OCSE)",
+        "value": "500-560"
+      },
+      {
+        "questions": "91",
+        "label": "500-651: Adv anced Security Architecture for Systems Engineers",
+        "value": "500-651"
+      },
+      {
+        "questions": "69",
+        "label": "500-701: Cisco Video Infrastructure Design",
+        "value": "500-701"
+      },
+      {
+        "questions": "90",
+        "label": "500-710: Video infrastructure implementation",
+        "value": "500-710"
+      },
+      {
+        "questions": "40",
+        "label": "500-901: Cisco Data Center Unified Computing Infrastructure Design(DCICUC)",
+        "value": "500-901"
+      },
+      {
+        "questions": "70",
+        "label": "600-210: Implementing Cisco Service Provider Mobility UMTS Networks (SPUMTS)",
+        "value": "600-210"
+      },
+      {
+        "questions": "70",
+        "label": "600-211: Implementing Cisco Service Provider Mobility CDMA Networks (SPCDMA)",
+        "value": "600-211"
+      },
+      {
+        "questions": "70",
+        "label": "600-212: Implementing Cisco Service Provider Mobility LTE Networks (SPLTE)",
+        "value": "600-212"
+      },
+      {
+        "questions": "89",
+        "label": "600-455: Designing Cisco Unified Contact Center Enterprise",
+        "value": "600-455"
+      },
+      {
+        "questions": "70",
+        "label": "600-460: Implementing andSupporting Cisco Unified Contact Center Enterprise",
+        "value": "600-460"
+      },
+      {
+        "questions": "60",
+        "label": "600-660: Implementing Cisco Application Centric Infrastructure - Advanced (600-660 DCACIA)",
+        "value": "600-660"
+      },
+      {
+        "questions": "67",
+        "label": "640-692: Supporting Cisco Routing and Switching Network Devices (RSTECH)",
+        "value": "640-692"
+      },
+      {
+        "questions": "269",
+        "label": "640-875: Building Cisco Service Provider Next-Generation Networks Part 1 (SPNGN1)",
+        "value": "640-875"
+      },
+      {
+        "questions": "126",
+        "label": "640-878: Building Cisco Service Provider Next-Generation Networks Part 2 (SPNGN2)",
+        "value": "640-878"
+      },
+      {
+        "questions": "57",
+        "label": "642-270: Implementing Cisco TelePresence Video Networking Solutions (ITVNS)",
+        "value": "642-270"
+      },
+      {
+        "questions": "47",
+        "label": "642-278: Implementing CUCM for TelePresence Video Solutions (PAIUCMTV)",
+        "value": "642-278"
+      },
+      {
+        "questions": "191",
+        "label": "642-883: Deploying Cisco Service Provider Network Routing (SPROUTE)",
+        "value": "642-883"
+      },
+      {
+        "questions": "131",
+        "label": "642-885: Deploying Cisco Service Provider Advanced Routing (SPADVROUTE)",
+        "value": "642-885"
+      },
+      {
+        "questions": "183",
+        "label": "642-887: Implementing Cisco Service Provider Next-Generation Core Network Services (SPCORE)",
+        "value": "642-887"
+      },
+      {
+        "questions": "126",
+        "label": "642-889: Implementing Cisco Service Provider Next-Generation Edge Network Services (SPEDGE)",
+        "value": "642-889"
+      },
+      {
+        "questions": "50",
+        "label": "644-066: Routing and Switching Solutions for System Engineers - RSSSE",
+        "value": "644-066"
+      },
+      {
+        "questions": "50",
+        "label": "644-068: Advanced Routing and Switching for Field Engineers - ARSFE",
+        "value": "644-068"
+      },
+      {
+        "questions": "77",
+        "label": "644-906: Implementing and Maintaining Cisco Technologies Using IOS XR (IMTXR)",
+        "value": "644-906"
+      },
+      {
+        "questions": "50",
+        "label": "646-048: Advanced Routing and Switching for Account Managers - ARSAM",
+        "value": "646-048"
+      },
+      {
+        "questions": "172",
+        "label": "646-365: Cisco Express Foundation for Account Managers (CXFA)",
+        "value": "646-365"
+      },
+      {
+        "questions": "132",
+        "label": "646-985: Data Center Networking Solution Sales (DCNSS)",
+        "value": "646-985"
+      },
+      {
+        "questions": "54",
+        "label": "648-232: Cisco WebEx Solutions Design and Implementation - CWSDI",
+        "value": "648-232"
+      },
+      {
+        "questions": "64",
+        "label": "648-244: Designing and Implementing Cisco Unified Communications on Unified Computing Systems - DIUCUCS",
+        "value": "648-244"
+      },
+      {
+        "questions": "150",
+        "label": "648-375: Cisco Express Foundation for Systems Engineers (CXFS)",
+        "value": "648-375"
+      },
+      {
+        "questions": "200",
+        "label": "648-385: Cisco Express Foundation for Field Engineers",
+        "value": "648-385"
+      },
+      {
+        "questions": "210",
+        "label": "650-059: Cisco Lifecycle Services Advanced Routing and Switching",
+        "value": "650-059"
+      },
+      {
+        "questions": "83",
+        "label": "650-082: Mobile Internet Technology for System Engineers",
+        "value": "650-082"
+      },
+      {
+        "questions": "56",
+        "label": "650-127: Authorized Connected Grid Engineer Knowledge Verification",
+        "value": "650-127"
+      },
+      {
+        "questions": "23",
+        "label": "650-128: Authorized Connected Grid Account Manager Knowledge Verification",
+        "value": "650-128"
+      },
+      {
+        "questions": "20",
+        "label": "650-281: C-Series Servers for Account Manager",
+        "value": "650-281"
+      },
+      {
+        "questions": "56",
+        "label": "650-292: TelePresence Video Sales Specialist for Express",
+        "value": "650-292"
+      },
+      {
+        "questions": "52",
+        "label": "650-293: TelePresence Video Sales Engineer for Express",
+        "value": "650-293"
+      },
+      {
+        "questions": "69",
+        "label": "650-472: Introduction to 802.1X Operations for Cisco Security Professionals",
+        "value": "650-472"
+      },
+      {
+        "questions": "30",
+        "label": "650-474: Introducing Cisco Identity Services Engine for System Engineer",
+        "value": "650-474"
+      },
+      {
+        "questions": "149",
+        "label": "650-621: Lifecycle Services for Advanced Wireless LAN (LCSAWLAN)",
+        "value": "650-621"
+      },
+      {
+        "questions": "69",
+        "label": "650-987: Cisco Data Center Unified Computing Sales Specialist",
+        "value": "650-987"
+      },
+      {
+        "questions": "50",
+        "label": "700-037: Advanced Collaboration Architecture Sales Specialist",
+        "value": "700-037"
+      },
+      {
+        "questions": "50",
+        "label": "700-038: Advanced Collaboration Architecture Field Engineer",
+        "value": "700-038"
+      },
+      {
+        "questions": "60",
+        "label": "700-039: Advanced Collaboration Architecture Sales Engineer",
+        "value": "700-039"
+      },
+      {
+        "questions": "50",
+        "label": "700-070: Cisco TelePresence IX5000 Series Immersive Solutions",
+        "value": "700-070"
+      },
+      {
+        "questions": "54",
+        "label": "700-101: Business Edition 6000 for Sales Engineers",
+        "value": "700-101"
+      },
+      {
+        "questions": "36",
+        "label": "700-104: Business Edition 6000 for Account Managers (BE6KAM)",
+        "value": "700-104"
+      },
+      {
+        "questions": "62",
+        "label": "700-150: Introduction to Cisco Sales",
+        "value": "700-150"
+      },
+      {
+        "questions": "40",
+        "label": "700-240: Cisco Environmental Sustainability Overview",
+        "value": "700-240"
+      },
+      {
+        "questions": "40",
+        "label": "700-245: Environmental Sustainability Practice-Building",
+        "value": "700-245"
+      },
+      {
+        "questions": "50",
+        "label": "700-250: Cisco Small and Medium Business Sales",
+        "value": "700-250"
+      },
+      {
+        "questions": "50",
+        "label": "700-260: Advanced Security Architecture for Account Manager",
+        "value": "700-260"
+      },
+      {
+        "questions": "50",
+        "label": "700-265: Cisco Advanced Security Architecture for Account Managers",
+        "value": "700-265"
+      },
+      {
+        "questions": "86",
+        "label": "700-302: Advanced Borderless Network Architecture Field Engineer",
+        "value": "700-302"
+      },
+      {
+        "questions": "50",
+        "label": "700-501: SMB Solutions for Engineers",
+        "value": "700-501"
+      },
+      {
+        "questions": "50",
+        "label": "700-505: SMB Solutions for Account Managers",
+        "value": "700-505"
+      },
+      {
+        "questions": "60",
+        "label": "700-651: Cisco Collaboration Architecture Sales Essentials",
+        "value": "700-651"
+      },
+      {
+        "questions": "40",
+        "label": "700-680: Cisco Collaboration SaaS Authorization Exam",
+        "value": "700-680"
+      },
+      {
+        "questions": "60",
+        "label": "700-695: Cisco Collaboration SaaS Authorization for PreSales Engineer (CSaaSSE)",
+        "value": "700-695"
+      },
+      {
+        "questions": "34",
+        "label": "700-703: Application Centric Infrastructure for Field Engineers Exam",
+        "value": "700-703"
+      },
+      {
+        "questions": "50",
+        "label": "700-750: Cisco Small and Medium Business Engineer",
+        "value": "700-750"
+      },
+      {
+        "questions": "50",
+        "label": "700-751: Cisco SMB Product and Positioning Technical Overview",
+        "value": "700-751"
+      },
+      {
+        "questions": "50",
+        "label": "700-755: Small Business Technical Overview (SBTO)",
+        "value": "700-755"
+      },
+      {
+        "questions": "50",
+        "label": "700-760: Cisco Security Architecture for Account Managers (ASAEAM)",
+        "value": "700-760"
+      },
+      {
+        "questions": "80",
+        "label": "700-765: Cisco Security Architecture for System Engineers",
+        "value": "700-765"
+      },
+      {
+        "questions": "145",
+        "label": "700-805: Cisco Renewals Manager (CRM)",
+        "value": "700-805"
+      },
+      {
+        "questions": "30",
+        "label": "700-821: Cisco IoT Essentials for System Engineers",
+        "value": "700-821"
+      },
+      {
+        "questions": "30",
+        "label": "700-826: Cisco IoT Essentials for Account Managers",
+        "value": "700-826"
+      },
+      {
+        "questions": "50",
+        "label": "700-905: Cisco HyperFlex for Systems Engineers (CHXSE)",
+        "value": "700-905"
+      },
+      {
+        "questions": "100",
+        "label": "800-150: Supporting Cisco Devices for Field Technicians",
+        "value": "800-150"
+      },
+      {
+        "questions": "98",
+        "label": "810-110: Cisco AI Technical Practitioner (AITECH)",
+        "value": "810-110"
+      },
+      {
+        "questions": "269",
+        "label": "810-440: Adopting The Cisco Business Architecture Approach",
+        "value": "810-440"
+      },
+      {
+        "questions": "60",
+        "label": "820-427: Building Business Specialist Skills",
+        "value": "820-427"
+      },
+      {
+        "questions": "178",
+        "label": "820-605: Cisco Customer Success Manager (CSM)",
+        "value": "820-605"
+      },
+      {
+        "questions": "65",
+        "label": "840-450: Mastering The Cisco Business Architecture Discipline",
+        "value": "840-450"
       }
     ]
   },
