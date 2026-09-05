@@ -3,7 +3,7 @@
     "provider": "ServiceNow",
     "exams": [
       {
-        "questions": "219",
+        "questions": "2",
         "label": "CAD: ServiceNow Certified Application Developer",
         "value": "cad"
       },
@@ -23,7 +23,7 @@
         "value": "cis-cpg"
       },
       {
-        "questions": "284",
+        "questions": "23",
         "label": "CIS-CSM: Certified Implementation Specialist - Customer Service Management",
         "value": "cis-csm"
       },
@@ -143,7 +143,7 @@
         "value": "c-aig-2412"
       },
       {
-        "questions": "65",
+        "questions": "6",
         "label": "C_ARSOR_2202: SAP Certified Application Associate - SAP Ariba Sourcing",
         "value": "c-arsor-2202"
       },
@@ -163,7 +163,7 @@
         "value": "c-cpi-2404"
       },
       {
-        "questions": "66",
+        "questions": "8",
         "label": "C_FIOAD_2021: SAP Certified Associate - SAP Fiori System Administration",
         "value": "c-fioad-2021"
       },
