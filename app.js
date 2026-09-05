@@ -186,6 +186,21 @@ document.addEventListener('DOMContentLoaded', () => {
     document.getElementById('modalPagamento').style.display = 'none';
   });
 
+  document.getElementById('btnCopyPaymentDescription').addEventListener('click', async () => {
+    const description = document.getElementById('paymentDescription').textContent;
+    try {
+      await navigator.clipboard.writeText(description);
+      const button = document.getElementById('btnCopyPaymentDescription');
+      button.textContent = 'Copied!';
+      setTimeout(() => {
+        button.textContent = 'Copy payment description';
+      }, 2000);
+    } catch (err) {
+      alert('Failed to copy payment description.');
+      console.error(err);
+    }
+  });
+
   // Ao clicar "Continuar" após pagamento
   document.getElementById('btnContinue').addEventListener('click', async () => {
     const sistema = document.getElementById('confSistema').textContent;
