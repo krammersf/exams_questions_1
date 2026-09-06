@@ -475,11 +475,11 @@ button:hover {
   position: absolute;
   top: -9px;
   right: -8px;
-  width: 8px;
-  height: 8px;
+  width: 10px;
+  height: 10px;
   place-items: center;
   border: 2px solid #fff;
-  border-radius: 30%;
+  border-radius: 50%;
   background: #198754;
 }
 
