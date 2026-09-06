@@ -6,15 +6,15 @@
         "questions": "219",
         "label": "CAD: ServiceNow Certified Application Developer",
         "value": "cad",
-        "carregado": false,
-        "contador": 0
+        "carregado": true,
+        "contador": 2
       },
       {
         "questions": "83",
         "label": "CAS-PA: Certified Application Specialist – Performance Analytics",
         "value": "cas-pa",
-        "carregado": false,
-        "contador": 0
+        "carregado": true,
+        "contador": 1
       },
       {
         "questions": "59",
@@ -34,8 +34,8 @@
         "questions": "284",
         "label": "CIS-CSM: Certified Implementation Specialist - Customer Service Management",
         "value": "cis-csm",
-        "carregado": false,
-        "contador": 0
+        "carregado": true,
+        "contador": 1
       },
       {
         "questions": "250",
@@ -193,15 +193,15 @@
         "questions": "57",
         "label": "C_AIG_2412: SAP Certified - SAP Generative AI Developer",
         "value": "c-aig-2412",
-        "carregado": false,
-        "contador": 0
+        "carregado": true,
+        "contador": 1
       },
       {
         "questions": "65",
         "label": "C_ARSOR_2202: SAP Certified Application Associate - SAP Ariba Sourcing",
         "value": "c-arsor-2202",
-        "carregado": false,
-        "contador": 0
+        "carregado": true,
+        "contador": 2
       },
       {
         "questions": "18",
@@ -228,8 +228,8 @@
         "questions": "66",
         "label": "C_FIOAD_2021: SAP Certified Associate - SAP Fiori System Administration",
         "value": "c-fioad-2021",
-        "carregado": false,
-        "contador": 0
+        "carregado": true,
+        "contador": 1
       },
       {
         "questions": "80",
@@ -604,15 +604,15 @@
         "questions": "377",
         "label": "ANS-C00: AWS Certified Advanced Networking - Specialty",
         "value": "ans-c00",
-        "carregado": false,
-        "contador": 0
+        "carregado": true,
+        "contador": 22
       },
       {
         "questions": "296",
         "label": "AWS Certified Advanced Networking - Specialty ANS-C01: AWS Certified Advanced Networking - Specialty ANS-C01",
         "value": "aws-certified-advanced-networking-specialty-ans-c01",
-        "carregado": false,
-        "contador": 0
+        "carregado": true,
+        "contador": 1
       },
       {
         "questions": "488",
@@ -625,8 +625,8 @@
         "questions": "59",
         "label": "AWS Certified Alexa Skill Builder - Specialty: AWS Certified Alexa Skill Builder - Specialty",
         "value": "aws-certified-alexa-skill-builder-specialty",
-        "carregado": false,
-        "contador": 0
+        "carregado": true,
+        "contador": 1
       },
       {
         "questions": "85",
@@ -723,8 +723,8 @@
         "questions": "130",
         "label": "AWS Certified SAP on AWS - Specialty PAS-C01: AWS Certified SAP on AWS - Specialty PAS-C01",
         "value": "aws-certified-sap-on-aws-specialty-pas-c01",
-        "carregado": false,
-        "contador": 0
+        "carregado": true,
+        "contador": 1
       },
       {
         "questions": "509",
@@ -751,8 +751,8 @@
         "questions": "822",
         "label": "AWS Certified Solutions Architect - Associate SAA-C02: AWS Certified Solutions Architect - Associate SAA-C02",
         "value": "aws-certified-solutions-architect-associate-saa-c02",
-        "carregado": false,
-        "contador": 0
+        "carregado": true,
+        "contador": 2
       },
       {
         "questions": "1019",
@@ -772,8 +772,8 @@
         "questions": "529",
         "label": "AWS Certified Solutions Architect - Professional SAP-C02: AWS Certified Solutions Architect - Professional SAP-C02",
         "value": "aws-certified-solutions-architect-professional-sap-c02",
-        "carregado": false,
-        "contador": 0
+        "carregado": true,
+        "contador": 1
       },
       {
         "questions": "478",
@@ -793,8 +793,8 @@
         "questions": "932",
         "label": "AWS-SysOps: AWS Certified SysOps Administrator",
         "value": "aws-sysops",
-        "carregado": false,
-        "contador": 0
+        "carregado": true,
+        "contador": 1
       }
     ]
   },
@@ -3881,8 +3881,8 @@
         "questions": "45",
         "label": "PSK I: Professional Scrum with Kanban",
         "value": "psk-i",
-        "carregado": false,
-        "contador": 0
+        "carregado": true,
+        "contador": 1
       },
       {
         "questions": "258",

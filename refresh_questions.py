@@ -4,6 +4,7 @@ import re
 import time
 import urllib.request
 import urllib.error
+from urllib.parse import unquote
 from pathlib import Path
 
 BASE_URLS = {
@@ -18,6 +19,14 @@ USER_AGENT = "Mozilla/5.0"
 MIN_REQUEST_INTERVAL = 2.5
 MAX_REQUEST_INTERVAL = 6.0
 last_request_at = 0.0
+FIREBASE_ORDER_STATUS_URL = (
+    "https://examtopics-v1-default-rtdb.europe-west1.firebasedatabase.app/"
+    "orderStatus.json"
+)
+FIREBASE_RESPONSES_URL = (
+    "https://examtopics-v1-default-rtdb.europe-west1.firebasedatabase.app/"
+    "respostas.json"
+)
 
 
 def wait_before_request() -> None:
@@ -60,6 +69,75 @@ def fetch_text(url: str, attempts: int = 3) -> str:
 def normalize_label(raw_label: str) -> str:
     cleaned = re.sub(r"<.*?>", "", raw_label)
     return " ".join(cleaned.split())
+
+
+def load_order_status() -> dict[str, dict]:
+    print("  Reading order status from Firebase...", flush=True)
+    request = urllib.request.Request(
+        FIREBASE_ORDER_STATUS_URL,
+        headers={"Accept": "application/json"},
+    )
+    with urllib.request.urlopen(request, timeout=30) as response:
+        raw_status = json.loads(response.read().decode("utf-8"))
+
+    if not isinstance(raw_status, dict):
+        return {}
+
+    return {
+        unquote(key): value
+        for key, value in raw_status.items()
+        if isinstance(value, dict)
+    }
+
+
+def load_response_status() -> dict[str, dict]:
+    print("  Reading order history from Firebase...", flush=True)
+    request = urllib.request.Request(
+        FIREBASE_RESPONSES_URL,
+        headers={"Accept": "application/json"},
+    )
+    with urllib.request.urlopen(request, timeout=30) as response:
+        responses = json.loads(response.read().decode("utf-8"))
+
+    counts = {}
+    for response in (responses or {}).values():
+        if not isinstance(response, dict):
+            continue
+        provider = response.get("sistema")
+        exam_value = response.get("subopcao")
+        if provider and exam_value:
+            key = f"{provider}:{exam_value}"
+            counts[key] = counts.get(key, 0) + 1
+
+    return {
+        key: {"carregado": True, "contador": count}
+        for key, count in counts.items()
+    }
+
+
+def apply_order_status(data: list[dict]) -> None:
+    try:
+        order_status = load_order_status()
+        response_status = load_response_status()
+    except (TimeoutError, ConnectionResetError, urllib.error.URLError, json.JSONDecodeError) as error:
+        print(f"  Could not read Firebase order status; keeping JSON values ({error})", flush=True)
+        return
+
+    updated_count = 0
+    for provider in data:
+        provider_name = provider.get("provider")
+        for exam in provider.get("exams", []):
+            key = f"{provider_name}:{exam.get('value')}"
+            status = order_status.get(key) or response_status.get(key)
+            if not status:
+                continue
+            exam["carregado"] = status.get("carregado", exam.get("carregado", False)) is True
+            exam["contador"] = max(
+                int(status.get("contador", 0) or 0),
+                int(exam.get("contador", 0) or 0),
+            )
+            updated_count += 1
+    print(f"  Applied Firebase status to {updated_count} exams", flush=True)
 
 
 def extract_exam_list(base_url: str, existing_exams: list[dict] | None = None) -> list[dict]:
@@ -123,6 +201,7 @@ def update_json() -> None:
         for exam in provider.get("exams", []):
             exam["carregado"] = exam.get("carregado", False)
             exam["contador"] = exam.get("contador", 0)
+    apply_order_status(data)
 
     updated_providers = []
     for provider in data:
