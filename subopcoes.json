@@ -5,112 +5,156 @@
       {
         "questions": "219",
         "label": "CAD: ServiceNow Certified Application Developer",
-        "value": "cad"
+        "value": "cad",
+        "carregado": false,
+        "contador": 0
       },
       {
         "questions": "83",
         "label": "CAS-PA: Certified Application Specialist – Performance Analytics",
-        "value": "cas-pa"
+        "value": "cas-pa",
+        "carregado": false,
+        "contador": 0
       },
       {
         "questions": "59",
         "label": "CIS-APM: Certified Implementation Specialist - Application Portfolio Management",
-        "value": "cis-apm"
+        "value": "cis-apm",
+        "carregado": false,
+        "contador": 0
       },
       {
         "questions": "45",
         "label": "CIS-CPG: Certified Implementation Specialist - Cloud Provisioning and Governance",
-        "value": "cis-cpg"
+        "value": "cis-cpg",
+        "carregado": false,
+        "contador": 0
       },
       {
         "questions": "284",
         "label": "CIS-CSM: Certified Implementation Specialist - Customer Service Management",
-        "value": "cis-csm"
+        "value": "cis-csm",
+        "carregado": false,
+        "contador": 0
       },
       {
         "questions": "250",
         "label": "CIS-DF: Certified Implementation Specialist - Data Foundations (CMDB and CSDM)",
-        "value": "cis-df"
+        "value": "cis-df",
+        "carregado": false,
+        "contador": 0
       },
       {
         "questions": "122",
         "label": "CIS-Discovery: Certified Implementation Specialist - Discovery",
-        "value": "cis-discovery"
+        "value": "cis-discovery",
+        "carregado": false,
+        "contador": 0
       },
       {
         "questions": "130",
         "label": "CIS-EM: Certified Implementation Specialist - Event Mangement",
-        "value": "cis-em"
+        "value": "cis-em",
+        "carregado": false,
+        "contador": 0
       },
       {
         "questions": "118",
         "label": "CIS-FSM: Certified Implementation Specialist - Field Service Mangement",
-        "value": "cis-fsm"
+        "value": "cis-fsm",
+        "carregado": false,
+        "contador": 0
       },
       {
         "questions": "203",
         "label": "CIS-HAM: Certified Implementation Specialist – Hardware Asset Management",
-        "value": "cis-ham"
+        "value": "cis-ham",
+        "carregado": false,
+        "contador": 0
       },
       {
         "questions": "229",
         "label": "CIS-HR: Certified Implementation Specialist - Human Resources",
-        "value": "cis-hr"
+        "value": "cis-hr",
+        "carregado": false,
+        "contador": 0
       },
       {
         "questions": "242",
         "label": "CIS-ITSM: Certified Implementation Specialist - IT Service Management",
-        "value": "cis-itsm"
+        "value": "cis-itsm",
+        "carregado": false,
+        "contador": 0
       },
       {
         "questions": "169",
         "label": "CIS-PPM: Certified Implementation Specialist - Project Portfolio Management",
-        "value": "cis-ppm"
+        "value": "cis-ppm",
+        "carregado": false,
+        "contador": 0
       },
       {
         "questions": "289",
         "label": "CIS-RC: Certified Implementation Specialist - Risk and Compliance",
-        "value": "cis-rc"
+        "value": "cis-rc",
+        "carregado": false,
+        "contador": 0
       },
       {
         "questions": "222",
         "label": "CIS-SAM: Certified Implementation Specialist - Software Asset Management",
-        "value": "cis-sam"
+        "value": "cis-sam",
+        "carregado": false,
+        "contador": 0
       },
       {
         "questions": "125",
         "label": "CIS-SIR: Certified Implementation Specialist - Security Incident Response",
-        "value": "cis-sir"
+        "value": "cis-sir",
+        "carregado": false,
+        "contador": 0
       },
       {
         "questions": "124",
         "label": "CIS-SM: Certified Implementation Specialist - Service Mapping",
-        "value": "cis-sm"
+        "value": "cis-sm",
+        "carregado": false,
+        "contador": 0
       },
       {
         "questions": "182",
         "label": "CIS-SPM: Certified Implementation Specialist - Strategic Portfolio Management",
-        "value": "cis-spm"
+        "value": "cis-spm",
+        "carregado": false,
+        "contador": 0
       },
       {
         "questions": "60",
         "label": "CIS-TPRM: Certified Implementation Specialist - Third-party Risk Management",
-        "value": "cis-tprm"
+        "value": "cis-tprm",
+        "carregado": false,
+        "contador": 0
       },
       {
         "questions": "132",
         "label": "CIS-VR: Certified Implementation Specialist - Vulnerability Response",
-        "value": "cis-vr"
+        "value": "cis-vr",
+        "carregado": false,
+        "contador": 0
       },
       {
         "questions": "60",
         "label": "CIS-VRM: Certified Implementation Specialist - Vendor Risk Management",
-        "value": "cis-vrm"
+        "value": "cis-vrm",
+        "carregado": false,
+        "contador": 0
       },
       {
         "questions": "408",
         "label": "CSA: ServiceNow Certified System Administrator",
-        "value": "csa"
+        "value": "csa",
+        "carregado": false,
+        "contador": 0
       }
     ]
   },
@@ -120,312 +164,436 @@
       {
         "questions": "79",
         "label": "C_ABAPD_2309: SAP Certified Associate - Back-End Developer - ABAP Cloud",
-        "value": "c-abapd-2309"
+        "value": "c-abapd-2309",
+        "carregado": false,
+        "contador": 0
       },
       {
         "questions": "80",
         "label": "C_ACT_2403: SAP Certified Associate - Project Manager - SAP Activate",
-        "value": "c-act-2403"
+        "value": "c-act-2403",
+        "carregado": false,
+        "contador": 0
       },
       {
         "questions": "80",
         "label": "C_ACTIVATE13: SAP Certified Associate - SAP Activate Project Manager",
-        "value": "c-activate13"
+        "value": "c-activate13",
+        "carregado": false,
+        "contador": 0
       },
       {
         "questions": "80",
         "label": "C_ACTIVATE22: SAP Certified Associate - SAP Activate Project Manager",
-        "value": "c-activate22"
+        "value": "c-activate22",
+        "carregado": false,
+        "contador": 0
       },
       {
         "questions": "57",
         "label": "C_AIG_2412: SAP Certified - SAP Generative AI Developer",
-        "value": "c-aig-2412"
+        "value": "c-aig-2412",
+        "carregado": false,
+        "contador": 0
       },
       {
         "questions": "65",
         "label": "C_ARSOR_2202: SAP Certified Application Associate - SAP Ariba Sourcing",
-        "value": "c-arsor-2202"
+        "value": "c-arsor-2202",
+        "carregado": false,
+        "contador": 0
       },
       {
         "questions": "18",
         "label": "C_BCBDC_2505: SAP Certified Associate - SAP Business Data Cloud",
-        "value": "c-bcbdc-2505"
+        "value": "c-bcbdc-2505",
+        "carregado": false,
+        "contador": 0
       },
       {
         "questions": "80",
         "label": "C_CPI_14: SAP Certified Development Associate - SAP Integration Suite",
-        "value": "c-cpi-14"
+        "value": "c-cpi-14",
+        "carregado": false,
+        "contador": 0
       },
       {
         "questions": "60",
         "label": "C_CPI_2404: SAP Certified Associate - Integration Developer",
-        "value": "c-cpi-2404"
+        "value": "c-cpi-2404",
+        "carregado": false,
+        "contador": 0
       },
       {
         "questions": "66",
         "label": "C_FIOAD_2021: SAP Certified Associate - SAP Fiori System Administration",
-        "value": "c-fioad-2021"
+        "value": "c-fioad-2021",
+        "carregado": false,
+        "contador": 0
       },
       {
         "questions": "80",
         "label": "C_HAMOD_2404: SAP Certified Associate - Data Engineer - SAP HANA",
-        "value": "c-hamod-2404"
+        "value": "c-hamod-2404",
+        "carregado": false,
+        "contador": 0
       },
       {
         "questions": "77",
         "label": "C_HANATEC_17: SAP Certified Technology Associate - SAP HANA 2.0 SPS05",
-        "value": "c-hanatec-17"
+        "value": "c-hanatec-17",
+        "carregado": false,
+        "contador": 0
       },
       {
         "questions": "80",
         "label": "C_HANATEC_18: SAP Certified Technology Associate - SAP HANA 2.0 SPS06",
-        "value": "c-hanatec-18"
+        "value": "c-hanatec-18",
+        "carregado": false,
+        "contador": 0
       },
       {
         "questions": "80",
         "label": "C_HCMP_2311: SAP Certified Associate - SAP HCM Payroll for SAP S/4HANA",
-        "value": "c-hcmp-2311"
+        "value": "c-hcmp-2311",
+        "carregado": false,
+        "contador": 0
       },
       {
         "questions": "80",
         "label": "C_HRHPC_2505: SAP Certified Associate - Implementation Consultant - SAP SuccessFactors Employee Central Payroll",
-        "value": "c-hrhpc-2505"
+        "value": "c-hrhpc-2505",
+        "carregado": false,
+        "contador": 0
       },
       {
         "questions": "80",
         "label": "C_S4CFI_2202: SAP Certified Application Associate - SAP S/4HANA Cloud (public) - Finance Implementation",
-        "value": "c-s4cfi-2202"
+        "value": "c-s4cfi-2202",
+        "carregado": false,
+        "contador": 0
       },
       {
         "questions": "79",
         "label": "C_S4CFI_2504: SAP Certified Associate - Implementation Consultant - SAP S/4HANA Cloud Public Edition, Financial Accounting",
-        "value": "c-s4cfi-2504"
+        "value": "c-s4cfi-2504",
+        "carregado": false,
+        "contador": 0
       },
       {
         "questions": "79",
         "label": "C_S4CPR_2408: SAP Certified Associate - Implementation Consultant - SAP S/4HANA Cloud Public Edition, Sourcing and Procurement",
-        "value": "c-s4cpr-2408"
+        "value": "c-s4cpr-2408",
+        "carregado": false,
+        "contador": 0
       },
       {
         "questions": "79",
         "label": "C_S4CS_2408: SAP Certified Associate - Implementation Consultant - SAP S/4HANA Cloud Public Edition, Sales",
-        "value": "c-s4cs-2408"
+        "value": "c-s4cs-2408",
+        "carregado": false,
+        "contador": 0
       },
       {
         "questions": "80",
         "label": "C_S4EWM_2020: SAP Certified Associate - Extended Warehouse Management with SAP S/4HANA",
-        "value": "c-s4ewm-2020"
+        "value": "c-s4ewm-2020",
+        "carregado": false,
+        "contador": 0
       },
       {
         "questions": "80",
         "label": "C_S4EWM_2023: SAP Certified Associate - Extended Warehouse Management in SAP S/4HANA",
-        "value": "c-s4ewm-2023"
+        "value": "c-s4ewm-2023",
+        "carregado": false,
+        "contador": 0
       },
       {
         "questions": "80",
         "label": "C_S4PM_2504: SAP Certified Associate - Managing SAP S/4HANA Cloud Public Edition Projects",
-        "value": "c-s4pm-2504"
+        "value": "c-s4pm-2504",
+        "carregado": false,
+        "contador": 0
       },
       {
         "questions": "79",
         "label": "C_S4TM_2020: SAP Certified Associate - Transportation Management in SAP S/4HANA",
-        "value": "c-s4tm-2020"
+        "value": "c-s4tm-2020",
+        "carregado": false,
+        "contador": 0
       },
       {
         "questions": "80",
         "label": "C_SAC_2221: SAP Certified Application Associate - SAP Analytics Cloud",
-        "value": "c-sac-2221"
+        "value": "c-sac-2221",
+        "carregado": false,
+        "contador": 0
       },
       {
         "questions": "80",
         "label": "C_SEC_2405: SAP Certified Associate - Security Administrator",
-        "value": "c-sec-2405"
+        "value": "c-sec-2405",
+        "carregado": false,
+        "contador": 0
       },
       {
         "questions": "80",
         "label": "C_SECAUTH_20: SAP Certified Technology Associate - SAP System Security and Authorizations",
-        "value": "c-secauth-20"
+        "value": "c-secauth-20",
+        "carregado": false,
+        "contador": 0
       },
       {
         "questions": "80",
         "label": "C_TADM_23: SAP Certified Technology Consultant - SAP S/4HANA System Administration",
-        "value": "c-tadm-23"
+        "value": "c-tadm-23",
+        "carregado": false,
+        "contador": 0
       },
       {
         "questions": "155",
         "label": "C_TAW12_750: SAP Certified Development Associate - ABAP with SAP NetWeaver 7.50",
-        "value": "c-taw12-750"
+        "value": "c-taw12-750",
+        "carregado": false,
+        "contador": 0
       },
       {
         "questions": "426",
         "label": "C_TFIN52_64: SAP Certified Application Associate - Financial Accounting with SAP ERP 6.0 EHP4",
-        "value": "c_tfin52_64"
+        "value": "c_tfin52_64",
+        "carregado": false,
+        "contador": 0
       },
       {
         "questions": "96",
         "label": "C_TFIN52_67: SAP Certified Application Associate - Financial Accounting with SAP ERP 6.0 EhP7",
-        "value": "c-tfin52-67"
+        "value": "c-tfin52-67",
+        "carregado": false,
+        "contador": 0
       },
       {
         "questions": "244",
         "label": "C_THR12_67: SAP Certified Application Associate - SAP HCM with ERP 6.0 EHP7",
-        "value": "c-thr12-67"
+        "value": "c-thr12-67",
+        "carregado": false,
+        "contador": 0
       },
       {
         "questions": "79",
         "label": "C_THR81_2205: SAP Certified Application Associate - SAP SuccessFactors Employee Central Core 1H/2022",
-        "value": "c-thr81-2205"
+        "value": "c-thr81-2205",
+        "carregado": false,
+        "contador": 0
       },
       {
         "questions": "60",
         "label": "C_THR81_2505: SAP Certified - SAP SuccessFactors Employee Central Core and Position Management",
-        "value": "c-thr81-2505"
+        "value": "c-thr81-2505",
+        "carregado": false,
+        "contador": 0
       },
       {
         "questions": "80",
         "label": "C_THR82_2505: SAP Certified Associate - SAP SuccessFactors Performance and Goals",
-        "value": "c-thr82-2505"
+        "value": "c-thr82-2505",
+        "carregado": false,
+        "contador": 0
       },
       {
         "questions": "80",
         "label": "C_THR83_2505: SAP Certified Associate - Implementation Consultant - SAP SuccessFactors Recruiting: Recruiter Experience",
-        "value": "c-thr83-2505"
+        "value": "c-thr83-2505",
+        "carregado": false,
+        "contador": 0
       },
       {
         "questions": "80",
         "label": "C_THR97_2505: SAP Certified Associate - Implementation Consultant - SAP SuccessFactors Onboarding",
-        "value": "c-thr97-2505"
+        "value": "c-thr97-2505",
+        "carregado": false,
+        "contador": 0
       },
       {
         "questions": "80",
         "label": "C_TPLM30_67: SAP Certified Application Associate - SAP Maintenance &amp; Repair with ERP 6.0 EHP7",
-        "value": "c-tplm30-67"
+        "value": "c-tplm30-67",
+        "carregado": false,
+        "contador": 0
       },
       {
         "questions": "80",
         "label": "C_TS410_2022: SAP Certified Application Associate - Business Process Integration with SAP S/4HANA",
-        "value": "c-ts410-2022"
+        "value": "c-ts410-2022",
+        "carregado": false,
+        "contador": 0
       },
       {
         "questions": "80",
         "label": "C_TS413_1909: SAP Certified Application Associate – SAP S/4HANA Asset Management",
-        "value": "c-ts413-1909"
+        "value": "c-ts413-1909",
+        "carregado": false,
+        "contador": 0
       },
       {
         "questions": "80",
         "label": "C_TS413_2021: SAP Certified Application Associate - SAP S/4HANA Asset Management",
-        "value": "c-ts413-2021"
+        "value": "c-ts413-2021",
+        "carregado": false,
+        "contador": 0
       },
       {
         "questions": "80",
         "label": "C_TS422_2023: SAP Certified Associate - SAP S/4HANA Cloud Private Edition, Production Planning and Manufacturing",
-        "value": "c-ts422-2023"
+        "value": "c-ts422-2023",
+        "carregado": false,
+        "contador": 0
       },
       {
         "questions": "80",
         "label": "C_TS450_2020: SAP Certified Application Associate - SAP S/4HANA Sourcing and Procurement - Upskilling for ERP Experts",
-        "value": "c-ts450-2020"
+        "value": "c-ts450-2020",
+        "carregado": false,
+        "contador": 0
       },
       {
         "questions": "80",
         "label": "C_TS452_2021: SAP Certified Application Associate - SAP S/4HANA Sourcing and Procurement",
-        "value": "c-ts452-2021"
+        "value": "c-ts452-2021",
+        "carregado": false,
+        "contador": 0
       },
       {
         "questions": "80",
         "label": "C_TS452_2022: SAP Certified Associate - SAP S/4HANA Sourcing and Procurement",
-        "value": "c-ts452-2022"
+        "value": "c-ts452-2022",
+        "carregado": false,
+        "contador": 0
       },
       {
         "questions": "80",
         "label": "C_TS452_2410: SAP Certified Associate - SAP S/4HANA Cloud Private Edition, Sourcing and Procurement",
-        "value": "c-ts452-2410"
+        "value": "c-ts452-2410",
+        "carregado": false,
+        "contador": 0
       },
       {
         "questions": "80",
         "label": "C_TS462_2020: SAP Certified Application Associate – SAP S/4HANA Sales 2020",
-        "value": "c-ts462-2020"
+        "value": "c-ts462-2020",
+        "carregado": false,
+        "contador": 0
       },
       {
         "questions": "80",
         "label": "C_TS462_2021: SAP Certified Application Associate – SAP S/4HANA Sales 2021",
-        "value": "c-ts462-2021"
+        "value": "c-ts462-2021",
+        "carregado": false,
+        "contador": 0
       },
       {
         "questions": "80",
         "label": "C_TS462_2022: SAP Certified Application Associate - SAP S/4HANA Sales 2022",
-        "value": "c-ts462-2022"
+        "value": "c-ts462-2022",
+        "carregado": false,
+        "contador": 0
       },
       {
         "questions": "60",
         "label": "C_TS462_2023: SAP Certified Associate - SAP S/4HANA Cloud Private Edition, Sales",
-        "value": "c-ts462-2023"
+        "value": "c-ts462-2023",
+        "carregado": false,
+        "contador": 0
       },
       {
         "questions": "80",
         "label": "C_TS4CO_2023: SAP Certified Associate - SAP S/4HANA for Management Accounting Associates",
-        "value": "c-ts4co-2023"
+        "value": "c-ts4co-2023",
+        "carregado": false,
+        "contador": 0
       },
       {
         "questions": "80",
         "label": "C_TS4FI_2020: SAP Certified Application Associate - SAP S/4HANA for Financial Accounting Associates (SAP S/4HANA 2020)",
-        "value": "c-ts4fi-2020"
+        "value": "c-ts4fi-2020",
+        "carregado": false,
+        "contador": 0
       },
       {
         "questions": "80",
         "label": "C_TS4FI_2021: SAP Certified Associate - SAP S/4HANA 2021 for Financial Accounting",
-        "value": "c-ts4fi-2021"
+        "value": "c-ts4fi-2021",
+        "carregado": false,
+        "contador": 0
       },
       {
         "questions": "80",
         "label": "C_TS4FI_2023: SAP Certified Associate - SAP S/4HANA Cloud Private Edition, Financial Accounting",
-        "value": "c-ts4fi-2023"
+        "value": "c-ts4fi-2023",
+        "carregado": false,
+        "contador": 0
       },
       {
         "questions": "173",
         "label": "C_TSCM52_67: SAP Certified Application Associate - Procurement with SAP ERP 6.0 EhP7",
-        "value": "c-tscm52-67"
+        "value": "c-tscm52-67",
+        "carregado": false,
+        "contador": 0
       },
       {
         "questions": "80",
         "label": "C_TSCM62_67: SAP Certified Application Associate – Sales and Distribution, ERP 6.0 EhP7",
-        "value": "c_tscm62_67"
+        "value": "c_tscm62_67",
+        "carregado": false,
+        "contador": 0
       },
       {
         "questions": "40",
         "label": "E_ACTAI_2403: SAP Certified Specialist - Project Manager - SAP Activate for Agile Implementation Management",
-        "value": "e-actai-2403"
+        "value": "e-actai-2403",
+        "carregado": false,
+        "contador": 0
       },
       {
         "questions": "40",
         "label": "E_ACTCLD_21: SAP Certified Specialist - SAP Activate for Cloud Solutions Project Manager",
-        "value": "e-actcld-21"
+        "value": "e-actcld-21",
+        "carregado": false,
+        "contador": 0
       },
       {
         "questions": "40",
         "label": "E_HANAAW_17: SAP Certified Development Specialist - ABAP for SAP HANA 2.0",
-        "value": "e-hanaaw-17"
+        "value": "e-hanaaw-17",
+        "carregado": false,
+        "contador": 0
       },
       {
         "questions": "40",
         "label": "E_S4CPE_2023: SAP Certified Specialist - SAP S/4HANA Cloud, private edition implementation with SAP Activate",
-        "value": "e-s4cpe-2023"
+        "value": "e-s4cpe-2023",
+        "carregado": false,
+        "contador": 0
       },
       {
         "questions": "40",
         "label": "E_S4HCON2023: SAP Certified Specialist - SAP S/4HANA Conversion and SAP System Upgrade",
-        "value": "e-s4hcon2023"
+        "value": "e-s4hcon2023",
+        "carregado": false,
+        "contador": 0
       },
       {
         "questions": "40",
         "label": "P_BTPA_2408: SAP Certified Professional - Solution Architect - SAP BTP",
-        "value": "p-btpa-2408"
+        "value": "p-btpa-2408",
+        "carregado": false,
+        "contador": 0
       },
       {
         "questions": "79",
         "label": "P_S4FIN_2021: SAP Certified Application Professional - Financials in SAP S/4HANA for SAP ERP Finance Experts (SAP S/4HANA 2021)",
-        "value": "p-s4fin-2021"
+        "value": "p-s4fin-2021",
+        "carregado": false,
+        "contador": 0
       }
     ]
   },
@@ -435,142 +603,198 @@
       {
         "questions": "377",
         "label": "ANS-C00: AWS Certified Advanced Networking - Specialty",
-        "value": "ans-c00"
+        "value": "ans-c00",
+        "carregado": false,
+        "contador": 0
       },
       {
         "questions": "296",
         "label": "AWS Certified Advanced Networking - Specialty ANS-C01: AWS Certified Advanced Networking - Specialty ANS-C01",
-        "value": "aws-certified-advanced-networking-specialty-ans-c01"
+        "value": "aws-certified-advanced-networking-specialty-ans-c01",
+        "carregado": false,
+        "contador": 0
       },
       {
         "questions": "488",
         "label": "AWS Certified AI Practitioner AIF-C01: AWS Certified AI Practitioner AIF-C01",
-        "value": "aws-certified-ai-practitioner-aif-c01"
+        "value": "aws-certified-ai-practitioner-aif-c01",
+        "carregado": false,
+        "contador": 0
       },
       {
         "questions": "59",
         "label": "AWS Certified Alexa Skill Builder - Specialty: AWS Certified Alexa Skill Builder - Specialty",
-        "value": "aws-certified-alexa-skill-builder-specialty"
+        "value": "aws-certified-alexa-skill-builder-specialty",
+        "carregado": false,
+        "contador": 0
       },
       {
         "questions": "85",
         "label": "AWS Certified Big Data - Specialty: AWS Certified Big Data - Specialty (BDS-C00)",
-        "value": "aws-certified-big-data-specialty"
+        "value": "aws-certified-big-data-specialty",
+        "carregado": false,
+        "contador": 0
       },
       {
         "questions": "200",
         "label": "AWS Certified CloudOps Engineer - Associate SOA-C03: AWS Certified CloudOps Engineer - Associate SOA-C03",
-        "value": "aws-certified-cloudops-engineer-associate-soa-c03"
+        "value": "aws-certified-cloudops-engineer-associate-soa-c03",
+        "carregado": false,
+        "contador": 0
       },
       {
         "questions": "988",
         "label": "AWS Certified Cloud Practitioner: AWS Certified Cloud Practitioner (CLF-C01)",
-        "value": "aws-certified-cloud-practitioner"
+        "value": "aws-certified-cloud-practitioner",
+        "carregado": false,
+        "contador": 0
       },
       {
         "questions": "719",
         "label": "AWS Certified Cloud Practitioner CLF-C02: AWS Certified Cloud Practitioner CLF-C02",
-        "value": "aws-certified-cloud-practitioner-clf-c02"
+        "value": "aws-certified-cloud-practitioner-clf-c02",
+        "carregado": false,
+        "contador": 0
       },
       {
         "questions": "164",
         "label": "AWS Certified Data Analytics - Specialty: AWS Certified Data Analytics - Specialty (DAS-C01)",
-        "value": "aws-certified-data-analytics-specialty"
+        "value": "aws-certified-data-analytics-specialty",
+        "carregado": false,
+        "contador": 0
       },
       {
         "questions": "359",
         "label": "AWS Certified Database - Specialty: AWS Certified Database - Specialty",
-        "value": "aws-certified-database-specialty"
+        "value": "aws-certified-database-specialty",
+        "carregado": false,
+        "contador": 0
       },
       {
         "questions": "366",
         "label": "AWS Certified Data Engineer - Associate DEA-C01: AWS Certified Data Engineer - Associate DEA-C01",
-        "value": "aws-certified-data-engineer-associate-dea-c01"
+        "value": "aws-certified-data-engineer-associate-dea-c01",
+        "carregado": false,
+        "contador": 0
       },
       {
         "questions": "443",
         "label": "AWS Certified Developer Associate: AWS Certified Developer Associate",
-        "value": "aws-certified-developer-associate"
+        "value": "aws-certified-developer-associate",
+        "carregado": false,
+        "contador": 0
       },
       {
         "questions": "557",
         "label": "AWS Certified Developer - Associate DVA-C02: AWS Certified Developer - Associate DVA-C02",
-        "value": "aws-certified-developer-associate-dva-c02"
+        "value": "aws-certified-developer-associate-dva-c02",
+        "carregado": false,
+        "contador": 0
       },
       {
         "questions": "460",
         "label": "AWS Certified DevOps Engineer - Professional DOP-C02: AWS Certified DevOps Engineer - Professional DOP-C02",
-        "value": "aws-certified-devops-engineer-professional-dop-c02"
+        "value": "aws-certified-devops-engineer-professional-dop-c02",
+        "carregado": false,
+        "contador": 0
       },
       {
         "questions": "127",
         "label": "AWS Certified Generative AI Developer - Professional AIP-C01: AWS Certified Generative AI Developer - Professional AIP-C01",
-        "value": "aws-certified-generative-ai-developer-professional-aip-c01"
+        "value": "aws-certified-generative-ai-developer-professional-aip-c01",
+        "carregado": false,
+        "contador": 0
       },
       {
         "questions": "271",
         "label": "AWS Certified Machine Learning Engineer - Associate MLA-C01: AWS Certified Machine Learning Engineer - Associate MLA-C01",
-        "value": "aws-certified-machine-learning-engineer-associate-mla-c01"
+        "value": "aws-certified-machine-learning-engineer-associate-mla-c01",
+        "carregado": false,
+        "contador": 0
       },
       {
         "questions": "369",
         "label": "AWS Certified Machine Learning - Specialty: AWS Certified Machine Learning - Specialty (MLS-C01)",
-        "value": "aws-certified-machine-learning-specialty"
+        "value": "aws-certified-machine-learning-specialty",
+        "carregado": false,
+        "contador": 0
       },
       {
         "questions": "130",
         "label": "AWS Certified SAP on AWS - Specialty PAS-C01: AWS Certified SAP on AWS - Specialty PAS-C01",
-        "value": "aws-certified-sap-on-aws-specialty-pas-c01"
+        "value": "aws-certified-sap-on-aws-specialty-pas-c01",
+        "carregado": false,
+        "contador": 0
       },
       {
         "questions": "509",
         "label": "AWS Certified Security - Specialty: AWS Certified Security - Specialty",
-        "value": "aws-certified-security-specialty"
+        "value": "aws-certified-security-specialty",
+        "carregado": false,
+        "contador": 0
       },
       {
         "questions": "307",
         "label": "AWS Certified Security - Specialty SCS-C02: AWS Certified Security - Specialty SCS-C02",
-        "value": "aws-certified-security-specialty-scs-c02"
+        "value": "aws-certified-security-specialty-scs-c02",
+        "carregado": false,
+        "contador": 0
       },
       {
         "questions": "85",
         "label": "AWS Certified Security - Specialty SCS-C03: AWS Certified Security - Specialty SCS-C03",
-        "value": "aws-certified-security-specialty-scs-c03"
+        "value": "aws-certified-security-specialty-scs-c03",
+        "carregado": false,
+        "contador": 0
       },
       {
         "questions": "822",
         "label": "AWS Certified Solutions Architect - Associate SAA-C02: AWS Certified Solutions Architect - Associate SAA-C02",
-        "value": "aws-certified-solutions-architect-associate-saa-c02"
+        "value": "aws-certified-solutions-architect-associate-saa-c02",
+        "carregado": false,
+        "contador": 0
       },
       {
         "questions": "1019",
         "label": "AWS Certified Solutions Architect - Associate SAA-C03: AWS Certified Solutions Architect - Associate SAA-C03",
-        "value": "aws-certified-solutions-architect-associate-saa-c03"
+        "value": "aws-certified-solutions-architect-associate-saa-c03",
+        "carregado": false,
+        "contador": 0
       },
       {
         "questions": "1019",
         "label": "AWS Certified Solutions Architect - Professional: AWS Certified Solutions Architect - Professional",
-        "value": "aws-certified-solutions-architect-professional"
+        "value": "aws-certified-solutions-architect-professional",
+        "carregado": false,
+        "contador": 0
       },
       {
         "questions": "529",
         "label": "AWS Certified Solutions Architect - Professional SAP-C02: AWS Certified Solutions Architect - Professional SAP-C02",
-        "value": "aws-certified-solutions-architect-professional-sap-c02"
+        "value": "aws-certified-solutions-architect-professional-sap-c02",
+        "carregado": false,
+        "contador": 0
       },
       {
         "questions": "478",
         "label": "AWS Certified SysOps Administrator - Associate: AWS Certified SysOps Administrator - Associate (SOA-C02)",
-        "value": "aws-certified-sysops-administrator-associate"
+        "value": "aws-certified-sysops-administrator-associate",
+        "carregado": false,
+        "contador": 0
       },
       {
         "questions": "208",
         "label": "AWS DevOps Engineer Professional: AWS DevOps Engineer - Professional (DOP-C01)",
-        "value": "aws-devops-engineer-professional"
+        "value": "aws-devops-engineer-professional",
+        "carregado": false,
+        "contador": 0
       },
       {
         "questions": "932",
         "label": "AWS-SysOps: AWS Certified SysOps Administrator",
-        "value": "aws-sysops"
+        "value": "aws-sysops",
+        "carregado": false,
+        "contador": 0
       }
     ]
   },
@@ -580,1157 +804,1619 @@
       {
         "questions": "41",
         "label": "62-193: Technology Literacy for Educators",
-        "value": "62-193"
+        "value": "62-193",
+        "carregado": false,
+        "contador": 0
       },
       {
         "questions": "156",
         "label": "70-243: Administering and Deploying System Center 2012 Configuration Manager (SCCM)",
-        "value": "70-243"
+        "value": "70-243",
+        "carregado": false,
+        "contador": 0
       },
       {
         "questions": "141",
         "label": "70-331: Core Solutions of Microsoft SharePoint Server 2013",
-        "value": "70-331"
+        "value": "70-331",
+        "carregado": false,
+        "contador": 0
       },
       {
         "questions": "127",
         "label": "70-332: Advanced Solutions of Microsoft SharePoint Server 2013",
-        "value": "70-332"
+        "value": "70-332",
+        "carregado": false,
+        "contador": 0
       },
       {
         "questions": "126",
         "label": "70-333: Deploying Enterprise Voice with Skype for Business 2015",
-        "value": "70-333"
+        "value": "70-333",
+        "carregado": false,
+        "contador": 0
       },
       {
         "questions": "145",
         "label": "70-334: Core Solutions of Microsoft Skype for Business 2015",
-        "value": "70-334"
+        "value": "70-334",
+        "carregado": false,
+        "contador": 0
       },
       {
         "questions": "165",
         "label": "70-339: Managing Microsoft SharePoint Server 2016",
-        "value": "70-339"
+        "value": "70-339",
+        "carregado": false,
+        "contador": 0
       },
       {
         "questions": "183",
         "label": "70-341: Core Solutions of Microsoft Exchange Server 2013",
-        "value": "70-341"
+        "value": "70-341",
+        "carregado": false,
+        "contador": 0
       },
       {
         "questions": "191",
         "label": "70-342: Advanced Solutions of Microsoft Exchange Server 2013",
-        "value": "70-342"
+        "value": "70-342",
+        "carregado": false,
+        "contador": 0
       },
       {
         "questions": "168",
         "label": "70-345: Designing and Deploying Microsoft Exchange Server 2016",
-        "value": "70-345"
+        "value": "70-345",
+        "carregado": false,
+        "contador": 0
       },
       {
         "questions": "282",
         "label": "70-346: Managing Office 365 Identities and Requirements",
-        "value": "70-346"
+        "value": "70-346",
+        "carregado": false,
+        "contador": 0
       },
       {
         "questions": "247",
         "label": "70-347: Enabling Office 365 Services",
-        "value": "70-347"
+        "value": "70-347",
+        "carregado": false,
+        "contador": 0
       },
       {
         "questions": "48",
         "label": "70-348: Managing Projects and Portfolios with Microsoft PPM",
-        "value": "70-348"
+        "value": "70-348",
+        "carregado": false,
+        "contador": 0
       },
       {
         "questions": "65",
         "label": "70-357: Developing Mobile Apps",
-        "value": "70-357"
+        "value": "70-357",
+        "carregado": false,
+        "contador": 0
       },
       {
         "questions": "36",
         "label": "70-398: Planning for and Managing Devices in the Enterprise",
-        "value": "70-398"
+        "value": "70-398",
+        "carregado": false,
+        "contador": 0
       },
       {
         "questions": "550",
         "label": "70-410: Installing and Configuring Windows Server 2012",
-        "value": "70-410"
+        "value": "70-410",
+        "carregado": false,
+        "contador": 0
       },
       {
         "questions": "300",
         "label": "70-411: Administering Windows Server 2012",
-        "value": "70-411"
+        "value": "70-411",
+        "carregado": false,
+        "contador": 0
       },
       {
         "questions": "448",
         "label": "70-412: Configuring Advanced Windows Server 2012 Services",
-        "value": "70-412"
+        "value": "70-412",
+        "carregado": false,
+        "contador": 0
       },
       {
         "questions": "337",
         "label": "70-413: MCSE Designing and Implementing a Server Infrastructure",
-        "value": "70-413"
+        "value": "70-413",
+        "carregado": false,
+        "contador": 0
       },
       {
         "questions": "171",
         "label": "70-414: MCSE Implementing an Advanced Server Infrastructure",
-        "value": "70-414"
+        "value": "70-414",
+        "carregado": false,
+        "contador": 0
       },
       {
         "questions": "691",
         "label": "70-417: Upgrading Your Skills to MCSA Windows Server 2012",
-        "value": "70-417"
+        "value": "70-417",
+        "carregado": false,
+        "contador": 0
       },
       {
         "questions": "265",
         "label": "70-461: MCSA Querying Microsoft SQL Server 2012/2014",
-        "value": "70-461"
+        "value": "70-461",
+        "carregado": false,
+        "contador": 0
       },
       {
         "questions": "320",
         "label": "70-462: MCSA Administering Microsoft SQL Server 20122014 Databases",
-        "value": "70-462"
+        "value": "70-462",
+        "carregado": false,
+        "contador": 0
       },
       {
         "questions": "218",
         "label": "70-463: MCSA Implementing a Data Warehouse with Microsoft SQL Server 20122014",
-        "value": "70-463"
+        "value": "70-463",
+        "carregado": false,
+        "contador": 0
       },
       {
         "questions": "209",
         "label": "70-464: Developing Microsoft SQL Server 2012/2014 Databases",
-        "value": "70-464"
+        "value": "70-464",
+        "carregado": false,
+        "contador": 0
       },
       {
         "questions": "64",
         "label": "70-465: Designing Database Solutions for Microsoft SQL Server 2012",
-        "value": "70-465"
+        "value": "70-465",
+        "carregado": false,
+        "contador": 0
       },
       {
         "questions": "190",
         "label": "70-466: Implementing Data Models and Reports with Microsoft SQL Server 2012",
-        "value": "70-466"
+        "value": "70-466",
+        "carregado": false,
+        "contador": 0
       },
       {
         "questions": "102",
         "label": "70-467: Designing Business Intelligence Solutions with Microsoft SQL Server 2012",
-        "value": "70-467"
+        "value": "70-467",
+        "carregado": false,
+        "contador": 0
       },
       {
         "questions": "26",
         "label": "70-473: Designing and Implementing Cloud Data Platform Solutions",
-        "value": "70-473"
+        "value": "70-473",
+        "carregado": false,
+        "contador": 0
       },
       {
         "questions": "42",
         "label": "70-475: Designing and Implementing Big Data Analytics Solutions",
-        "value": "70-475"
+        "value": "70-475",
+        "carregado": false,
+        "contador": 0
       },
       {
         "questions": "270",
         "label": "70-480: MCSD Programming in HTML5 with JavaScript and CSS3",
-        "value": "70-480"
+        "value": "70-480",
+        "carregado": false,
+        "contador": 0
       },
       {
         "questions": "271",
         "label": "70-483: MCSD Programming in C",
-        "value": "70-483"
+        "value": "70-483",
+        "carregado": false,
+        "contador": 0
       },
       {
         "questions": "234",
         "label": "70-486: MCSD Developing ASP.NET MVC 4 Web Applications",
-        "value": "70-486"
+        "value": "70-486",
+        "carregado": false,
+        "contador": 0
       },
       {
         "questions": "200",
         "label": "70-487: MCSD Developing Windows Azure and Web Services",
-        "value": "70-487"
+        "value": "70-487",
+        "carregado": false,
+        "contador": 0
       },
       {
         "questions": "79",
         "label": "70-488: Developing Microsoft SharePoint Server 2013 Core Solutions",
-        "value": "70-488"
+        "value": "70-488",
+        "carregado": false,
+        "contador": 0
       },
       {
         "questions": "48",
         "label": "70-489: Developing Microsoft SharePoint Server 2013 Advanced Solutions",
-        "value": "70-489"
+        "value": "70-489",
+        "carregado": false,
+        "contador": 0
       },
       {
         "questions": "97",
         "label": "70-496: Administering Visual Studio Team Foundation Server 2012",
-        "value": "70-496"
+        "value": "70-496",
+        "carregado": false,
+        "contador": 0
       },
       {
         "questions": "100",
         "label": "70-497: Software Testing with Visual Studio 2012",
-        "value": "70-497"
+        "value": "70-497",
+        "carregado": false,
+        "contador": 0
       },
       {
         "questions": "95",
         "label": "70-498: Delivering Continuous Value with Visual Studio 2012 Application Lifecycle Management",
-        "value": "70-498"
+        "value": "70-498",
+        "carregado": false,
+        "contador": 0
       },
       {
         "questions": "217",
         "label": "70-532: Developing Microsoft Azure Solutions",
-        "value": "70-532"
+        "value": "70-532",
+        "carregado": false,
+        "contador": 0
       },
       {
         "questions": "246",
         "label": "70-533: Implementing Microsoft Azure Infrastructure Solutions",
-        "value": "70-533"
+        "value": "70-533",
+        "carregado": false,
+        "contador": 0
       },
       {
         "questions": "35",
         "label": "70-535: Architecting Microsoft Azure Solutions",
-        "value": "70-535"
+        "value": "70-535",
+        "carregado": false,
+        "contador": 0
       },
       {
         "questions": "67",
         "label": "70-537: Configuring and Operating a Hybrid Cloud with Microsoft Azure Stack",
-        "value": "70-537"
+        "value": "70-537",
+        "carregado": false,
+        "contador": 0
       },
       {
         "questions": "551",
         "label": "70-680: Windows 7 Configuring",
-        "value": "70-680"
+        "value": "70-680",
+        "carregado": false,
+        "contador": 0
       },
       {
         "questions": "118",
         "label": "70-685: Windows 7 Enterprise Desktop Support Technician",
-        "value": "70-685"
+        "value": "70-685",
+        "carregado": false,
+        "contador": 0
       },
       {
         "questions": "183",
         "label": "70-686: Windows 7, Enterprise Desktop Administrator",
-        "value": "70-686"
+        "value": "70-686",
+        "carregado": false,
+        "contador": 0
       },
       {
         "questions": "125",
         "label": "70-695: Deploying Windows Devices and Enterprise Apps",
-        "value": "70-695"
+        "value": "70-695",
+        "carregado": false,
+        "contador": 0
       },
       {
         "questions": "369",
         "label": "70-697: Configuring Windows Devices",
-        "value": "70-697"
+        "value": "70-697",
+        "carregado": false,
+        "contador": 0
       },
       {
         "questions": "153",
         "label": "70-698: Installing and Configuring Windows 10",
-        "value": "70-698"
+        "value": "70-698",
+        "carregado": false,
+        "contador": 0
       },
       {
         "questions": "155",
         "label": "70-703: Administering Microsoft System Center Configuration Manager and Cloud Services Integration",
-        "value": "70-703"
+        "value": "70-703",
+        "carregado": false,
+        "contador": 0
       },
       {
         "questions": "113",
         "label": "70-705: Designing and Providing Microsoft Licensing Solutions to Large Organizations",
-        "value": "70-705"
+        "value": "70-705",
+        "carregado": false,
+        "contador": 0
       },
       {
         "questions": "47",
         "label": "70-713: Software Asset Management (SAM) Core",
-        "value": "70-713"
+        "value": "70-713",
+        "carregado": false,
+        "contador": 0
       },
       {
         "questions": "63",
         "label": "70-735: OEM Manufacturing and Deployment for Windows 10",
-        "value": "70-735"
+        "value": "70-735",
+        "carregado": false,
+        "contador": 0
       },
       {
         "questions": "294",
         "label": "70-740: Installation, Storage, and Compute with Windows Server 2016",
-        "value": "70-740"
+        "value": "70-740",
+        "carregado": false,
+        "contador": 0
       },
       {
         "questions": "207",
         "label": "70-741: MCSA Networking with Windows Server 2016",
-        "value": "70-741"
+        "value": "70-741",
+        "carregado": false,
+        "contador": 0
       },
       {
         "questions": "266",
         "label": "70-742: Identity with Windows Server 2016",
-        "value": "70-742"
+        "value": "70-742",
+        "carregado": false,
+        "contador": 0
       },
       {
         "questions": "231",
         "label": "70-743: Upgrading Your Skills to MCSA Windows Server 2016",
-        "value": "70-743"
+        "value": "70-743",
+        "carregado": false,
+        "contador": 0
       },
       {
         "questions": "205",
         "label": "70-744: Securing Windows Server 2016",
-        "value": "70-744"
+        "value": "70-744",
+        "carregado": false,
+        "contador": 0
       },
       {
         "questions": "73",
         "label": "70-745: Implementing a Software-Defined Datacenter",
-        "value": "70-745"
+        "value": "70-745",
+        "carregado": false,
+        "contador": 0
       },
       {
         "questions": "201",
         "label": "70-761: Querying Data with Transact-SQL",
-        "value": "70-761"
+        "value": "70-761",
+        "carregado": false,
+        "contador": 0
       },
       {
         "questions": "178",
         "label": "70-762: Developing SQL Databases",
-        "value": "70-762"
+        "value": "70-762",
+        "carregado": false,
+        "contador": 0
       },
       {
         "questions": "342",
         "label": "70-764: Administering a SQL Database Infrastructure",
-        "value": "70-764"
+        "value": "70-764",
+        "carregado": false,
+        "contador": 0
       },
       {
         "questions": "186",
         "label": "70-765: Provisioning SQL Databases",
-        "value": "70-765"
+        "value": "70-765",
+        "carregado": false,
+        "contador": 0
       },
       {
         "questions": "142",
         "label": "70-767: Implementing a SQL Data Warehouse",
-        "value": "70-767"
+        "value": "70-767",
+        "carregado": false,
+        "contador": 0
       },
       {
         "questions": "38",
         "label": "70-768: Developing SQL Data Models",
-        "value": "70-768"
+        "value": "70-768",
+        "carregado": false,
+        "contador": 0
       },
       {
         "questions": "39",
         "label": "70-773: Analyzing Big Data with Microsoft R",
-        "value": "70-773"
+        "value": "70-773",
+        "carregado": false,
+        "contador": 0
       },
       {
         "questions": "37",
         "label": "70-774: Perform Cloud Data Science with Azure Machine Learning",
-        "value": "70-774"
+        "value": "70-774",
+        "carregado": false,
+        "contador": 0
       },
       {
         "questions": "35",
         "label": "70-775: Perform Data Engineering on Microsoft Azure HDInsight",
-        "value": "70-775"
+        "value": "70-775",
+        "carregado": false,
+        "contador": 0
       },
       {
         "questions": "83",
         "label": "70-776: Perform Big Data Engineering on Microsoft Cloud Services",
-        "value": "70-776"
+        "value": "70-776",
+        "carregado": false,
+        "contador": 0
       },
       {
         "questions": "145",
         "label": "70-778: Analyzing and Visualizing Data with Microsoft Power BI",
-        "value": "70-778"
+        "value": "70-778",
+        "carregado": false,
+        "contador": 0
       },
       {
         "questions": "98",
         "label": "70-779: Analyzing and Visualizing Data with Microsoft Excel",
-        "value": "70-779"
+        "value": "70-779",
+        "carregado": false,
+        "contador": 0
       },
       {
         "questions": "101",
         "label": "74-343: Managing Projects with Microsoft Project 2013",
-        "value": "74-343"
+        "value": "74-343",
+        "carregado": false,
+        "contador": 0
       },
       {
         "questions": "99",
         "label": "74-409: Server Virtualization with Windows Server Hyper-V and System Center",
-        "value": "74-409"
+        "value": "74-409",
+        "carregado": false,
+        "contador": 0
       },
       {
         "questions": "98",
         "label": "74-697: OEM Preinstallation",
-        "value": "74-697"
+        "value": "74-697",
+        "carregado": false,
+        "contador": 0
       },
       {
         "questions": "30",
         "label": "77-420: Excel 2013",
-        "value": "77-420"
+        "value": "77-420",
+        "carregado": false,
+        "contador": 0
       },
       {
         "questions": "12",
         "label": "77-427: Excel 2013 Expert Part One",
-        "value": "77-427"
+        "value": "77-427",
+        "carregado": false,
+        "contador": 0
       },
       {
         "questions": "61",
         "label": "77-602: MOS: Using Microsoft Office Excel 2007",
-        "value": "77-602"
+        "value": "77-602",
+        "carregado": false,
+        "contador": 0
       },
       {
         "questions": "34",
         "label": "77-725: Word 2016: Core Document Creation, Collaboration and Communication",
-        "value": "77-725"
+        "value": "77-725",
+        "carregado": false,
+        "contador": 0
       },
       {
         "questions": "4",
         "label": "77-727: Excel 2016: Core Data Analysis, Manipulation, and Presentation",
-        "value": "77-727"
+        "value": "77-727",
+        "carregado": false,
+        "contador": 0
       },
       {
         "questions": "101",
         "label": "77-881: Word 2010",
-        "value": "77-881"
+        "value": "77-881",
+        "carregado": false,
+        "contador": 0
       },
       {
         "questions": "101",
         "label": "77-884: Outlook 2010",
-        "value": "77-884"
+        "value": "77-884",
+        "carregado": false,
+        "contador": 0
       },
       {
         "questions": "18",
         "label": "77-886: SharePoint 2010",
-        "value": "77-886"
+        "value": "77-886",
+        "carregado": false,
+        "contador": 0
       },
       {
         "questions": "61",
         "label": "77-888: Excel 2010 Expert",
-        "value": "77-888"
+        "value": "77-888",
+        "carregado": false,
+        "contador": 0
       },
       {
         "questions": "260",
         "label": "98-349: Windows Operating System Fundamentals",
-        "value": "98-349"
+        "value": "98-349",
+        "carregado": false,
+        "contador": 0
       },
       {
         "questions": "163",
         "label": "98-361: Software Development Fundamentals",
-        "value": "98-361"
+        "value": "98-361",
+        "carregado": false,
+        "contador": 0
       },
       {
         "questions": "235",
         "label": "98-364: Database Fundamentals",
-        "value": "98-364"
+        "value": "98-364",
+        "carregado": false,
+        "contador": 0
       },
       {
         "questions": "439",
         "label": "98-365: Windows Server Administration Fundamentals",
-        "value": "98-365"
+        "value": "98-365",
+        "carregado": false,
+        "contador": 0
       },
       {
         "questions": "196",
         "label": "98-366: Networking Fundamentals",
-        "value": "98-366"
+        "value": "98-366",
+        "carregado": false,
+        "contador": 0
       },
       {
         "questions": "162",
         "label": "98-367: Security Fundamentals",
-        "value": "98-367"
+        "value": "98-367",
+        "carregado": false,
+        "contador": 0
       },
       {
         "questions": "66",
         "label": "98-368: Mobility and Devices Fundamentals",
-        "value": "98-368"
+        "value": "98-368",
+        "carregado": false,
+        "contador": 0
       },
       {
         "questions": "39",
         "label": "98-369: Cloud Fundamentals",
-        "value": "98-369"
+        "value": "98-369",
+        "carregado": false,
+        "contador": 0
       },
       {
         "questions": "96",
         "label": "98-375: HTML5 App Development Fundamentals",
-        "value": "98-375"
+        "value": "98-375",
+        "carregado": false,
+        "contador": 0
       },
       {
         "questions": "40",
         "label": "98-381: Introduction to Programming Using Python",
-        "value": "98-381"
+        "value": "98-381",
+        "carregado": false,
+        "contador": 0
       },
       {
         "questions": "39",
         "label": "98-382: Introduction to Programming Using JavaScript",
-        "value": "98-382"
+        "value": "98-382",
+        "carregado": false,
+        "contador": 0
       },
       {
         "questions": "40",
         "label": "98-383: Introduction to Programming Using HTML and CSS",
-        "value": "98-383"
+        "value": "98-383",
+        "carregado": false,
+        "contador": 0
       },
       {
         "questions": "42",
         "label": "98-388: Introduction to Programming Using Java",
-        "value": "98-388"
+        "value": "98-388",
+        "carregado": false,
+        "contador": 0
       },
       {
         "questions": "120",
         "label": "AB-100: Agentic AI Business Solutions Architect",
-        "value": "ab-100"
+        "value": "ab-100",
+        "carregado": false,
+        "contador": 0
       },
       {
         "questions": "69",
         "label": "AB-410: Building Intelligent Applications",
-        "value": "ab-410"
+        "value": "ab-410",
+        "carregado": false,
+        "contador": 0
       },
       {
         "questions": "84",
         "label": "AB-620: Designing and Building Integrated AI Agent Solutions in Copilot Studio",
-        "value": "ab-620"
+        "value": "ab-620",
+        "carregado": false,
+        "contador": 0
       },
       {
         "questions": "92",
         "label": "AB-730: AI Business Professional",
-        "value": "ab-730"
+        "value": "ab-730",
+        "carregado": false,
+        "contador": 0
       },
       {
         "questions": "100",
         "label": "AB-731: AI Transformation Leader",
-        "value": "ab-731"
+        "value": "ab-731",
+        "carregado": false,
+        "contador": 0
       },
       {
         "questions": "89",
         "label": "AB-900: Microsoft 365 Copilot and Agent Administration Fundamentals",
-        "value": "ab-900"
+        "value": "ab-900",
+        "carregado": false,
+        "contador": 0
       },
       {
         "questions": "218",
         "label": "AI-100: Designing and Implementing an Azure AI Solution",
-        "value": "ai-100"
+        "value": "ai-100",
+        "carregado": false,
+        "contador": 0
       },
       {
         "questions": "333",
         "label": "AI-102: Designing and Implementing a Microsoft Azure AI Solution",
-        "value": "ai-102"
+        "value": "ai-102",
+        "carregado": false,
+        "contador": 0
       },
       {
         "questions": "135",
         "label": "AI-103: Developing AI Apps and Agents on Azure",
-        "value": "ai-103"
+        "value": "ai-103",
+        "carregado": false,
+        "contador": 0
       },
       {
         "questions": "140",
         "label": "AI-200: Developing AI Cloud Solutions on Azure",
-        "value": "ai-200"
+        "value": "ai-200",
+        "carregado": false,
+        "contador": 0
       },
       {
         "questions": "170",
         "label": "AI-300: Operationalizing Machine Learning and Generative AI Solutions",
-        "value": "ai-300"
+        "value": "ai-300",
+        "carregado": false,
+        "contador": 0
       },
       {
         "questions": "246",
         "label": "AI-900: Microsoft Azure AI Fundamentals",
-        "value": "ai-900"
+        "value": "ai-900",
+        "carregado": false,
+        "contador": 0
       },
       {
         "questions": "128",
         "label": "AI-901: Microsoft Azure AI Fundamentals",
-        "value": "ai-901"
+        "value": "ai-901",
+        "carregado": false,
+        "contador": 0
       },
       {
         "questions": "197",
         "label": "AZ-100: Microsoft Azure Infrastructure and Deployment",
-        "value": "az-100"
+        "value": "az-100",
+        "carregado": false,
+        "contador": 0
       },
       {
         "questions": "103",
         "label": "AZ-101: Microsoft Azure Integration and Security",
-        "value": "az-101"
+        "value": "az-101",
+        "carregado": false,
+        "contador": 0
       },
       {
         "questions": "76",
         "label": "AZ-102: Microsoft Azure Administrator Certification Transition",
-        "value": "az-102"
+        "value": "az-102",
+        "carregado": false,
+        "contador": 0
       },
       {
         "questions": "265",
         "label": "AZ-103: Microsoft Azure Administrator",
-        "value": "az-103"
+        "value": "az-103",
+        "carregado": false,
+        "contador": 0
       },
       {
         "questions": "606",
         "label": "AZ-104: Microsoft Azure Administrator",
-        "value": "az-104"
+        "value": "az-104",
+        "carregado": false,
+        "contador": 0
       },
       {
         "questions": "424",
         "label": "AZ-120: Planning and Administering Microsoft Azure for SAP Workloads",
-        "value": "az-120"
+        "value": "az-120",
+        "carregado": false,
+        "contador": 0
       },
       {
         "questions": "363",
         "label": "AZ-140: Configuring and Operating Windows Virtual Desktop on Microsoft Azure",
-        "value": "az-140"
+        "value": "az-140",
+        "carregado": false,
+        "contador": 0
       },
       {
         "questions": "63",
         "label": "AZ-200: Microsoft Azure Developer Core Solutions",
-        "value": "az-200"
+        "value": "az-200",
+        "carregado": false,
+        "contador": 0
       },
       {
         "questions": "61",
         "label": "AZ-202: Microsoft Azure Developer Certification Transition",
-        "value": "az-202"
+        "value": "az-202",
+        "carregado": false,
+        "contador": 0
       },
       {
         "questions": "150",
         "label": "AZ-203: Developing Solutions for Microsoft Azure",
-        "value": "az-203"
+        "value": "az-203",
+        "carregado": false,
+        "contador": 0
       },
       {
         "questions": "487",
         "label": "AZ-204: Developing Solutions for Microsoft Azure",
-        "value": "az-204"
+        "value": "az-204",
+        "carregado": false,
+        "contador": 0
       },
       {
         "questions": "251",
         "label": "AZ-220: Microsoft Azure IoT Developer",
-        "value": "az-220"
+        "value": "az-220",
+        "carregado": false,
+        "contador": 0
       },
       {
         "questions": "241",
         "label": "AZ-300: Microsoft Azure Architect Technologies",
-        "value": "az-300"
+        "value": "az-300",
+        "carregado": false,
+        "contador": 0
       },
       {
         "questions": "234",
         "label": "AZ-301: Microsoft Azure Architect Design",
-        "value": "az-301"
+        "value": "az-301",
+        "carregado": false,
+        "contador": 0
       },
       {
         "questions": "55",
         "label": "AZ-302: Microsoft Azure Solutions Architect",
-        "value": "az-302"
+        "value": "az-302",
+        "carregado": false,
+        "contador": 0
       },
       {
         "questions": "334",
         "label": "AZ-303: Microsoft Azure Architect Technologies",
-        "value": "az-303"
+        "value": "az-303",
+        "carregado": false,
+        "contador": 0
       },
       {
         "questions": "237",
         "label": "AZ-304: Microsoft Azure Architect Design",
-        "value": "az-304"
+        "value": "az-304",
+        "carregado": false,
+        "contador": 0
       },
       {
         "questions": "286",
         "label": "AZ-305: Designing Microsoft Azure Infrastructure Solutions",
-        "value": "az-305"
+        "value": "az-305",
+        "carregado": false,
+        "contador": 0
       },
       {
         "questions": "564",
         "label": "AZ-400: Microsoft Azure DevOps Solutions",
-        "value": "az-400"
+        "value": "az-400",
+        "carregado": false,
+        "contador": 0
       },
       {
         "questions": "505",
         "label": "AZ-500: Microsoft Azure Security Technologies",
-        "value": "az-500"
+        "value": "az-500",
+        "carregado": false,
+        "contador": 0
       },
       {
         "questions": "167",
         "label": "AZ-600: Configuring and Operating a Hybrid Cloud with Microsoft Azure Stack Hub",
-        "value": "az-600"
+        "value": "az-600",
+        "carregado": false,
+        "contador": 0
       },
       {
         "questions": "387",
         "label": "AZ-700: Designing and Implementing Microsoft Azure Networking Solutions",
-        "value": "az-700"
+        "value": "az-700",
+        "carregado": false,
+        "contador": 0
       },
       {
         "questions": "92",
         "label": "AZ-720: Troubleshooting Microsoft Azure Connectivity",
-        "value": "az-720"
+        "value": "az-720",
+        "carregado": false,
+        "contador": 0
       },
       {
         "questions": "311",
         "label": "AZ-800: Administering Windows Server Hybrid Core Infrastructure",
-        "value": "az-800"
+        "value": "az-800",
+        "carregado": false,
+        "contador": 0
       },
       {
         "questions": "326",
         "label": "AZ-801: Configuring Windows Server Hybrid Advanced Services",
-        "value": "az-801"
+        "value": "az-801",
+        "carregado": false,
+        "contador": 0
       },
       {
         "questions": "474",
         "label": "AZ-900: Microsoft Azure Fundamentals",
-        "value": "az-900"
+        "value": "az-900",
+        "carregado": false,
+        "contador": 0
       },
       {
         "questions": "94",
         "label": "DA-100: Analyzing Data with Microsoft Power BI",
-        "value": "da-100"
+        "value": "da-100",
+        "carregado": false,
+        "contador": 0
       },
       {
         "questions": "527",
         "label": "DP-100: Designing and Implementing a Data Science Solution on Azure",
-        "value": "dp-100"
+        "value": "dp-100",
+        "carregado": false,
+        "contador": 0
       },
       {
         "questions": "372",
         "label": "DP-200: Implementing an Azure Data Solution",
-        "value": "dp-200"
+        "value": "dp-200",
+        "carregado": false,
+        "contador": 0
       },
       {
         "questions": "208",
         "label": "DP-201: Designing an Azure Data Solution",
-        "value": "dp-201"
+        "value": "dp-201",
+        "carregado": false,
+        "contador": 0
       },
       {
         "questions": "399",
         "label": "DP-203: Data Engineering on Microsoft Azure",
-        "value": "dp-203"
+        "value": "dp-203",
+        "carregado": false,
+        "contador": 0
       },
       {
         "questions": "373",
         "label": "DP-300: Administering Relational Databases on Microsoft Azure",
-        "value": "dp-300"
+        "value": "dp-300",
+        "carregado": false,
+        "contador": 0
       },
       {
         "questions": "271",
         "label": "DP-420: Designing and Implementing Cloud-Native Applications Using Microsoft Azure Cosmos DB",
-        "value": "dp-420"
+        "value": "dp-420",
+        "carregado": false,
+        "contador": 0
       },
       {
         "questions": "194",
         "label": "DP-500: Designing and Implementing Enterprise-Scale Analytics Solutions Using Microsoft Azure and Microsoft Power BI",
-        "value": "dp-500"
+        "value": "dp-500",
+        "carregado": false,
+        "contador": 0
       },
       {
         "questions": "222",
         "label": "DP-600: Implementing Analytics Solutions Using Microsoft Fabric",
-        "value": "dp-600"
+        "value": "dp-600",
+        "carregado": false,
+        "contador": 0
       },
       {
         "questions": "139",
         "label": "DP-700: Implementing Data Engineering Solutions Using Microsoft Fabric",
-        "value": "dp-700"
+        "value": "dp-700",
+        "carregado": false,
+        "contador": 0
       },
       {
         "questions": "108",
         "label": "DP-750: Implementing Data Engineering Solutions Using Azure Databricks",
-        "value": "dp-750"
+        "value": "dp-750",
+        "carregado": false,
+        "contador": 0
       },
       {
         "questions": "101",
         "label": "DP-800: Developing AI-Enabled Database Solutions",
-        "value": "dp-800"
+        "value": "dp-800",
+        "carregado": false,
+        "contador": 0
       },
       {
         "questions": "323",
         "label": "DP-900: Microsoft Azure Data Fundamentals",
-        "value": "dp-900"
+        "value": "dp-900",
+        "carregado": false,
+        "contador": 0
       },
       {
         "questions": "65",
         "label": "GH-100: GitHub Administration",
-        "value": "gh-100"
+        "value": "gh-100",
+        "carregado": false,
+        "contador": 0
       },
       {
         "questions": "124",
         "label": "GH-200: GitHub Actions",
-        "value": "gh-200"
+        "value": "gh-200",
+        "carregado": false,
+        "contador": 0
       },
       {
         "questions": "124",
         "label": "GH-300: GitHub Copilot",
-        "value": "gh-300"
+        "value": "gh-300",
+        "carregado": false,
+        "contador": 0
       },
       {
         "questions": "127",
         "label": "GH-500: GitHub Advanced Security",
-        "value": "gh-500"
+        "value": "gh-500",
+        "carregado": false,
+        "contador": 0
       },
       {
         "questions": "58",
         "label": "GH-600: Developing in Agentic AI Systems",
-        "value": "gh-600"
+        "value": "gh-600",
+        "carregado": false,
+        "contador": 0
       },
       {
         "questions": "142",
         "label": "GH-900: GitHub Foundations",
-        "value": "gh-900"
+        "value": "gh-900",
+        "carregado": false,
+        "contador": 0
       },
       {
         "questions": "126",
         "label": "MB-200: Microsoft Dynamics 365 Customer Engagement Core",
-        "value": "mb-200"
+        "value": "mb-200",
+        "carregado": false,
+        "contador": 0
       },
       {
         "questions": "383",
         "label": "MB-210: Microsoft Dynamics 365 for Sales",
-        "value": "mb-210"
+        "value": "mb-210",
+        "carregado": false,
+        "contador": 0
       },
       {
         "questions": "328",
         "label": "MB-220: Microsoft Dynamics 365 for Marketing",
-        "value": "mb-220"
+        "value": "mb-220",
+        "carregado": false,
+        "contador": 0
       },
       {
         "questions": "459",
         "label": "MB-230: Microsoft Dynamics 365 Customer Service Functional Consultant",
-        "value": "mb-230"
+        "value": "mb-230",
+        "carregado": false,
+        "contador": 0
       },
       {
         "questions": "343",
         "label": "MB-240: Microsoft Dynamics 365 for Field Service",
-        "value": "mb-240"
+        "value": "mb-240",
+        "carregado": false,
+        "contador": 0
       },
       {
         "questions": "185",
         "label": "MB-260: Microsoft Customer Data Platform Specialist",
-        "value": "mb-260"
+        "value": "mb-260",
+        "carregado": false,
+        "contador": 0
       },
       {
         "questions": "90",
         "label": "MB2-707: Microsoft Dynamics CRM Customization and Configuration",
-        "value": "mb2-707"
+        "value": "mb2-707",
+        "carregado": false,
+        "contador": 0
       },
       {
         "questions": "23",
         "label": "MB2-708: Microsoft Dynamics CRM Installation",
-        "value": "mb2-708"
+        "value": "mb2-708",
+        "carregado": false,
+        "contador": 0
       },
       {
         "questions": "50",
         "label": "MB2-710: Microsoft Dynamics CRM 2016 Online Deployment",
-        "value": "mb2-710"
+        "value": "mb2-710",
+        "carregado": false,
+        "contador": 0
       },
       {
         "questions": "48",
         "label": "MB2-711: Microsoft Dynamics CRM 2016 Installation",
-        "value": "mb2-711"
+        "value": "mb2-711",
+        "carregado": false,
+        "contador": 0
       },
       {
         "questions": "90",
         "label": "MB2-712: Microsoft Dynamics CRM 2016 Customization and Configuration",
-        "value": "mb2-712"
+        "value": "mb2-712",
+        "carregado": false,
+        "contador": 0
       },
       {
         "questions": "48",
         "label": "MB2-713: Microsoft Dynamics CRM 2016 Sales",
-        "value": "mb2-713"
+        "value": "mb2-713",
+        "carregado": false,
+        "contador": 0
       },
       {
         "questions": "90",
         "label": "MB2-714: Microsoft Dynamics CRM 2016 Customer Service",
-        "value": "mb2-714"
+        "value": "mb2-714",
+        "carregado": false,
+        "contador": 0
       },
       {
         "questions": "48",
         "label": "MB2-715: Microsoft Dynamics 365 customer engagement Online Deployment",
-        "value": "mb2-715"
+        "value": "mb2-715",
+        "carregado": false,
+        "contador": 0
       },
       {
         "questions": "100",
         "label": "MB2-716: Microsoft Dynamics 365 Customization and Configuration",
-        "value": "mb2-716"
+        "value": "mb2-716",
+        "carregado": false,
+        "contador": 0
       },
       {
         "questions": "50",
         "label": "MB2-717: Microsoft Dynamics 365 for Sales",
-        "value": "mb2-717"
+        "value": "mb2-717",
+        "carregado": false,
+        "contador": 0
       },
       {
         "questions": "42",
         "label": "MB2-718: Microsoft Dynamics 365 for Customer Service",
-        "value": "mb2-718"
+        "value": "mb2-718",
+        "carregado": false,
+        "contador": 0
       },
       {
         "questions": "48",
         "label": "MB2-719: Microsoft Dynamics 365 for Marketing",
-        "value": "mb2-719"
+        "value": "mb2-719",
+        "carregado": false,
+        "contador": 0
       },
       {
         "questions": "183",
         "label": "MB-280: Microsoft Dynamics 365 Customer Experience Analyst",
-        "value": "mb-280"
+        "value": "mb-280",
+        "carregado": false,
+        "contador": 0
       },
       {
         "questions": "48",
         "label": "MB2-877: exam",
-        "value": "mb2-877"
+        "value": "mb2-877",
+        "carregado": false,
+        "contador": 0
       },
       {
         "questions": "456",
         "label": "MB-300: Microsoft Dynamics 365: Core Finance and Operations",
-        "value": "mb-300"
+        "value": "mb-300",
+        "carregado": false,
+        "contador": 0
       },
       {
         "questions": "425",
         "label": "MB-310: Microsoft Dynamics 365 Finance Functional Consultant",
-        "value": "mb-310"
+        "value": "mb-310",
+        "carregado": false,
+        "contador": 0
       },
       {
         "questions": "206",
         "label": "MB-320: Microsoft Dynamics 365 Supply Chain Management, Manufacturing",
-        "value": "mb-320"
+        "value": "mb-320",
+        "carregado": false,
+        "contador": 0
       },
       {
         "questions": "454",
         "label": "MB-330: Microsoft Dynamics 365 Supply Chain Management",
-        "value": "mb-330"
+        "value": "mb-330",
+        "carregado": false,
+        "contador": 0
       },
       {
         "questions": "270",
         "label": "MB-335: Microsoft Dynamics 365 Supply Chain Management Functional Consultant Expert",
-        "value": "mb-335"
+        "value": "mb-335",
+        "carregado": false,
+        "contador": 0
       },
       {
         "questions": "182",
         "label": "MB-340: Microsoft Dynamics 365 Commerce Functional Consultant",
-        "value": "mb-340"
+        "value": "mb-340",
+        "carregado": false,
+        "contador": 0
       },
       {
         "questions": "61",
         "label": "MB-400: Microsoft Power Apps + Dynamics 365 Developer",
-        "value": "mb-400"
+        "value": "mb-400",
+        "carregado": false,
+        "contador": 0
       },
       {
         "questions": "399",
         "label": "MB-500: Microsoft Dynamics 365: Finance and Operations Apps Developer",
-        "value": "mb-500"
+        "value": "mb-500",
+        "carregado": false,
+        "contador": 0
       },
       {
         "questions": "56",
         "label": "MB-600: Microsoft Power Apps + Dynamics 365 Solution Architect",
-        "value": "mb-600"
+        "value": "mb-600",
+        "carregado": false,
+        "contador": 0
       },
       {
         "questions": "97",
         "label": "MB6-894: Development, Extensions and Deployment for Microsoft Dynamics 365 for Finance and Operations",
-        "value": "mb6-894"
+        "value": "mb6-894",
+        "carregado": false,
+        "contador": 0
       },
       {
         "questions": "71",
         "label": "MB6-895: exam",
-        "value": "mb6-895"
+        "value": "mb6-895",
+        "carregado": false,
+        "contador": 0
       },
       {
         "questions": "87",
         "label": "MB6-896: exam",
-        "value": "mb6-896"
+        "value": "mb6-896",
+        "carregado": false,
+        "contador": 0
       },
       {
         "questions": "91",
         "label": "MB6-897: exam",
-        "value": "mb6-897"
+        "value": "mb6-897",
+        "carregado": false,
+        "contador": 0
       },
       {
         "questions": "79",
         "label": "MB6-898: exam",
-        "value": "mb6-898"
+        "value": "mb6-898",
+        "carregado": false,
+        "contador": 0
       },
       {
         "questions": "332",
         "label": "MB-700: Microsoft Dynamics 365: Finance and Operations Apps Solution Architect",
-        "value": "mb-700"
+        "value": "mb-700",
+        "carregado": false,
+        "contador": 0
       },
       {
         "questions": "307",
         "label": "MB-800: Microsoft Dynamics 365 Business Central Functional Consultant",
-        "value": "mb-800"
+        "value": "mb-800",
+        "carregado": false,
+        "contador": 0
       },
       {
         "questions": "131",
         "label": "MB-820: Microsoft Dynamics 365 Business Central Developer",
-        "value": "mb-820"
+        "value": "mb-820",
+        "carregado": false,
+        "contador": 0
       },
       {
         "questions": "77",
         "label": "MB-900: Microsoft Dynamics 365 Fundamentals",
-        "value": "mb-900"
+        "value": "mb-900",
+        "carregado": false,
+        "contador": 0
       },
       {
         "questions": "92",
         "label": "MB-901: Microsoft Dynamics 365 Fundamentals",
-        "value": "mb-901"
+        "value": "mb-901",
+        "carregado": false,
+        "contador": 0
       },
       {
         "questions": "229",
         "label": "MB-910: Microsoft Dynamics 365 Fundamentals Customer Engagement Apps (CRM)",
-        "value": "mb-910"
+        "value": "mb-910",
+        "carregado": false,
+        "contador": 0
       },
       {
         "questions": "175",
         "label": "MB-920: Microsoft Dynamics 365 Fundamentals Finance and Operations Apps (ERP)",
-        "value": "mb-920"
+        "value": "mb-920",
+        "carregado": false,
+        "contador": 0
       },
       {
         "questions": "415",
         "label": "MD-100: Windows 10",
-        "value": "md-100"
+        "value": "md-100",
+        "carregado": false,
+        "contador": 0
       },
       {
         "questions": "417",
         "label": "MD-101: Managing Modern Desktops",
-        "value": "md-101"
+        "value": "md-101",
+        "carregado": false,
+        "contador": 0
       },
       {
         "questions": "409",
         "label": "MD-102: Endpoint Administrator",
-        "value": "md-102"
+        "value": "md-102",
+        "carregado": false,
+        "contador": 0
       },
       {
         "questions": "24",
         "label": "MO-201: Microsoft Excel Expert (Excel and Excel 2019)",
-        "value": "mo-201"
+        "value": "mo-201",
+        "carregado": false,
+        "contador": 0
       },
       {
         "questions": "437",
         "label": "MS-100: Microsoft 365 Identity and Services",
-        "value": "ms-100"
+        "value": "ms-100",
+        "carregado": false,
+        "contador": 0
       },
       {
         "questions": "449",
         "label": "MS-101: Microsoft 365 Mobility and Security",
-        "value": "ms-101"
+        "value": "ms-101",
+        "carregado": false,
+        "contador": 0
       },
       {
         "questions": "460",
         "label": "MS-102: Microsoft 365 Administrator",
-        "value": "ms-102"
+        "value": "ms-102",
+        "carregado": false,
+        "contador": 0
       },
       {
         "questions": "143",
         "label": "MS-200: Planning and Configuring a Messaging Platform",
-        "value": "ms-200"
+        "value": "ms-200",
+        "carregado": false,
+        "contador": 0
       },
       {
         "questions": "178",
         "label": "MS-201: Implementing a Hybrid and Secure Messaging Platform",
-        "value": "ms-201"
+        "value": "ms-201",
+        "carregado": false,
+        "contador": 0
       },
       {
         "questions": "64",
         "label": "MS-202: Microsoft 365 Messaging Administrator Certification Transition",
-        "value": "ms-202"
+        "value": "ms-202",
+        "carregado": false,
+        "contador": 0
       },
       {
         "questions": "448",
         "label": "MS-203: Microsoft 365 Messaging",
-        "value": "ms-203"
+        "value": "ms-203",
+        "carregado": false,
+        "contador": 0
       },
       {
         "questions": "95",
         "label": "MS-220: Troubleshooting Microsoft Exchange Online",
-        "value": "ms-220"
+        "value": "ms-220",
+        "carregado": false,
+        "contador": 0
       },
       {
         "questions": "119",
         "label": "MS-300: Deploying Microsoft 365 Teamwork",
-        "value": "ms-300"
+        "value": "ms-300",
+        "carregado": false,
+        "contador": 0
       },
       {
         "questions": "125",
         "label": "MS-301: Deploying SharePoint Server Hybrid",
-        "value": "ms-301"
+        "value": "ms-301",
+        "carregado": false,
+        "contador": 0
       },
       {
         "questions": "45",
         "label": "MS-302: Microsoft 365 Teamwork Administrator Certification Transition",
-        "value": "ms-302"
+        "value": "ms-302",
+        "carregado": false,
+        "contador": 0
       },
       {
         "questions": "352",
         "label": "MS-500: Microsoft 365 Security Administration",
-        "value": "ms-500"
+        "value": "ms-500",
+        "carregado": false,
+        "contador": 0
       },
       {
         "questions": "245",
         "label": "MS-600: Building Applications and Solutions with Microsoft 365 Core Services",
-        "value": "ms-600"
+        "value": "ms-600",
+        "carregado": false,
+        "contador": 0
       },
       {
         "questions": "513",
         "label": "MS-700: Managing Microsoft Teams",
-        "value": "ms-700"
+        "value": "ms-700",
+        "carregado": false,
+        "contador": 0
       },
       {
         "questions": "137",
         "label": "MS-720: Microsoft Teams Voice Engineer",
-        "value": "ms-720"
+        "value": "ms-720",
+        "carregado": false,
+        "contador": 0
       },
       {
         "questions": "300",
         "label": "MS-721: Collaboration Communications Systems Engineer",
-        "value": "ms-721"
+        "value": "ms-721",
+        "carregado": false,
+        "contador": 0
       },
       {
         "questions": "125",
         "label": "MS-740: Troubleshooting Microsoft Teams",
-        "value": "ms-740"
+        "value": "ms-740",
+        "carregado": false,
+        "contador": 0
       },
       {
         "questions": "507",
         "label": "MS-900: Microsoft 365 Fundamentals",
-        "value": "ms-900"
+        "value": "ms-900",
+        "carregado": false,
+        "contador": 0
       },
       {
         "questions": "352",
         "label": "PL-100: Microsoft Power Platform App Maker",
-        "value": "pl-100"
+        "value": "pl-100",
+        "carregado": false,
+        "contador": 0
       },
       {
         "questions": "328",
         "label": "PL-200: Microsoft Power Platform Functional Consultant",
-        "value": "pl-200"
+        "value": "pl-200",
+        "carregado": false,
+        "contador": 0
       },
       {
         "questions": "397",
         "label": "PL-300: Microsoft Power BI Data Analyst",
-        "value": "pl-300"
+        "value": "pl-300",
+        "carregado": false,
+        "contador": 0
       },
       {
         "questions": "429",
         "label": "PL-400: Microsoft Power Platform Developer",
-        "value": "pl-400"
+        "value": "pl-400",
+        "carregado": false,
+        "contador": 0
       },
       {
         "questions": "180",
         "label": "PL-500: Microsoft Power Automate RPA Developer",
-        "value": "pl-500"
+        "value": "pl-500",
+        "carregado": false,
+        "contador": 0
       },
       {
         "questions": "255",
         "label": "PL-600: Microsoft Power Platform Solution Architect",
-        "value": "pl-600"
+        "value": "pl-600",
+        "carregado": false,
+        "contador": 0
       },
       {
         "questions": "380",
         "label": "PL-900: Microsoft Power Platform Fundamentals",
-        "value": "pl-900"
+        "value": "pl-900",
+        "carregado": false,
+        "contador": 0
       },
       {
         "questions": "360",
         "label": "SC-100: Microsoft Cybersecurity Architect",
-        "value": "sc-100"
+        "value": "sc-100",
+        "carregado": false,
+        "contador": 0
       },
       {
         "questions": "480",
         "label": "SC-200: Microsoft Security Operations Analyst",
-        "value": "sc-200"
+        "value": "sc-200",
+        "carregado": false,
+        "contador": 0
       },
       {
         "questions": "463",
         "label": "SC-300: Microsoft Identity and Access Administrator",
-        "value": "sc-300"
+        "value": "sc-300",
+        "carregado": false,
+        "contador": 0
       },
       {
         "questions": "387",
         "label": "SC-400: Microsoft Information Protection Administrator",
-        "value": "sc-400"
+        "value": "sc-400",
+        "carregado": false,
+        "contador": 0
       },
       {
         "questions": "280",
         "label": "SC-401: Administering Information Security in Microsoft 365",
-        "value": "sc-401"
+        "value": "sc-401",
+        "carregado": false,
+        "contador": 0
       },
       {
         "questions": "121",
         "label": "SC-500: Implementing End-to-End Security Controls for Cloud and AI Workloads",
-        "value": "sc-500"
+        "value": "sc-500",
+        "carregado": false,
+        "contador": 0
       },
       {
         "questions": "252",
         "label": "SC-900: Microsoft Security, Compliance, and Identity Fundamentals",
-        "value": "sc-900"
+        "value": "sc-900",
+        "carregado": false,
+        "contador": 0
       }
     ]
   },
@@ -1740,1037 +2426,1451 @@
       {
         "questions": "138",
         "label": "010-151: Supporting Cisco Data Center System Devices (DCTECH)",
-        "value": "010-151"
+        "value": "010-151",
+        "carregado": false,
+        "contador": 0
       },
       {
         "questions": "724",
         "label": "100-105: ICND Interconnecting Cisco Networking Devices Part 1",
-        "value": "100-105"
+        "value": "100-105",
+        "carregado": false,
+        "contador": 0
       },
       {
         "questions": "73",
         "label": "100-140: Cisco Certified Support Technician (CCST) IT Support",
-        "value": "100-140"
+        "value": "100-140",
+        "carregado": false,
+        "contador": 0
       },
       {
         "questions": "75",
         "label": "100-150: Cisco Certified Support Technician (CCST) Networking",
-        "value": "100-150"
+        "value": "100-150",
+        "carregado": false,
+        "contador": 0
       },
       {
         "questions": "84",
         "label": "100-160: Cisco Certified Support Technician (CCST) Cybersecurity",
-        "value": "100-160"
+        "value": "100-160",
+        "carregado": false,
+        "contador": 0
       },
       {
         "questions": "60",
         "label": "100-490: Cisco Certified Technician Routing &amp; Switching (RSTECH)",
-        "value": "100-490"
+        "value": "100-490",
+        "carregado": false,
+        "contador": 0
       },
       {
         "questions": "60",
         "label": "100-890: Supporting Cisco Collaboration Devices",
-        "value": "100-890"
+        "value": "100-890",
+        "carregado": false,
+        "contador": 0
       },
       {
         "questions": "693",
         "label": "200-105: ICND Interconnecting Cisco Networking Devices Part 2",
-        "value": "200-105"
+        "value": "200-105",
+        "carregado": false,
+        "contador": 0
       },
       {
         "questions": "1926",
         "label": "200-125: CCNA Cisco Certified Network Associate",
-        "value": "200-125"
+        "value": "200-125",
+        "carregado": false,
+        "contador": 0
       },
       {
         "questions": "131",
         "label": "200-150: Introducing Cisco Data Center Networking",
-        "value": "200-150"
+        "value": "200-150",
+        "carregado": false,
+        "contador": 0
       },
       {
         "questions": "81",
         "label": "200-155: Introducing Cisco Data Center Technologies",
-        "value": "200-155"
+        "value": "200-155",
+        "carregado": false,
+        "contador": 0
       },
       {
         "questions": "462",
         "label": "200-201: Understanding Cisco Cybersecurity Operations Fundamentals (CBROPS)",
-        "value": "200-201"
+        "value": "200-201",
+        "carregado": false,
+        "contador": 0
       },
       {
         "questions": "1395",
         "label": "200-301: Cisco Certified Network Associate (CCNA)",
-        "value": "200-301"
+        "value": "200-301",
+        "carregado": false,
+        "contador": 0
       },
       {
         "questions": "756",
         "label": "200-310: Designing for Cisco Internetwork Solutions",
-        "value": "200-310"
+        "value": "200-310",
+        "carregado": false,
+        "contador": 0
       },
       {
         "questions": "601",
         "label": "200-355: CCNA Wireless Implementing Cisco Wireless Network Fundamentals",
-        "value": "200-355"
+        "value": "200-355",
+        "carregado": false,
+        "contador": 0
       },
       {
         "questions": "64",
         "label": "200-401: Managing Industrial Networks with Cisco Networking Technologies",
-        "value": "200-401"
+        "value": "200-401",
+        "carregado": false,
+        "contador": 0
       },
       {
         "questions": "67",
         "label": "200-601: Managing Industrial Networks for Manufacturing with Cisco Technologies",
-        "value": "200-601"
+        "value": "200-601",
+        "carregado": false,
+        "contador": 0
       },
       {
         "questions": "631",
         "label": "200-901: DevNet Associate (DEVASC)",
-        "value": "200-901"
+        "value": "200-901",
+        "carregado": false,
+        "contador": 0
       },
       {
         "questions": "413",
         "label": "210-060: CCNA Collaboration Implementing Cisco Collaboration Devices (CICD)",
-        "value": "210-060"
+        "value": "210-060",
+        "carregado": false,
+        "contador": 0
       },
       {
         "questions": "341",
         "label": "210-065: CCNA Collaboration Implementing Cisco Video Network Devices (CIVND)",
-        "value": "210-065"
+        "value": "210-065",
+        "carregado": false,
+        "contador": 0
       },
       {
         "questions": "1130",
         "label": "210-250: CCNA Cyber Ops Understanding Cisco Cybersecurity Fundamentals",
-        "value": "210-250"
+        "value": "210-250",
+        "carregado": false,
+        "contador": 0
       },
       {
         "questions": "179",
         "label": "210-255: CCNA Cyber Ops Implementing Cisco Cybersecurity Operations",
-        "value": "210-255"
+        "value": "210-255",
+        "carregado": false,
+        "contador": 0
       },
       {
         "questions": "620",
         "label": "210-260: CCNA Security Implementing Cisco Network Security",
-        "value": "210-260"
+        "value": "210-260",
+        "carregado": false,
+        "contador": 0
       },
       {
         "questions": "60",
         "label": "210-451: Understanding Cisco Cloud Fundamentals",
-        "value": "210-451"
+        "value": "210-451",
+        "carregado": false,
+        "contador": 0
       },
       {
         "questions": "117",
         "label": "210-455: Introducing Cisco Cloud Administration",
-        "value": "210-455"
+        "value": "210-455",
+        "carregado": false,
+        "contador": 0
       },
       {
         "questions": "361",
         "label": "300-070: Implementing Cisco IP Telephony and Video, Part 1 (CIPTV1)",
-        "value": "300-070"
+        "value": "300-070",
+        "carregado": false,
+        "contador": 0
       },
       {
         "questions": "496",
         "label": "300-075: Implementing Cisco IP Telephony and Video Part 2 (CIPTV2)",
-        "value": "300-075"
+        "value": "300-075",
+        "carregado": false,
+        "contador": 0
       },
       {
         "questions": "157",
         "label": "300-080: Troubleshooting Cisco IP Telephony and Video (CTCOLLAB)",
-        "value": "300-080"
+        "value": "300-080",
+        "carregado": false,
+        "contador": 0
       },
       {
         "questions": "182",
         "label": "300-085: Implementing Cisco Collaboration Applications (CAPPS)",
-        "value": "300-085"
+        "value": "300-085",
+        "carregado": false,
+        "contador": 0
       },
       {
         "questions": "1468",
         "label": "300-101: CCNP Implementing Cisco IP Routing (ROUTE v2.0)",
-        "value": "300-101"
+        "value": "300-101",
+        "carregado": false,
+        "contador": 0
       },
       {
         "questions": "992",
         "label": "300-115: CCNP Cisco IP Switched Networks (SWITCH v2.0)",
-        "value": "300-115"
+        "value": "300-115",
+        "carregado": false,
+        "contador": 0
       },
       {
         "questions": "154",
         "label": "300-135: CCNP Troubleshooting and Maintaining Cisco IP Networks (TSHOOT v2.0)",
-        "value": "300-135"
+        "value": "300-135",
+        "carregado": false,
+        "contador": 0
       },
       {
         "questions": "465",
         "label": "300-160: Designing Cisco Data Center Infrastructure",
-        "value": "300-160"
+        "value": "300-160",
+        "carregado": false,
+        "contador": 0
       },
       {
         "questions": "328",
         "label": "300-165: Implementing Cisco Data Center Infrastructure",
-        "value": "300-165"
+        "value": "300-165",
+        "carregado": false,
+        "contador": 0
       },
       {
         "questions": "58",
         "label": "300-170: Implementing Cisco Data Center Virtualization and Automation",
-        "value": "300-170"
+        "value": "300-170",
+        "carregado": false,
+        "contador": 0
       },
       {
         "questions": "239",
         "label": "300-175: Implementing Cisco Data Center Unified Computing",
-        "value": "300-175"
+        "value": "300-175",
+        "carregado": false,
+        "contador": 0
       },
       {
         "questions": "81",
         "label": "300-180: Troubleshooting Cisco Data Center Infrastructure (DCIT)",
-        "value": "300-180"
+        "value": "300-180",
+        "carregado": false,
+        "contador": 0
       },
       {
         "questions": "368",
         "label": "300-206: CCNP Security Implementing Cisco Edge Network Security Solutions (SENSS)",
-        "value": "300-206"
+        "value": "300-206",
+        "carregado": false,
+        "contador": 0
       },
       {
         "questions": "256",
         "label": "300-208: CCNP Security Implementing Cisco Secure Access Solutions (SISAS)",
-        "value": "300-208"
+        "value": "300-208",
+        "carregado": false,
+        "contador": 0
       },
       {
         "questions": "314",
         "label": "300-209: CCNP Security Implementing Cisco Secure Mobility Solutions (SIMOS)",
-        "value": "300-209"
+        "value": "300-209",
+        "carregado": false,
+        "contador": 0
       },
       {
         "questions": "563",
         "label": "300-210: CCNP Security Implementing Cisco Threat Control Solutions",
-        "value": "300-210"
+        "value": "300-210",
+        "carregado": false,
+        "contador": 0
       },
       {
         "questions": "134",
         "label": "300-215: Conducting Forensic Analysis and Incident Response Using Cisco CyberOps Technologies (CBRFIR)",
-        "value": "300-215"
+        "value": "300-215",
+        "carregado": false,
+        "contador": 0
       },
       {
         "questions": "60",
         "label": "300-220: Conducting Threat Hunting and Defending using Cisco Technologies for Cybersecurity",
-        "value": "300-220"
+        "value": "300-220",
+        "carregado": false,
+        "contador": 0
       },
       {
         "questions": "411",
         "label": "300-320: Designing Cisco Network Service Architectures",
-        "value": "300-320"
+        "value": "300-320",
+        "carregado": false,
+        "contador": 0
       },
       {
         "questions": "137",
         "label": "300-360: Designing Cisco Wireless Enterprise Networks",
-        "value": "300-360"
+        "value": "300-360",
+        "carregado": false,
+        "contador": 0
       },
       {
         "questions": "54",
         "label": "300-365: Deploying Cisco Wireless Enterprise Networks",
-        "value": "300-365"
+        "value": "300-365",
+        "carregado": false,
+        "contador": 0
       },
       {
         "questions": "57",
         "label": "300-370: Troubleshooting Cisco Wireless Enterprise Network",
-        "value": "300-370"
+        "value": "300-370",
+        "carregado": false,
+        "contador": 0
       },
       {
         "questions": "53",
         "label": "300-375: Securing Cisco Wireless Enterprise Networks",
-        "value": "300-375"
+        "value": "300-375",
+        "carregado": false,
+        "contador": 0
       },
       {
         "questions": "620",
         "label": "300-410: Implementing Cisco Enterprise Advanced Routing and Services (ENARSI)",
-        "value": "300-410"
+        "value": "300-410",
+        "carregado": false,
+        "contador": 0
       },
       {
         "questions": "502",
         "label": "300-415: Implementing Cisco SD-WAN Solutions (ENSDWI)",
-        "value": "300-415"
+        "value": "300-415",
+        "carregado": false,
+        "contador": 0
       },
       {
         "questions": "417",
         "label": "300-420: Designing Cisco Enterprise Networks (ENSLD)",
-        "value": "300-420"
+        "value": "300-420",
+        "carregado": false,
+        "contador": 0
       },
       {
         "questions": "268",
         "label": "300-425: Designing Cisco Enterprise Wireless Networks (300-425 ENWLSD)",
-        "value": "300-425"
+        "value": "300-425",
+        "carregado": false,
+        "contador": 0
       },
       {
         "questions": "326",
         "label": "300-430: Implementing Cisco Enterprise Wireless Networks (300-430 ENWLSI)",
-        "value": "300-430"
+        "value": "300-430",
+        "carregado": false,
+        "contador": 0
       },
       {
         "questions": "233",
         "label": "300-435: Automating Cisco Enterprise Solutions (ENAUTO)",
-        "value": "300-435"
+        "value": "300-435",
+        "carregado": false,
+        "contador": 0
       },
       {
         "questions": "84",
         "label": "300-440: Designing and Implementing Cloud Connectivity (ENCC)",
-        "value": "300-440"
+        "value": "300-440",
+        "carregado": false,
+        "contador": 0
       },
       {
         "questions": "57",
         "label": "300-445: Designing and Implementing Enterprise Network Assurance",
-        "value": "300-445"
+        "value": "300-445",
+        "carregado": false,
+        "contador": 0
       },
       {
         "questions": "96",
         "label": "300-460: Implementing and Troubleshooting the Cisco Cloud Infrastructure",
-        "value": "300-460"
+        "value": "300-460",
+        "carregado": false,
+        "contador": 0
       },
       {
         "questions": "60",
         "label": "300-465: Designing the Cisco Cloud",
-        "value": "300-465"
+        "value": "300-465",
+        "carregado": false,
+        "contador": 0
       },
       {
         "questions": "60",
         "label": "300-470: Automating the Cisco Enterprise Cloud",
-        "value": "300-470"
+        "value": "300-470",
+        "carregado": false,
+        "contador": 0
       },
       {
         "questions": "60",
         "label": "300-475: Building the Cisco Cloud with Application Centric Infrastructure",
-        "value": "300-475"
+        "value": "300-475",
+        "carregado": false,
+        "contador": 0
       },
       {
         "questions": "264",
         "label": "300-510: Implementing Cisco Service Provider Advanced Routing Solutions (SPRI)",
-        "value": "300-510"
+        "value": "300-510",
+        "carregado": false,
+        "contador": 0
       },
       {
         "questions": "147",
         "label": "300-515: Implementing Cisco Service Provider VPN Services (SPVI)",
-        "value": "300-515"
+        "value": "300-515",
+        "carregado": false,
+        "contador": 0
       },
       {
         "questions": "118",
         "label": "300-535: Automating Cisco Service Provider Solutions (SPAUTO)",
-        "value": "300-535"
+        "value": "300-535",
+        "carregado": false,
+        "contador": 0
       },
       {
         "questions": "70",
         "label": "300-550: Designing and Implementing Cisco Network Programmability",
-        "value": "300-550"
+        "value": "300-550",
+        "carregado": false,
+        "contador": 0
       },
       {
         "questions": "306",
         "label": "300-610: Designing Cisco Data Center Infrastructure (DCID)",
-        "value": "300-610"
+        "value": "300-610",
+        "carregado": false,
+        "contador": 0
       },
       {
         "questions": "291",
         "label": "300-615: Troubleshooting Cisco Data Center Infrastructure (DCIT)",
-        "value": "300-615"
+        "value": "300-615",
+        "carregado": false,
+        "contador": 0
       },
       {
         "questions": "404",
         "label": "300-620: Implementing Cisco Application Centric Infrastructure (DCACI)",
-        "value": "300-620"
+        "value": "300-620",
+        "carregado": false,
+        "contador": 0
       },
       {
         "questions": "60",
         "label": "300-625: Configuring Cisco MDS 9000 Series Switches (DCSAN)",
-        "value": "300-625"
+        "value": "300-625",
+        "carregado": false,
+        "contador": 0
       },
       {
         "questions": "120",
         "label": "300-630: Implementing Cisco Application Centric Infrastructure - Advanced",
-        "value": "300-630"
+        "value": "300-630",
+        "carregado": false,
+        "contador": 0
       },
       {
         "questions": "60",
         "label": "300-635: Automating Cisco Data Center Solutions (DCAUTO)",
-        "value": "300-635"
+        "value": "300-635",
+        "carregado": false,
+        "contador": 0
       },
       {
         "questions": "60",
         "label": "300-640: Implementing Cisco Data Center AI Infrastructure (DCAI)",
-        "value": "300-640"
+        "value": "300-640",
+        "carregado": false,
+        "contador": 0
       },
       {
         "questions": "435",
         "label": "300-710: Securing Networks with Cisco Firepower (300-710 SNCF)",
-        "value": "300-710"
+        "value": "300-710",
+        "carregado": false,
+        "contador": 0
       },
       {
         "questions": "407",
         "label": "300-715: Implementing and Configuring Cisco Identity Services Engine (300-715 SISE)",
-        "value": "300-715"
+        "value": "300-715",
+        "carregado": false,
+        "contador": 0
       },
       {
         "questions": "214",
         "label": "300-720: Securing Email with Cisco Email Security Appliance (300-720 SESA)",
-        "value": "300-720"
+        "value": "300-720",
+        "carregado": false,
+        "contador": 0
       },
       {
         "questions": "112",
         "label": "300-725: Securing the Web with Cisco Web Security Appliance (300-725 SWSA)",
-        "value": "300-725"
+        "value": "300-725",
+        "carregado": false,
+        "contador": 0
       },
       {
         "questions": "249",
         "label": "300-730: Implementing Secure Solutions with Virtual Private Networks (SVPN 300-730)",
-        "value": "300-730"
+        "value": "300-730",
+        "carregado": false,
+        "contador": 0
       },
       {
         "questions": "116",
         "label": "300-735: Automating Cisco Security Solutions (SAUTO)",
-        "value": "300-735"
+        "value": "300-735",
+        "carregado": false,
+        "contador": 0
       },
       {
         "questions": "61",
         "label": "300-745: Designing Cisco Security Infrastructure",
-        "value": "300-745"
+        "value": "300-745",
+        "carregado": false,
+        "contador": 0
       },
       {
         "questions": "238",
         "label": "300-810: Implementing Cisco Collaboration Applications (CLICA)",
-        "value": "300-810"
+        "value": "300-810",
+        "carregado": false,
+        "contador": 0
       },
       {
         "questions": "245",
         "label": "300-815: Implementing Cisco Advanced Call Control and Mobility Services (CLASSM)",
-        "value": "300-815"
+        "value": "300-815",
+        "carregado": false,
+        "contador": 0
       },
       {
         "questions": "277",
         "label": "300-820: Implementing Cisco Collaboration Cloud and Edge Solutions",
-        "value": "300-820"
+        "value": "300-820",
+        "carregado": false,
+        "contador": 0
       },
       {
         "questions": "58",
         "label": "300-825: Implementing Cisco Collaboration Conferencing",
-        "value": "300-825"
+        "value": "300-825",
+        "carregado": false,
+        "contador": 0
       },
       {
         "questions": "60",
         "label": "300-830: Implementing Cisco Collaboration Cloud Customer Experience (CLCCE)",
-        "value": "300-830"
+        "value": "300-830",
+        "carregado": false,
+        "contador": 0
       },
       {
         "questions": "117",
         "label": "300-835: Automating Cisco Collaboration Solutions (CLAUTO)",
-        "value": "300-835"
+        "value": "300-835",
+        "carregado": false,
+        "contador": 0
       },
       {
         "questions": "161",
         "label": "300-910: Implementing DevOps Solutions and Practices using Cisco Platforms (DEVOPS)",
-        "value": "300-910"
+        "value": "300-910",
+        "carregado": false,
+        "contador": 0
       },
       {
         "questions": "59",
         "label": "300-915: Developing Solutions Using Cisco IoT and Edge Platforms (DEVIOT)",
-        "value": "300-915"
+        "value": "300-915",
+        "carregado": false,
+        "contador": 0
       },
       {
         "questions": "60",
         "label": "300-920: Developing Applications for Cisco Webex and Webex Devices (DEVWBX)",
-        "value": "300-920"
+        "value": "300-920",
+        "carregado": false,
+        "contador": 0
       },
       {
         "questions": "102",
         "label": "350-101: Implementing and Operating Cisco Wireless Core Technologies (WLCOR)",
-        "value": "350-101"
+        "value": "350-101",
+        "carregado": false,
+        "contador": 0
       },
       {
         "questions": "228",
         "label": "350-201: Performing CyberOps Using Core Security Technologies (CBRCOR)",
-        "value": "350-201"
+        "value": "350-201",
+        "carregado": false,
+        "contador": 0
       },
       {
         "questions": "1066",
         "label": "350-401: Implementing Cisco Enterprise Network Core Technologies (ENCOR)",
-        "value": "350-401"
+        "value": "350-401",
+        "carregado": false,
+        "contador": 0
       },
       {
         "questions": "515",
         "label": "350-501: Implementing and Operating Cisco Service Provider Network Core Technologies (SPCOR)",
-        "value": "350-501"
+        "value": "350-501",
+        "carregado": false,
+        "contador": 0
       },
       {
         "questions": "526",
         "label": "350-601: Implementing and Operating Cisco Data Center Core Technologies (DCCOR)",
-        "value": "350-601"
+        "value": "350-601",
+        "carregado": false,
+        "contador": 0
       },
       {
         "questions": "703",
         "label": "350-701: Implementing and Operating Cisco Security Core Technologies",
-        "value": "350-701"
+        "value": "350-701",
+        "carregado": false,
+        "contador": 0
       },
       {
         "questions": "515",
         "label": "350-801: Implementing Cisco Collaboration Core Technologies (CLCOR)",
-        "value": "350-801"
+        "value": "350-801",
+        "carregado": false,
+        "contador": 0
       },
       {
         "questions": "614",
         "label": "350-901: Designing, Deploying, and Managing Network Automation Systems (AUTOCOR)",
-        "value": "350-901"
+        "value": "350-901",
+        "carregado": false,
+        "contador": 0
       },
       {
         "questions": "253",
         "label": "352-001: CCDE Design Written",
-        "value": "352-001"
+        "value": "352-001",
+        "carregado": false,
+        "contador": 0
       },
       {
         "questions": "349",
         "label": "400-007: Cisco Certified Design Expert",
-        "value": "400-007"
+        "value": "400-007",
+        "carregado": false,
+        "contador": 0
       },
       {
         "questions": "939",
         "label": "400-051: CCIE Collaboration Written",
-        "value": "400-051"
+        "value": "400-051",
+        "carregado": false,
+        "contador": 0
       },
       {
         "questions": "2105",
         "label": "400-101: CCIE Routing and Switching Written",
-        "value": "400-101"
+        "value": "400-101",
+        "carregado": false,
+        "contador": 0
       },
       {
         "questions": "489",
         "label": "400-151: CCIE Data Center Written Exam",
-        "value": "400-151"
+        "value": "400-151",
+        "carregado": false,
+        "contador": 0
       },
       {
         "questions": "446",
         "label": "400-201: CCIE SP Written v4.1",
-        "value": "400-201"
+        "value": "400-201",
+        "carregado": false,
+        "contador": 0
       },
       {
         "questions": "952",
         "label": "400-251: CCIE Security Written Exam",
-        "value": "400-251"
+        "value": "400-251",
+        "carregado": false,
+        "contador": 0
       },
       {
         "questions": "449",
         "label": "400-351: CCIE Wireless Written Exam",
-        "value": "400-351"
+        "value": "400-351",
+        "carregado": false,
+        "contador": 0
       },
       {
         "questions": "77",
         "label": "500-006: Implementing Cisco TelePresence Video Solution Part 2",
-        "value": "500-006"
+        "value": "500-006",
+        "carregado": false,
+        "contador": 0
       },
       {
         "questions": "64",
         "label": "500-007: Implementing Cisco TelePresence Video Solution Part 1",
-        "value": "500-007"
+        "value": "500-007",
+        "carregado": false,
+        "contador": 0
       },
       {
         "questions": "49",
         "label": "500-051: Unified Communications Contact Center Express Implementation - UCCX",
-        "value": "500-051"
+        "value": "500-051",
+        "carregado": false,
+        "contador": 0
       },
       {
         "questions": "88",
         "label": "500-052: Deploying Cisco Unified Contact Center Express",
-        "value": "500-052"
+        "value": "500-052",
+        "carregado": false,
+        "contador": 0
       },
       {
         "questions": "50",
         "label": "500-170: Designing the FlexPod Solution (FPDESIGN)",
-        "value": "500-170"
+        "value": "500-170",
+        "carregado": false,
+        "contador": 0
       },
       {
         "questions": "50",
         "label": "500-171: Implementing and Administering the FlexPod Solution (FPIMPADM)",
-        "value": "500-171"
+        "value": "500-171",
+        "carregado": false,
+        "contador": 0
       },
       {
         "questions": "85",
         "label": "500-220: Cisco Meraki Solutions Specialist",
-        "value": "500-220"
+        "value": "500-220",
+        "carregado": false,
+        "contador": 0
       },
       {
         "questions": "30",
         "label": "500-230: Cisco Service Provider Routing Field Engineer",
-        "value": "500-230"
+        "value": "500-230",
+        "carregado": false,
+        "contador": 0
       },
       {
         "questions": "29",
         "label": "500-240: Cisco Mobile Backhaul for Field Engineers",
-        "value": "500-240"
+        "value": "500-240",
+        "carregado": false,
+        "contador": 0
       },
       {
         "questions": "48",
         "label": "500-254: Implementing and Configuring Cisco Identity Services Engine",
-        "value": "500-254"
+        "value": "500-254",
+        "carregado": false,
+        "contador": 0
       },
       {
         "questions": "50",
         "label": "500-265: Advanced Security Architecture for System Engineers",
-        "value": "500-265"
+        "value": "500-265",
+        "carregado": false,
+        "contador": 0
       },
       {
         "questions": "169",
         "label": "500-275: Securing Cisco Networks with Sourcefire FireAMP Endpoints",
-        "value": "500-275"
+        "value": "500-275",
+        "carregado": false,
+        "contador": 0
       },
       {
         "questions": "60",
         "label": "500-285: Securing Cisco Networks with Sourcefire Intrusion Prevention System",
-        "value": "500-285"
+        "value": "500-285",
+        "carregado": false,
+        "contador": 0
       },
       {
         "questions": "48",
         "label": "500-301: Cisco Cloud Collaboration Solutions",
-        "value": "500-301"
+        "value": "500-301",
+        "carregado": false,
+        "contador": 0
       },
       {
         "questions": "91",
         "label": "500-325: Cisco Collaboration Servers and Appliances",
-        "value": "500-325"
+        "value": "500-325",
+        "carregado": false,
+        "contador": 0
       },
       {
         "questions": "64",
         "label": "500-420: Cisco AppDynamics Associate Performance Analyst",
-        "value": "500-420"
+        "value": "500-420",
+        "carregado": false,
+        "contador": 0
       },
       {
         "questions": "61",
         "label": "500-425: Cisco AppDynamics Associate Administrator",
-        "value": "500-425"
+        "value": "500-425",
+        "carregado": false,
+        "contador": 0
       },
       {
         "questions": "50",
         "label": "500-430: Cisco AppDynamics Professional Implementer",
-        "value": "500-430"
+        "value": "500-430",
+        "carregado": false,
+        "contador": 0
       },
       {
         "questions": "93",
         "label": "500-440: Designing Cisco Unified Contact Center Enterprise (UCCED)",
-        "value": "500-440"
+        "value": "500-440",
+        "carregado": false,
+        "contador": 0
       },
       {
         "questions": "60",
         "label": "500-442: Administering Cisco Contact Center Enterprise",
-        "value": "500-442"
+        "value": "500-442",
+        "carregado": false,
+        "contador": 0
       },
       {
         "questions": "60",
         "label": "500-443: Advanced Administration and Reporting of Contact Center Enterprise",
-        "value": "500-443"
+        "value": "500-443",
+        "carregado": false,
+        "contador": 0
       },
       {
         "questions": "56",
         "label": "500-444: Cisco Contact Center Enterprise Implementation and Troubleshooting (CCEIT)",
-        "value": "500-444"
+        "value": "500-444",
+        "carregado": false,
+        "contador": 0
       },
       {
         "questions": "58",
         "label": "500-445: Implementing Cisco Contact Center Enterprise Chat and Email (CCECE)",
-        "value": "500-445"
+        "value": "500-445",
+        "carregado": false,
+        "contador": 0
       },
       {
         "questions": "95",
         "label": "500-450: Implementing and Supporting Cisco Unified Contact Center Enterprise (UCCEIS)",
-        "value": "500-450"
+        "value": "500-450",
+        "carregado": false,
+        "contador": 0
       },
       {
         "questions": "36",
         "label": "500-451: Enterprise Network Unified Access Essentials",
-        "value": "500-451"
+        "value": "500-451",
+        "carregado": false,
+        "contador": 0
       },
       {
         "questions": "87",
         "label": "500-452: Enterprise Networks Core and WAN",
-        "value": "500-452"
+        "value": "500-452",
+        "carregado": false,
+        "contador": 0
       },
       {
         "questions": "35",
         "label": "500-470: Cisco Enterprise Networks SDA, SDWAN and ISE Exam for System Engineers",
-        "value": "500-470"
+        "value": "500-470",
+        "carregado": false,
+        "contador": 0
       },
       {
         "questions": "49",
         "label": "500-490: Designing Cisco Enterprise Networks (ENDESIGN)",
-        "value": "500-490"
+        "value": "500-490",
+        "carregado": false,
+        "contador": 0
       },
       {
         "questions": "62",
         "label": "500-551: Cisco Networking: On-Premise and Cloud Solutions",
-        "value": "500-551"
+        "value": "500-551",
+        "carregado": false,
+        "contador": 0
       },
       {
         "questions": "50",
         "label": "500-560: Cisco Networking: On-Premise and Cloud Solutions (OCSE)",
-        "value": "500-560"
+        "value": "500-560",
+        "carregado": false,
+        "contador": 0
       },
       {
         "questions": "91",
         "label": "500-651: Adv anced Security Architecture for Systems Engineers",
-        "value": "500-651"
+        "value": "500-651",
+        "carregado": false,
+        "contador": 0
       },
       {
         "questions": "69",
         "label": "500-701: Cisco Video Infrastructure Design",
-        "value": "500-701"
+        "value": "500-701",
+        "carregado": false,
+        "contador": 0
       },
       {
         "questions": "90",
         "label": "500-710: Video infrastructure implementation",
-        "value": "500-710"
+        "value": "500-710",
+        "carregado": false,
+        "contador": 0
       },
       {
         "questions": "40",
         "label": "500-901: Cisco Data Center Unified Computing Infrastructure Design(DCICUC)",
-        "value": "500-901"
+        "value": "500-901",
+        "carregado": false,
+        "contador": 0
       },
       {
         "questions": "70",
         "label": "600-210: Implementing Cisco Service Provider Mobility UMTS Networks (SPUMTS)",
-        "value": "600-210"
+        "value": "600-210",
+        "carregado": false,
+        "contador": 0
       },
       {
         "questions": "70",
         "label": "600-211: Implementing Cisco Service Provider Mobility CDMA Networks (SPCDMA)",
-        "value": "600-211"
+        "value": "600-211",
+        "carregado": false,
+        "contador": 0
       },
       {
         "questions": "70",
         "label": "600-212: Implementing Cisco Service Provider Mobility LTE Networks (SPLTE)",
-        "value": "600-212"
+        "value": "600-212",
+        "carregado": false,
+        "contador": 0
       },
       {
         "questions": "89",
         "label": "600-455: Designing Cisco Unified Contact Center Enterprise",
-        "value": "600-455"
+        "value": "600-455",
+        "carregado": false,
+        "contador": 0
       },
       {
         "questions": "70",
         "label": "600-460: Implementing andSupporting Cisco Unified Contact Center Enterprise",
-        "value": "600-460"
+        "value": "600-460",
+        "carregado": false,
+        "contador": 0
       },
       {
         "questions": "60",
         "label": "600-660: Implementing Cisco Application Centric Infrastructure - Advanced (600-660 DCACIA)",
-        "value": "600-660"
+        "value": "600-660",
+        "carregado": false,
+        "contador": 0
       },
       {
         "questions": "67",
         "label": "640-692: Supporting Cisco Routing and Switching Network Devices (RSTECH)",
-        "value": "640-692"
+        "value": "640-692",
+        "carregado": false,
+        "contador": 0
       },
       {
         "questions": "269",
         "label": "640-875: Building Cisco Service Provider Next-Generation Networks Part 1 (SPNGN1)",
-        "value": "640-875"
+        "value": "640-875",
+        "carregado": false,
+        "contador": 0
       },
       {
         "questions": "126",
         "label": "640-878: Building Cisco Service Provider Next-Generation Networks Part 2 (SPNGN2)",
-        "value": "640-878"
+        "value": "640-878",
+        "carregado": false,
+        "contador": 0
       },
       {
         "questions": "57",
         "label": "642-270: Implementing Cisco TelePresence Video Networking Solutions (ITVNS)",
-        "value": "642-270"
+        "value": "642-270",
+        "carregado": false,
+        "contador": 0
       },
       {
         "questions": "47",
         "label": "642-278: Implementing CUCM for TelePresence Video Solutions (PAIUCMTV)",
-        "value": "642-278"
+        "value": "642-278",
+        "carregado": false,
+        "contador": 0
       },
       {
         "questions": "191",
         "label": "642-883: Deploying Cisco Service Provider Network Routing (SPROUTE)",
-        "value": "642-883"
+        "value": "642-883",
+        "carregado": false,
+        "contador": 0
       },
       {
         "questions": "131",
         "label": "642-885: Deploying Cisco Service Provider Advanced Routing (SPADVROUTE)",
-        "value": "642-885"
+        "value": "642-885",
+        "carregado": false,
+        "contador": 0
       },
       {
         "questions": "183",
         "label": "642-887: Implementing Cisco Service Provider Next-Generation Core Network Services (SPCORE)",
-        "value": "642-887"
+        "value": "642-887",
+        "carregado": false,
+        "contador": 0
       },
       {
         "questions": "126",
         "label": "642-889: Implementing Cisco Service Provider Next-Generation Edge Network Services (SPEDGE)",
-        "value": "642-889"
+        "value": "642-889",
+        "carregado": false,
+        "contador": 0
       },
       {
         "questions": "50",
         "label": "644-066: Routing and Switching Solutions for System Engineers - RSSSE",
-        "value": "644-066"
+        "value": "644-066",
+        "carregado": false,
+        "contador": 0
       },
       {
         "questions": "50",
         "label": "644-068: Advanced Routing and Switching for Field Engineers - ARSFE",
-        "value": "644-068"
+        "value": "644-068",
+        "carregado": false,
+        "contador": 0
       },
       {
         "questions": "77",
         "label": "644-906: Implementing and Maintaining Cisco Technologies Using IOS XR (IMTXR)",
-        "value": "644-906"
+        "value": "644-906",
+        "carregado": false,
+        "contador": 0
       },
       {
         "questions": "50",
         "label": "646-048: Advanced Routing and Switching for Account Managers - ARSAM",
-        "value": "646-048"
+        "value": "646-048",
+        "carregado": false,
+        "contador": 0
       },
       {
         "questions": "172",
         "label": "646-365: Cisco Express Foundation for Account Managers (CXFA)",
-        "value": "646-365"
+        "value": "646-365",
+        "carregado": false,
+        "contador": 0
       },
       {
         "questions": "132",
         "label": "646-985: Data Center Networking Solution Sales (DCNSS)",
-        "value": "646-985"
+        "value": "646-985",
+        "carregado": false,
+        "contador": 0
       },
       {
         "questions": "54",
         "label": "648-232: Cisco WebEx Solutions Design and Implementation - CWSDI",
-        "value": "648-232"
+        "value": "648-232",
+        "carregado": false,
+        "contador": 0
       },
       {
         "questions": "64",
         "label": "648-244: Designing and Implementing Cisco Unified Communications on Unified Computing Systems - DIUCUCS",
-        "value": "648-244"
+        "value": "648-244",
+        "carregado": false,
+        "contador": 0
       },
       {
         "questions": "150",
         "label": "648-375: Cisco Express Foundation for Systems Engineers (CXFS)",
-        "value": "648-375"
+        "value": "648-375",
+        "carregado": false,
+        "contador": 0
       },
       {
         "questions": "200",
         "label": "648-385: Cisco Express Foundation for Field Engineers",
-        "value": "648-385"
+        "value": "648-385",
+        "carregado": false,
+        "contador": 0
       },
       {
         "questions": "210",
         "label": "650-059: Cisco Lifecycle Services Advanced Routing and Switching",
-        "value": "650-059"
+        "value": "650-059",
+        "carregado": false,
+        "contador": 0
       },
       {
         "questions": "83",
         "label": "650-082: Mobile Internet Technology for System Engineers",
-        "value": "650-082"
+        "value": "650-082",
+        "carregado": false,
+        "contador": 0
       },
       {
         "questions": "56",
         "label": "650-127: Authorized Connected Grid Engineer Knowledge Verification",
-        "value": "650-127"
+        "value": "650-127",
+        "carregado": false,
+        "contador": 0
       },
       {
         "questions": "23",
         "label": "650-128: Authorized Connected Grid Account Manager Knowledge Verification",
-        "value": "650-128"
+        "value": "650-128",
+        "carregado": false,
+        "contador": 0
       },
       {
         "questions": "20",
         "label": "650-281: C-Series Servers for Account Manager",
-        "value": "650-281"
+        "value": "650-281",
+        "carregado": false,
+        "contador": 0
       },
       {
         "questions": "56",
         "label": "650-292: TelePresence Video Sales Specialist for Express",
-        "value": "650-292"
+        "value": "650-292",
+        "carregado": false,
+        "contador": 0
       },
       {
         "questions": "52",
         "label": "650-293: TelePresence Video Sales Engineer for Express",
-        "value": "650-293"
+        "value": "650-293",
+        "carregado": false,
+        "contador": 0
       },
       {
         "questions": "69",
         "label": "650-472: Introduction to 802.1X Operations for Cisco Security Professionals",
-        "value": "650-472"
+        "value": "650-472",
+        "carregado": false,
+        "contador": 0
       },
       {
         "questions": "30",
         "label": "650-474: Introducing Cisco Identity Services Engine for System Engineer",
-        "value": "650-474"
+        "value": "650-474",
+        "carregado": false,
+        "contador": 0
       },
       {
         "questions": "149",
         "label": "650-621: Lifecycle Services for Advanced Wireless LAN (LCSAWLAN)",
-        "value": "650-621"
+        "value": "650-621",
+        "carregado": false,
+        "contador": 0
       },
       {
         "questions": "69",
         "label": "650-987: Cisco Data Center Unified Computing Sales Specialist",
-        "value": "650-987"
+        "value": "650-987",
+        "carregado": false,
+        "contador": 0
       },
       {
         "questions": "50",
         "label": "700-037: Advanced Collaboration Architecture Sales Specialist",
-        "value": "700-037"
+        "value": "700-037",
+        "carregado": false,
+        "contador": 0
       },
       {
         "questions": "50",
         "label": "700-038: Advanced Collaboration Architecture Field Engineer",
-        "value": "700-038"
+        "value": "700-038",
+        "carregado": false,
+        "contador": 0
       },
       {
         "questions": "60",
         "label": "700-039: Advanced Collaboration Architecture Sales Engineer",
-        "value": "700-039"
+        "value": "700-039",
+        "carregado": false,
+        "contador": 0
       },
       {
         "questions": "50",
         "label": "700-070: Cisco TelePresence IX5000 Series Immersive Solutions",
-        "value": "700-070"
+        "value": "700-070",
+        "carregado": false,
+        "contador": 0
       },
       {
         "questions": "54",
         "label": "700-101: Business Edition 6000 for Sales Engineers",
-        "value": "700-101"
+        "value": "700-101",
+        "carregado": false,
+        "contador": 0
       },
       {
         "questions": "36",
         "label": "700-104: Business Edition 6000 for Account Managers (BE6KAM)",
-        "value": "700-104"
+        "value": "700-104",
+        "carregado": false,
+        "contador": 0
       },
       {
         "questions": "62",
         "label": "700-150: Introduction to Cisco Sales",
-        "value": "700-150"
+        "value": "700-150",
+        "carregado": false,
+        "contador": 0
       },
       {
         "questions": "40",
         "label": "700-240: Cisco Environmental Sustainability Overview",
-        "value": "700-240"
+        "value": "700-240",
+        "carregado": false,
+        "contador": 0
       },
       {
         "questions": "40",
         "label": "700-245: Environmental Sustainability Practice-Building",
-        "value": "700-245"
+        "value": "700-245",
+        "carregado": false,
+        "contador": 0
       },
       {
         "questions": "50",
         "label": "700-250: Cisco Small and Medium Business Sales",
-        "value": "700-250"
+        "value": "700-250",
+        "carregado": false,
+        "contador": 0
       },
       {
         "questions": "50",
         "label": "700-260: Advanced Security Architecture for Account Manager",
-        "value": "700-260"
+        "value": "700-260",
+        "carregado": false,
+        "contador": 0
       },
       {
         "questions": "50",
         "label": "700-265: Cisco Advanced Security Architecture for Account Managers",
-        "value": "700-265"
+        "value": "700-265",
+        "carregado": false,
+        "contador": 0
       },
       {
         "questions": "86",
         "label": "700-302: Advanced Borderless Network Architecture Field Engineer",
-        "value": "700-302"
+        "value": "700-302",
+        "carregado": false,
+        "contador": 0
       },
       {
         "questions": "50",
         "label": "700-501: SMB Solutions for Engineers",
-        "value": "700-501"
+        "value": "700-501",
+        "carregado": false,
+        "contador": 0
       },
       {
         "questions": "50",
         "label": "700-505: SMB Solutions for Account Managers",
-        "value": "700-505"
+        "value": "700-505",
+        "carregado": false,
+        "contador": 0
       },
       {
         "questions": "60",
         "label": "700-651: Cisco Collaboration Architecture Sales Essentials",
-        "value": "700-651"
+        "value": "700-651",
+        "carregado": false,
+        "contador": 0
       },
       {
         "questions": "40",
         "label": "700-680: Cisco Collaboration SaaS Authorization Exam",
-        "value": "700-680"
+        "value": "700-680",
+        "carregado": false,
+        "contador": 0
       },
       {
         "questions": "60",
         "label": "700-695: Cisco Collaboration SaaS Authorization for PreSales Engineer (CSaaSSE)",
-        "value": "700-695"
+        "value": "700-695",
+        "carregado": false,
+        "contador": 0
       },
       {
         "questions": "34",
         "label": "700-703: Application Centric Infrastructure for Field Engineers Exam",
-        "value": "700-703"
+        "value": "700-703",
+        "carregado": false,
+        "contador": 0
       },
       {
         "questions": "50",
         "label": "700-750: Cisco Small and Medium Business Engineer",
-        "value": "700-750"
+        "value": "700-750",
+        "carregado": false,
+        "contador": 0
       },
       {
         "questions": "50",
         "label": "700-751: Cisco SMB Product and Positioning Technical Overview",
-        "value": "700-751"
+        "value": "700-751",
+        "carregado": false,
+        "contador": 0
       },
       {
         "questions": "50",
         "label": "700-755: Small Business Technical Overview (SBTO)",
-        "value": "700-755"
+        "value": "700-755",
+        "carregado": false,
+        "contador": 0
       },
       {
         "questions": "50",
         "label": "700-760: Cisco Security Architecture for Account Managers (ASAEAM)",
-        "value": "700-760"
+        "value": "700-760",
+        "carregado": false,
+        "contador": 0
       },
       {
         "questions": "80",
         "label": "700-765: Cisco Security Architecture for System Engineers",
-        "value": "700-765"
+        "value": "700-765",
+        "carregado": false,
+        "contador": 0
       },
       {
         "questions": "145",
         "label": "700-805: Cisco Renewals Manager (CRM)",
-        "value": "700-805"
+        "value": "700-805",
+        "carregado": false,
+        "contador": 0
       },
       {
         "questions": "30",
         "label": "700-821: Cisco IoT Essentials for System Engineers",
-        "value": "700-821"
+        "value": "700-821",
+        "carregado": false,
+        "contador": 0
       },
       {
         "questions": "30",
         "label": "700-826: Cisco IoT Essentials for Account Managers",
-        "value": "700-826"
+        "value": "700-826",
+        "carregado": false,
+        "contador": 0
       },
       {
         "questions": "50",
         "label": "700-905: Cisco HyperFlex for Systems Engineers (CHXSE)",
-        "value": "700-905"
+        "value": "700-905",
+        "carregado": false,
+        "contador": 0
       },
       {
         "questions": "100",
         "label": "800-150: Supporting Cisco Devices for Field Technicians",
-        "value": "800-150"
+        "value": "800-150",
+        "carregado": false,
+        "contador": 0
       },
       {
         "questions": "98",
         "label": "810-110: Cisco AI Technical Practitioner (AITECH)",
-        "value": "810-110"
+        "value": "810-110",
+        "carregado": false,
+        "contador": 0
       },
       {
         "questions": "269",
         "label": "810-440: Adopting The Cisco Business Architecture Approach",
-        "value": "810-440"
+        "value": "810-440",
+        "carregado": false,
+        "contador": 0
       },
       {
         "questions": "60",
         "label": "820-427: Building Business Specialist Skills",
-        "value": "820-427"
+        "value": "820-427",
+        "carregado": false,
+        "contador": 0
       },
       {
         "questions": "178",
         "label": "820-605: Cisco Customer Success Manager (CSM)",
-        "value": "820-605"
+        "value": "820-605",
+        "carregado": false,
+        "contador": 0
       },
       {
         "questions": "65",
         "label": "840-450: Mastering The Cisco Business Architecture Discipline",
-        "value": "840-450"
+        "value": "840-450",
+        "carregado": false,
+        "contador": 0
       }
     ]
   },
@@ -2780,27 +3880,37 @@
       {
         "questions": "45",
         "label": "PSK I: Professional Scrum with Kanban",
-        "value": "psk-i"
+        "value": "psk-i",
+        "carregado": false,
+        "contador": 0
       },
       {
         "questions": "258",
         "label": "PSM I: Professional Scrum Master I",
-        "value": "psm-i"
+        "value": "psm-i",
+        "carregado": false,
+        "contador": 0
       },
       {
         "questions": "221",
         "label": "PSM II: Professional Scrum Master II",
-        "value": "psm-ii"
+        "value": "psm-ii",
+        "carregado": false,
+        "contador": 0
       },
       {
         "questions": "159",
         "label": "PSPO I: Professional Scrum Product Owner I",
-        "value": "pspo-i"
+        "value": "pspo-i",
+        "carregado": false,
+        "contador": 0
       },
       {
         "questions": "94",
         "label": "PSPO II: Professional Scrum Product Owner",
-        "value": "pspo-ii"
+        "value": "pspo-ii",
+        "carregado": false,
+        "contador": 0
       }
     ]
   }

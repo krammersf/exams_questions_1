@@ -93,13 +93,24 @@ def extract_exam_list(base_url: str, existing_exams: list[dict] | None = None) -
             previous_exam = existing_by_value.get(value)
             if previous_exam:
                 print(f"  Could not read {value}; keeping previous value", flush=True)
-                exams.append(previous_exam)
+                exams.append({
+                    **previous_exam,
+                    "carregado": previous_exam.get("carregado", False),
+                    "contador": previous_exam.get("contador", 0),
+                })
                 continue
             print(f"  Could not read {value}; skipping ({error})", flush=True)
             continue
         match = re.search(r"Browse\s*([0-9,]+)\s*Questions", page_html, re.I)
         questions = match.group(1).replace(",", "") if match else "0"
-        exams.append({"questions": questions, "label": label, "value": value})
+        previous_exam = existing_by_value.get(value, {})
+        exams.append({
+            "questions": questions,
+            "label": label,
+            "value": value,
+            "carregado": previous_exam.get("carregado", False),
+            "contador": previous_exam.get("contador", 0),
+        })
 
     return exams
 
@@ -108,6 +119,10 @@ def update_json() -> None:
     print("Starting exam questions refresh...", flush=True)
     file_path = Path(__file__).resolve().with_name("subopcoes.json")
     data = json.loads(file_path.read_text(encoding="utf-8"))
+    for provider in data:
+        for exam in provider.get("exams", []):
+            exam["carregado"] = exam.get("carregado", False)
+            exam["contador"] = exam.get("contador", 0)
 
     updated_providers = []
     for provider in data:

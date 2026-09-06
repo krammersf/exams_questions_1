@@ -40,6 +40,39 @@
     const examList = document.getElementById('examList');
     let providers = [];
     let selectedProvider = '';
+    const examOrderStateKey = 'examOrderState';
+
+    function getExamOrderState() {
+      try {
+        return JSON.parse(localStorage.getItem(examOrderStateKey)) || {};
+      } catch (error) {
+        console.error('Could not read exam order state', error);
+        return {};
+      }
+    }
+
+    function saveExamOrder(provider, exam) {
+      const state = getExamOrderState();
+      const key = `${provider}:${exam.value}`;
+      const current = state[key] || {
+        carregado: exam.carregado === true,
+        contador: Number(exam.contador) || 0
+      };
+
+      state[key] = {
+        carregado: true,
+        contador: Number(current.contador) + 1
+      };
+      localStorage.setItem(examOrderStateKey, JSON.stringify(state));
+    }
+
+    function getExamStatus(provider, exam) {
+      const state = getExamOrderState()[`${provider}:${exam.value}`];
+      return state || {
+        carregado: exam.carregado === true,
+        contador: Number(exam.contador) || 0
+      };
+    }
 
     function getProviderDisplayName(provider) {
       return provider === 'AWS' ? 'Amazon (AWS)' : provider;
@@ -55,7 +88,8 @@
 
       examList.innerHTML = exams.length
         ? exams.map(exam => {
-            const [code, description] = exam.label.split(': ');
+              const [code, description] = exam.label.split(': ');
+              const status = getExamStatus(exam.provider, exam);
             return `
             <div class="exam-row">
               <div>
@@ -65,12 +99,25 @@
               </div>
               <div class="exam-row-actions">
                 <b>${exam.questions} questions</b>
-                <a class="order-exam-button" href="index.html?provider=${encodeURIComponent(exam.provider)}&exam=${encodeURIComponent(exam.value)}">Order</a>
+                <a class="order-exam-button${status.carregado ? ' is-loaded' : ''}" href="index.html?provider=${encodeURIComponent(exam.provider)}&exam=${encodeURIComponent(exam.value)}" data-provider="${exam.provider}" data-exam-value="${exam.value}">
+                  Order
+                  ${status.carregado ? '<span class="order-status" aria-label="Already ordered">&#10003;</span>' : ''}
+                </a>
               </div>
             </div>
           `;
           }).join('')
         : '<p class="empty-exams">No exams found.</p>';
+
+      examList.querySelectorAll('.order-exam-button').forEach(button => {
+        button.addEventListener('click', () => {
+          const provider = button.dataset.provider;
+          const exam = providers
+            .find(item => item.provider === provider)
+            ?.exams.find(item => item.value === button.dataset.examValue);
+          if (exam) saveExamOrder(provider, exam);
+        });
+      });
     }
 
     async function loadExams() {
@@ -78,6 +125,12 @@
         const response = await fetch('subopcoes.json');
         if (!response.ok) throw new Error('Could not load exams');
         providers = await response.json();
+        providers.forEach(provider => {
+          provider.exams.forEach(exam => {
+            exam.carregado = exam.carregado === true;
+            exam.contador = Number(exam.contador) || 0;
+          });
+        });
 
         providers.forEach(provider => {
           const option = document.createElement('div');
