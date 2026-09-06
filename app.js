@@ -22,6 +22,35 @@ let subopcoesPorSistema = [];
 let selectedProvider = '';
 let selectedExamValue = '';
 let selectedExamLabel = '';
+const examOrderStateKey = 'examOrderState';
+const pendingExamOrderKey = 'pendingExamOrder';
+
+function registerExamOrder(provider, examValue) {
+  let state = {};
+  try {
+    state = JSON.parse(localStorage.getItem(examOrderStateKey)) || {};
+  } catch (error) {
+    console.error('Could not read exam order state', error);
+  }
+
+  const key = `${provider}:${examValue}`;
+  const current = state[key] || { carregado: false, contador: 0 };
+  state[key] = {
+    carregado: true,
+    contador: Number(current.contador) + 1
+  };
+  localStorage.setItem(examOrderStateKey, JSON.stringify(state));
+}
+
+function registerSuccessfulExamOrder(provider, examValue) {
+  const pendingOrder = sessionStorage.getItem(pendingExamOrderKey);
+  const currentOrder = `${provider}:${examValue}`;
+
+  if (pendingOrder !== currentOrder) {
+    registerExamOrder(provider, examValue);
+  }
+  sessionStorage.removeItem(pendingExamOrderKey);
+}
 
 function getProviderDisplayName(provider) {
   return provider === 'AWS' ? 'Amazon (AWS)' : provider;
@@ -238,6 +267,8 @@ document.addEventListener('DOMContentLoaded', () => {
         email,
         timestamp: new Date().toISOString()
       });
+
+      registerSuccessfulExamOrder(sistema, subopcao);
 
       document.getElementById('modalPagamento').style.display = 'none';
       document.getElementById('modalSucesso').style.display = 'flex';
