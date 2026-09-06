@@ -138,7 +138,7 @@
                 <b>${exam.questions} questions</b>
                 <a class="order-exam-button${status.carregado ? ' is-loaded' : ''}" href="index.html?provider=${encodeURIComponent(exam.provider)}&exam=${encodeURIComponent(exam.value)}" data-provider="${exam.provider}" data-exam-value="${exam.value}">
                   Order
-                  ${status.carregado ? '<span class="order-status" aria-label="Already ordered">&#10003;</span>' : ''}
+                  ${status.carregado ? '<span class="order-status" aria-label="Already ordered"></span>' : ''}
                 </a>
               </div>
             </div>

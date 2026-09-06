@@ -473,18 +473,14 @@ button:hover {
 
 .order-status {
   position: absolute;
-  top: -12px;
-  right: -10px;
-  display: grid;
-  width: 24px;
-  height: 24px;
+  top: -9px;
+  right: -8px;
+  width: 18px;
+  height: 18px;
   place-items: center;
   border: 2px solid #fff;
   border-radius: 50%;
   background: #198754;
-  color: #fff;
-  font-size: 16px;
-  line-height: 1;
 }
 
 .empty-exams {
