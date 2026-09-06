@@ -32,7 +32,21 @@
 
   </main>
 
-  <script>
+  <script type="module">
+    import { initializeApp } from "https://www.gstatic.com/firebasejs/10.12.2/firebase-app.js";
+    import { getDatabase, ref, onValue, runTransaction } from "https://www.gstatic.com/firebasejs/10.12.2/firebase-database.js";
+
+    const firebaseConfig = {
+      apiKey: "AIzaSyDERCoKXi7qa1k4S5pc0JipHyFEjgqwXAg",
+      authDomain: "examtopics-v1.firebaseapp.com",
+      databaseURL: "https://examtopics-v1-default-rtdb.europe-west1.firebasedatabase.app",
+      projectId: "examtopics-v1",
+      storageBucket: "examtopics-v1.appspot.com",
+      messagingSenderId: "596894003766",
+      appId: "1:596894003766:web:9c310b67a78b46b97c5e97"
+    };
+
+    const db = getDatabase(initializeApp(firebaseConfig));
     const providerSelect = document.getElementById('examsProviderSelect');
     const providerDisplay = document.getElementById('examsProviderDisplay');
     const providerOptions = document.getElementById('examsProviderOptions');
@@ -40,6 +54,7 @@
     const examList = document.getElementById('examList');
     let providers = [];
     let selectedProvider = '';
+    let remoteOrderState = {};
     const examOrderStateKey = 'examOrderState';
     const pendingExamOrderKey = 'pendingExamOrder';
 
@@ -68,11 +83,32 @@
     }
 
     function getExamStatus(provider, exam) {
-      const state = getExamOrderState()[`${provider}:${exam.value}`];
+      const key = `${provider}:${exam.value}`;
+      const localState = getExamOrderState()[key];
+      const remoteState = remoteOrderState[encodeURIComponent(key)];
+      const state = remoteState || localState;
       return state || {
         carregado: exam.carregado === true,
         contador: Number(exam.contador) || 0
       };
+    }
+
+    async function syncLocalOrderState() {
+      const localState = getExamOrderState();
+      const entries = Object.entries(localState).filter(([, state]) => state?.carregado);
+
+      await Promise.all(entries.map(async ([key, state]) => {
+        const orderRef = ref(db, `orderStatus/${encodeURIComponent(key)}`);
+        await runTransaction(orderRef, current => {
+          if (current && Number(current.contador) >= Number(state.contador)) {
+            return current;
+          }
+          return {
+            carregado: true,
+            contador: Number(state.contador) || 1
+          };
+        });
+      }));
     }
 
     function getProviderDisplayName(provider) {
@@ -146,6 +182,17 @@
             renderExams();
           });
           providerOptions.appendChild(option);
+        });
+        try {
+          await syncLocalOrderState();
+        } catch (error) {
+          console.error('Could not migrate local exam order state', error);
+        }
+        onValue(ref(db, 'orderStatus'), snapshot => {
+          remoteOrderState = snapshot.val() || {};
+          renderExams();
+        }, error => {
+          console.error('Could not load shared exam order state', error);
         });
         providerDisplay.addEventListener('click', () => {
           providerOptions.style.display = providerOptions.style.display === 'block' ? 'none' : 'block';

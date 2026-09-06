@@ -1,6 +1,6 @@
 // Importar Firebase
 import { initializeApp } from "https://www.gstatic.com/firebasejs/10.12.2/firebase-app.js";
-import { getDatabase, ref, push } from "https://www.gstatic.com/firebasejs/10.12.2/firebase-database.js";
+import { getDatabase, ref, push, runTransaction } from "https://www.gstatic.com/firebasejs/10.12.2/firebase-database.js";
 
 // Configuração do Firebase
 const firebaseConfig = {
@@ -42,12 +42,22 @@ function registerExamOrder(provider, examValue) {
   localStorage.setItem(examOrderStateKey, JSON.stringify(state));
 }
 
-function registerSuccessfulExamOrder(provider, examValue) {
+async function registerSuccessfulExamOrder(provider, examValue) {
   const pendingOrder = sessionStorage.getItem(pendingExamOrderKey);
   const currentOrder = `${provider}:${examValue}`;
 
   if (pendingOrder !== currentOrder) {
     registerExamOrder(provider, examValue);
+  }
+
+  try {
+    const orderRef = ref(db, `orderStatus/${encodeURIComponent(currentOrder)}`);
+    await runTransaction(orderRef, current => ({
+      carregado: true,
+      contador: (Number(current?.contador) || 0) + 1
+    }));
+  } catch (error) {
+    console.error('Could not synchronize exam order state', error);
   }
   sessionStorage.removeItem(pendingExamOrderKey);
 }
@@ -268,7 +278,7 @@ document.addEventListener('DOMContentLoaded', () => {
         timestamp: new Date().toISOString()
       });
 
-      registerSuccessfulExamOrder(sistema, subopcao);
+      await registerSuccessfulExamOrder(sistema, subopcao);
 
       document.getElementById('modalPagamento').style.display = 'none';
       document.getElementById('modalSucesso').style.display = 'flex';
