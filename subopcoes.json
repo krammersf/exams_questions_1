@@ -618,8 +618,8 @@
         "questions": "488",
         "label": "AWS Certified AI Practitioner AIF-C01: AWS Certified AI Practitioner AIF-C01",
         "value": "aws-certified-ai-practitioner-aif-c01",
-        "carregado": false,
-        "contador": 0
+        "carregado": true,
+        "contador": 1
       },
       {
         "questions": "59",
@@ -653,8 +653,8 @@
         "questions": "719",
         "label": "AWS Certified Cloud Practitioner CLF-C02: AWS Certified Cloud Practitioner CLF-C02",
         "value": "aws-certified-cloud-practitioner-clf-c02",
-        "carregado": false,
-        "contador": 0
+        "carregado": true,
+        "contador": 1
       },
       {
         "questions": "164",
@@ -3882,7 +3882,7 @@
         "label": "PSK I: Professional Scrum with Kanban",
         "value": "psk-i",
         "carregado": true,
-        "contador": 1
+        "contador": 3
       },
       {
         "questions": "258",
