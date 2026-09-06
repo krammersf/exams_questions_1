@@ -33,10 +33,34 @@ async function carregarSubopcoes() {
     if (!response.ok) throw new Error('Erro a carregar JSON');
     subopcoesPorSistema = await response.json();
     popularProvidersDropdown();
+    preencherPedidoFromUrl();
   } catch (e) {
     console.error(e);
     subopcoesPorSistema = [];
   }
+}
+
+function preencherPedidoFromUrl() {
+  const params = new URLSearchParams(window.location.search);
+  const provider = params.get('provider');
+  const examValue = params.get('exam');
+  if (!provider || !examValue) return;
+
+  const providerData = subopcoesPorSistema.find(item => item.provider === provider);
+  const exam = providerData?.exams.find(item => item.value === examValue);
+  if (!providerData || !exam) return;
+
+  selectedProvider = providerData.provider;
+  document.getElementById('sistema').value = providerData.provider;
+  document.getElementById('providerDisplay').textContent = getProviderDisplayName(providerData.provider);
+
+  popularExamsDropdown(providerData.exams);
+  selectedExamValue = exam.value;
+  selectedExamLabel = exam.label;
+  document.getElementById('subopcao').value = exam.value;
+  document.getElementById('selectDisplay').textContent = exam.label.split(': ')[0];
+  document.getElementById('infoQuestions').textContent = `This exam has ${exam.questions} questions.`;
+  document.getElementById('email').focus();
 }
 
 function popularProvidersDropdown() {

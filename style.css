@@ -448,6 +448,28 @@ button:hover {
   white-space: nowrap;
 }
 
+.exam-row-actions {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  flex: 0 0 auto;
+}
+
+.order-exam-button {
+  display: inline-block;
+  padding: 8px 14px;
+  background-color: #004997;
+  color: #fff;
+  border-radius: 4px;
+  text-decoration: none;
+  font-weight: bold;
+  white-space: nowrap;
+}
+
+.order-exam-button:hover {
+  background-color: #0056b3;
+}
+
 .empty-exams {
   padding: 16px;
   margin: 0;
@@ -586,5 +608,10 @@ button:hover {
 
   .exam-row b {
     font-size: 14px;
+  }
+
+  .exam-row-actions {
+    width: 100%;
+    justify-content: space-between;
   }
 }

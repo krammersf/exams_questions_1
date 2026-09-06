@@ -63,7 +63,10 @@
                 <span class="exam-code">${code}</span>
                 <span>${description || ''}</span>
               </div>
-              <b>${exam.questions} questions</b>
+              <div class="exam-row-actions">
+                <b>${exam.questions} questions</b>
+                <a class="order-exam-button" href="index.html?provider=${encodeURIComponent(exam.provider)}&exam=${encodeURIComponent(exam.value)}">Order</a>
+              </div>
             </div>
           `;
           }).join('')
