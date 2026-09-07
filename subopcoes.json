@@ -20,15 +20,15 @@
         "questions": "59",
         "label": "CIS-APM: Certified Implementation Specialist - Application Portfolio Management",
         "value": "cis-apm",
-        "carregado": false,
-        "contador": 0
+        "carregado": true,
+        "contador": 1
       },
       {
         "questions": "45",
         "label": "CIS-CPG: Certified Implementation Specialist - Cloud Provisioning and Governance",
         "value": "cis-cpg",
-        "carregado": false,
-        "contador": 0
+        "carregado": true,
+        "contador": 1
       },
       {
         "questions": "284",
@@ -41,57 +41,57 @@
         "questions": "250",
         "label": "CIS-DF: Certified Implementation Specialist - Data Foundations (CMDB and CSDM)",
         "value": "cis-df",
-        "carregado": false,
-        "contador": 0
+        "carregado": true,
+        "contador": 1
       },
       {
         "questions": "122",
         "label": "CIS-Discovery: Certified Implementation Specialist - Discovery",
         "value": "cis-discovery",
-        "carregado": false,
-        "contador": 0
+        "carregado": true,
+        "contador": 1
       },
       {
         "questions": "130",
         "label": "CIS-EM: Certified Implementation Specialist - Event Mangement",
         "value": "cis-em",
-        "carregado": false,
-        "contador": 0
+        "carregado": true,
+        "contador": 1
       },
       {
         "questions": "118",
         "label": "CIS-FSM: Certified Implementation Specialist - Field Service Mangement",
         "value": "cis-fsm",
-        "carregado": false,
-        "contador": 0
+        "carregado": true,
+        "contador": 1
       },
       {
         "questions": "203",
         "label": "CIS-HAM: Certified Implementation Specialist – Hardware Asset Management",
         "value": "cis-ham",
-        "carregado": false,
-        "contador": 0
+        "carregado": true,
+        "contador": 1
       },
       {
         "questions": "229",
         "label": "CIS-HR: Certified Implementation Specialist - Human Resources",
         "value": "cis-hr",
-        "carregado": false,
-        "contador": 0
+        "carregado": true,
+        "contador": 1
       },
       {
         "questions": "242",
         "label": "CIS-ITSM: Certified Implementation Specialist - IT Service Management",
         "value": "cis-itsm",
-        "carregado": false,
-        "contador": 0
+        "carregado": true,
+        "contador": 1
       },
       {
         "questions": "169",
         "label": "CIS-PPM: Certified Implementation Specialist - Project Portfolio Management",
         "value": "cis-ppm",
-        "carregado": false,
-        "contador": 0
+        "carregado": true,
+        "contador": 1
       },
       {
         "questions": "289",
@@ -146,15 +146,15 @@
         "questions": "60",
         "label": "CIS-VRM: Certified Implementation Specialist - Vendor Risk Management",
         "value": "cis-vrm",
-        "carregado": false,
-        "contador": 0
+        "carregado": true,
+        "contador": 1
       },
       {
         "questions": "408",
         "label": "CSA: ServiceNow Certified System Administrator",
         "value": "csa",
-        "carregado": false,
-        "contador": 0
+        "carregado": true,
+        "contador": 1
       }
     ]
   },
@@ -632,8 +632,8 @@
         "questions": "85",
         "label": "AWS Certified Big Data - Specialty: AWS Certified Big Data - Specialty (BDS-C00)",
         "value": "aws-certified-big-data-specialty",
-        "carregado": false,
-        "contador": 0
+        "carregado": true,
+        "contador": 1
       },
       {
         "questions": "200",
@@ -3888,29 +3888,29 @@
         "questions": "258",
         "label": "PSM I: Professional Scrum Master I",
         "value": "psm-i",
-        "carregado": false,
-        "contador": 0
+        "carregado": true,
+        "contador": 1
       },
       {
         "questions": "221",
         "label": "PSM II: Professional Scrum Master II",
         "value": "psm-ii",
-        "carregado": false,
-        "contador": 0
+        "carregado": true,
+        "contador": 2
       },
       {
         "questions": "159",
         "label": "PSPO I: Professional Scrum Product Owner I",
         "value": "pspo-i",
-        "carregado": false,
-        "contador": 0
+        "carregado": true,
+        "contador": 1
       },
       {
         "questions": "94",
         "label": "PSPO II: Professional Scrum Product Owner",
         "value": "pspo-ii",
-        "carregado": false,
-        "contador": 0
+        "carregado": true,
+        "contador": 1
       }
     ]
   }
