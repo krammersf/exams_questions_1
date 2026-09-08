@@ -42,7 +42,7 @@
         "label": "CIS-DF: Certified Implementation Specialist - Data Foundations (CMDB and CSDM)",
         "value": "cis-df",
         "carregado": true,
-        "contador": 1
+        "contador": 2
       },
       {
         "questions": "122",
@@ -84,7 +84,7 @@
         "label": "CIS-ITSM: Certified Implementation Specialist - IT Service Management",
         "value": "cis-itsm",
         "carregado": true,
-        "contador": 1
+        "contador": 3
       },
       {
         "questions": "169",
@@ -97,50 +97,50 @@
         "questions": "289",
         "label": "CIS-RC: Certified Implementation Specialist - Risk and Compliance",
         "value": "cis-rc",
-        "carregado": false,
-        "contador": 0
+        "carregado": true,
+        "contador": 1
       },
       {
         "questions": "222",
         "label": "CIS-SAM: Certified Implementation Specialist - Software Asset Management",
         "value": "cis-sam",
-        "carregado": false,
-        "contador": 0
+        "carregado": true,
+        "contador": 1
       },
       {
         "questions": "125",
         "label": "CIS-SIR: Certified Implementation Specialist - Security Incident Response",
         "value": "cis-sir",
-        "carregado": false,
-        "contador": 0
+        "carregado": true,
+        "contador": 1
       },
       {
         "questions": "124",
         "label": "CIS-SM: Certified Implementation Specialist - Service Mapping",
         "value": "cis-sm",
-        "carregado": false,
-        "contador": 0
+        "carregado": true,
+        "contador": 1
       },
       {
         "questions": "182",
         "label": "CIS-SPM: Certified Implementation Specialist - Strategic Portfolio Management",
         "value": "cis-spm",
-        "carregado": false,
-        "contador": 0
+        "carregado": true,
+        "contador": 1
       },
       {
         "questions": "60",
         "label": "CIS-TPRM: Certified Implementation Specialist - Third-party Risk Management",
         "value": "cis-tprm",
-        "carregado": false,
-        "contador": 0
+        "carregado": true,
+        "contador": 1
       },
       {
         "questions": "132",
         "label": "CIS-VR: Certified Implementation Specialist - Vulnerability Response",
         "value": "cis-vr",
-        "carregado": false,
-        "contador": 0
+        "carregado": true,
+        "contador": 1
       },
       {
         "questions": "60",
@@ -639,15 +639,15 @@
         "questions": "200",
         "label": "AWS Certified CloudOps Engineer - Associate SOA-C03: AWS Certified CloudOps Engineer - Associate SOA-C03",
         "value": "aws-certified-cloudops-engineer-associate-soa-c03",
-        "carregado": false,
-        "contador": 0
+        "carregado": true,
+        "contador": 1
       },
       {
         "questions": "988",
         "label": "AWS Certified Cloud Practitioner: AWS Certified Cloud Practitioner (CLF-C01)",
         "value": "aws-certified-cloud-practitioner",
-        "carregado": false,
-        "contador": 0
+        "carregado": true,
+        "contador": 1
       },
       {
         "questions": "719",
@@ -660,8 +660,8 @@
         "questions": "164",
         "label": "AWS Certified Data Analytics - Specialty: AWS Certified Data Analytics - Specialty (DAS-C01)",
         "value": "aws-certified-data-analytics-specialty",
-        "carregado": false,
-        "contador": 0
+        "carregado": true,
+        "contador": 1
       },
       {
         "questions": "359",
@@ -699,18 +699,18 @@
         "contador": 0
       },
       {
-        "questions": "127",
+        "questions": "136",
         "label": "AWS Certified Generative AI Developer - Professional AIP-C01: AWS Certified Generative AI Developer - Professional AIP-C01",
         "value": "aws-certified-generative-ai-developer-professional-aip-c01",
-        "carregado": false,
-        "contador": 0
+        "carregado": true,
+        "contador": 1
       },
       {
         "questions": "271",
         "label": "AWS Certified Machine Learning Engineer - Associate MLA-C01: AWS Certified Machine Learning Engineer - Associate MLA-C01",
         "value": "aws-certified-machine-learning-engineer-associate-mla-c01",
-        "carregado": false,
-        "contador": 0
+        "carregado": true,
+        "contador": 1
       },
       {
         "questions": "369",
