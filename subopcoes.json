@@ -2802,7 +2802,7 @@
         "contador": 0
       },
       {
-        "questions": "84",
+        "questions": "118",
         "label": "300-440: Designing and Implementing Cloud Connectivity (ENCC)",
         "value": "300-440",
         "carregado": false,
@@ -3033,7 +3033,7 @@
         "contador": 0
       },
       {
-        "questions": "102",
+        "questions": "140",
         "label": "350-101: Implementing and Operating Cisco Wireless Core Technologies (WLCOR)",
         "value": "350-101",
         "carregado": false,
