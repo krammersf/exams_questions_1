@@ -1740,6 +1740,13 @@
         "contador": 0
       },
       {
+        "questions": "63",
+        "label": "AZ-802: Administering Windows Server",
+        "value": "az-802",
+        "carregado": false,
+        "contador": 0
+      },
+      {
         "questions": "474",
         "label": "AZ-900: Microsoft Azure Fundamentals",
         "value": "az-900",
