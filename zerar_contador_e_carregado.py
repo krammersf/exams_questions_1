@@ -22,7 +22,16 @@ def perguntar(mensagem: str) -> bool:
         print("Resposta invalida. Escreva s ou n.")
 
 
-def atualizar_estado_firebase(exames: list[dict]) -> None:
+def ler_estado_firebase() -> dict:
+    request = urllib.request.Request(FIREBASE_ORDER_STATUS_URL)
+    with urllib.request.urlopen(request, timeout=30) as response:
+        estado = json.loads(response.read().decode("utf-8"))
+    return estado if isinstance(estado, dict) else {}
+
+
+def atualizar_estado_firebase(
+    exames: list[dict], estado_atual: dict
+) -> tuple[int, int]:
     estado = {
         quote(f"{exame.get('provider')}:{exame.get('value')}", safe=""): {
             "carregado": exame.get("carregado", False) is True,
@@ -30,6 +39,14 @@ def atualizar_estado_firebase(exames: list[dict]) -> None:
         }
         for exame in exames
     }
+    contadores_zerados = sum(
+        int(estado_atual.get(key, {}).get("contador", 0) or 0) != 0
+        for key in estado
+    )
+    campos_carregado_alterados = sum(
+        estado_atual.get(key, {}).get("carregado", False) is True
+        for key in estado
+    )
     request = urllib.request.Request(
         FIREBASE_ORDER_STATUS_URL,
         data=json.dumps(estado).encode("utf-8"),
@@ -38,6 +55,7 @@ def atualizar_estado_firebase(exames: list[dict]) -> None:
     )
     with urllib.request.urlopen(request, timeout=30):
         pass
+    return contadores_zerados, campos_carregado_alterados
 
 
 def main() -> None:
@@ -50,27 +68,29 @@ def main() -> None:
 
     zerar_contadores = perguntar("Deseja zerar todos os contadores?")
     mudar_carregado = perguntar("Deseja mudar todos os campos carregado para false?")
-    contadores_zerados = 0
-    campos_carregado_alterados = 0
-
     if zerar_contadores:
         for exame in exames:
-            if exame.get("contador", 0) != 0:
-                contadores_zerados += 1
             exame["contador"] = 0
 
     if mudar_carregado:
         for exame in exames:
-            if exame.get("carregado", False) is not False:
-                campos_carregado_alterados += 1
             exame["carregado"] = False
 
     if zerar_contadores or mudar_carregado:
         for provider in dados:
             for exame in provider.get("exams", []):
                 exame["provider"] = provider.get("provider")
+        contadores_zerados = 0
+        campos_carregado_alterados = 0
         try:
-            atualizar_estado_firebase(exames)
+            estado_atual = ler_estado_firebase()
+            contadores_zerados, campos_carregado_alterados = atualizar_estado_firebase(
+                exames, estado_atual
+            )
+            if not zerar_contadores:
+                contadores_zerados = 0
+            if not mudar_carregado:
+                campos_carregado_alterados = 0
             firebase_atualizado = True
         except (TimeoutError, ConnectionResetError, urllib.error.URLError) as error:
             firebase_atualizado = False
