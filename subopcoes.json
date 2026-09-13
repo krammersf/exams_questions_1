@@ -42,7 +42,7 @@
         "label": "CIS-DF: Certified Implementation Specialist - Data Foundations (CMDB and CSDM)",
         "value": "cis-df",
         "carregado": true,
-        "contador": 2
+        "contador": 5
       },
       {
         "questions": "122",
@@ -165,8 +165,8 @@
         "questions": "79",
         "label": "C_ABAPD_2309: SAP Certified Associate - Back-End Developer - ABAP Cloud",
         "value": "c-abapd-2309",
-        "carregado": false,
-        "contador": 0
+        "carregado": true,
+        "contador": 1
       },
       {
         "questions": "80",
