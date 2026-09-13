@@ -100,7 +100,7 @@
       await Promise.all(entries.map(async ([key, state]) => {
         const orderRef = ref(db, `orderStatus/${encodeURIComponent(key)}`);
         await runTransaction(orderRef, current => {
-          if (current && Number(current.contador) >= Number(state.contador)) {
+          if (current) {
             return current;
           }
           return {
