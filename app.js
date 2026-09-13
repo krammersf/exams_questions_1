@@ -279,6 +279,7 @@ document.addEventListener('DOMContentLoaded', () => {
       });
 
       await registerSuccessfulExamOrder(sistema, subopcao);
+      window.history.replaceState({}, document.title, window.location.pathname);
 
       document.getElementById('modalPagamento').style.display = 'none';
       document.getElementById('modalSucesso').style.display = 'flex';
