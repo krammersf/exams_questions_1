@@ -6,155 +6,155 @@
         "questions": "219",
         "label": "CAD: ServiceNow Certified Application Developer",
         "value": "cad",
-        "carregado": true,
-        "contador": 2
+        "carregado": false,
+        "contador": 0
       },
       {
         "questions": "83",
         "label": "CAS-PA: Certified Application Specialist – Performance Analytics",
         "value": "cas-pa",
-        "carregado": true,
-        "contador": 1
+        "carregado": false,
+        "contador": 0
       },
       {
         "questions": "59",
         "label": "CIS-APM: Certified Implementation Specialist - Application Portfolio Management",
         "value": "cis-apm",
-        "carregado": true,
-        "contador": 1
+        "carregado": false,
+        "contador": 0
       },
       {
         "questions": "45",
         "label": "CIS-CPG: Certified Implementation Specialist - Cloud Provisioning and Governance",
         "value": "cis-cpg",
-        "carregado": true,
-        "contador": 1
+        "carregado": false,
+        "contador": 0
       },
       {
         "questions": "284",
         "label": "CIS-CSM: Certified Implementation Specialist - Customer Service Management",
         "value": "cis-csm",
-        "carregado": true,
-        "contador": 1
+        "carregado": false,
+        "contador": 0
       },
       {
         "questions": "250",
         "label": "CIS-DF: Certified Implementation Specialist - Data Foundations (CMDB and CSDM)",
         "value": "cis-df",
-        "carregado": true,
-        "contador": 5
+        "carregado": false,
+        "contador": 0
       },
       {
         "questions": "122",
         "label": "CIS-Discovery: Certified Implementation Specialist - Discovery",
         "value": "cis-discovery",
-        "carregado": true,
-        "contador": 1
+        "carregado": false,
+        "contador": 0
       },
       {
         "questions": "130",
         "label": "CIS-EM: Certified Implementation Specialist - Event Mangement",
         "value": "cis-em",
-        "carregado": true,
-        "contador": 1
+        "carregado": false,
+        "contador": 0
       },
       {
         "questions": "118",
         "label": "CIS-FSM: Certified Implementation Specialist - Field Service Mangement",
         "value": "cis-fsm",
-        "carregado": true,
-        "contador": 1
+        "carregado": false,
+        "contador": 0
       },
       {
         "questions": "203",
         "label": "CIS-HAM: Certified Implementation Specialist – Hardware Asset Management",
         "value": "cis-ham",
-        "carregado": true,
-        "contador": 1
+        "carregado": false,
+        "contador": 0
       },
       {
         "questions": "229",
         "label": "CIS-HR: Certified Implementation Specialist - Human Resources",
         "value": "cis-hr",
-        "carregado": true,
-        "contador": 1
+        "carregado": false,
+        "contador": 0
       },
       {
         "questions": "242",
         "label": "CIS-ITSM: Certified Implementation Specialist - IT Service Management",
         "value": "cis-itsm",
-        "carregado": true,
-        "contador": 3
+        "carregado": false,
+        "contador": 0
       },
       {
         "questions": "169",
         "label": "CIS-PPM: Certified Implementation Specialist - Project Portfolio Management",
         "value": "cis-ppm",
-        "carregado": true,
-        "contador": 1
+        "carregado": false,
+        "contador": 0
       },
       {
         "questions": "289",
         "label": "CIS-RC: Certified Implementation Specialist - Risk and Compliance",
         "value": "cis-rc",
-        "carregado": true,
-        "contador": 1
+        "carregado": false,
+        "contador": 0
       },
       {
         "questions": "222",
         "label": "CIS-SAM: Certified Implementation Specialist - Software Asset Management",
         "value": "cis-sam",
-        "carregado": true,
-        "contador": 1
+        "carregado": false,
+        "contador": 0
       },
       {
         "questions": "125",
         "label": "CIS-SIR: Certified Implementation Specialist - Security Incident Response",
         "value": "cis-sir",
-        "carregado": true,
-        "contador": 1
+        "carregado": false,
+        "contador": 0
       },
       {
         "questions": "124",
         "label": "CIS-SM: Certified Implementation Specialist - Service Mapping",
         "value": "cis-sm",
-        "carregado": true,
-        "contador": 1
+        "carregado": false,
+        "contador": 0
       },
       {
         "questions": "182",
         "label": "CIS-SPM: Certified Implementation Specialist - Strategic Portfolio Management",
         "value": "cis-spm",
-        "carregado": true,
-        "contador": 1
+        "carregado": false,
+        "contador": 0
       },
       {
         "questions": "60",
         "label": "CIS-TPRM: Certified Implementation Specialist - Third-party Risk Management",
         "value": "cis-tprm",
-        "carregado": true,
-        "contador": 1
+        "carregado": false,
+        "contador": 0
       },
       {
         "questions": "132",
         "label": "CIS-VR: Certified Implementation Specialist - Vulnerability Response",
         "value": "cis-vr",
-        "carregado": true,
-        "contador": 1
+        "carregado": false,
+        "contador": 0
       },
       {
         "questions": "60",
         "label": "CIS-VRM: Certified Implementation Specialist - Vendor Risk Management",
         "value": "cis-vrm",
-        "carregado": true,
-        "contador": 1
+        "carregado": false,
+        "contador": 0
       },
       {
         "questions": "408",
         "label": "CSA: ServiceNow Certified System Administrator",
         "value": "csa",
-        "carregado": true,
-        "contador": 1
+        "carregado": false,
+        "contador": 0
       }
     ]
   },
@@ -165,8 +165,8 @@
         "questions": "79",
         "label": "C_ABAPD_2309: SAP Certified Associate - Back-End Developer - ABAP Cloud",
         "value": "c-abapd-2309",
-        "carregado": true,
-        "contador": 1
+        "carregado": false,
+        "contador": 0
       },
       {
         "questions": "80",
@@ -193,15 +193,15 @@
         "questions": "57",
         "label": "C_AIG_2412: SAP Certified - SAP Generative AI Developer",
         "value": "c-aig-2412",
-        "carregado": true,
-        "contador": 1
+        "carregado": false,
+        "contador": 0
       },
       {
         "questions": "65",
         "label": "C_ARSOR_2202: SAP Certified Application Associate - SAP Ariba Sourcing",
         "value": "c-arsor-2202",
-        "carregado": true,
-        "contador": 2
+        "carregado": false,
+        "contador": 0
       },
       {
         "questions": "18",
@@ -228,8 +228,8 @@
         "questions": "66",
         "label": "C_FIOAD_2021: SAP Certified Associate - SAP Fiori System Administration",
         "value": "c-fioad-2021",
-        "carregado": true,
-        "contador": 1
+        "carregado": false,
+        "contador": 0
       },
       {
         "questions": "80",
@@ -604,64 +604,64 @@
         "questions": "377",
         "label": "ANS-C00: AWS Certified Advanced Networking - Specialty",
         "value": "ans-c00",
-        "carregado": true,
-        "contador": 22
+        "carregado": false,
+        "contador": 0
       },
       {
         "questions": "296",
         "label": "AWS Certified Advanced Networking - Specialty ANS-C01: AWS Certified Advanced Networking - Specialty ANS-C01",
         "value": "aws-certified-advanced-networking-specialty-ans-c01",
-        "carregado": true,
-        "contador": 1
+        "carregado": false,
+        "contador": 0
       },
       {
         "questions": "488",
         "label": "AWS Certified AI Practitioner AIF-C01: AWS Certified AI Practitioner AIF-C01",
         "value": "aws-certified-ai-practitioner-aif-c01",
-        "carregado": true,
-        "contador": 1
+        "carregado": false,
+        "contador": 0
       },
       {
         "questions": "59",
         "label": "AWS Certified Alexa Skill Builder - Specialty: AWS Certified Alexa Skill Builder - Specialty",
         "value": "aws-certified-alexa-skill-builder-specialty",
-        "carregado": true,
-        "contador": 1
+        "carregado": false,
+        "contador": 0
       },
       {
         "questions": "85",
         "label": "AWS Certified Big Data - Specialty: AWS Certified Big Data - Specialty (BDS-C00)",
         "value": "aws-certified-big-data-specialty",
-        "carregado": true,
-        "contador": 1
+        "carregado": false,
+        "contador": 0
       },
       {
         "questions": "200",
         "label": "AWS Certified CloudOps Engineer - Associate SOA-C03: AWS Certified CloudOps Engineer - Associate SOA-C03",
         "value": "aws-certified-cloudops-engineer-associate-soa-c03",
-        "carregado": true,
-        "contador": 1
+        "carregado": false,
+        "contador": 0
       },
       {
         "questions": "988",
         "label": "AWS Certified Cloud Practitioner: AWS Certified Cloud Practitioner (CLF-C01)",
         "value": "aws-certified-cloud-practitioner",
-        "carregado": true,
-        "contador": 1
+        "carregado": false,
+        "contador": 0
       },
       {
         "questions": "719",
         "label": "AWS Certified Cloud Practitioner CLF-C02: AWS Certified Cloud Practitioner CLF-C02",
         "value": "aws-certified-cloud-practitioner-clf-c02",
-        "carregado": true,
-        "contador": 1
+        "carregado": false,
+        "contador": 0
       },
       {
         "questions": "164",
         "label": "AWS Certified Data Analytics - Specialty: AWS Certified Data Analytics - Specialty (DAS-C01)",
         "value": "aws-certified-data-analytics-specialty",
-        "carregado": true,
-        "contador": 1
+        "carregado": false,
+        "contador": 0
       },
       {
         "questions": "359",
@@ -702,15 +702,15 @@
         "questions": "136",
         "label": "AWS Certified Generative AI Developer - Professional AIP-C01: AWS Certified Generative AI Developer - Professional AIP-C01",
         "value": "aws-certified-generative-ai-developer-professional-aip-c01",
-        "carregado": true,
-        "contador": 1
+        "carregado": false,
+        "contador": 0
       },
       {
         "questions": "271",
         "label": "AWS Certified Machine Learning Engineer - Associate MLA-C01: AWS Certified Machine Learning Engineer - Associate MLA-C01",
         "value": "aws-certified-machine-learning-engineer-associate-mla-c01",
-        "carregado": true,
-        "contador": 1
+        "carregado": false,
+        "contador": 0
       },
       {
         "questions": "369",
@@ -723,8 +723,8 @@
         "questions": "130",
         "label": "AWS Certified SAP on AWS - Specialty PAS-C01: AWS Certified SAP on AWS - Specialty PAS-C01",
         "value": "aws-certified-sap-on-aws-specialty-pas-c01",
-        "carregado": true,
-        "contador": 1
+        "carregado": false,
+        "contador": 0
       },
       {
         "questions": "509",
@@ -751,8 +751,8 @@
         "questions": "822",
         "label": "AWS Certified Solutions Architect - Associate SAA-C02: AWS Certified Solutions Architect - Associate SAA-C02",
         "value": "aws-certified-solutions-architect-associate-saa-c02",
-        "carregado": true,
-        "contador": 2
+        "carregado": false,
+        "contador": 0
       },
       {
         "questions": "1019",
@@ -772,8 +772,8 @@
         "questions": "529",
         "label": "AWS Certified Solutions Architect - Professional SAP-C02: AWS Certified Solutions Architect - Professional SAP-C02",
         "value": "aws-certified-solutions-architect-professional-sap-c02",
-        "carregado": true,
-        "contador": 1
+        "carregado": false,
+        "contador": 0
       },
       {
         "questions": "478",
@@ -793,8 +793,8 @@
         "questions": "932",
         "label": "AWS-SysOps: AWS Certified SysOps Administrator",
         "value": "aws-sysops",
-        "carregado": true,
-        "contador": 1
+        "carregado": false,
+        "contador": 0
       }
     ]
   },
@@ -3888,36 +3888,237 @@
         "questions": "45",
         "label": "PSK I: Professional Scrum with Kanban",
         "value": "psk-i",
-        "carregado": true,
-        "contador": 3
+        "carregado": false,
+        "contador": 0
       },
       {
         "questions": "258",
         "label": "PSM I: Professional Scrum Master I",
         "value": "psm-i",
-        "carregado": true,
-        "contador": 1
+        "carregado": false,
+        "contador": 0
       },
       {
         "questions": "221",
         "label": "PSM II: Professional Scrum Master II",
         "value": "psm-ii",
-        "carregado": true,
-        "contador": 2
+        "carregado": false,
+        "contador": 0
       },
       {
         "questions": "159",
         "label": "PSPO I: Professional Scrum Product Owner I",
         "value": "pspo-i",
-        "carregado": true,
-        "contador": 1
+        "carregado": false,
+        "contador": 0
       },
       {
         "questions": "94",
         "label": "PSPO II: Professional Scrum Product Owner",
         "value": "pspo-ii",
-        "carregado": true,
-        "contador": 1
+        "carregado": false,
+        "contador": 0
+      }
+    ]
+  },
+  {
+    "provider": "Google",
+    "exams": [
+      {
+        "questions": "431",
+        "label": "AdWords Fundamentals: Google AdWords Fundamentals",
+        "value": "adwords-fundamentals",
+        "carregado": false,
+        "contador": 0
+      },
+      {
+        "questions": "107",
+        "label": "Associate Android Developer: Associate Android Developer",
+        "value": "associate-android-developer",
+        "carregado": false,
+        "contador": 0
+      },
+      {
+        "questions": "375",
+        "label": "Associate Cloud Engineer: Associate Cloud Engineer",
+        "value": "associate-cloud-engineer",
+        "carregado": false,
+        "contador": 0
+      },
+      {
+        "questions": "103",
+        "label": "Associate Data Practitioner: Google Cloud Certified - Associate Data Practitioner",
+        "value": "associate-data-practitioner",
+        "carregado": false,
+        "contador": 0
+      },
+      {
+        "questions": "108",
+        "label": "Associate Google Workspace Administrator: Associate Google Workspace Administrator",
+        "value": "associate-google-workspace-administrator",
+        "carregado": false,
+        "contador": 0
+      },
+      {
+        "questions": "289",
+        "label": "Cloud Digital Leader: Cloud Digital Leader",
+        "value": "cloud-digital-leader",
+        "carregado": false,
+        "contador": 0
+      },
+      {
+        "questions": "213",
+        "label": "display-advertising: Google AdWords Display Advertising",
+        "value": "display-advertising",
+        "carregado": false,
+        "contador": 0
+      },
+      {
+        "questions": "75",
+        "label": "Generative AI Leader: Generative AI Leader",
+        "value": "generative-ai-leader",
+        "carregado": false,
+        "contador": 0
+      },
+      {
+        "questions": "70",
+        "label": "Google Analytics: Google Analytics Individual Qualification (IQ)",
+        "value": "google-analytics",
+        "carregado": false,
+        "contador": 0
+      },
+      {
+        "questions": "48",
+        "label": "GSuite: GSuite",
+        "value": "gsuite",
+        "carregado": false,
+        "contador": 0
+      },
+      {
+        "questions": "332",
+        "label": "individual-qualification: Google Analytics Individual Qualification (IQ)",
+        "value": "individual-qualification",
+        "carregado": false,
+        "contador": 0
+      },
+      {
+        "questions": "86",
+        "label": "mobile-advertising: Google AdWords Mobile Advertising",
+        "value": "mobile-advertising",
+        "carregado": false,
+        "contador": 0
+      },
+      {
+        "questions": "50",
+        "label": "Professional Chrome Enterprise Administrator: Professional Chrome Enterprise Administrator",
+        "value": "professional-chrome-enterprise-administrator",
+        "carregado": false,
+        "contador": 0
+      },
+      {
+        "questions": "147",
+        "label": "Professional ChromeOS Administrator: Professional ChromeOS Administrator",
+        "value": "professional-chromeos-administrator",
+        "carregado": false,
+        "contador": 0
+      },
+      {
+        "questions": "360",
+        "label": "Professional Cloud Architect: Professional Cloud Architect on Google Cloud Platform",
+        "value": "professional-cloud-architect",
+        "carregado": false,
+        "contador": 0
+      },
+      {
+        "questions": "197",
+        "label": "Professional Cloud Database Engineer: Professional Cloud Database Engineer",
+        "value": "professional-cloud-database-engineer",
+        "carregado": false,
+        "contador": 0
+      },
+      {
+        "questions": "379",
+        "label": "Professional Cloud Developer: Professional Cloud Developer",
+        "value": "professional-cloud-developer",
+        "carregado": false,
+        "contador": 0
+      },
+      {
+        "questions": "239",
+        "label": "Professional Cloud DevOps Engineer: Professional Cloud DevOps Engineer",
+        "value": "professional-cloud-devops-engineer",
+        "carregado": false,
+        "contador": 0
+      },
+      {
+        "questions": "316",
+        "label": "Professional Cloud Network Engineer: Professional Cloud Network Engineer",
+        "value": "professional-cloud-network-engineer",
+        "carregado": false,
+        "contador": 0
+      },
+      {
+        "questions": "376",
+        "label": "Professional Cloud Security Engineer: Professional Cloud Security Engineer",
+        "value": "professional-cloud-security-engineer",
+        "carregado": false,
+        "contador": 0
+      },
+      {
+        "questions": "79",
+        "label": "Professional Collaboration Engineer: Professional Collaboration Engineer",
+        "value": "professional-collaboration-engineer",
+        "carregado": false,
+        "contador": 0
+      },
+      {
+        "questions": "349",
+        "label": "Professional Data Engineer: Professional Data Engineer on Google Cloud Platform",
+        "value": "professional-data-engineer",
+        "carregado": false,
+        "contador": 0
+      },
+      {
+        "questions": "151",
+        "label": "Professional Google Workspace Administrator: Professional Google Workspace Administrator",
+        "value": "professional-google-workspace-administrator",
+        "carregado": false,
+        "contador": 0
+      },
+      {
+        "questions": "375",
+        "label": "Professional Machine Learning Engineer: Professional Machine Learning Engineer",
+        "value": "professional-machine-learning-engineer",
+        "carregado": false,
+        "contador": 0
+      },
+      {
+        "questions": "133",
+        "label": "Professional Security Operations Engineer: Professional Security Operations Engineer",
+        "value": "professional-security-operations-engineer",
+        "carregado": false,
+        "contador": 0
+      },
+      {
+        "questions": "235",
+        "label": "search-advertising: Google AdWords Search Advertising",
+        "value": "search-advertising",
+        "carregado": false,
+        "contador": 0
+      },
+      {
+        "questions": "91",
+        "label": "shopping-advertising: Google AdWords Shopping Advertising",
+        "value": "shopping-advertising",
+        "carregado": false,
+        "contador": 0
+      },
+      {
+        "questions": "123",
+        "label": "video-advertising: Google AdWords Video Advertising",
+        "value": "video-advertising",
+        "carregado": false,
+        "contador": 0
       }
     ]
   }
