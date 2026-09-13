@@ -13,8 +13,8 @@ BASE_URLS = {
     "Scrum": "https://www.examtopics.com/exams/scrum/",
     "AWS": "https://www.examtopics.com/exams/amazon/",
     "Microsoft": "https://www.examtopics.com/exams/microsoft/",
-    "Cisco": "https://www.examtopics.com/exams/cisco/",
     "Google": "https://www.examtopics.com/exams/google/",
+    "Salesforce": "https://www.examtopics.com/exams/salesforce/",
 }
 USER_AGENT = "Mozilla/5.0"
 MIN_REQUEST_INTERVAL = 2.5

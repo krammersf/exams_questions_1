@@ -162,7 +162,7 @@
       try {
         const response = await fetch('subopcoes.json');
         if (!response.ok) throw new Error('Could not load exams');
-        providers = await response.json();
+        providers = (await response.json()).filter(provider => provider.provider !== 'Cisco');
         providers.forEach(provider => {
           provider.exams.forEach(exam => {
             exam.carregado = exam.carregado === true;

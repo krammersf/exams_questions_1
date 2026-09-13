@@ -70,7 +70,7 @@ async function carregarSubopcoes() {
   try {
     const response = await fetch('subopcoes.json');
     if (!response.ok) throw new Error('Erro a carregar JSON');
-    subopcoesPorSistema = await response.json();
+    subopcoesPorSistema = (await response.json()).filter(item => item.provider !== 'Cisco');
     popularProvidersDropdown();
     preencherPedidoFromUrl();
   } catch (e) {

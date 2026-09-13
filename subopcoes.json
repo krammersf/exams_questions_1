@@ -4121,5 +4121,507 @@
         "contador": 0
       }
     ]
+  },
+  {
+    "provider": "Salesforce",
+    "exams": [
+      {
+        "questions": "1388",
+        "label": "ADM-201: Administration Essentials for New Admins",
+        "value": "adm-201",
+        "carregado": false,
+        "contador": 0
+      },
+      {
+        "questions": "379",
+        "label": "ADM-211: Administration Essentials for Experienced Admin",
+        "value": "adm-211",
+        "carregado": false,
+        "contador": 0
+      },
+      {
+        "questions": "87",
+        "label": "B2B Commerce for Developers Accredited Professional: B2B Commerce for Developers Accredited Professional",
+        "value": "b2b-commerce-for-developers-accredited-professional",
+        "carregado": false,
+        "contador": 0
+      },
+      {
+        "questions": "320",
+        "label": "Certified Advanced Administrator: Certified Advanced Administrator",
+        "value": "certified-advanced-administrator",
+        "carregado": false,
+        "contador": 0
+      },
+      {
+        "questions": "213",
+        "label": "Certified Agentforce Specialist: Certified Agentforce Specialist",
+        "value": "certified-agentforce-specialist",
+        "carregado": false,
+        "contador": 0
+      },
+      {
+        "questions": "105",
+        "label": "Certified AI Associate: Certified AI Associate",
+        "value": "certified-ai-associate",
+        "carregado": false,
+        "contador": 0
+      },
+      {
+        "questions": "118",
+        "label": "Certified AI Specialist: Certified AI Specialist",
+        "value": "certified-ai-specialist",
+        "carregado": false,
+        "contador": 0
+      },
+      {
+        "questions": "82",
+        "label": "Certified Associate: Certified Associate",
+        "value": "certified-associate",
+        "carregado": false,
+        "contador": 0
+      },
+      {
+        "questions": "64",
+        "label": "Certified B2B Solution Architect: Certified B2B Solution Architect",
+        "value": "certified-b2b-solution-architect",
+        "carregado": false,
+        "contador": 0
+      },
+      {
+        "questions": "0",
+        "label": "Certified B2C Commerce Developer: Certified B2C Commerce Developer",
+        "value": "certified-b2c-commerce-developer",
+        "carregado": false,
+        "contador": 0
+      },
+      {
+        "questions": "231",
+        "label": "Certified Business Analyst: Certified Business Analyst",
+        "value": "certified-business-analyst",
+        "carregado": false,
+        "contador": 0
+      },
+      {
+        "questions": "103",
+        "label": "Certified Community Cloud Consultant: Certified Community Cloud Consultant",
+        "value": "certified-community-cloud-consultant",
+        "carregado": false,
+        "contador": 0
+      },
+      {
+        "questions": "257",
+        "label": "Certified CPQ Specialist: Certified CPQ Specialist",
+        "value": "certified-cpq-specialist",
+        "carregado": false,
+        "contador": 0
+      },
+      {
+        "questions": "65",
+        "label": "Certified Data 360 Consultant: Certified Data 360 Consultant",
+        "value": "certified-data-360-consultant",
+        "carregado": false,
+        "contador": 0
+      },
+      {
+        "questions": "136",
+        "label": "Certified Data Architect: Certified Data Architect",
+        "value": "certified-data-architect",
+        "carregado": false,
+        "contador": 0
+      },
+      {
+        "questions": "149",
+        "label": "Certified Data Cloud Consultant: Certified Data Cloud Consultant",
+        "value": "certified-data-cloud-consultant",
+        "carregado": false,
+        "contador": 0
+      },
+      {
+        "questions": "118",
+        "label": "Certified Development Lifecycle and Deployment Architect: Certified Development Lifecycle and Deployment Architect",
+        "value": "certified-development-lifecycle-and-deployment-architect",
+        "carregado": false,
+        "contador": 0
+      },
+      {
+        "questions": "119",
+        "label": "Certified Development Lifecycle and Deployment Designer: Certified Development Lifecycle and Deployment Designer",
+        "value": "certified-development-lifecycle-and-deployment-designer",
+        "carregado": false,
+        "contador": 0
+      },
+      {
+        "questions": "65",
+        "label": "Certified Education Cloud Consultant: Certified Education Cloud Consultant",
+        "value": "certified-education-cloud-consultant",
+        "carregado": false,
+        "contador": 0
+      },
+      {
+        "questions": "60",
+        "label": "Certified Einstein Analytics and Discovery Consultant: Certified Einstein Analytics and Discovery Consultant",
+        "value": "certified-einstein-analytics-and-discovery-consultant",
+        "carregado": false,
+        "contador": 0
+      },
+      {
+        "questions": "140",
+        "label": "Certified Experience Cloud Consultant: Certified Experience Cloud Consultant",
+        "value": "certified-experience-cloud-consultant",
+        "carregado": false,
+        "contador": 0
+      },
+      {
+        "questions": "60",
+        "label": "Certified Heroku Architecture Designer: Certified Heroku Architecture Designer",
+        "value": "certified-heroku-architecture-designer",
+        "carregado": false,
+        "contador": 0
+      },
+      {
+        "questions": "60",
+        "label": "Certified Identity and Access Management Designer: Certified Identity and Access Management Designer",
+        "value": "certified-identity-and-access-management-designer",
+        "carregado": false,
+        "contador": 0
+      },
+      {
+        "questions": "84",
+        "label": "Certified Industries CPQ Developer: Certified Industries CPQ Developer",
+        "value": "certified-industries-cpq-developer",
+        "carregado": false,
+        "contador": 0
+      },
+      {
+        "questions": "175",
+        "label": "Certified Integration Architect: Certified Integration Architect",
+        "value": "certified-integration-architect",
+        "carregado": false,
+        "contador": 0
+      },
+      {
+        "questions": "65",
+        "label": "Certified Marketing Cloud Account Engagement Specialist: Certified Marketing Cloud Account Engagement Specialist",
+        "value": "certified-marketing-cloud-account-engagement-specialist",
+        "carregado": false,
+        "contador": 0
+      },
+      {
+        "questions": "116",
+        "label": "Certified Marketing Cloud Administrator: Certified Marketing Cloud Administrator",
+        "value": "certified-marketing-cloud-administrator",
+        "carregado": false,
+        "contador": 0
+      },
+      {
+        "questions": "270",
+        "label": "Certified Marketing Cloud Consultant: Certified Marketing Cloud Consultant",
+        "value": "certified-marketing-cloud-consultant",
+        "carregado": false,
+        "contador": 0
+      },
+      {
+        "questions": "130",
+        "label": "Certified Marketing Cloud Developer: Certified Marketing Cloud Developer",
+        "value": "certified-marketing-cloud-developer",
+        "carregado": false,
+        "contador": 0
+      },
+      {
+        "questions": "286",
+        "label": "Certified Marketing Cloud Email Specialist: Certified Marketing Cloud Email Specialist",
+        "value": "certified-marketing-cloud-email-specialist",
+        "carregado": false,
+        "contador": 0
+      },
+      {
+        "questions": "61",
+        "label": "Certified Marketing Cloud Engagement Administrator: Certified Marketing Cloud Engagement Administrator",
+        "value": "certified-marketing-cloud-engagement-administrator",
+        "carregado": false,
+        "contador": 0
+      },
+      {
+        "questions": "60",
+        "label": "Certified MuleSoft Developer: Certified MuleSoft Developer",
+        "value": "certified-mulesoft-developer",
+        "carregado": false,
+        "contador": 0
+      },
+      {
+        "questions": "60",
+        "label": "Certified MuleSoft Developer I: Certified MuleSoft Developer I",
+        "value": "certified-mulesoft-developer-i",
+        "carregado": false,
+        "contador": 0
+      },
+      {
+        "questions": "57",
+        "label": "Certified MuleSoft Developer II: Certified MuleSoft Developer II",
+        "value": "certified-mulesoft-developer-ii",
+        "carregado": false,
+        "contador": 0
+      },
+      {
+        "questions": "60",
+        "label": "Certified MuleSoft Integration Architect I: Salesforce Certified MuleSoft Integration Architect I",
+        "value": "certified-mulesoft-integration-architect-i",
+        "carregado": false,
+        "contador": 0
+      },
+      {
+        "questions": "60",
+        "label": "Certified Mulesoft Platform Integration Architect: Certified Mulesoft Platform Integration Architect",
+        "value": "certified-mulesoft-platform-integration-architect",
+        "carregado": false,
+        "contador": 0
+      },
+      {
+        "questions": "111",
+        "label": "Certified OmniStudio Consultant: Certified OmniStudio Consultant",
+        "value": "certified-omnistudio-consultant",
+        "carregado": false,
+        "contador": 0
+      },
+      {
+        "questions": "80",
+        "label": "Certified OmniStudio Developer: Certified OmniStudio Developer",
+        "value": "certified-omnistudio-developer",
+        "carregado": false,
+        "contador": 0
+      },
+      {
+        "questions": "111",
+        "label": "Certified Platform Administrator II: Certified Platform Administrator II",
+        "value": "certified-platform-administrator-ii",
+        "carregado": false,
+        "contador": 0
+      },
+      {
+        "questions": "658",
+        "label": "Certified Platform App Builder: Certified Platform App Builder",
+        "value": "certified-platform-app-builder",
+        "carregado": false,
+        "contador": 0
+      },
+      {
+        "questions": "65",
+        "label": "Certified Platform Data Architect: Certified Platform Data Architect",
+        "value": "certified-platform-data-architect",
+        "carregado": false,
+        "contador": 0
+      },
+      {
+        "questions": "127",
+        "label": "Certified Platform Developer: Certified Platform Developer",
+        "value": "certified-platform-developer",
+        "carregado": false,
+        "contador": 0
+      },
+      {
+        "questions": "424",
+        "label": "Certified Platform Developer II: Certified Platform Developer II",
+        "value": "certified-platform-developer-ii",
+        "carregado": false,
+        "contador": 0
+      },
+      {
+        "questions": "58",
+        "label": "Certified Platform Identity and Access Management Architect: Certified Platform Identity and Access Management Architect",
+        "value": "certified-platform-identity-and-access-management-architect",
+        "carregado": false,
+        "contador": 0
+      },
+      {
+        "questions": "59",
+        "label": "Certified Platform Sharing and Visibility Architect: Certified Platform Sharing and Visibility Architect",
+        "value": "certified-platform-sharing-and-visibility-architect",
+        "carregado": false,
+        "contador": 0
+      },
+      {
+        "questions": "44",
+        "label": "Certified Process Automation Accredited Professional: Certified Process Automation Accredited Professional",
+        "value": "certified-process-automation-accredited-professional",
+        "carregado": false,
+        "contador": 0
+      },
+      {
+        "questions": "116",
+        "label": "Certified Revenue Cloud Consultant: Certified Revenue Cloud Consultant",
+        "value": "certified-revenue-cloud-consultant",
+        "carregado": false,
+        "contador": 0
+      },
+      {
+        "questions": "493",
+        "label": "Certified Sales Cloud Consultant: Certified Sales Cloud Consultant",
+        "value": "certified-sales-cloud-consultant",
+        "carregado": false,
+        "contador": 0
+      },
+      {
+        "questions": "343",
+        "label": "Certified Service Cloud Consultant: Salesforce Certified Service Cloud Consultant",
+        "value": "certified-service-cloud-consultant",
+        "carregado": false,
+        "contador": 0
+      },
+      {
+        "questions": "100",
+        "label": "Certified Sharing and Visibility Architect: Certified Sharing and Visibility Architect",
+        "value": "certified-sharing-and-visibility-architect",
+        "carregado": false,
+        "contador": 0
+      },
+      {
+        "questions": "119",
+        "label": "Certified Sharing and Visibility Designer: Certified Sharing and Visibility Designer",
+        "value": "certified-sharing-and-visibility-designer",
+        "carregado": false,
+        "contador": 0
+      },
+      {
+        "questions": "71",
+        "label": "Certified Tableau Consultant: Certified Tableau Consultant",
+        "value": "certified-tableau-consultant",
+        "carregado": false,
+        "contador": 0
+      },
+      {
+        "questions": "122",
+        "label": "Certified Tableau CRM and Einstein Discovery Consultant: Certified Tableau CRM and Einstein Discovery Consultant",
+        "value": "certified-tableau-crm-and-einstein-discovery-consultant",
+        "carregado": false,
+        "contador": 0
+      },
+      {
+        "questions": "127",
+        "label": "Certified Tableau Data Analyst: Certified Tableau Data Analyst",
+        "value": "certified-tableau-data-analyst",
+        "carregado": false,
+        "contador": 0
+      },
+      {
+        "questions": "40",
+        "label": "Certified Tableau Desktop Foundations: Certified Tableau Desktop Foundations",
+        "value": "certified-tableau-desktop-foundations",
+        "carregado": false,
+        "contador": 0
+      },
+      {
+        "questions": "55",
+        "label": "Certified Tableau Server Administrator: Certified Tableau Server Administrator",
+        "value": "certified-tableau-server-administrator",
+        "carregado": false,
+        "contador": 0
+      },
+      {
+        "questions": "60",
+        "label": "Certified User Experience Designer: Certified User Experience Designer",
+        "value": "certified-user-experience-designer",
+        "carregado": false,
+        "contador": 0
+      },
+      {
+        "questions": "60",
+        "label": "CRM Analytics and Einstein Discovery Consultant: Certified CRM Analytics and Einstein Discovery Consultant",
+        "value": "crm-analytics-and-einstein-discovery-consultant",
+        "carregado": false,
+        "contador": 0
+      },
+      {
+        "questions": "130",
+        "label": "CRT-160: Salesforce Certified Pardot Specialist",
+        "value": "crt-160",
+        "carregado": false,
+        "contador": 0
+      },
+      {
+        "questions": "65",
+        "label": "CRT-251: Sales Cloud Consultant",
+        "value": "crt-251",
+        "carregado": false,
+        "contador": 0
+      },
+      {
+        "questions": "439",
+        "label": "CRT-450: Salesforce Certified Platform Developer I",
+        "value": "crt-450",
+        "carregado": false,
+        "contador": 0
+      },
+      {
+        "questions": "382",
+        "label": "DEV-401: Building Applications with Force.com and Visualforce",
+        "value": "dev-401",
+        "carregado": false,
+        "contador": 0
+      },
+      {
+        "questions": "65",
+        "label": "DEV-450: Salesforce Certified Platform Developer I (SU18)",
+        "value": "dev-450",
+        "carregado": false,
+        "contador": 0
+      },
+      {
+        "questions": "186",
+        "label": "DEV-501: Apex and Visualforce Controllers",
+        "value": "dev-501",
+        "carregado": false,
+        "contador": 0
+      },
+      {
+        "questions": "146",
+        "label": "Field Service Consultant: Field Service Consultant",
+        "value": "field-service-consultant",
+        "carregado": false,
+        "contador": 0
+      },
+      {
+        "questions": "129",
+        "label": "Field Service Lightning Consultant: Field Service Lightning Consultant",
+        "value": "field-service-lightning-consultant",
+        "carregado": false,
+        "contador": 0
+      },
+      {
+        "questions": "84",
+        "label": "Financial Services Cloud Accredited Professional: Financial Services Cloud Accredited Professional",
+        "value": "financial-services-cloud-accredited-professional",
+        "carregado": false,
+        "contador": 0
+      },
+      {
+        "questions": "105",
+        "label": "Health Cloud Accredited Professional: Health Cloud Accredited Professional",
+        "value": "health-cloud-accredited-professional",
+        "carregado": false,
+        "contador": 0
+      },
+      {
+        "questions": "59",
+        "label": "Heroku Developer Accredited Professional: Heroku Developer Accredited Professional",
+        "value": "heroku-developer-accredited-professional",
+        "carregado": false,
+        "contador": 0
+      },
+      {
+        "questions": "60",
+        "label": "Platform User Experience Designer: Platform User Experience Designer",
+        "value": "platform-user-experience-designer",
+        "carregado": false,
+        "contador": 0
+      },
+      {
+        "questions": "96",
+        "label": "Public Sector Solutions Accredited Professional: Public Sector Solutions Accredited Professional",
+        "value": "public-sector-solutions-accredited-professional",
+        "carregado": false,
+        "contador": 0
+      }
+    ]
   }
 ]
