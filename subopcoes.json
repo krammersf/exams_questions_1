@@ -13,8 +13,8 @@
         "questions": "83",
         "label": "CAS-PA: Certified Application Specialist – Performance Analytics",
         "value": "cas-pa",
-        "carregado": false,
-        "contador": 0
+        "carregado": true,
+        "contador": 1
       },
       {
         "questions": "59",
@@ -27,8 +27,8 @@
         "questions": "45",
         "label": "CIS-CPG: Certified Implementation Specialist - Cloud Provisioning and Governance",
         "value": "cis-cpg",
-        "carregado": false,
-        "contador": 0
+        "carregado": true,
+        "contador": 1
       },
       {
         "questions": "284",
@@ -3888,8 +3888,8 @@
         "questions": "45",
         "label": "PSK I: Professional Scrum with Kanban",
         "value": "psk-i",
-        "carregado": false,
-        "contador": 0
+        "carregado": true,
+        "contador": 1
       },
       {
         "questions": "258",
@@ -3984,8 +3984,8 @@
         "questions": "70",
         "label": "Google Analytics: Google Analytics Individual Qualification (IQ)",
         "value": "google-analytics",
-        "carregado": false,
-        "contador": 0
+        "carregado": true,
+        "contador": 1
       },
       {
         "questions": "48",
@@ -4143,8 +4143,8 @@
         "questions": "87",
         "label": "B2B Commerce for Developers Accredited Professional: B2B Commerce for Developers Accredited Professional",
         "value": "b2b-commerce-for-developers-accredited-professional",
-        "carregado": false,
-        "contador": 0
+        "carregado": true,
+        "contador": 1
       },
       {
         "questions": "320",
