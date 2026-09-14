@@ -6,22 +6,22 @@
         "questions": "219",
         "label": "CAD: ServiceNow Certified Application Developer",
         "value": "cad",
-        "carregado": false,
-        "contador": 0
+        "carregado": true,
+        "contador": 1
       },
       {
         "questions": "83",
         "label": "CAS-PA: Certified Application Specialist – Performance Analytics",
         "value": "cas-pa",
-        "carregado": false,
+        "carregado": true,
         "contador": 1
       },
       {
         "questions": "59",
         "label": "CIS-APM: Certified Implementation Specialist - Application Portfolio Management",
         "value": "cis-apm",
-        "carregado": false,
-        "contador": 0
+        "carregado": true,
+        "contador": 1
       },
       {
         "questions": "45",
@@ -34,15 +34,15 @@
         "questions": "284",
         "label": "CIS-CSM: Certified Implementation Specialist - Customer Service Management",
         "value": "cis-csm",
-        "carregado": false,
-        "contador": 0
+        "carregado": true,
+        "contador": 1
       },
       {
         "questions": "250",
         "label": "CIS-DF: Certified Implementation Specialist - Data Foundations (CMDB and CSDM)",
         "value": "cis-df",
-        "carregado": false,
-        "contador": 0
+        "carregado": true,
+        "contador": 1
       },
       {
         "questions": "122",
@@ -172,8 +172,8 @@
         "questions": "80",
         "label": "C_ACT_2403: SAP Certified Associate - Project Manager - SAP Activate",
         "value": "c-act-2403",
-        "carregado": false,
-        "contador": 0
+        "carregado": true,
+        "contador": 1
       },
       {
         "questions": "80",
@@ -625,8 +625,8 @@
         "questions": "59",
         "label": "AWS Certified Alexa Skill Builder - Specialty: AWS Certified Alexa Skill Builder - Specialty",
         "value": "aws-certified-alexa-skill-builder-specialty",
-        "carregado": false,
-        "contador": 0
+        "carregado": true,
+        "contador": 1
       },
       {
         "questions": "85",
@@ -3935,8 +3935,8 @@
         "questions": "107",
         "label": "Associate Android Developer: Associate Android Developer",
         "value": "associate-android-developer",
-        "carregado": false,
-        "contador": 0
+        "carregado": true,
+        "contador": 1
       },
       {
         "questions": "375",
@@ -3956,8 +3956,8 @@
         "questions": "108",
         "label": "Associate Google Workspace Administrator: Associate Google Workspace Administrator",
         "value": "associate-google-workspace-administrator",
-        "carregado": false,
-        "contador": 0
+        "carregado": true,
+        "contador": 2
       },
       {
         "questions": "289",
@@ -4143,8 +4143,8 @@
         "questions": "87",
         "label": "B2B Commerce for Developers Accredited Professional: B2B Commerce for Developers Accredited Professional",
         "value": "b2b-commerce-for-developers-accredited-professional",
-        "carregado": false,
-        "contador": 1
+        "carregado": true,
+        "contador": 6
       },
       {
         "questions": "320",
