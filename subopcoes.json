@@ -42,7 +42,7 @@
         "label": "CIS-DF: Certified Implementation Specialist - Data Foundations (CMDB and CSDM)",
         "value": "cis-df",
         "carregado": true,
-        "contador": 1
+        "contador": 2
       },
       {
         "questions": "122",
@@ -1477,6 +1477,13 @@
         "questions": "120",
         "label": "AB-100: Agentic AI Business Solutions Architect",
         "value": "ab-100",
+        "carregado": false,
+        "contador": 0
+      },
+      {
+        "questions": "100",
+        "label": "AB-250: Transforming Contact Center Experiences with AI in Dynamics 365",
+        "value": "ab-250",
         "carregado": false,
         "contador": 0
       },
