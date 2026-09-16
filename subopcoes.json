@@ -7,7 +7,7 @@
         "label": "CAD: ServiceNow Certified Application Developer",
         "value": "cad",
         "carregado": true,
-        "contador": 1
+        "contador": 2
       },
       {
         "questions": "83",
@@ -608,7 +608,7 @@
         "contador": 0
       },
       {
-        "questions": "296",
+        "questions": "306",
         "label": "AWS Certified Advanced Networking - Specialty ANS-C01: AWS Certified Advanced Networking - Specialty ANS-C01",
         "value": "aws-certified-advanced-networking-specialty-ans-c01",
         "carregado": false,
