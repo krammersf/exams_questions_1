@@ -1558,6 +1558,13 @@
         "contador": 0
       },
       {
+        "questions": "107",
+        "label": "AI-500: Designing and Implementing Multi-Agent AI Solutions",
+        "value": "ai-500",
+        "carregado": false,
+        "contador": 0
+      },
+      {
         "questions": "246",
         "label": "AI-900: Microsoft Azure AI Fundamentals",
         "value": "ai-900",
@@ -3981,7 +3988,7 @@
         "contador": 0
       },
       {
-        "questions": "75",
+        "questions": "99",
         "label": "Generative AI Leader: Generative AI Leader",
         "value": "generative-ai-leader",
         "carregado": false,
