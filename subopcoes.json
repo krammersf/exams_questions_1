@@ -62,15 +62,15 @@
         "questions": "118",
         "label": "CIS-FSM: Certified Implementation Specialist - Field Service Mangement",
         "value": "cis-fsm",
-        "carregado": false,
-        "contador": 0
+        "carregado": true,
+        "contador": 1
       },
       {
         "questions": "203",
         "label": "CIS-HAM: Certified Implementation Specialist – Hardware Asset Management",
         "value": "cis-ham",
-        "carregado": false,
-        "contador": 0
+        "carregado": true,
+        "contador": 1
       },
       {
         "questions": "229",
@@ -90,50 +90,50 @@
         "questions": "169",
         "label": "CIS-PPM: Certified Implementation Specialist - Project Portfolio Management",
         "value": "cis-ppm",
-        "carregado": false,
-        "contador": 0
+        "carregado": true,
+        "contador": 1
       },
       {
         "questions": "289",
         "label": "CIS-RC: Certified Implementation Specialist - Risk and Compliance",
         "value": "cis-rc",
-        "carregado": false,
-        "contador": 0
+        "carregado": true,
+        "contador": 2
       },
       {
         "questions": "222",
         "label": "CIS-SAM: Certified Implementation Specialist - Software Asset Management",
         "value": "cis-sam",
-        "carregado": false,
-        "contador": 0
+        "carregado": true,
+        "contador": 1
       },
       {
         "questions": "125",
         "label": "CIS-SIR: Certified Implementation Specialist - Security Incident Response",
         "value": "cis-sir",
-        "carregado": false,
-        "contador": 0
+        "carregado": true,
+        "contador": 2
       },
       {
         "questions": "124",
         "label": "CIS-SM: Certified Implementation Specialist - Service Mapping",
         "value": "cis-sm",
-        "carregado": false,
-        "contador": 0
+        "carregado": true,
+        "contador": 2
       },
       {
         "questions": "182",
         "label": "CIS-SPM: Certified Implementation Specialist - Strategic Portfolio Management",
         "value": "cis-spm",
-        "carregado": false,
-        "contador": 0
+        "carregado": true,
+        "contador": 1
       },
       {
         "questions": "60",
         "label": "CIS-TPRM: Certified Implementation Specialist - Third-party Risk Management",
         "value": "cis-tprm",
-        "carregado": false,
-        "contador": 0
+        "carregado": true,
+        "contador": 3
       },
       {
         "questions": "132",
@@ -179,8 +179,8 @@
         "questions": "80",
         "label": "C_ACTIVATE13: SAP Certified Associate - SAP Activate Project Manager",
         "value": "c-activate13",
-        "carregado": false,
-        "contador": 0
+        "carregado": true,
+        "contador": 1
       },
       {
         "questions": "80",
@@ -200,15 +200,15 @@
         "questions": "65",
         "label": "C_ARSOR_2202: SAP Certified Application Associate - SAP Ariba Sourcing",
         "value": "c-arsor-2202",
-        "carregado": false,
-        "contador": 0
+        "carregado": true,
+        "contador": 1
       },
       {
         "questions": "18",
         "label": "C_BCBDC_2505: SAP Certified Associate - SAP Business Data Cloud",
         "value": "c-bcbdc-2505",
-        "carregado": false,
-        "contador": 0
+        "carregado": true,
+        "contador": 1
       },
       {
         "questions": "80",
@@ -611,8 +611,8 @@
         "questions": "306",
         "label": "AWS Certified Advanced Networking - Specialty ANS-C01: AWS Certified Advanced Networking - Specialty ANS-C01",
         "value": "aws-certified-advanced-networking-specialty-ans-c01",
-        "carregado": false,
-        "contador": 0
+        "carregado": true,
+        "contador": 1
       },
       {
         "questions": "488",
@@ -674,8 +674,8 @@
         "questions": "366",
         "label": "AWS Certified Data Engineer - Associate DEA-C01: AWS Certified Data Engineer - Associate DEA-C01",
         "value": "aws-certified-data-engineer-associate-dea-c01",
-        "carregado": false,
-        "contador": 0
+        "carregado": true,
+        "contador": 1
       },
       {
         "questions": "443",
@@ -1502,6 +1502,13 @@
         "contador": 0
       },
       {
+        "questions": "65",
+        "label": "AB-650: Administering Microsoft 365 and AI Services",
+        "value": "ab-650",
+        "carregado": false,
+        "contador": 0
+      },
+      {
         "questions": "92",
         "label": "AB-730: AI Business Professional",
         "value": "ab-730",
@@ -1572,7 +1579,7 @@
         "contador": 0
       },
       {
-        "questions": "128",
+        "questions": "158",
         "label": "AI-901: Microsoft Azure AI Fundamentals",
         "value": "ai-901",
         "carregado": false,
@@ -1831,7 +1838,7 @@
         "contador": 0
       },
       {
-        "questions": "139",
+        "questions": "161",
         "label": "DP-700: Implementing Data Engineering Solutions Using Microsoft Fabric",
         "value": "dp-700",
         "carregado": false,
@@ -4164,8 +4171,8 @@
         "questions": "320",
         "label": "Certified Advanced Administrator: Certified Advanced Administrator",
         "value": "certified-advanced-administrator",
-        "carregado": false,
-        "contador": 0
+        "carregado": true,
+        "contador": 1
       },
       {
         "questions": "213",
